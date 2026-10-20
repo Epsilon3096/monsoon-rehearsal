@@ -6,11 +6,19 @@
       "path": "data/public_evidence/jps/jps_selangor_rainfall_page.html.txt",
       "source_url": "https://publicinfobanjir.water.gov.my/hujan/data-hujan/?state=SEL&lang=en",
       "retrieved_at_utc": "2026-10-13T14:41:23.479950+00:00",
-      "sha256": "4c3226af22a5b5cc9300eccaccc6d2ef8f77891b3b85017617df9e87bc1d31d4",
-      "bytes": 78678,
+      "sha256": "1546b296f50adfc3b3209b8cb8559be6ef165480e5d1312d3e4044080a6baa41",
+      "bytes": 78666,
       "publisher": "Department of Irrigation and Drainage Malaysia (JPS/DID)",
       "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse.",
-      "evidence_class": "Public portal documentation snapshot; inert HTML source"
+      "evidence_class": "Public portal documentation snapshot; inert HTML source",
+      "original_response_sha256": "4c3226af22a5b5cc9300eccaccc6d2ef8f77891b3b85017617df9e87bc1d31d4",
+      "original_response_bytes": 78678,
+      "redaction": {
+        "date": "2026-10-20",
+        "replacements": 3,
+        "reason": "Remove third-party browser telemetry key, CAPTCHA site identifier and page token from public redistribution",
+        "claim": "Public-page identifiers are not project credentials. Sanitised copy; document text unchanged."
+      }
     },
     {
       "path": "data/public_evidence/jps/jps_selangor_rainfall_table.html.txt",
