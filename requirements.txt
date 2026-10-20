@@ -1,0 +1,4 @@
+# Streamlit Community Cloud discovers this filename before pyproject.toml.
+# Use Python 3.12 in the deployment's Advanced settings.
+# Reuse the verified dependency pins rather than resolving a different stack.
+-r requirements.lock.txt

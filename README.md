@@ -35,6 +35,12 @@ An executable research prototype for deciding which drainage restoration jobs a 
 
 ## Open the prototype
 
+For Streamlit Community Cloud, deploy `app.py` from `main` and select **Python
+3.12** in **Advanced settings**. Python 3.14 is outside this release's supported
+range. The root `requirements.txt` installs the pinned release dependencies.
+See [cloud setup and verification](docs/DEPLOYMENT.md), including how to recover
+an app created with the wrong Python version.
+
 On this Windows workspace, double-click **Start.cmd**. The launcher reuses the prepared environment and serves the app at **http://127.0.0.1:8513**. Keep its window open while using the app. Press Ctrl+C to stop it.
 
 If moving the source folder to another computer, install Python 3.11, 3.12 or 3.13 first. The launcher creates `.venv` and installs the pinned dependencies on its first run. Installation requires internet access; the application runs locally without map tiles, forecast feeds, API keys, or cloud services. The original synthetic demonstration needs no account. The new operator/shadow research workspace requires locally created accounts, with no default credentials.
