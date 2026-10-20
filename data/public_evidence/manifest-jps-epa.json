@@ -16,13 +16,22 @@
       "path": "data/public_evidence/jps/jps_selangor_rainfall_table.html.txt",
       "source_url": "https://publicinfobanjir.water.gov.my/wp-content/themes/shapely/agency/searchresultrainfall.php?state=SEL&district=ALL&station=ALL&loginStatus=0&language=1",
       "retrieved_at_utc": "2026-10-13T14:42:19.572934+00:00",
-      "sha256": "5c7845aa2c8025494997a2906e540ee124a78dde45446d836e113912f61e1c5a",
-      "bytes": 90768,
+      "sha256": "1d7fcb0815731cd49dc2b14053a9267e9b17c9e51f42f71c9533896d2aec9c9b",
+      "bytes": 90764,
       "publisher": "Department of Irrigation and Drainage Malaysia (JPS/DID)",
       "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse.",
       "access": "Anonymous public page's documented request with loginStatus=0; no login or terms acceptance",
       "evidence_class": "Public reported station observations; quality/provisional status not supplied",
-      "units": "Rainfall accumulations: mm. Last-updated timestamps have no explicit offset in the response."
+      "units": "Rainfall accumulations: mm. Last-updated timestamps have no explicit offset in the response.",
+      "original_response_sha256": "5c7845aa2c8025494997a2906e540ee124a78dde45446d836e113912f61e1c5a",
+      "original_response_bytes": 90768,
+      "redaction": {
+        "date": "2026-10-20",
+        "reason": "Remove third-party Google Maps API key embedded in public webpage script URL before further distribution",
+        "replacements": 1,
+        "marker": "REDACTED_PUBLIC_PAGE_GOOGLE_API_KEY",
+        "claim": "Sanitised copy; not byte-identical to acquired response. Rainfall table values unchanged."
+      }
     },
     {
       "path": "data/public_evidence/jps/jps_selangor_rainfall_snapshot.csv",
@@ -36,7 +45,9 @@
       "columns": 13,
       "units": "Rainfall columns are mm, not mm/hour or m3/s; last_one_hour_mm is accumulated depth over the latest hour.",
       "missing_data": "Text '-', empty and nonnumeric cells remain raw strings, never coerced to zero.",
-      "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse."
+      "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse.",
+      "published_source_sha256": "1d7fcb0815731cd49dc2b14053a9267e9b17c9e51f42f71c9533896d2aec9c9b",
+      "source_redaction_note": "raw_source_sha256 identifies original acquired response; public HTML copy has one API-key redaction. CSV values unchanged."
     },
     {
       "path": "data/public_evidence/jps/summary.json",
