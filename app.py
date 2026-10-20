@@ -527,7 +527,7 @@ def workspace(case,store):
         st.caption("Plan the achievable work.")
         research=st.checkbox("Show research tools",value=False,key="research_tools_enabled",
                              help="Opt in to experimental validation workspaces. These tools do not qualify the custom solver or authorise maintenance.")
-        pages=["Rehearse","Work window","Work tickets","Evidence"]
+        pages=["Rehearse","Demonstration","Work window","Work tickets","Evidence"]
         if research:
             pages.insert(3,"Validation")
         if st.session_state.get("workspace") not in pages:
@@ -543,6 +543,9 @@ def workspace(case,store):
     if notice: st.success(notice)
     if case.get("runtime_warning"): st.warning(case["runtime_warning"])
     if page=="Rehearse": planning_page(case,store,state)
+    elif page=="Demonstration":
+        from monsoon.demo_ui import render_demo
+        render_demo()
     elif page=="Work window":
         from monsoon.preparation_ui import render_work_window
         render_work_window(case)

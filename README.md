@@ -1,10 +1,31 @@
-# Monsoon Rehearsal · v0.8.1
+# Monsoon Rehearsal
+
+**Choose drainage work that can finish before rain—and check where the water goes.**
+
+Version 0.9.0 adds a three-minute guided demonstration and a prospectively declared outlet-restoration benchmark. Start with **Demonstration** in the sidebar; use **Rehearse** for the full four-job planning workflow.
+
+| What you can inspect | Current evidence |
+| --- | --- |
+| Maintenance benefit | Four separate synthetic outlet-restoration cases pass unchanged numerical and represented-location checks; zero-inflow control passes. |
+| Boundary limits | High-backwater control remains unresolved. The original interacting network's adverse cases remain visible. |
+| Scheduling | Bounded job durations, travel, prerequisites and crew return; work that cannot fit is skipped. |
+| Baselines | The original planner ties adaptive marginal; the new one-job case ties downstream-first. Scheduling superiority is not established. |
+| Tickets | Persistent draft, review, approval and dispatch controls tied to exact-plan evidence. The demonstration cannot grant approval. |
+| Practitioner evidence | Blank review packet ready. Actual operator review, measured validation and shadow trial remain pending. |
+
+[Live demonstration guide](docs/DEMONSTRATION.md) · [Verification](evidence/v0.9/VERIFICATION.md) · [Benchmark rationale](docs/MAINTENANCE_CASE.md) · [Results and raw-run manifest](evidence/v0.9/maintenance-benchmark/) · [Operator review packet](docs/OPERATOR_REVIEW_PACKET.md)
+
+![Guided synthetic maintenance demonstration](docs/images/demonstration.png)
+
+The practice conversation in `docs/FICTIONAL_REVIEW_PRACTICE.md` is explicitly invented and is not a testimonial. No external organisation has endorsed this prototype.
+
+## Product and evidence boundaries
 
 An executable research prototype for deciding which drainage restoration jobs a limited crew can complete before a common pre-storm deadline. It connects an actual EPA SWMM dynamic-wave model, exhaustive scheduling, explicit baseline comparisons, and a persistent reviewed-ticket workflow.
 
 **The hydraulic study data are synthetic. This is a verified software prototype, not a calibrated field decision system.** The original reference result ties the adaptive marginal baseline; one held-out storm violates the location-level safeguard. The v0.3 observation-conditioned policy and all three screened alternatives abstain in all ten designed evaluation events. **No scheduling advantage has been demonstrated.** Those outcomes remain part of the evidence.
 
-**v0.8 focuses the main application on the SWMM product.** The default pages are Rehearse, Work window, Work tickets and Evidence. **Show research tools** explicitly opens the separate validation workspaces. Read `PRODUCT_SCOPE.md` for the demonstration, its verification profile and the distinction between an inspectable prototype and established operational benefit. The frozen v0.8 verification remains under `evidence/v0.8/`; the decision-interface update is recorded separately under `evidence/v0.8.1/`.
+**The main application focuses on the SWMM product.** The default pages are Rehearse, Demonstration, Work window, Work tickets and Evidence. **Show research tools** explicitly opens the separate validation workspaces. Read `PRODUCT_SCOPE.md` for the product verification profile and the distinction between an inspectable prototype and established operational benefit. Frozen earlier verification remains under `evidence/v0.8/` and `evidence/v0.8.1/`; new demonstration evidence is separate under `evidence/v0.9/`.
 
 **Custom-solver development is stopped for this delivery after the 17 October strategy review.** The separate v0.7 bench research conserves water but remains unqualified because its complex-pulse mesh-accuracy check fails. A passing v0.8 product profile does not accept that solver, repair the earlier SWMM bench failures or demonstrate a scheduling advantage. See `evidence/v0.7/VERIFICATION.md` for the retained results. The previous archives remain unchanged.
 
@@ -106,6 +127,7 @@ The model's spill is water removed at a named drainage-model boundary. It is nei
 | File | Responsibility |
 |---|---|
 | `app.py` | Browser workflow and inspection views |
+| `monsoon/demo_ui.py`, `monsoon/maintenance_benchmark.py` | Read-only walkthrough and separately frozen native outlet-restoration benchmark |
 | `monsoon/case.py`, `data/reference_case.json` | Frozen synthetic case and provenance |
 | `monsoon/hydraulics.py`, `_swmm_worker.py` | Input construction, isolated EPA engine, unit conversion, checked cache |
 | `monsoon/planning.py` | Exact queues, causal replay, baseline policies, protected-location gates, holdouts |

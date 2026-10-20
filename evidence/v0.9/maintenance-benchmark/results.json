@@ -1,0 +1,359 @@
+{
+  "protocol_sha256": "d07107e8bb69ce13e30d0e44116908952280ae6c926a1f034690df4017e7eeb3",
+  "source_sha256": {
+    "monsoon/maintenance_benchmark.py": "cdda6aba6a58eff7628d413cbc91c810c296697be0203795ed573cdfc26c1b7f",
+    "monsoon/hydraulics.py": "e8658c4a2f27b469269f88b43b1e8ad33e94a8ee3ef9612ca550cbae8cf108c4",
+    "monsoon/_swmm_worker.py": "f1d5773c00dd41d56e9b4b97951146f77856585d77ba3a3f489edbeb21fd1830",
+    "monsoon/planning.py": "13eec8cb3d4993e5548e2aeb4ec306e0bed070192b89adce1b01b0c06dd1ec5a"
+  },
+  "comparisons": [
+    {
+      "id": "T1",
+      "title": "Short inflow pulse",
+      "purpose": "declared_positive_mechanism",
+      "status": "passed",
+      "errors": [],
+      "rows": [
+        {
+          "node": "A1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "B1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "S",
+          "baseline_m3": 481.2342507191668,
+          "restored_m3": 0.0,
+          "change_m3": -481.2342507191668,
+          "half_step_change_m3": -481.2335120103977,
+          "extended_change_m3": -481.2342507191668,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "O",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        }
+      ],
+      "baseline_total_m3": 481.2342507191668,
+      "restored_total_m3": 0.0,
+      "reduction_m3": 481.2342507191668,
+      "positive_mechanism": true,
+      "approval_allowed": false
+    },
+    {
+      "id": "T2",
+      "title": "Two peaks with antecedent storage",
+      "purpose": "declared_positive_mechanism",
+      "status": "passed",
+      "errors": [],
+      "rows": [
+        {
+          "node": "A1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "B1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "S",
+          "baseline_m3": 872.9502773984461,
+          "restored_m3": 0.0,
+          "change_m3": -872.9502773984461,
+          "half_step_change_m3": -872.9469797310227,
+          "extended_change_m3": -872.9502773984461,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "O",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        }
+      ],
+      "baseline_total_m3": 872.9502773984461,
+      "restored_total_m3": 0.0,
+      "reduction_m3": 872.9502773984461,
+      "positive_mechanism": true,
+      "approval_allowed": false
+    },
+    {
+      "id": "T3",
+      "title": "Long inflow with greater restriction",
+      "purpose": "declared_positive_mechanism",
+      "status": "passed",
+      "errors": [],
+      "rows": [
+        {
+          "node": "A1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "B1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "S",
+          "baseline_m3": 1971.4458114557092,
+          "restored_m3": 0.0,
+          "change_m3": -1971.4458114557092,
+          "half_step_change_m3": -1971.3625435302176,
+          "extended_change_m3": -1971.4458114557092,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "O",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        }
+      ],
+      "baseline_total_m3": 1971.4458114557092,
+      "restored_total_m3": 0.0,
+      "reduction_m3": 1971.4458114557092,
+      "positive_mechanism": true,
+      "approval_allowed": false
+    },
+    {
+      "id": "T4",
+      "title": "Lower inflow and smoother channel",
+      "purpose": "declared_positive_mechanism",
+      "status": "passed",
+      "errors": [],
+      "rows": [
+        {
+          "node": "A1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "B1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "S",
+          "baseline_m3": 70.90012324914534,
+          "restored_m3": 0.0,
+          "change_m3": -70.90012324914534,
+          "half_step_change_m3": -70.84116207929507,
+          "extended_change_m3": -70.90012324914534,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "O",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        }
+      ],
+      "baseline_total_m3": 70.90012324914534,
+      "restored_total_m3": 0.0,
+      "reduction_m3": 70.90012324914534,
+      "positive_mechanism": true,
+      "approval_allowed": false
+    },
+    {
+      "id": "C_ZERO",
+      "title": "No inflow: null control",
+      "purpose": "null_control",
+      "status": "passed",
+      "errors": [],
+      "rows": [
+        {
+          "node": "A1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "B1",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "S",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        },
+        {
+          "node": "O",
+          "baseline_m3": 0.0,
+          "restored_m3": 0.0,
+          "change_m3": 0.0,
+          "half_step_change_m3": 0.0,
+          "extended_change_m3": 0.0,
+          "limit_m3": 0.05,
+          "within_limit": true
+        }
+      ],
+      "baseline_total_m3": 0.0,
+      "restored_total_m3": 0.0,
+      "reduction_m3": 0.0,
+      "positive_mechanism": false,
+      "approval_allowed": false
+    },
+    {
+      "id": "C_BACKWATER",
+      "title": "Receiving water above storage crest",
+      "purpose": "adverse_boundary_control",
+      "status": "unresolved",
+      "errors": [
+        "baseline/S: event-horizon disagreement",
+        "baseline/total: event-horizon disagreement",
+        "restored/S: event-horizon disagreement",
+        "restored/total: event-horizon disagreement"
+      ],
+      "rows": [],
+      "approval_allowed": false
+    }
+  ],
+  "primary_mechanism_supported": true,
+  "null_control_passed": true,
+  "timing": {
+    "120": {
+      "status": "supported",
+      "completed_jobs": [
+        "M1"
+      ],
+      "events": [
+        {
+          "job_id": "M1",
+          "depart_minute": 0.0,
+          "start_minute": 10.0,
+          "finish_minute": 45.0,
+          "actual_minutes": 35.0,
+          "max_minutes": 45.0,
+          "from_location": "DEPOT",
+          "to_location": "M1",
+          "bound_finish_minute": 55.0,
+          "supported": true
+        }
+      ],
+      "finish_minute": 55.0,
+      "work_finish_minute": 45.0,
+      "crew_minutes": 55.0,
+      "skipped": [],
+      "reasons": [],
+      "start_minute": 0.0,
+      "start_location": "DEPOT",
+      "final_location": "DEPOT",
+      "last_work_location": "M1",
+      "deadline_minutes": 120.0,
+      "return_minutes": 10.0
+    },
+    "50": {
+      "status": "supported",
+      "completed_jobs": [],
+      "events": [],
+      "finish_minute": 0.0,
+      "work_finish_minute": 0.0,
+      "crew_minutes": 0.0,
+      "skipped": [
+        {
+          "job_id": "M1",
+          "reason": "insufficient_bound_window",
+          "missing_prerequisites": []
+        }
+      ],
+      "reasons": [],
+      "start_minute": 0.0,
+      "start_location": "DEPOT",
+      "final_location": "DEPOT",
+      "last_work_location": "DEPOT",
+      "deadline_minutes": 50.0,
+      "return_minutes": 0.0
+    }
+  },
+  "late_work_skipped": true,
+  "baseline_comparison": "With one job, downstream-first and the candidate choose the identical action. No optimizer advantage.",
+  "physical_validation_established": false,
+  "operator_validation_established": false,
+  "approval_allowed": false,
+  "dispatch_allowed": false,
+  "scope": "A separate synthetic mechanism benchmark. Original reference audit failures remain unchanged."
+}

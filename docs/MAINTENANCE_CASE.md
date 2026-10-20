@@ -25,3 +25,20 @@ The benchmark has no route to live plan approval or tickets. Passing cases do no
 Run `python -m monsoon.maintenance_benchmark --output var/benchmark-new-attempt` from the repository. The output must be new. The runner writes its protocol/source/engine freeze before the first calculation, then retains every input, native output, report, log and result with a SHA-256 manifest. All attempts, including failures, should remain available. File hashes establish identity, not independent third-party chronology or physical truth.
 
 Engine capability source: [EPA SWMM documentation](https://www.epa.gov/water-research/storm-water-management-model-swmm), consulted 20 October 2026. EPA documents dynamic-wave routing, open channels, external inflows and backwater. EPA does not endorse this project or supply this benchmark geometry.
+
+## Recorded first attempt — 20 October 2026
+
+The protocol and runner were committed before this attempt. No geometry, scenario or threshold was changed after seeing its output. Raw artifacts are under `evidence/v0.9/maintenance-benchmark/`.
+
+| Case | Restricted spill (m³) | Restored spill (m³) | Comparison outcome |
+| --- | ---: | ---: | --- |
+| T1 · short pulse | 481.2343 | 0.0000 | Pass |
+| T2 · two peaks / antecedent storage | 872.9503 | 0.0000 | Pass |
+| T3 · prolonged inflow / residual restriction | 1971.4458 | 0.0000 | Pass |
+| T4 · lower inflow | 70.9001 | 0.0000 | Pass |
+| C_ZERO · no inflow | 0.0000 | 0.0000 | Null control passes |
+| C_BACKWATER · high receiving water | Not qualified | Not qualified | Unresolved event horizon |
+
+All 36 native runs passed the unchanged worker checks. Maximum absolute routing continuity and independent water-balance residual were each approximately **0.03705%**, below the 1% limits. Passing water accounting does not establish event completeness: C_BACKWATER still exceeds the separate 0.05 m³ horizon tolerance at storage and total spill, in both restricted and restored configurations. Its complete raw values remain available as diagnostics.
+
+The 120-minute work window admits M1; the 50-minute window skips it using the 45-minute job bound plus travel and return. Downstream-first ties the candidate because both have the same single action. No field benefit, downstream receiving-water safety or scheduler advantage follows from this result.

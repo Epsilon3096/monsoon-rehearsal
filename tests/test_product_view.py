@@ -30,9 +30,9 @@ def test_default_product_pages_keep_adverse_evidence_without_experimental_import
     app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120).run()
     assert not app.exception
     assert app.sidebar.checkbox(key="research_tools_enabled").value is False
-    assert app.sidebar.radio(key="workspace").options == ["Rehearse", "Work window", "Work tickets", "Evidence"]
+    assert app.sidebar.radio(key="workspace").options == ["Rehearse", "Demonstration", "Work window", "Work tickets", "Evidence"]
     assert app.sidebar.radio(key="workspace").value == "Rehearse"
-    for page in ("Work window", "Work tickets", "Evidence"):
+    for page in ("Demonstration", "Work window", "Work tickets", "Evidence"):
         app.sidebar.radio(key="workspace").set_value(page).run()
         assert not app.exception, [e.value for e in app.exception]
     warnings = "\n".join(item.value for item in app.warning)

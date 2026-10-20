@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "evidence_origin": "SYNTHETIC; no survey, operator or measured validation",
+  "case": {
+    "id": "synthetic-terminal-restoration-v1",
+    "title": "Final outlet restoration: synthetic mechanism benchmark",
+    "storage_area_m2": 50,
+    "depth_threshold_fraction": 0.8,
+    "nodes": [
+      {
+        "id": "A1",
+        "label": "Feeder A",
+        "kind": "junction",
+        "invert_m": 101.0,
+        "max_depth_m": 1.5,
+        "x": 0,
+        "y": 3
+      },
+      {
+        "id": "B1",
+        "label": "Feeder B",
+        "kind": "junction",
+        "invert_m": 101.0,
+        "max_depth_m": 1.5,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "S",
+        "label": "Upstream storage",
+        "kind": "storage",
+        "invert_m": 100.5,
+        "max_depth_m": 1.0,
+        "x": 4,
+        "y": 1.5
+      },
+      {
+        "id": "O",
+        "label": "Receiving boundary",
+        "kind": "outfall",
+        "invert_m": 99.5,
+        "max_depth_m": 0,
+        "x": 9,
+        "y": 1.5
+      }
+    ],
+    "links": [
+      {
+        "id": "FEED_A",
+        "from_node": "A1",
+        "to_node": "S",
+        "length_m": 50,
+        "roughness_n": 0.02,
+        "shape": "RECT_OPEN",
+        "depth_m": 1.2,
+        "blocked_width_m": 1.5,
+        "restored_width_m": 1.5,
+        "job_id": null
+      },
+      {
+        "id": "FEED_B",
+        "from_node": "B1",
+        "to_node": "S",
+        "length_m": 50,
+        "roughness_n": 0.02,
+        "shape": "RECT_OPEN",
+        "depth_m": 1.2,
+        "blocked_width_m": 1.5,
+        "restored_width_m": 1.5,
+        "job_id": null
+      },
+      {
+        "id": "FINAL",
+        "from_node": "S",
+        "to_node": "O",
+        "length_m": 50,
+        "roughness_n": 0.02,
+        "shape": "RECT_OPEN",
+        "depth_m": 1.0,
+        "blocked_width_m": 0.1,
+        "restored_width_m": 1.0,
+        "job_id": "M1"
+      }
+    ],
+    "jobs": [
+      {
+        "id": "M1",
+        "title": "Restore final outlet reach",
+        "asset_id": "FINAL",
+        "nominal_minutes": 35,
+        "max_minutes": 45,
+        "downstream_rank": 0,
+        "prerequisites": [],
+        "cost_rm": 0,
+        "evidence_status": "synthetic"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "T1",
+      "title": "Short inflow pulse",
+      "purpose": "declared_positive_mechanism",
+      "hydraulic": {
+        "peak_a_cms": 0.3,
+        "peak_b_cms": 0.3,
+        "hydrograph": "triangle",
+        "tailwater_m": 99.5,
+        "initial_storage_depth_m": 0,
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "T2",
+      "title": "Two peaks with antecedent storage",
+      "purpose": "declared_positive_mechanism",
+      "hydraulic": {
+        "peak_a_cms": 0.35,
+        "peak_b_cms": 0.25,
+        "hydrograph": "double",
+        "tailwater_m": 100,
+        "initial_storage_depth_m": 0.3,
+        "roughness_multiplier": 1.2,
+        "restriction_multiplier": 0.75
+      }
+    },
+    {
+      "id": "T3",
+      "title": "Long inflow with greater restriction",
+      "purpose": "declared_positive_mechanism",
+      "hydraulic": {
+        "peak_a_cms": 0.45,
+        "peak_b_cms": 0.35,
+        "hydrograph": "plateau",
+        "tailwater_m": 100.4,
+        "initial_storage_depth_m": 0.5,
+        "roughness_multiplier": 1.2,
+        "restriction_multiplier": 0.5
+      }
+    },
+    {
+      "id": "T4",
+      "title": "Lower inflow and smoother channel",
+      "purpose": "declared_positive_mechanism",
+      "hydraulic": {
+        "peak_a_cms": 0.15,
+        "peak_b_cms": 0.15,
+        "hydrograph": "triangle",
+        "tailwater_m": 99.5,
+        "initial_storage_depth_m": 0,
+        "roughness_multiplier": 0.8,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "C_ZERO",
+      "title": "No inflow: null control",
+      "purpose": "null_control",
+      "hydraulic": {
+        "peak_a_cms": 0,
+        "peak_b_cms": 0,
+        "hydrograph": "triangle",
+        "tailwater_m": 99.5,
+        "initial_storage_depth_m": 0,
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "C_BACKWATER",
+      "title": "Receiving water above storage crest",
+      "purpose": "adverse_boundary_control",
+      "hydraulic": {
+        "peak_a_cms": 0.3,
+        "peak_b_cms": 0.3,
+        "hydrograph": "plateau",
+        "tailwater_m": 101.7,
+        "initial_storage_depth_m": 0,
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    }
+  ],
+  "criteria": {
+    "per_node_no_worsening_m3": 0.05,
+    "step_tolerance_absolute_m3": 0.05,
+    "step_tolerance_relative": 0.02,
+    "horizon_difference_m3": 0.05,
+    "positive_benefit_m3": 1,
+    "engine_checks": "unchanged _swmm_worker.py"
+  },
+  "dispatch_allowed": false,
+  "design_reference": "docs/MAINTENANCE_CASE.md"
+}
