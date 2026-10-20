@@ -11,6 +11,17 @@ before `pyproject.toml`; this avoids attempting to install this setuptools
 project through Poetry. Do not remove the Python upper bound to hide a runtime
 mismatch.
 
+Do not put the local port `8513` or a local-only bind address in the shared
+`.streamlit/config.toml`. Community Cloud expects its standard port `8501`.
+The Windows launcher already passes localhost and port `8513` explicitly, so
+the local launcher keeps its existing behaviour.
+
+During the 20 October deployment, Community Cloud installed the 45 pinned
+packages, then replaced `pyarrow==25.0.1` with `24.0.0` under its own known-crash
+mitigation. Consequently the hosted dependency set is not identical to the
+Windows release lock; its own runtime checks are required. Preserve the
+historical release lock rather than rewriting its verification history.
+
 If an existing deployment reports Python 3.14, open its **Settings → General**,
 set **Python version** to **3.12**, and save changes. This control was available
 in the signed-in Community Cloud interface on 20 October 2026. Rebooting or
