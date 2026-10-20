@@ -1,0 +1,25 @@
+{
+  "scanner": "Gitleaks 8.30.1",
+  "scope": "All reachable Git history before adding this scan receipt",
+  "report_sha256": "fea05b6a4106d46b9d53ff609d4098c38e24039de6209ae8222ac47dab54c87f",
+  "commits_scanned": 7,
+  "reported_matches": 2806,
+  "reviewed_nonsecret_sha256_matches": {
+    "TICKET_API.md": 12,
+    "evidence_key": 2776,
+    "_array_api_info.py": 2,
+    "test_api.py": 2,
+    "test_array_api_info.py": 2,
+    "test_limited_api.py": 2,
+    "capi_maps.py": 2,
+    "test_capi_maps.py": 2,
+    "test_public_api.py": 2,
+    "_testcapi.pyd": 2,
+    "_testinternalcapi.pyd": 2
+  },
+  "unresolved_credential_candidates": 0,
+  "google_api_key_pattern_matches": 0,
+  "classification": "Each generic match was checked in its actual Git blob at its reported line: only explicitly named evidence_key or file-checksum fields holding 64 lowercase hexadecimal SHA-256 values were accepted. No directory or credential rule was disabled.",
+  "credential_revoked": false,
+  "cached_github_views_purged": false
+}
