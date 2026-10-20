@@ -467,7 +467,7 @@ def evidence_page(case,store):
     st.write("Understand the model behind each recommendation and the checks required before a plan can proceed.")
     left, middle, right = st.columns(3)
     left.metric("Hydraulic engine", "EPA SWMM")
-    middle.metric("Reference network", "4 jobs · 1 crew")
+    middle.metric("Network · one crew", "4 jobs")
     right.metric("Data basis", "Synthetic")
     st.info("This demonstration uses synthetic geometry and inflows. It is not calibrated to a real site and does not authorise field work.")
 
