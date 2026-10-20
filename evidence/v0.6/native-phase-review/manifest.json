@@ -1,0 +1,18 @@
+{
+  "schema_version": "monsoon.v06-review-evidence/1",
+  "evidence_kind": "synthetic_fixture",
+  "files": {
+    "half/model.inp": "28346f1ff327a32fbc99287d8972e860197a30cb40ad791d2dfcf90461bd7f68",
+    "half/model.out": "9b65143880feb04b9319e8de79bcaf1e2b88e7b4ce0cf8aeb0db90746ca256f8",
+    "half/model.rpt": "541dbf8e05e1a513ab7e19a1bbe1ac8ae2a1db6876028f82bb20de2101eebf30",
+    "half/probe.json": "27fbe841121be47feccc92b654633daf19c4d037f25bb36322937d7cfa1174ef",
+    "primary/model.inp": "53767266195af80a3aac57b0eb4a60d7ba2d0b8c0a631242cc955c1e3e82a597",
+    "primary/model.out": "e805496bda2abb5f68faa35c7c4f9fdde3af26dc03c0c66e496ac673efbd1a5a",
+    "primary/model.rpt": "4ffa5781c552e08f140cfdd698a73ad9bcb7fc1158f975e35d31cd509b3a3b4c",
+    "primary/probe.json": "ab5e4c0ca249d3cf72a63b6572126c7c6d2ad9e4e8913a6cf8b47c7b335590b0",
+    "probe-source.py": "5bd22564b23c4969ab2ae88c85124d01a8691afdd8dff44767e78496c5745fc4",
+    "summary.json": "99ebf99af140c2a37de1175389e1c7de4159fe1c583ed678ae1156390b966497"
+  },
+  "physical_validation_established": false,
+  "operational_activation_allowed": false
+}

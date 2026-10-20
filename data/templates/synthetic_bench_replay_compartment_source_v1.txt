@@ -1,0 +1,4 @@
+ENTIRELY SYNTHETIC SOFTWARE FIXTURE. No physical rig, survey, measured boundary or operator.
+New cold-start replay development geometry copied from the separately named synthetic_bench_prepared_site_v2/model_v2 analytical compartment: 0.1 m2 constant-area storage A and elevated dry outlet O.
+This positive numerical fixture tests retained water and receipt plumbing only; it does not establish wet-conduit, backwater, overflow or physical accuracy.
+The earlier three-node flowing replay candidate passes old whole-event checks but fails the additional every-step balance audit. Its exact replay fixture bytes remain in replay_development_failures; historical v0.5 fixtures are unchanged.

@@ -1,0 +1,109 @@
+- button "keyboard_double_arrow_left":
+  - generic: keyboard_double_arrow_left
+- heading "Monsoon" [level=3]
+- heading "Rehearsal" [level=3]
+- paragraph: Plan the achievable work.
+- radiogroup "Workspace":
+  - radio "Rehearse"
+  - paragraph: Rehearse
+  - radio "Work window"
+  - paragraph: Work window
+  - radio "Work tickets"
+  - paragraph: Work tickets
+  - radio "Validation" [checked]
+  - paragraph: Validation
+  - radio "Evidence"
+  - paragraph: Evidence
+- separator
+- paragraph: REFERENCE CATCHMENT
+- paragraph: Monsoon Rehearsal · synthetic reference catchment
+- paragraph: Synthetic data · one crew · four jobs
+- paragraph: Local research prototype v0.7
+- banner:
+  - button "keyboard_double_arrow_right":
+    - generic: keyboard_double_arrow_right
+  - button "Deploy":
+    - generic: Deploy
+  - button "Main menu":
+- heading "Validation workspace" [level=1]:
+  - text: Validation workspace
+  - link "Link to heading":
+    - /url: "#validation-workspace"
+- paragraph: Collect the evidence that turns a synthetic demonstration into a defensible operational decision.
+- paragraph: Validation area
+- radiogroup "Validation area":
+  - radio "Readiness"
+  - paragraph: Readiness
+  - radio "Bench preparation"
+  - paragraph: Bench preparation
+  - radio "Bench model"
+  - paragraph: Bench model
+  - radio "Wet preparation"
+  - paragraph: Wet preparation
+  - radio "Boundary replay"
+  - paragraph: Boundary replay
+  - radio "Conservative bench" [checked] [active]
+  - paragraph: Conservative bench
+  - radio "Site & measurements"
+  - paragraph: Site & measurements
+  - radio "Policy comparison"
+  - paragraph: Policy comparison
+  - radio "Operator & shadow"
+  - paragraph: Operator & shadow
+- heading "Track every water transfer" [level=3]:
+  - text: Track every water transfer
+  - link "Link to heading":
+    - /url: "#track-every-water-transfer"
+- paragraph: A separate conservative bench engine for rectangular open channels. Each channel and compartment shares the same recorded transfer at their connection.
+- status:
+  - paragraph: The earlier SWMM failures remain part of the evidence. This workspace uses a different numerical method; it does not mark those runs as corrected.
+- paragraph: Conservative input source
+- radiogroup "Conservative input source":
+  - radio "Supplied files" [checked]
+  - paragraph: Supplied files
+  - radio "Synthetic example"
+  - paragraph: Synthetic example
+- paragraph: Site package file
+- region "Site package file":
+  - button "file upload"
+  - button "upload Upload":
+    - generic: upload
+    - paragraph: Upload
+  - generic: 5MB per file • JSON
+- paragraph: Or paste site package JSON
+- textbox "Or paste site package JSON":
+  - /placeholder: ""
+- paragraph: Model specification file
+- region "Model specification file":
+  - button "file upload"
+  - button "upload Upload":
+    - generic: upload
+    - paragraph: Upload
+  - generic: 5MB per file • JSON
+- paragraph: Or paste model specification JSON
+- textbox "Or paste model specification JSON":
+  - /placeholder: ""
+- paragraph: Run boundaries file
+- region "Run boundaries file":
+  - button "file upload"
+  - button "upload Upload":
+    - generic: upload
+    - paragraph: Upload
+  - generic: 5MB per file • JSON
+- paragraph: Or paste run boundaries JSON
+- textbox "Or paste run boundaries JSON":
+  - /placeholder: ""
+- paragraph: Phase boundaries in seconds (comma separated; blank for the whole run)
+- textbox "Phase boundaries in seconds (comma separated; blank for the whole run)":
+  - /placeholder: ""
+  - text: "50"
+- paragraph: "Fixed verification: 128 cells, a smaller time step and a separate 256-cell run. Every routing endpoint uses the original 1 mL or 1% water limit. Time and mesh agreement use the unchanged 2% and absolute limits."
+- button "Check conservative model" [disabled]:
+  - paragraph: Check conservative model
+- button "Run fixed three-part verification" [disabled]:
+  - paragraph: Run fixed three-part verification
+- generic "keyboard_arrow_right Method, scope and verification guide":
+  - generic: keyboard_arrow_right
+  - paragraph: Method, scope and verification guide
+- button "Download conservative bench guide":
+  - paragraph: Download conservative bench guide

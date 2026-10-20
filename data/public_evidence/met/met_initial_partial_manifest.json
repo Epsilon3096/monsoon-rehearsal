@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "source": "METMalaysia via Malaysia's Official Open API",
+  "documentation_url": "https://developer.data.gov.my/realtime-api/weather",
+  "access_url": "https://developer.data.gov.my/quickstart",
+  "access": "Public GET; no API token, account or access request used.",
+  "reference_date": "2026-10-13",
+  "geography": "Selangor forecast; national warning response. No selected pilot site.",
+  "purpose": "Public-data ingestion and regional context; not hydraulic calibration or policy-performance evidence.",
+  "licence": "Dataset-specific redistribution terms not established from the API docs; retain source attribution and verify terms before public redistribution.",
+  "limitations": [
+    "Qualitative forecasts cannot determine storm intensity, hydrographs or a safe maintenance deadline.",
+    "No forecast is treated as a probability distribution.",
+    "Snapshot dates and HTTP timestamps may differ from the research reference date; check coverage.",
+    "No public weather record is injected into the frozen synthetic catchment."
+  ],
+  "records": [
+    {
+      "kind": "forecast",
+      "file": "met_forecast_7dd3de1a101c.json",
+      "sha256": "7dd3de1a101cc72174e5e37fc0d0e44583fe4b85e3623b80f7728a86c09ea733",
+      "bytes": 4420,
+      "url": "https://api.data.gov.my/weather/forecast?contains=Selangor%40location__location_name&limit=14",
+      "retrieved_at_utc": "2026-10-13T14:44:40.251530+00:00",
+      "http_date": "Tue, 13 Oct 2026 14:44:39 GMT",
+      "http_status": 200,
+      "content_type": "application/json",
+      "query_limit": 14,
+      "possibly_truncated": true,
+      "record_count": 14,
+      "date_from": "2026-10-13",
+      "date_to": "2026-10-19",
+      "covers_reference_date": true,
+      "freshness": "dated_snapshot",
+      "locations": [
+        "Hulu Selangor",
+        "Kuala Selangor"
+      ],
+      "rainfall_intensity_available": false,
+      "units": "Qualitative forecast phrases; temperature in degrees Celsius. No rainfall mm or mm/h."
+    },
+    {
+      "kind": "warning",
+      "file": "met_warning_0a94dec3e1d4.json",
+      "sha256": "0a94dec3e1d418a744f1cc199e20d79e5638a6a809ebdcc433bd1f01148a58ed",
+      "bytes": 7653,
+      "url": "https://api.data.gov.my/weather/warning?limit=100",
+      "retrieved_at_utc": "2026-10-13T14:44:40.457381+00:00",
+      "http_date": "Tue, 13 Oct 2026 14:44:39 GMT",
+      "http_status": 200,
+      "content_type": "application/json",
+      "query_limit": 100,
+      "possibly_truncated": false,
+      "record_count": 4,
+      "date_from": "2026-10-10",
+      "date_to": "2026-10-14",
+      "missing_validity_fields": 2,
+      "freshness": "archived_response_not_live_status",
+      "rainfall_intensity_available": false,
+      "units": "Unmodified warning text and source validity timestamps; no numeric rainfall conversion.",
+      "timezone_note": "Source warning timestamps are preserved. Naive timestamps are not silently assigned a timezone.",
+      "empty_response_meaning": "An empty response is not proof of safe weather or an all-clear."
+    }
+  ]
+}

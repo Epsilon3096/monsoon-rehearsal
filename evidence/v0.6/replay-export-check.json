@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "kind": "synthetic_boundary_replay_software_exercise",
+  "complete_export_files": 89,
+  "zip_sha256": "9de5f0246339350063fce8ede107917b6a0861156943dfa444e81229cb6087ea",
+  "study_sha256": "787175c3fbf38883c2457bbad7e0d2e2948dbd1912db1866463bc16af4ec51c7",
+  "exercise_sha256": "b016c29d0d8afd02a4b708009e15082637eec6780273798e7790ed056c6275c0",
+  "physical_validation_established": false,
+  "independent_hydraulic_validation": false,
+  "original_folder": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-final-replay\\synthetic-boundary-study-0ztkmnyw"
+}

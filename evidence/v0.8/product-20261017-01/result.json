@@ -1,0 +1,68 @@
+{
+  "scope": "SWMM product and non-bench workflow regression; NOT full research qualification",
+  "attempt": "evidence/v0.8/product-20261017-01",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\runtime\\venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-c",
+        "pytest-product.ini",
+        "-q",
+        "--junitxml=C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\monsoon-rehearsal\\evidence\\v0.8\\product-20261017-01\\pytest.xml"
+      ],
+      "started_utc": "2026-10-16T16:52:01.665348+00:00",
+      "returncode": 0,
+      "log": "pytest.log",
+      "log_sha256": "4444b54e861e0760b9420cf64a722e90ad4a654ec99d0a44cefe07e3f3099363"
+    },
+    {
+      "argv": [
+        "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\runtime\\venv\\Scripts\\python.exe",
+        "-m",
+        "monsoon.verify",
+        "--output",
+        "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\monsoon-rehearsal\\evidence\\v0.8\\product-20261017-01",
+        "--workers",
+        "3"
+      ],
+      "started_utc": "2026-10-16T17:01:51.232742+00:00",
+      "returncode": 0,
+      "log": "verification.log",
+      "log_sha256": "4a2c6e1bfd8837e79a1858c79701a5612ac55d1b85bb8c2c8743e9c75d85a58c"
+    }
+  ],
+  "passed": true,
+  "custom_solver_qualified": false,
+  "scheduling_advantage_established": false,
+  "field_validation_established": false,
+  "tests": {
+    "tests": 580,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_unchanged": true,
+  "changed_sources": [],
+  "scientific_verification_status": "passed",
+  "runner_unchanged": true,
+  "completed_utc": "2026-10-16T17:02:18.969021+00:00",
+  "artifact_sha256": {
+    "baseline-comparisons.csv": "3197963e4e36b263b1e32dd58cc07ae309a3b06002a2dd538f286825bad2e59d",
+    "holdouts.json": "204f7bb9307e5523ed807a94ff6ee59a290eb8ec9a50bf46335a2ed9a26f7d6f",
+    "horizon.json": "8ce664f39007fa353d29d711af34a27a7343d0e1eaa3cfeb6198cbd909df892f",
+    "hydraulics.json": "b4a808d1088c7a4ba43eefce6f3bf3f821d732769cae3e70f88cd658314b1e7e",
+    "no-work-audit.json": "b824a138cd61419b8e8dade36c732115df5fefd5ca815f4c96cf8758efdf11f5",
+    "planning.json": "67835a355e85037f6f4231d6d6632a909080d9eb2aff745765d87c86363a4ee5",
+    "pytest.log": "4444b54e861e0760b9420cf64a722e90ad4a654ec99d0a44cefe07e3f3099363",
+    "pytest.xml": "5971e5947b42efc3f37d15059f44162482dd146e88dda996338882da3725f942",
+    "selected-plan-audit.json": "723e2009492fedc2968fc8839fecfe035f9d088709b58514a528e45e7039c1e8",
+    "source-freeze.json": "abfda77fec40e97951b0e407158b010648dc6390c07da150074905e93ef58c30",
+    "verification.json": "51f27be200b54020787a549e8fbbbd70eab54ee9449d7b064c33c270a86dcfb1",
+    "verification.log": "4a2c6e1bfd8837e79a1858c79701a5612ac55d1b85bb8c2c8743e9c75d85a58c",
+    "VERIFICATION.md": "285dd35d81dba89f9a527c5dec764eed6f39973475cf227c185005a95b530808",
+    "workflow-blocked.json": "f185f84d0a82e6347d151cab557935bd71bb6cc1db84361f4e9a27369aa4da16",
+    "workflow.json": "9d57c44b58dfab09200e5bf93b230be1c29093453918e2f79b648d67b6894962"
+  }
+}

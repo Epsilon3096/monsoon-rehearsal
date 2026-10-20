@@ -1,0 +1,22 @@
+{
+  "schema_version": "monsoon.v06-reviewed-source-pins/1",
+  "review_date": "2026-10-15",
+  "interpretation": "Sources inspected during the focused same-development-team review. The release integration manifest determines the final packaged revision. This is not external certification or physical validation.",
+  "source_sha256": {
+    "monsoon/bench_initialization.py": "075385a3e66c1e243e9b507403ae6b5a668ef08629fbeab2b0068f8b7b6d5f27",
+    "monsoon/_bench_initialization_worker.py": "e491a6a1a10d86b4775c1af3e306af8dfc52705b65b6c6289a559ade5bf1c095",
+    "monsoon/bench_replay.py": "591b843389a61180a0895f57f9d4092bd90f1ecd088d57f0edaac72795eed79f",
+    "monsoon/bench_next_demo.py": "a04d92c5fc79d7a017886e5ceeb86960ffdf1b01409be37288346648f921b92d",
+    "monsoon/bench_next_ui.py": "7c575c07724c5e188e6d3c0e8b0efafb12fbf2b225a4af266e044aba6aa30b6a",
+    "monsoon/bench_balance_audit.py": "68c0e7f9afd9ee42507a1abdc3f3c50f045b7a9870afce4a9b0a9a1b3abddeae",
+    "monsoon/_bench_balance_worker.py": "46d390c00679b98e08787a2d0ebbe3f1b60be84e10fd5f8851f872d1aabebe7a",
+    "monsoon/bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+    "monsoon/_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+    "monsoon/site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5",
+    "tests/test_bench_balance_audit.py": "2f6fd737b505e73b2dc5c56bcd7e0908053fc3f847861930d93ab6935552059c"
+  },
+  "physical_validation_established": false,
+  "operational_activation_allowed": false,
+  "independent_external_review": false,
+  "full_suite_performed_by_review_agent": false
+}

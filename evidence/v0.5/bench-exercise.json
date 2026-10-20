@@ -1,0 +1,85 @@
+{
+  "kind": "synthetic_software_roundtrip",
+  "physical_validation_established": false,
+  "independent_hydraulic_validation": false,
+  "operational_activation_allowed": false,
+  "limitation": "Responses are generated from the same solver plus declared offsets. This only tests software lineage and error arithmetic.",
+  "status": "passed",
+  "declared_error_arithmetic_verified": true,
+  "study_id": "STUDY-ae918c8f41ad4fb9bb7a365e7b7c6b8e",
+  "folder": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\bench-v05-final\\synthetic-study-ws_cm0d4",
+  "integrity_check": {
+    "valid": true,
+    "integrity_valid": true,
+    "current_runtime_matches_freeze": true,
+    "study_id": "STUDY-ae918c8f41ad4fb9bb7a365e7b7c6b8e",
+    "version": 4,
+    "head_sha256": "b3657c7f375bad679c057f668529ba6f2f64934d29c055bbd09942d6c9008ca0",
+    "errors": [],
+    "operational_activation_allowed": false,
+    "physical_validation_established": false,
+    "full_protocol_completed": false,
+    "external_prospectivity_verified": false,
+    "evidence_authenticity_verified": false,
+    "automatic_fit_performed": false
+  },
+  "calibration_comparison": {
+    "status": "resolved_errors",
+    "summary": "Numerical errors retained for 1 response series; no fit or physical acceptance is inferred.",
+    "errors": [],
+    "series": [
+      {
+        "series_id": "SYN-STAGE-A",
+        "quantity": "stage_m",
+        "location_id": "A",
+        "unit": "m",
+        "status": "resolved_errors",
+        "sample_count": 121,
+        "missing_count": 0,
+        "rmse": 0.0010000000000000009,
+        "bias": 0.0010000000000000009,
+        "maximum_absolute_error": 0.0010000000000000009,
+        "expanded_uncertainty_abs": 0.002
+      }
+    ],
+    "acceptance_assessed": false,
+    "physical_validation_established": false,
+    "limitations": [
+      "Predictions use the predeclared inflow/receiving-stage forcing, not a replay or verification of measured boundary traces; actual forcing reproduction remains unassessed.",
+      "These are response error summaries, not the frozen physical protocol's uncertainty-aware acceptance or complete water-balance assessment.",
+      "Synthetic generated responses can check software plumbing only, including when numerical residuals are zero."
+    ]
+  },
+  "withheld_comparison": {
+    "status": "resolved_errors",
+    "summary": "Numerical errors retained for 1 response series; no fit or physical acceptance is inferred.",
+    "errors": [],
+    "series": [
+      {
+        "series_id": "SYN-STAGE-A",
+        "quantity": "stage_m",
+        "location_id": "A",
+        "unit": "m",
+        "status": "resolved_errors",
+        "sample_count": 121,
+        "missing_count": 0,
+        "rmse": 0.010000000000000002,
+        "bias": 0.010000000000000002,
+        "maximum_absolute_error": 0.010000000000000002,
+        "expanded_uncertainty_abs": 0.002
+      }
+    ],
+    "acceptance_assessed": false,
+    "physical_validation_established": false,
+    "limitations": [
+      "Predictions use the predeclared inflow/receiving-stage forcing, not a replay or verification of measured boundary traces; actual forcing reproduction remains unassessed.",
+      "These are response error summaries, not the frozen physical protocol's uncertainty-aware acceptance or complete water-balance assessment.",
+      "Synthetic generated responses can check software plumbing only, including when numerical residuals are zero."
+    ]
+  },
+  "declared_offsets_m": {
+    "calibration": 0.001,
+    "withheld": 0.01
+  },
+  "study_file": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\bench-v05-final\\synthetic-study-ws_cm0d4\\study.json"
+}

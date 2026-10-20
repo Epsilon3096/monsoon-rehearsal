@@ -1,0 +1,113 @@
+{
+  "kind": "synthetic_boundary_replay_software_exercise",
+  "status": "passed",
+  "limitation": "Circular same-solver responses with known offsets test sequence, lineage and arithmetic only. Boundary values are invented. No physical validation or independent hydraulic accuracy is established.",
+  "physical_validation_established": false,
+  "independent_hydraulic_validation": false,
+  "operational_activation_allowed": false,
+  "declared_error_arithmetic_verified": true,
+  "study_id": "REPLAY-b0d0b9af6cce4ddc9d3c3cd04667cf20",
+  "folder": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-final-replay\\synthetic-boundary-study-0ztkmnyw",
+  "database": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-final-replay\\synthetic-boundary-study-0ztkmnyw\\exercise.sqlite3",
+  "study_file": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-final-replay\\synthetic-boundary-study-0ztkmnyw\\study.json",
+  "result_file": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-final-replay\\synthetic-boundary-study-0ztkmnyw\\exercise-result.json",
+  "evidence_zip": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-final-replay\\synthetic-boundary-study-0ztkmnyw\\synthetic-replay-evidence.zip",
+  "summary_rows": [
+    {
+      "Partition": "Calibration",
+      "Response": "STAGE-A",
+      "Unit": "m",
+      "Declared offset": 0.001,
+      "Calculated RMSE": 0.0010000000000000009,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Calibration",
+      "Response": "FLOW-O",
+      "Unit": "m3/s",
+      "Declared offset": 1e-07,
+      "Calculated RMSE": 1.0000000000000001e-07,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Calibration",
+      "Response": "SPILL-A",
+      "Unit": "m3/s",
+      "Declared offset": 1e-07,
+      "Calculated RMSE": 1.0000000000000001e-07,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Calibration",
+      "Response": "STORAGE",
+      "Unit": "m3",
+      "Declared offset": 1e-06,
+      "Calculated RMSE": 1.0000000000001156e-06,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Withheld",
+      "Response": "STAGE-A",
+      "Unit": "m",
+      "Declared offset": 0.01,
+      "Calculated RMSE": 0.009999999999999997,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Withheld",
+      "Response": "FLOW-O",
+      "Unit": "m3/s",
+      "Declared offset": 1e-06,
+      "Calculated RMSE": 1e-06,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Withheld",
+      "Response": "SPILL-A",
+      "Unit": "m3/s",
+      "Declared offset": 1e-06,
+      "Calculated RMSE": 1e-06,
+      "Status": "resolved_errors"
+    },
+    {
+      "Partition": "Withheld",
+      "Response": "STORAGE",
+      "Unit": "m3",
+      "Declared offset": 9.999999999999999e-06,
+      "Calculated RMSE": 9.999999999999698e-06,
+      "Status": "resolved_errors"
+    }
+  ],
+  "integrity_check": {
+    "valid": true,
+    "integrity_valid": true,
+    "current_runtime_matches_freeze": true,
+    "current_runtime_matches_study": true,
+    "study_id": "REPLAY-b0d0b9af6cce4ddc9d3c3cd04667cf20",
+    "version": 8,
+    "head_sha256": "3bad899d8a8d31e2c46c0060a783c738db8f172c8438d2c8e0ffcac4bd0aecd0",
+    "errors": [],
+    "operational_activation_allowed": false,
+    "physical_validation_established": false,
+    "full_protocol_completed": false,
+    "external_prospectivity_verified": false,
+    "evidence_authenticity_verified": false,
+    "automatic_fit_performed": false,
+    "parameter_error_isolated": false,
+    "boundary_uncertainty_propagated": false,
+    "planned_target_reproduction_assessed": false
+  },
+  "file_sha256": {
+    "calibration_boundaries.json": "2bc0243c8d05ab2565b7e453dbebc1c1e2e3440c52a0c0fefd11aafa2dc6f4dd",
+    "calibration_event.json": "409b67ef3af1db15de163ebebb8f08bc6abec00d129108b88d362f3c8841a664",
+    "calibration_responses.json": "53ac416b3d5641fa882b8f882d176b8cb2f420e9436f640261395f156f4412db",
+    "model.json": "0f6c79f3c6e38d4d66d7cafccd69d497465863d1aaf00af9910649eb4a4c90d4",
+    "recipe.json": "15887c1b8a9d83004e27254647e8932a16de4f36529262b4e83d06102579841a",
+    "site.json": "4d4dab253c5e8a30c39c18a1d4b5f5cf2278d59b3563751b98205335b1175e8b",
+    "study.json": "787175c3fbf38883c2457bbad7e0d2e2948dbd1912db1866463bc16af4ec51c7",
+    "synthetic-replay-evidence.zip": "9de5f0246339350063fce8ede107917b6a0861156943dfa444e81229cb6087ea",
+    "validation_boundaries.json": "8bb5f52d546b3e05d6be45ad045338d17d81fda76779902e703c8047df2e41a4",
+    "validation_event.json": "52311cca8513aa844f236e3b083988dc615191c72d1150102f30dc905c09977d",
+    "validation_responses.json": "256f5119a2d27e0cade12ad32e4fab4693846a8505898349e053f18feade18d7"
+  }
+}

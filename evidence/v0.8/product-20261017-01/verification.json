@@ -1,0 +1,642 @@
+{
+  "created_utc": "2026-10-16T17:02:18.818245+00:00",
+  "status": "passed",
+  "scope": "Numerical/software verification of synthetic prototype; no field or bench validation",
+  "engine": {
+    "engine": "EPA SWMM / Open Water Analytics toolkit",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "adapter_version": "1.0.1",
+    "routing": "DYNWAVE",
+    "units": "CMS / metres / m3",
+    "default_routing_step_s": 0.5,
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c"
+  },
+  "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+  "source_sha256": {
+    "monsoon\\__init__.py": "84151ab8eebcc4450cad6041c8e3a31e3e9f8e83b90ddc11437f203893b673ee",
+    "monsoon\\_bench_balance_worker.py": "9dda9879a8d7ab3ab3dcca81295118b5e5cc3bab8f5f443b44a5e29265380ea1",
+    "monsoon\\_bench_conservative_worker.py": "1772ea177648e7ee0cc4c1b9f27d23092953b39e14c6797cadb2726535ae2b63",
+    "monsoon\\_bench_initialization_worker.py": "1343da6654e7ee3cda0b4155bc27673c7102750fe388e2df80eb547144678b73",
+    "monsoon\\_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+    "monsoon\\_swmm_worker.py": "f1d5773c00dd41d56e9b4b97951146f77856585d77ba3a3f489edbeb21fd1830",
+    "monsoon\\assurance.py": "71b45f3a7e15f024514dd8071a8a2d94d1050134be8bf31068d43c8c957e13b5",
+    "monsoon\\assurance_hydraulics.py": "18b961f8db0f0dcb9bc3983bbbd8d94d94c3409cba2426076826172642e3bcb4",
+    "monsoon\\bench_balance_audit.py": "68c0e7f9afd9ee42507a1abdc3f3c50f045b7a9870afce4a9b0a9a1b3abddeae",
+    "monsoon\\bench_conservative.py": "4a57bc6204de206ddbaaaf40bdc174cab24d4eda997f0d9f98463f2142d11d1f",
+    "monsoon\\bench_conservative_ui.py": "cc321887164ad56217c12620260540240aa8c3768d0f34764ff21a3518d08218",
+    "monsoon\\bench_demo.py": "8e9dfc2b6e943e892e6c63afc938ee752034fe0ba36499c01582e7829463f217",
+    "monsoon\\bench_fv.py": "ae817c13e99ede0aa03dbb00ef3c0d92f3f7e2b718b5a1c9c3a3a36db16ce461",
+    "monsoon\\bench_initialization.py": "1ea615f2b1edb6c4b7ecbfcb2e49010f81a0444a140ef6232a1e6eb569d5dbb4",
+    "monsoon\\bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+    "monsoon\\bench_next_demo.py": "a04d92c5fc79d7a017886e5ceeb86960ffdf1b01409be37288346648f921b92d",
+    "monsoon\\bench_next_ui.py": "7c575c07724c5e188e6d3c0e8b0efafb12fbf2b225a4af266e044aba6aa30b6a",
+    "monsoon\\bench_preparation.py": "e22847ecad32cda4bc0f2e23c030780f9e2751a94146f805b0e6ba17a6cc9457",
+    "monsoon\\bench_process.py": "990b2af9ef1225a367e19195a83a52fb98a395d28df07be2f73c143799c1b502",
+    "monsoon\\bench_replay.py": "591b843389a61180a0895f57f9d4092bd90f1ecd088d57f0edaac72795eed79f",
+    "monsoon\\bench_study.py": "dcab07cadd2117ab322e66107b8e45d3f1d903b9b5c8e03cdab63b71068f7ea1",
+    "monsoon\\bench_ui.py": "361a0a3a58bd4ac8a4aa1017a6267de6febcd8754369024d68df7abb8cfe232c",
+    "monsoon\\briefing.py": "4d142c7f6064e63ce82fab044e108f6ed3ecd41de9fb74f04f391567adc9d73f",
+    "monsoon\\case.py": "fe4f82249340a3ccfa90473e5ccd98643f1433b49f0ea8853fbba7db6a009d2a",
+    "monsoon\\charts.py": "985bc3f5dad5e6f17e2ed3dabb68b96af520fbf499985d9ea8b5f9e72ad304f0",
+    "monsoon\\decision_review.py": "95f30f38de1e91e98bdb99e502645ddfef56040857b21873c27b23bd15e874b6",
+    "monsoon\\hydraulics.py": "0d108cc8080fe2c15de1484e4f05b5c5d827c90c706d7a0f7cfb8f86fd8bc8ef",
+    "monsoon\\measurements.py": "970d055c3761ee1cd749eebcc9a8eff447a41459a3ad0dc1847b053a8a61331c",
+    "monsoon\\observed_policy.py": "e605e2fe73dec5fc6278a38d88cc31c7a7b0f4f1a30c444d5ee75f7104efc90d",
+    "monsoon\\operations.py": "65f5ab95057055a16b7e0bed5594cf410edede290a7773ccefa07e4529371df3",
+    "monsoon\\operations_ui.py": "1a2123941ccf976ff457b3d8415d7a90c17f7050518c39fa2c90e2ad4bf14abc",
+    "monsoon\\planning.py": "13eec8cb3d4993e5548e2aeb4ec306e0bed070192b89adce1b01b0c06dd1ec5a",
+    "monsoon\\policy_evaluation.py": "2c38ef9485e292c7f635efa1e331168622353384df476ded5b67bebd2e1c3f1b",
+    "monsoon\\policy_replay.py": "fc99888f58f9e1aa8eafa2cfb0a1f51f8df42acfd644dc16f195f15fc1129d81",
+    "monsoon\\preparation_ui.py": "3bc1f05d90b4ab1c75168821b953252ec108d944c8589ccd2339e3fde967635e",
+    "monsoon\\public_weather.py": "7a564666a78be7e0bd6fdfcb4df785b690133409c594bcf8359b003339a989b8",
+    "monsoon\\service.py": "0b13f9eb797508ea0fbe9d387722a4fef0a841e82e714bda813f66fa8a376e2f",
+    "monsoon\\site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5",
+    "monsoon\\tickets.py": "e6fdb540113c6f809f2f6afa3f66ff353778713b5a47cb2f93d663fd64b3a1f0",
+    "monsoon\\validation_ui.py": "40c78d1e980bca15c51c8e77bf52fb9964150df63b4d6de1bb252f950b7b421e",
+    "monsoon\\verify.py": "47cb4bdf2bef8b576cde12017312706d59f14eb2fd774e3b9babeaab65a2e0c8",
+    "monsoon\\work_window.py": "09065fd825c36ed6e9d218d647385c7024f1f8a4f4212948999e2e505c92daea",
+    "app.py": "18199a9cdf57248e773ae2ae061991afe10cd64f962a0569bb296854f934a7f3"
+  },
+  "tests": {
+    "status": "passed",
+    "tests": 580,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\monsoon-rehearsal\\evidence\\v0.8\\product-20261017-01\\pytest.xml",
+    "sha256": "5971e5947b42efc3f37d15059f44162482dd146e88dda996338882da3725f942"
+  },
+  "hydraulics": {
+    "status": "passed",
+    "state_scenario_pairs": 144,
+    "engine_runs": 288,
+    "routing_step_s": 0.5,
+    "halved_routing_step_s": 0.25
+  },
+  "maximum_absolute_continuity_error_percent": 0.38192954659461975,
+  "hydraulic_evaluation_count_note": "engine_runs counts requested evaluations, including cache reuse and equivalent pre-restored diagnostic states; it is not a fresh-subprocess or independent-replicate count.",
+  "distinct_step_verification_run_ids": 260,
+  "horizon": {
+    "status": "passed",
+    "state_scenario_pairs": 144,
+    "horizon_minutes": 180,
+    "extended_horizon_minutes": 360,
+    "horizon_sensitive_diagnostics": [
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "8c83dd177d118b0f912f6265acc4f577632a542e7f5faddd4060bb27b8eb77d0",
+        "extended_run_id": "4d2e52990803d9de85251839b15c5335959d8660256d83521fae3b3c238062f7",
+        "spill_m3": 689.5929500710178,
+        "extended_spill_m3": 822.7520898219467,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.15913975092894
+        },
+        "final_storage_m3": 403.87594305509117,
+        "extended_final_storage_m3": 403.73955804536763,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "958af34087b6a2227681f8e866235ea138c926383dcd030b5716cd72e1c06cab",
+        "extended_run_id": "fba4e6cacaeda11e3b6276319be1c0f2ba54cc15183507d3dc47fe777f6aba83",
+        "spill_m3": 678.667647306074,
+        "extended_spill_m3": 811.9044533142556,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.2368060081817
+        },
+        "final_storage_m3": 459.6913632569017,
+        "extended_final_storage_m3": 459.8774999845697,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J2"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "47d4df69fee127b93feda68c9d2d97e83b87f9ebba8e5eb8461f7098e03d37c2",
+        "extended_run_id": "063082ec0c2edb5ce5ae5f9c3dfa3b1421a798a9bd5d4d9ca0e1fcdf525bdf9f",
+        "spill_m3": 689.5876059043887,
+        "extended_spill_m3": 822.7514674673632,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.1638615629745
+        },
+        "final_storage_m3": 403.8824595675785,
+        "extended_final_storage_m3": 403.7414513644297,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J3"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "70965bb470a68efc0ba776e01f7e9f0039efbf27d2037d955c9099d2739db658",
+        "extended_run_id": "d5c0e68eabc60f55a0f7942ad37aedffa3c94fe9190c46f6656ea91a0bb48f58",
+        "spill_m3": 689.6134007911353,
+        "extended_spill_m3": 822.7376854990811,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.12428470794578
+        },
+        "final_storage_m3": 403.8570755249337,
+        "extended_final_storage_m3": 403.7545634331013,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "1d340882fa34a721a41648698d4a5193c79ea00d4cf13463f2ec825204cd5a97",
+        "extended_run_id": "93bb49774b232ea4e64db0adf893ef8be72ec6d055139f1ec447ee1f1aceec73",
+        "spill_m3": 681.1164204331294,
+        "extended_spill_m3": 814.2077526776075,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.09133224447805
+        },
+        "final_storage_m3": 412.35044811151204,
+        "extended_final_storage_m3": 412.2802872316313,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J2"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "973901f3afd17a838ff5216108c958a6cbc060fdc2b6f44ed4064abae54d2cfe",
+        "extended_run_id": "6bfb7301cb19d397f3e0adda88139baf87334baef182f05c6c63d42c6eb70dd7",
+        "spill_m3": 682.1366656891354,
+        "extended_spill_m3": 815.4659154354326,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.32924974629725
+        },
+        "final_storage_m3": 459.7032472663866,
+        "extended_final_storage_m3": 459.8784860932091,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J3"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "d484acf9cf5ea6002d9785b66e12fbc44decec9a1c3c3ff98c127acb36562679",
+        "extended_run_id": "212f0ae7a7e7c541cd7dc69c39481267f744d48dde685ae9aca439950f3bcd80",
+        "spill_m3": 678.6727044443455,
+        "extended_spill_m3": 811.9057056163293,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.2330011719838
+        },
+        "final_storage_m3": 459.6874584129208,
+        "extended_final_storage_m3": 459.87717670344546,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "6451395190b799e20ae458a537b0abad81c67f76f0bce43e79164889fd407428",
+        "extended_run_id": "18a55c7026b475b850d94900c8a1da96b331c8a0ec45078e786cd4b53f201e2c",
+        "spill_m3": 674.9205567057334,
+        "extended_spill_m3": 808.7069283693376,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.7863716636042
+        },
+        "final_storage_m3": 468.3762668971542,
+        "extended_final_storage_m3": 468.1996946863637,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J2",
+          "J3"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "5f04c3efa6c9811c652b6c9c04ee41190518a3c9da5fa2b19e0c80a88405bed2",
+        "extended_run_id": "81e43e65b73dea6f337d1defa6138bd0b4ebfc3c2eaaa2a8377a4eb31e8ae4b1",
+        "spill_m3": 689.6085262562673,
+        "extended_spill_m3": 822.7363864981044,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.12786024183708
+        },
+        "final_storage_m3": 403.8631393317959,
+        "extended_final_storage_m3": 403.75709114476564,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J2",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "38d1573e8a038acbf07b84e185f7481913554b2372698fb70ee942d4076a038b",
+        "extended_run_id": "29ec518fc18c796e89b7654ea961bb5f82467028a10dbe3a936113597ac314a4",
+        "spill_m3": 681.1118610659794,
+        "extended_spill_m3": 814.2058685123932,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.0940074464138
+        },
+        "final_storage_m3": 412.35629865540153,
+        "extended_final_storage_m3": 412.28340290973347,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J3",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "77fee5e3c9284063fecddf1f67383f2effbc0b5fafcdc5c494c6a6beed5e2ffa",
+        "extended_run_id": "c65d3c96e2eae1e8648069bcac76ba3fd2e6bd9546c4cf311a25bc028c2f3a86",
+        "spill_m3": 681.1461421081628,
+        "extended_spill_m3": 814.2221897065396,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.0760475983767
+        },
+        "final_storage_m3": 412.3225752372749,
+        "extended_final_storage_m3": 412.2670863786802,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J2",
+          "J3"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "37cd15a6e99a9ce93ef573d75bedabb6ec679da06d603fafe14010e545eb4dfa",
+        "extended_run_id": "92029db8e66d18a7d6d05c3fc8c600ad1f105dcd9c9ea968eee65f4cba04bc2f",
+        "spill_m3": 682.1407735174008,
+        "extended_spill_m3": 815.4670883178527,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.32631480045188
+        },
+        "final_storage_m3": 459.70028062968635,
+        "extended_final_storage_m3": 459.87827382428867,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J2",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "247dfb80efcca7099b5a21f8b00b99900583bd64d41dd4fa7bcef950e8d7a9f3",
+        "extended_run_id": "f011f3aa5e59db96138d28fad6a46d591cc2d3ca528043747559d04828bc4b4b",
+        "spill_m3": 677.9239294424711,
+        "extended_spill_m3": 811.7724548421911,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.84852539971996
+        },
+        "final_storage_m3": 468.3816624032438,
+        "extended_final_storage_m3": 468.2018683052404,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J3",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "478edc4c035ccea4ab6f48738f37bbbba8e3c41bb206a8ec5cafa024d7bb4438",
+        "extended_run_id": "aa0c86d57be5988c071647f1c49b3c1fe9de368d519ea56880e79463bc75f186",
+        "spill_m3": 674.9482812585063,
+        "extended_spill_m3": 808.707748696418,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.75946743791167
+        },
+        "final_storage_m3": 468.35038208219646,
+        "extended_final_storage_m3": 468.1996740785819,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J2",
+          "J3",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "c3c83021ecd58c7dd97d154ca45dbe8b5056885b13b951f1108f62984f301a95",
+        "extended_run_id": "ba82d10b74cc906d7a4440f1dcd36a91d7166e132fb10331c24062ae4e1bc592",
+        "spill_m3": 681.140427451158,
+        "extended_spill_m3": 814.2205241093367,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.08009665817872
+        },
+        "final_storage_m3": 412.32947341601397,
+        "extended_final_storage_m3": 412.2699694566621,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      },
+      {
+        "scenario_id": "D1",
+        "phase": "diagnostic",
+        "completed_jobs": [
+          "J1",
+          "J2",
+          "J3",
+          "J4"
+        ],
+        "valid": true,
+        "errors": [],
+        "horizon_stable": false,
+        "required_for_event_adequacy": false,
+        "run_id": "757e4f00a8016b507e3687e934ee2e36801c6a7f57f0c2a91c3aa304f2641f53",
+        "extended_run_id": "fd384a111182842d0de5fca6ebab93b6f25170f3c9ced869e30ada591c655e2d",
+        "spill_m3": 677.9518474180319,
+        "extended_spill_m3": 811.7751296298844,
+        "per_node_additional_spill_m3": {
+          "A1": 0.0,
+          "A2": 0.0,
+          "B1": 0.0,
+          "B2": 0.0,
+          "S": 0.0,
+          "J": 0.0,
+          "T": 133.82328221185253
+        },
+        "final_storage_m3": 468.35561514276844,
+        "extended_final_storage_m3": 468.19999143845814,
+        "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+      }
+    ]
+  },
+  "planning": {
+    "counts": {
+      "enumerated_queues": 65,
+      "remaining_jobs": 4,
+      "planning_scenarios": 4,
+      "supported_plans": 28,
+      "inadmissible_plans": 37,
+      "unresolved_plans": 0,
+      "hydraulic_callback_calls": 64
+    },
+    "priority_queue": [
+      "J4",
+      "J1",
+      "J3",
+      "J2"
+    ],
+    "worst_spill_m3": 0.5384892486540153,
+    "ties_adaptive_marginal_baseline_on_all_planning_scenarios": true,
+    "frozen_fingerprint": "ecc10430acfc4fa213bfd7478bdb5cb6879df76c7ccc64f7418c1797d4a9856c"
+  },
+  "holdout_failures": [
+    {
+      "method": "downstream_first",
+      "scenario_id": "H1",
+      "status": "inadmissible",
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ]
+    },
+    {
+      "method": "marginal_benefit",
+      "scenario_id": "H2",
+      "status": "inadmissible",
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ]
+    },
+    {
+      "method": "robust",
+      "scenario_id": "H2",
+      "status": "inadmissible",
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ]
+    },
+    {
+      "method": "deterministic_nominal",
+      "scenario_id": "H1",
+      "status": "inadmissible",
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ]
+    }
+  ],
+  "selected_plan_gate": {
+    "status": "passed",
+    "audit_status": "failed",
+    "audit_counts": {
+      "passed": 10,
+      "failed": 5,
+      "unresolved": 0
+    },
+    "plan_id": "P-a4d7b852d7b24b49",
+    "snapshot_hash": "8b24fd876f80d20c17d1e0156cc387bfc16aa9f514073a129de8c02d38d15572",
+    "review_refused": true,
+    "approval_allowed": false,
+    "gate_reasons": [
+      "Development assurance is failed: 5 failed and 0 unresolved required cases. Approval for this envelope is blocked."
+    ],
+    "scope": "Actual SWMM development-stress audit of the frozen reference candidate; no work authorized."
+  },
+  "workflow": {
+    "status": "passed",
+    "kind": "real_no_additional_work_gate",
+    "plan_id": "P-f651a34fab834427",
+    "audit_status": "passed",
+    "snapshot_hash": "6c141c9669fdd7ed531ac13dc5fa56a87b4d0a7e82de5fd42a2639ea64e70778",
+    "queue": [],
+    "approval_allowed": true,
+    "job_ticket_refused": true,
+    "scope": "Real SWMM evidence; reviewed and approved only the empty queue. No work or physical observation is asserted."
+  },
+  "actual_work_loop_evidence": "Current approval-through-closeout and observed-state replanning are tested only with explicit arithmetic fixtures in pytest. Original v0.1 evidence is retained separately; its plan approvals do not establish a v0.2 stress pass.",
+  "limits": [
+    "Node spill at the model boundary is not mapped property inundation.",
+    "The robust policy has no demonstrated advantage over the adaptive marginal baseline in this case.",
+    "H2 fails the per-location screen for robust and marginal policies; no field deployment conclusion follows.",
+    "Downstream-first is an explicit topology heuristic and still needs operator review.",
+    "One crew, dry pre-event work, verified binary restoration, uniform travel, and finite scenarios only."
+  ]
+}

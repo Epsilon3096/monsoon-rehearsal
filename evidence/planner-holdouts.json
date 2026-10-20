@@ -1,0 +1,2414 @@
+{
+  "frozen_fingerprint": "debc2cfaf546436d1a1de702badd354590a37418e846b54ff4bed50215ab851b",
+  "comparisons": [
+    {
+      "method": "no_work",
+      "method_label": "No additional discretionary work",
+      "queue": [],
+      "plan_status": "supported",
+      "scenario_id": "H1",
+      "status": "supported",
+      "completed_jobs": [],
+      "newly_completed_jobs": [],
+      "crew_minutes": 0.0,
+      "run_id": "fbec62364191ec5ad3c49a6e801208ecee108cd62cf91016597c81de9a27fba3",
+      "total_spill_m3": 123.81696062432314,
+      "nodes": {
+        "A1": {
+          "spill_m3": 34.181156835111665,
+          "max_depth_m": 0.9999999999999999,
+          "duration_above_threshold_min": 24.348700290630738,
+          "threshold_m": 0.8,
+          "flood_duration_min": 6.725,
+          "integrated_spill_m3": 34.181156835111615,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3900287418017064,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 50.222010505230465,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 29.351310192881353,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 12.383333333333335,
+          "integrated_spill_m3": 50.22201050523055,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 39.41379328398102,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 34.97633143467021,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 18.71666666666667,
+          "integrated_spill_m3": 39.41379328398096,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.3287765865025585,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.0458604199193533,
+          "duration_above_threshold_min": 16.861014113052768,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.37731278870609497,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3593915337600348,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [],
+        "events": [],
+        "finish_minute": 0.0,
+        "work_finish_minute": 0.0,
+        "crew_minutes": 0.0,
+        "skipped": [],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "DEPOT",
+        "deadline_minutes": 180.0,
+        "return_minutes": 0.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [],
+          "run_id": "fbec62364191ec5ad3c49a6e801208ecee108cd62cf91016597c81de9a27fba3",
+          "total_spill_m3": 123.81696062432314,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "no_work",
+      "method_label": "No additional discretionary work",
+      "queue": [],
+      "plan_status": "supported",
+      "scenario_id": "H2",
+      "status": "supported",
+      "completed_jobs": [],
+      "newly_completed_jobs": [],
+      "crew_minutes": 0.0,
+      "run_id": "34a73f72d6e4c4b381d6b92e5d8b0208ac46671fd6a7da8382f55cc57c071b3b",
+      "total_spill_m3": 1219.608507329018,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7106252030210168,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.27929385124233636,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 938.8316051300898,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 49.12981829542567,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 44.30833333333333,
+          "integrated_spill_m3": 938.8316051301309,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 280.77690219892827,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 51.21300611976817,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 47.375,
+          "integrated_spill_m3": 280.7769021989287,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.4087244290427752,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.0408734904474866,
+          "duration_above_threshold_min": 33.49880472484225,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8105341380738608,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.9000000000000034,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [],
+        "events": [],
+        "finish_minute": 0.0,
+        "work_finish_minute": 0.0,
+        "crew_minutes": 0.0,
+        "skipped": [],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "DEPOT",
+        "deadline_minutes": 180.0,
+        "return_minutes": 0.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [],
+          "run_id": "34a73f72d6e4c4b381d6b92e5d8b0208ac46671fd6a7da8382f55cc57c071b3b",
+          "total_spill_m3": 1219.608507329018,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "downstream_first",
+      "method_label": "Downstream-first heuristic",
+      "queue": [
+        "J1",
+        "J4",
+        "J3",
+        "J2"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H1",
+      "status": "inadmissible",
+      "completed_jobs": [
+        "J1"
+      ],
+      "newly_completed_jobs": [
+        "J1"
+      ],
+      "crew_minutes": 118.0,
+      "run_id": "50e8352e9887e198c56e86471d64cc6dbfae8bffa3d2d0d26a6da610040c9b6f",
+      "total_spill_m3": 95.5373200231664,
+      "nodes": {
+        "A1": {
+          "spill_m3": 34.50515717396191,
+          "max_depth_m": 0.9999999999999999,
+          "duration_above_threshold_min": 24.349102469882425,
+          "threshold_m": 0.8,
+          "flood_duration_min": 6.775,
+          "integrated_spill_m3": 34.50515717396192,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.39114793897036104,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 48.60080287786648,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 27.39950608805886,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 12.241666666666667,
+          "integrated_spill_m3": 48.60080287786668,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 12.431359971338008,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 29.59871031961276,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 10.558333333333334,
+          "integrated_spill_m3": 12.431359971337995,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8458641006974834,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.43698327316603075,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.4051317837977123,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.38428482124891467,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J1"
+        ],
+        "events": [
+          {
+            "job_id": "J1",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 108.0,
+            "actual_minutes": 98.0,
+            "max_minutes": 100.0,
+            "from_location": "DEPOT",
+            "to_location": "J1",
+            "bound_finish_minute": 110.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 118.0,
+        "work_finish_minute": 108.0,
+        "crew_minutes": 118.0,
+        "skipped": [
+          {
+            "job_id": "J4",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J3",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J2",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J1",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [
+        {
+          "scenario_id": "H1",
+          "node_id": "A1",
+          "completed_jobs": [
+            "J1"
+          ],
+          "spill_m3": 34.50515717396191,
+          "reference_spill_m3": 34.181156835111665,
+          "increase_m3": 0.32400033885024726,
+          "tolerance_m3": 0.05
+        }
+      ],
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J1"
+          ],
+          "run_id": "50e8352e9887e198c56e86471d64cc6dbfae8bffa3d2d0d26a6da610040c9b6f",
+          "total_spill_m3": 95.5373200231664,
+          "protected_violations": [
+            {
+              "scenario_id": "H1",
+              "node_id": "A1",
+              "completed_jobs": [
+                "J1"
+              ],
+              "spill_m3": 34.50515717396191,
+              "reference_spill_m3": 34.181156835111665,
+              "increase_m3": 0.32400033885024726,
+              "tolerance_m3": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "downstream_first",
+      "method_label": "Downstream-first heuristic",
+      "queue": [
+        "J1",
+        "J4",
+        "J3",
+        "J2"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H2",
+      "status": "supported",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "newly_completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "crew_minutes": 161.0,
+      "run_id": "d30840a5280632cd01747e82b6dab09da04b5251dc299aaf38e901cc2b2a238f",
+      "total_spill_m3": 1036.2641221574024,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.30018522996679137,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.27929385124233747,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 938.8482209376291,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 48.47621021707814,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 44.31666666666666,
+          "integrated_spill_m3": 938.8482209376701,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 97.41590121977326,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 49.2533320830121,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 45.50833333333333,
+          "integrated_spill_m3": 97.41590121977337,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.2499854979772123,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3972419801385291,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7730663835396967,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.9000000000000034,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J1",
+          "J2"
+        ],
+        "events": [
+          {
+            "job_id": "J1",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 98.0,
+            "actual_minutes": 88.0,
+            "max_minutes": 100.0,
+            "from_location": "DEPOT",
+            "to_location": "J1",
+            "bound_finish_minute": 110.0,
+            "supported": true
+          },
+          {
+            "job_id": "J2",
+            "depart_minute": 98.0,
+            "start_minute": 108.0,
+            "finish_minute": 151.0,
+            "actual_minutes": 43.0,
+            "max_minutes": 55.0,
+            "from_location": "J1",
+            "to_location": "J2",
+            "bound_finish_minute": 163.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 161.0,
+        "work_finish_minute": 151.0,
+        "crew_minutes": 161.0,
+        "skipped": [
+          {
+            "job_id": "J4",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J3",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J2",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J1"
+          ],
+          "run_id": "5d8be2cf1ee15ccea00637e3ae7e8f1eb3a23c0035ec03c9711cf71032e0c0a3",
+          "total_spill_m3": 1036.2858090073325,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J1",
+            "J2"
+          ],
+          "run_id": "d30840a5280632cd01747e82b6dab09da04b5251dc299aaf38e901cc2b2a238f",
+          "total_spill_m3": 1036.2641221574024,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "marginal_benefit",
+      "method_label": "Marginal hydraulic benefit per crew minute",
+      "queue": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H1",
+      "status": "supported",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "newly_completed_jobs": [
+        "J4",
+        "J2"
+      ],
+      "crew_minutes": 167.0,
+      "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+      "total_spill_m3": 0.0071945179382818586,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.4975609044460971,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.45787465014928197,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 0.0071945179382818586,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 21.760255175430274,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.06666666666666667,
+          "integrated_spill_m3": 0.0071945179382818586,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7000924210791137,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.4003501223135777,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.066215609365576,
+          "duration_above_threshold_min": 21.81618037479066,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3845406692933981,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.36598445041029243,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J4",
+          "J2"
+        ],
+        "events": [
+          {
+            "job_id": "J4",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 93.0,
+            "actual_minutes": 83.0,
+            "max_minutes": 85.0,
+            "from_location": "DEPOT",
+            "to_location": "J4",
+            "bound_finish_minute": 95.0,
+            "supported": true
+          },
+          {
+            "job_id": "J2",
+            "depart_minute": 93.0,
+            "start_minute": 103.0,
+            "finish_minute": 157.0,
+            "actual_minutes": 54.0,
+            "max_minutes": 55.0,
+            "from_location": "J4",
+            "to_location": "J2",
+            "bound_finish_minute": 158.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 167.0,
+        "work_finish_minute": 157.0,
+        "crew_minutes": 167.0,
+        "skipped": [
+          {
+            "job_id": "J1",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J3",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J2",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J4"
+          ],
+          "run_id": "f54559d9e8972ce3ca9d1360a2b52df151a4f2021d163c40f49e0ce979746921",
+          "total_spill_m3": 34.188351351605306,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J2",
+            "J4"
+          ],
+          "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+          "total_spill_m3": 0.0071945179382818586,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "marginal_benefit",
+      "method_label": "Marginal hydraulic benefit per crew minute",
+      "queue": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H2",
+      "status": "inadmissible",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "newly_completed_jobs": [
+        "J4",
+        "J3"
+      ],
+      "crew_minutes": 170.0,
+      "run_id": "8052177e7fee737f58523d338b64bf433b69ae8f35cb1c31def43fd27affe8f7",
+      "total_spill_m3": 810.7718106724424,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7351778077210759,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.33779294267702026,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8158161873368026,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 810.7718106724424,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 44.33046944339716,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 33.80833333333334,
+          "integrated_spill_m3": 810.7718106724437,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.820010638624007,
+          "duration_above_threshold_min": 43.47245187686047,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.1138749281422036,
+          "duration_above_threshold_min": 41.217406085457554,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8092452067956812,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.9000000000000034,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J4",
+          "J3"
+        ],
+        "events": [
+          {
+            "job_id": "J4",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 88.0,
+            "actual_minutes": 78.0,
+            "max_minutes": 85.0,
+            "from_location": "DEPOT",
+            "to_location": "J4",
+            "bound_finish_minute": 95.0,
+            "supported": true
+          },
+          {
+            "job_id": "J3",
+            "depart_minute": 88.0,
+            "start_minute": 98.0,
+            "finish_minute": 160.0,
+            "actual_minutes": 62.0,
+            "max_minutes": 70.0,
+            "from_location": "J4",
+            "to_location": "J3",
+            "bound_finish_minute": 168.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 170.0,
+        "work_finish_minute": 160.0,
+        "crew_minutes": 170.0,
+        "skipped": [
+          {
+            "job_id": "J1",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J2",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J3",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [
+        {
+          "scenario_id": "H2",
+          "node_id": "B2",
+          "completed_jobs": [
+            "J3",
+            "J4"
+          ],
+          "spill_m3": 810.7718106724424,
+          "reference_spill_m3": 280.77690219892827,
+          "increase_m3": 529.9949084735141,
+          "tolerance_m3": 0.05
+        }
+      ],
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J4"
+          ],
+          "run_id": "94ff65f5e17a6be9acb01c357e48c699493b9e54786dbdce11f680ec43d14c85",
+          "total_spill_m3": 893.7192354388532,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J3",
+            "J4"
+          ],
+          "run_id": "8052177e7fee737f58523d338b64bf433b69ae8f35cb1c31def43fd27affe8f7",
+          "total_spill_m3": 810.7718106724424,
+          "protected_violations": [
+            {
+              "scenario_id": "H2",
+              "node_id": "B2",
+              "completed_jobs": [
+                "J3",
+                "J4"
+              ],
+              "spill_m3": 810.7718106724424,
+              "reference_spill_m3": 280.77690219892827,
+              "increase_m3": 529.9949084735141,
+              "tolerance_m3": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "robust",
+      "method_label": "Finite-scenario planner",
+      "queue": [
+        "J4",
+        "J1",
+        "J3",
+        "J2"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H1",
+      "status": "supported",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "newly_completed_jobs": [
+        "J4",
+        "J2"
+      ],
+      "crew_minutes": 167.0,
+      "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+      "total_spill_m3": 0.0071945179382818586,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.4975609044460971,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.45787465014928197,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 0.0071945179382818586,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 21.760255175430274,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.06666666666666667,
+          "integrated_spill_m3": 0.0071945179382818586,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7000924210791137,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.4003501223135777,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.066215609365576,
+          "duration_above_threshold_min": 21.81618037479066,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3845406692933981,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.36598445041029243,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J4",
+          "J2"
+        ],
+        "events": [
+          {
+            "job_id": "J4",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 93.0,
+            "actual_minutes": 83.0,
+            "max_minutes": 85.0,
+            "from_location": "DEPOT",
+            "to_location": "J4",
+            "bound_finish_minute": 95.0,
+            "supported": true
+          },
+          {
+            "job_id": "J2",
+            "depart_minute": 93.0,
+            "start_minute": 103.0,
+            "finish_minute": 157.0,
+            "actual_minutes": 54.0,
+            "max_minutes": 55.0,
+            "from_location": "J4",
+            "to_location": "J2",
+            "bound_finish_minute": 158.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 167.0,
+        "work_finish_minute": 157.0,
+        "crew_minutes": 167.0,
+        "skipped": [
+          {
+            "job_id": "J1",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J3",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J2",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J4"
+          ],
+          "run_id": "f54559d9e8972ce3ca9d1360a2b52df151a4f2021d163c40f49e0ce979746921",
+          "total_spill_m3": 34.188351351605306,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J2",
+            "J4"
+          ],
+          "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+          "total_spill_m3": 0.0071945179382818586,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "robust",
+      "method_label": "Finite-scenario planner",
+      "queue": [
+        "J4",
+        "J1",
+        "J3",
+        "J2"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H2",
+      "status": "inadmissible",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "newly_completed_jobs": [
+        "J4",
+        "J3"
+      ],
+      "crew_minutes": 170.0,
+      "run_id": "8052177e7fee737f58523d338b64bf433b69ae8f35cb1c31def43fd27affe8f7",
+      "total_spill_m3": 810.7718106724424,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7351778077210759,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.33779294267702026,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8158161873368026,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 810.7718106724424,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 44.33046944339716,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 33.80833333333334,
+          "integrated_spill_m3": 810.7718106724437,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.820010638624007,
+          "duration_above_threshold_min": 43.47245187686047,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.1138749281422036,
+          "duration_above_threshold_min": 41.217406085457554,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8092452067956812,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.9000000000000034,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J4",
+          "J3"
+        ],
+        "events": [
+          {
+            "job_id": "J4",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 88.0,
+            "actual_minutes": 78.0,
+            "max_minutes": 85.0,
+            "from_location": "DEPOT",
+            "to_location": "J4",
+            "bound_finish_minute": 95.0,
+            "supported": true
+          },
+          {
+            "job_id": "J3",
+            "depart_minute": 88.0,
+            "start_minute": 98.0,
+            "finish_minute": 160.0,
+            "actual_minutes": 62.0,
+            "max_minutes": 70.0,
+            "from_location": "J4",
+            "to_location": "J3",
+            "bound_finish_minute": 168.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 170.0,
+        "work_finish_minute": 160.0,
+        "crew_minutes": 170.0,
+        "skipped": [
+          {
+            "job_id": "J1",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J2",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J3",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [
+        {
+          "scenario_id": "H2",
+          "node_id": "B2",
+          "completed_jobs": [
+            "J3",
+            "J4"
+          ],
+          "spill_m3": 810.7718106724424,
+          "reference_spill_m3": 280.77690219892827,
+          "increase_m3": 529.9949084735141,
+          "tolerance_m3": 0.05
+        }
+      ],
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J4"
+          ],
+          "run_id": "94ff65f5e17a6be9acb01c357e48c699493b9e54786dbdce11f680ec43d14c85",
+          "total_spill_m3": 893.7192354388532,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J3",
+            "J4"
+          ],
+          "run_id": "8052177e7fee737f58523d338b64bf433b69ae8f35cb1c31def43fd27affe8f7",
+          "total_spill_m3": 810.7718106724424,
+          "protected_violations": [
+            {
+              "scenario_id": "H2",
+              "node_id": "B2",
+              "completed_jobs": [
+                "J3",
+                "J4"
+              ],
+              "spill_m3": 810.7718106724424,
+              "reference_spill_m3": 280.77690219892827,
+              "increase_m3": 529.9949084735141,
+              "tolerance_m3": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "deterministic_nominal",
+      "method_label": "Deterministic nominal planner",
+      "queue": [
+        "J2",
+        "J4"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H1",
+      "status": "inadmissible",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "newly_completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "crew_minutes": 167.0,
+      "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+      "total_spill_m3": 0.0071945179382818586,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.4975609044460971,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.45787465014928197,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 0.0071945179382818586,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 21.760255175430274,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.06666666666666667,
+          "integrated_spill_m3": 0.0071945179382818586,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7000924210791137,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.4003501223135777,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.066215609365576,
+          "duration_above_threshold_min": 21.81618037479066,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3845406692933981,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.36598445041029243,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J2",
+          "J4"
+        ],
+        "events": [
+          {
+            "job_id": "J2",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 64.0,
+            "actual_minutes": 54.0,
+            "max_minutes": 55.0,
+            "from_location": "DEPOT",
+            "to_location": "J2",
+            "bound_finish_minute": 65.0,
+            "supported": true
+          },
+          {
+            "job_id": "J4",
+            "depart_minute": 64.0,
+            "start_minute": 74.0,
+            "finish_minute": 157.0,
+            "actual_minutes": 83.0,
+            "max_minutes": 85.0,
+            "from_location": "J2",
+            "to_location": "J4",
+            "bound_finish_minute": 159.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 167.0,
+        "work_finish_minute": 157.0,
+        "crew_minutes": 167.0,
+        "skipped": [],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J4",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [
+        {
+          "scenario_id": "H1",
+          "node_id": "B2",
+          "completed_jobs": [
+            "J2"
+          ],
+          "spill_m3": 41.33210949234461,
+          "reference_spill_m3": 39.41379328398102,
+          "increase_m3": 1.918316208363585,
+          "tolerance_m3": 0.05
+        }
+      ],
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J2"
+          ],
+          "run_id": "7f55b6e41c727d3d0c369fc9c688b3117597d3313a34de9d9af644202aea15d6",
+          "total_spill_m3": 91.52422287129085,
+          "protected_violations": [
+            {
+              "scenario_id": "H1",
+              "node_id": "B2",
+              "completed_jobs": [
+                "J2"
+              ],
+              "spill_m3": 41.33210949234461,
+              "reference_spill_m3": 39.41379328398102,
+              "increase_m3": 1.918316208363585,
+              "tolerance_m3": 0.05
+            }
+          ]
+        },
+        {
+          "completed_jobs": [
+            "J2",
+            "J4"
+          ],
+          "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+          "total_spill_m3": 0.0071945179382818586,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "deterministic_nominal",
+      "method_label": "Deterministic nominal planner",
+      "queue": [
+        "J2",
+        "J4"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H2",
+      "status": "supported",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "newly_completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "crew_minutes": 151.0,
+      "run_id": "b2ffa4354fc9e861e37f48dae47f716e1c550cc5d16d441a68184317a6a903dd",
+      "total_spill_m3": 893.0722204386135,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.30018522996679137,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3372153969270701,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 852.8769806848318,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 48.0650055772391,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 42.7,
+          "integrated_spill_m3": 852.876980684828,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 40.195239753781735,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 34.93626429522618,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 14.0,
+          "integrated_spill_m3": 40.19523975378192,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.7962121094886287,
+          "duration_above_threshold_min": 33.302534345618234,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.1136712036945553,
+          "duration_above_threshold_min": 40.992564765894876,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8095663890808644,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.9000000000000034,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J2",
+          "J4"
+        ],
+        "events": [
+          {
+            "job_id": "J2",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 53.0,
+            "actual_minutes": 43.0,
+            "max_minutes": 55.0,
+            "from_location": "DEPOT",
+            "to_location": "J2",
+            "bound_finish_minute": 65.0,
+            "supported": true
+          },
+          {
+            "job_id": "J4",
+            "depart_minute": 53.0,
+            "start_minute": 63.0,
+            "finish_minute": 141.0,
+            "actual_minutes": 78.0,
+            "max_minutes": 85.0,
+            "from_location": "J2",
+            "to_location": "J4",
+            "bound_finish_minute": 148.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 151.0,
+        "work_finish_minute": 141.0,
+        "crew_minutes": 151.0,
+        "skipped": [],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J4",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J2"
+          ],
+          "run_id": "cdab0b2c4a18c94a5366ede8091c62fa066d43a7182f354fb1758820b2ea83cb",
+          "total_spill_m3": 1218.9853739129614,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J2",
+            "J4"
+          ],
+          "run_id": "b2ffa4354fc9e861e37f48dae47f716e1c550cc5d16d441a68184317a6a903dd",
+          "total_spill_m3": 893.0722204386135,
+          "protected_violations": []
+        }
+      ]
+    },
+    {
+      "method": "user_entered",
+      "method_label": "User-entered comparison",
+      "queue": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H1",
+      "status": "inadmissible",
+      "completed_jobs": [
+        "J1"
+      ],
+      "newly_completed_jobs": [
+        "J1"
+      ],
+      "crew_minutes": 118.0,
+      "run_id": "50e8352e9887e198c56e86471d64cc6dbfae8bffa3d2d0d26a6da610040c9b6f",
+      "total_spill_m3": 95.5373200231664,
+      "nodes": {
+        "A1": {
+          "spill_m3": 34.50515717396191,
+          "max_depth_m": 0.9999999999999999,
+          "duration_above_threshold_min": 24.349102469882425,
+          "threshold_m": 0.8,
+          "flood_duration_min": 6.775,
+          "integrated_spill_m3": 34.50515717396192,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.39114793897036104,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 48.60080287786648,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 27.39950608805886,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 12.241666666666667,
+          "integrated_spill_m3": 48.60080287786668,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 12.431359971338008,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 29.59871031961276,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 10.558333333333334,
+          "integrated_spill_m3": 12.431359971337995,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.8458641006974834,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.43698327316603075,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.4051317837977123,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.38428482124891467,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J1"
+        ],
+        "events": [
+          {
+            "job_id": "J1",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 108.0,
+            "actual_minutes": 98.0,
+            "max_minutes": 100.0,
+            "from_location": "DEPOT",
+            "to_location": "J1",
+            "bound_finish_minute": 110.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 118.0,
+        "work_finish_minute": 108.0,
+        "crew_minutes": 118.0,
+        "skipped": [
+          {
+            "job_id": "J2",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J3",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J4",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J1",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [
+        {
+          "scenario_id": "H1",
+          "node_id": "A1",
+          "completed_jobs": [
+            "J1"
+          ],
+          "spill_m3": 34.50515717396191,
+          "reference_spill_m3": 34.181156835111665,
+          "increase_m3": 0.32400033885024726,
+          "tolerance_m3": 0.05
+        }
+      ],
+      "reasons": [
+        "At least one protected location worsens beyond tolerance in a reachable completed-work state."
+      ],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J1"
+          ],
+          "run_id": "50e8352e9887e198c56e86471d64cc6dbfae8bffa3d2d0d26a6da610040c9b6f",
+          "total_spill_m3": 95.5373200231664,
+          "protected_violations": [
+            {
+              "scenario_id": "H1",
+              "node_id": "A1",
+              "completed_jobs": [
+                "J1"
+              ],
+              "spill_m3": 34.50515717396191,
+              "reference_spill_m3": 34.181156835111665,
+              "increase_m3": 0.32400033885024726,
+              "tolerance_m3": 0.05
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "user_entered",
+      "method_label": "User-entered comparison",
+      "queue": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "plan_status": "inadmissible",
+      "scenario_id": "H2",
+      "status": "supported",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "newly_completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "crew_minutes": 161.0,
+      "run_id": "d30840a5280632cd01747e82b6dab09da04b5251dc299aaf38e901cc2b2a238f",
+      "total_spill_m3": 1036.2641221574024,
+      "nodes": {
+        "A1": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.30018522996679137,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "A2": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.27929385124233747,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.8,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "B1": {
+          "spill_m3": 938.8482209376291,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 48.47621021707814,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 44.31666666666666,
+          "integrated_spill_m3": 938.8482209376701,
+          "nonconverged_steps": 0
+        },
+        "B2": {
+          "spill_m3": 97.41590121977326,
+          "max_depth_m": 1.1,
+          "duration_above_threshold_min": 49.2533320830121,
+          "threshold_m": 0.8800000000000001,
+          "flood_duration_min": 45.50833333333333,
+          "integrated_spill_m3": 97.41590121977337,
+          "nonconverged_steps": 0
+        },
+        "S": {
+          "spill_m3": 0.0,
+          "max_depth_m": 1.2499854979772123,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 1.6,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "J": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.3972419801385291,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "T": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.7730663835396967,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.96,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        },
+        "O": {
+          "spill_m3": 0.0,
+          "max_depth_m": 0.9000000000000034,
+          "duration_above_threshold_min": 0.0,
+          "threshold_m": 0.0,
+          "flood_duration_min": 0.0,
+          "integrated_spill_m3": 0.0,
+          "nonconverged_steps": 0
+        }
+      },
+      "replay": {
+        "status": "supported",
+        "completed_jobs": [
+          "J1",
+          "J2"
+        ],
+        "events": [
+          {
+            "job_id": "J1",
+            "depart_minute": 0.0,
+            "start_minute": 10.0,
+            "finish_minute": 98.0,
+            "actual_minutes": 88.0,
+            "max_minutes": 100.0,
+            "from_location": "DEPOT",
+            "to_location": "J1",
+            "bound_finish_minute": 110.0,
+            "supported": true
+          },
+          {
+            "job_id": "J2",
+            "depart_minute": 98.0,
+            "start_minute": 108.0,
+            "finish_minute": 151.0,
+            "actual_minutes": 43.0,
+            "max_minutes": 55.0,
+            "from_location": "J1",
+            "to_location": "J2",
+            "bound_finish_minute": 163.0,
+            "supported": true
+          }
+        ],
+        "finish_minute": 161.0,
+        "work_finish_minute": 151.0,
+        "crew_minutes": 161.0,
+        "skipped": [
+          {
+            "job_id": "J3",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          },
+          {
+            "job_id": "J4",
+            "reason": "insufficient_bound_window",
+            "missing_prerequisites": []
+          }
+        ],
+        "reasons": [],
+        "start_minute": 0.0,
+        "start_location": "DEPOT",
+        "final_location": "DEPOT",
+        "last_work_location": "J2",
+        "deadline_minutes": 180.0,
+        "return_minutes": 10.0
+      },
+      "protected_violations": [],
+      "reasons": [],
+      "intermediate_states": [
+        {
+          "completed_jobs": [
+            "J1"
+          ],
+          "run_id": "5d8be2cf1ee15ccea00637e3ae7e8f1eb3a23c0035ec03c9711cf71032e0c0a3",
+          "total_spill_m3": 1036.2858090073325,
+          "protected_violations": []
+        },
+        {
+          "completed_jobs": [
+            "J1",
+            "J2"
+          ],
+          "run_id": "d30840a5280632cd01747e82b6dab09da04b5251dc299aaf38e901cc2b2a238f",
+          "total_spill_m3": 1036.2641221574024,
+          "protected_violations": []
+        }
+      ]
+    }
+  ],
+  "diagnostic_oracles": [
+    {
+      "scenario_id": "H1",
+      "label": "Hindsight oracle \u2014 diagnostic only",
+      "information_advantage": "Perfect hydraulic forcing and realised duration knowledge; actual durations replace forecast bounds",
+      "plan": {
+        "id": "P-J4-J1-J2",
+        "queue": [
+          "J4",
+          "J1",
+          "J2"
+        ],
+        "admissible": true,
+        "status": "supported",
+        "worst_spill_m3": 0.0071945179382818586,
+        "mean_spill_m3": 0.0071945179382818586,
+        "worst_crew_minutes": 167.0,
+        "worst_cost_rm": 1440.0,
+        "scenario_results": [
+          {
+            "scenario_id": "H1",
+            "status": "supported",
+            "completed_jobs": [
+              "J2",
+              "J4"
+            ],
+            "newly_completed_jobs": [
+              "J4",
+              "J2"
+            ],
+            "crew_minutes": 167.0,
+            "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+            "total_spill_m3": 0.0071945179382818586,
+            "nodes": {
+              "A1": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.4975609044460971,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.8,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "A2": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.45787465014928197,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.8,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "B1": {
+                "spill_m3": 0.0071945179382818586,
+                "max_depth_m": 1.1,
+                "duration_above_threshold_min": 21.760255175430274,
+                "threshold_m": 0.8800000000000001,
+                "flood_duration_min": 0.06666666666666667,
+                "integrated_spill_m3": 0.0071945179382818586,
+                "nonconverged_steps": 0
+              },
+              "B2": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.7000924210791137,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.8800000000000001,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "S": {
+                "spill_m3": 0.0,
+                "max_depth_m": 1.4003501223135777,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 1.6,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "J": {
+                "spill_m3": 0.0,
+                "max_depth_m": 1.066215609365576,
+                "duration_above_threshold_min": 21.81618037479066,
+                "threshold_m": 0.96,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "T": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.3845406692933981,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.96,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "O": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.36598445041029243,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              }
+            },
+            "replay": {
+              "status": "supported",
+              "completed_jobs": [
+                "J4",
+                "J2"
+              ],
+              "events": [
+                {
+                  "job_id": "J4",
+                  "depart_minute": 0.0,
+                  "start_minute": 10.0,
+                  "finish_minute": 93.0,
+                  "actual_minutes": 83.0,
+                  "max_minutes": 83.0,
+                  "from_location": "DEPOT",
+                  "to_location": "J4",
+                  "bound_finish_minute": 93.0,
+                  "supported": true
+                },
+                {
+                  "job_id": "J2",
+                  "depart_minute": 93.0,
+                  "start_minute": 103.0,
+                  "finish_minute": 157.0,
+                  "actual_minutes": 54.0,
+                  "max_minutes": 54.0,
+                  "from_location": "J4",
+                  "to_location": "J2",
+                  "bound_finish_minute": 157.0,
+                  "supported": true
+                }
+              ],
+              "finish_minute": 167.0,
+              "work_finish_minute": 157.0,
+              "crew_minutes": 167.0,
+              "skipped": [
+                {
+                  "job_id": "J1",
+                  "reason": "insufficient_bound_window",
+                  "missing_prerequisites": []
+                }
+              ],
+              "reasons": [],
+              "start_minute": 0.0,
+              "start_location": "DEPOT",
+              "final_location": "DEPOT",
+              "last_work_location": "J2",
+              "deadline_minutes": 180.0,
+              "return_minutes": 10.0
+            },
+            "protected_violations": [],
+            "reasons": [],
+            "intermediate_states": [
+              {
+                "completed_jobs": [
+                  "J4"
+                ],
+                "run_id": "f54559d9e8972ce3ca9d1360a2b52df151a4f2021d163c40f49e0ce979746921",
+                "total_spill_m3": 34.188351351605306,
+                "protected_violations": []
+              },
+              {
+                "completed_jobs": [
+                  "J2",
+                  "J4"
+                ],
+                "run_id": "be2feb6df97ea79101c56c224c5cf60664ede3912128213748769d6ab199aeb4",
+                "total_spill_m3": 0.0071945179382818586,
+                "protected_violations": []
+              }
+            ]
+          }
+        ],
+        "reasons": []
+      },
+      "exact_minimum_spill_m3": 0.0071945179382818586,
+      "enumerated_queues": 65
+    },
+    {
+      "scenario_id": "H2",
+      "label": "Hindsight oracle \u2014 diagnostic only",
+      "information_advantage": "Perfect hydraulic forcing and realised duration knowledge; actual durations replace forecast bounds",
+      "plan": {
+        "id": "P-J2-J4",
+        "queue": [
+          "J2",
+          "J4"
+        ],
+        "admissible": true,
+        "status": "supported",
+        "worst_spill_m3": 893.0722204386135,
+        "mean_spill_m3": 893.0722204386135,
+        "worst_crew_minutes": 151.0,
+        "worst_cost_rm": 1440.0,
+        "scenario_results": [
+          {
+            "scenario_id": "H2",
+            "status": "supported",
+            "completed_jobs": [
+              "J2",
+              "J4"
+            ],
+            "newly_completed_jobs": [
+              "J2",
+              "J4"
+            ],
+            "crew_minutes": 151.0,
+            "run_id": "b2ffa4354fc9e861e37f48dae47f716e1c550cc5d16d441a68184317a6a903dd",
+            "total_spill_m3": 893.0722204386135,
+            "nodes": {
+              "A1": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.30018522996679137,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.8,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "A2": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.3372153969270701,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.8,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "B1": {
+                "spill_m3": 852.8769806848318,
+                "max_depth_m": 1.1,
+                "duration_above_threshold_min": 48.0650055772391,
+                "threshold_m": 0.8800000000000001,
+                "flood_duration_min": 42.7,
+                "integrated_spill_m3": 852.876980684828,
+                "nonconverged_steps": 0
+              },
+              "B2": {
+                "spill_m3": 40.195239753781735,
+                "max_depth_m": 1.1,
+                "duration_above_threshold_min": 34.93626429522618,
+                "threshold_m": 0.8800000000000001,
+                "flood_duration_min": 14.0,
+                "integrated_spill_m3": 40.19523975378192,
+                "nonconverged_steps": 0
+              },
+              "S": {
+                "spill_m3": 0.0,
+                "max_depth_m": 1.7962121094886287,
+                "duration_above_threshold_min": 33.302534345618234,
+                "threshold_m": 1.6,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "J": {
+                "spill_m3": 0.0,
+                "max_depth_m": 1.1136712036945553,
+                "duration_above_threshold_min": 40.992564765894876,
+                "threshold_m": 0.96,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "T": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.8095663890808644,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.96,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              },
+              "O": {
+                "spill_m3": 0.0,
+                "max_depth_m": 0.9000000000000034,
+                "duration_above_threshold_min": 0.0,
+                "threshold_m": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "nonconverged_steps": 0
+              }
+            },
+            "replay": {
+              "status": "supported",
+              "completed_jobs": [
+                "J2",
+                "J4"
+              ],
+              "events": [
+                {
+                  "job_id": "J2",
+                  "depart_minute": 0.0,
+                  "start_minute": 10.0,
+                  "finish_minute": 53.0,
+                  "actual_minutes": 43.0,
+                  "max_minutes": 43.0,
+                  "from_location": "DEPOT",
+                  "to_location": "J2",
+                  "bound_finish_minute": 53.0,
+                  "supported": true
+                },
+                {
+                  "job_id": "J4",
+                  "depart_minute": 53.0,
+                  "start_minute": 63.0,
+                  "finish_minute": 141.0,
+                  "actual_minutes": 78.0,
+                  "max_minutes": 78.0,
+                  "from_location": "J2",
+                  "to_location": "J4",
+                  "bound_finish_minute": 141.0,
+                  "supported": true
+                }
+              ],
+              "finish_minute": 151.0,
+              "work_finish_minute": 141.0,
+              "crew_minutes": 151.0,
+              "skipped": [],
+              "reasons": [],
+              "start_minute": 0.0,
+              "start_location": "DEPOT",
+              "final_location": "DEPOT",
+              "last_work_location": "J4",
+              "deadline_minutes": 180.0,
+              "return_minutes": 10.0
+            },
+            "protected_violations": [],
+            "reasons": [],
+            "intermediate_states": [
+              {
+                "completed_jobs": [
+                  "J2"
+                ],
+                "run_id": "cdab0b2c4a18c94a5366ede8091c62fa066d43a7182f354fb1758820b2ea83cb",
+                "total_spill_m3": 1218.9853739129614,
+                "protected_violations": []
+              },
+              {
+                "completed_jobs": [
+                  "J2",
+                  "J4"
+                ],
+                "run_id": "b2ffa4354fc9e861e37f48dae47f716e1c550cc5d16d441a68184317a6a903dd",
+                "total_spill_m3": 893.0722204386135,
+                "protected_violations": []
+              }
+            ]
+          }
+        ],
+        "reasons": []
+      },
+      "exact_minimum_spill_m3": 893.0722204386135,
+      "enumerated_queues": 65
+    }
+  ],
+  "holdout_ids": [
+    "H1",
+    "H2"
+  ],
+  "hydraulic_callback_calls": 17,
+  "protocol": "Operational policies and marginal decision table were frozen before holdout evaluation. No reselection.",
+  "limitations": [
+    "Synthetic holdouts test a locked method, not calibrated field performance.",
+    "Holdout loss or no-worsening failure remains visible; a hindsight oracle is not an operational competitor."
+  ]
+}

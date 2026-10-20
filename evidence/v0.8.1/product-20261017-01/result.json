@@ -1,0 +1,40 @@
+{
+  "scope": "SWMM product and non-bench workflow regression; NOT full research qualification",
+  "attempt": "evidence/v0.8.1/product-20261017-01",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\runtime\\venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-c",
+        "pytest-product.ini",
+        "-q",
+        "--junitxml=C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\monsoon-rehearsal\\evidence\\v0.8.1\\product-20261017-01\\pytest.xml"
+      ],
+      "started_utc": "2026-10-17T04:33:19.468841+00:00",
+      "returncode": 1,
+      "log": "pytest.log",
+      "log_sha256": "3d3ca4dec7cf72e4a8932d1d59560ac513b276cf6d9b183ebf14c77a98f41e5e"
+    }
+  ],
+  "passed": false,
+  "custom_solver_qualified": false,
+  "scheduling_advantage_established": false,
+  "field_validation_established": false,
+  "source_unchanged": true,
+  "changed_sources": [],
+  "runner_unchanged": true,
+  "tests": {
+    "tests": 622,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "completed_utc": "2026-10-17T04:45:03.564234+00:00",
+  "artifact_sha256": {
+    "pytest.log": "3d3ca4dec7cf72e4a8932d1d59560ac513b276cf6d9b183ebf14c77a98f41e5e",
+    "pytest.xml": "085f8096635e5db479b134bfe205ce0c470ca127667a13bc779f68d4d6cdc0e4",
+    "source-freeze.json": "a365750a64fe2fb04f9308b6218f3e48dd57be85224d101b523149d181141627"
+  }
+}

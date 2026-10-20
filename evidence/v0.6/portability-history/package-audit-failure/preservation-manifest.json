@@ -1,0 +1,48 @@
+{
+  "schema_version": "monsoon.audit-portability-failure-preservation/1",
+  "source_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\monsoon-v06-package-vqxq38k1\\isolated-interactive\\exercise\\synthetic-boundary-study-n4rxeks1\\exercise.sqlite3.artifacts\\038c82108a5f4173a8dc82d2dd996ab5\\balance-audit\\bench-balance-audit-1mgotipf",
+  "copy_preserves_original_file_bytes": true,
+  "note": "Historical failed native artifact inventory. Copied result paths intentionally remain bound to the original location; this copy is not a freshly verified current-source audit.",
+  "observations": [
+    {
+      "attempt": "base",
+      "expected_output_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\monsoon-v06-package-vqxq38k1\\isolated-interactive\\exercise\\synthetic-boundary-study-n4rxeks1\\exercise.sqlite3.artifacts\\038c82108a5f4173a8dc82d2dd996ab5\\balance-audit\\bench-balance-audit-1mgotipf\\base\\model.out",
+      "expected_output_path_characters": 266,
+      "expected_output_exists": false,
+      "observed_output_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\monsoon-v06-package-vqxq38k1\\isolated-interactive\\exercise\\synthetic-boundary-study-n4rxeks1\\exercise.sqlite3.artifacts\\038c82108a5f4173a8dc82d2dd996ab5\\balance-audit\\bench-balance-audit-1mgotipf\\base\\mo",
+      "observed_output_path_characters": 259,
+      "observed_output_bytes": 16644
+    },
+    {
+      "attempt": "half",
+      "expected_output_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\monsoon-v06-package-vqxq38k1\\isolated-interactive\\exercise\\synthetic-boundary-study-n4rxeks1\\exercise.sqlite3.artifacts\\038c82108a5f4173a8dc82d2dd996ab5\\balance-audit\\bench-balance-audit-1mgotipf\\half\\model.out",
+      "expected_output_path_characters": 266,
+      "expected_output_exists": false,
+      "observed_output_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\monsoon-v06-package-vqxq38k1\\isolated-interactive\\exercise\\synthetic-boundary-study-n4rxeks1\\exercise.sqlite3.artifacts\\038c82108a5f4173a8dc82d2dd996ab5\\balance-audit\\bench-balance-audit-1mgotipf\\half\\mo",
+      "observed_output_path_characters": 259,
+      "observed_output_bytes": 16644
+    }
+  ],
+  "file_sha256": {
+    "_bench_balance_worker.py": "46d390c00679b98e08787a2d0ebbe3f1b60be84e10fd5f8851f872d1aabebe7a",
+    "bench_balance_audit.py": "68c0e7f9afd9ee42507a1abdc3f3c50f045b7a9870afce4a9b0a9a1b3abddeae",
+    "failing-audit/base/manifest.json": "ea2749f8268e60293a02097d162bf7be8d3ef3d0463012565e030cbbf1cf3c0e",
+    "failing-audit/base/mo": "af7be70ef0a7a8f913412bdb21ed5f1bec6a6f40778c2520a6e176f18e1f6785",
+    "failing-audit/base/model.inp": "a2646a1ffa8706aa77fd38e756229268036d701e777b7359ffc7837443c2a861",
+    "failing-audit/base/model.rpt": "4c095969971ec6a4bfe878bc8d3ae5aba46a51cfd76e9dc23de1dc7e6aa7721d",
+    "failing-audit/base/request.json": "82aa5141e872128916d7dff9cc31085406edf0d5c6cdff9e720315cd65837025",
+    "failing-audit/base/result.json": "c183f5d2cfd2bf21e3ed2c022acd8a24c4c5c8f96b6caa836463f778e0efcfd9",
+    "failing-audit/base/worker-result.json": "5d66ad809027964c77cf81628ea70c56a3ebf0cdeb4261eec888ea70dc38db0c",
+    "failing-audit/base/worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "failing-audit/half/manifest.json": "f54050c393232703627cd4c01753550a45284c7758c8327f992cad06937ed39b",
+    "failing-audit/half/mo": "fa00a757ae9782228d70f19c2c194b6ab7f0d250b2a296c59be6a02547eea40b",
+    "failing-audit/half/model.inp": "147884797cbbf8f5ba8f07dc895384c483251eefec9c949bd9de46d8c0901d06",
+    "failing-audit/half/model.rpt": "61368e7874a0a512c8ba647ac4b0d6ed0099047cfa4c0a1b5f57c5ed6980efe3",
+    "failing-audit/half/request.json": "23ea70643b37e56734a054729af6e74083f959648ca4086e8e9bf88abd70fd52",
+    "failing-audit/half/result.json": "f8df16bf50977d2b396ea45bf3be36082f9a697490ba36ef06f16385bbf88168",
+    "failing-audit/half/worker-result.json": "7a6f7aff5ac8d959afdfdf9ddb93b8f2e902b6c6be2d2dff1f6304c784a9ded1",
+    "failing-audit/half/worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "failing-audit/manifest.json": "31e2d2ce639ac0335e090921411836cd6e05d37c782031db1c7f4689d702d54c",
+    "failing-audit/result.json": "a3cbd47f270cd23133e8bd46ebc2be83dbdbc3ab74e81d2e72825bc43e3c79a0"
+  }
+}

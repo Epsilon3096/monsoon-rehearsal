@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-15T13:32:24.630309+00:00",
+  "url": "http://127.0.0.1:8513/",
+  "method": "Actual in-app browser navigation, native continuous preparation, synthetic replay exercise and three download controls; byte verification of exported artifacts",
+  "supplied_forms_started_blank": true,
+  "continuous_preparation_numerical_checks_passed": true,
+  "downloaded_source_and_runtime_identities_match_current": true,
+  "water_at_event_start_m3": 0.0070008619817843514,
+  "wet_download_artifact_count": 18,
+  "replay_download_artifact_count": 89,
+  "declared_error_rows": 8,
+  "downloaded_wet_zip_sha256": "11bf37784e1b971e89cfb94e1d8ff418dc31ad6b8c3602da98ed0c3b910778e1",
+  "downloaded_replay_zip_sha256": "757a9e8a17c1085da191f10776d52783cdb85a5357c6b20a177c0bed8b6f957f",
+  "downloaded_exercise_sha256": "a0fc4393c00b27943f8be584aac6dacb90b46d63fcd22584e65f26f6364654f1",
+  "synthetic_exercise_status": "passed",
+  "physical_validation_established": false,
+  "layout": "Actual app panels at their normal dimensions, with no viewport override. Both exercises and all three downloads were repeated against the final sources after the portability and required-file fixes. Tables retain horizontal scrolling for all columns.",
+  "screenshots": {
+    "Monsoon_Rehearsal_v0.6_Wet_Preparation.png": "bbac65d833c0ac742d1ea6cab87097626b98323f61d37b4436fb5e5f8789194a",
+    "Monsoon_Rehearsal_v0.6_Boundary_Replay.png": "8f48c3c66e5ebf48a36ad2a91e0e6d61c4eba3c2e96508ec4111215036a07dca"
+  }
+}

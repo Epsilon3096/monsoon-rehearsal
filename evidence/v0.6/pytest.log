@@ -1,0 +1,22 @@
+........................................................................ [  8%]
+........................................................................ [ 17%]
+........................................................................ [ 26%]
+........................................................................ [ 35%]
+........................................................................ [ 44%]
+........................................................................ [ 53%]
+........................................................................ [ 62%]
+........................................................................ [ 71%]
+........................................................................ [ 80%]
+........................................................................ [ 89%]
+........................................................................ [ 98%]
+..........                                                               [100%]
+============================= slowest 8 durations =============================
+176.96s call     tests/test_ui_workflow_review.py::test_delay_stales_controls_and_failed_inspection_blocks_replanning
+64.66s call     tests/test_app.py::test_arithmetic_complete_ui_audit_ticket_and_verified_replan
+60.38s call     tests/test_hydraulics.py::test_all_frozen_states_conserve_and_converge_when_step_halved
+18.69s call     tests/test_app.py::test_real_reference_stress_failure_blocks_ui_review_and_approval
+14.45s call     tests/test_bench_next_ui.py::test_boundary_receipts_responses_and_freeze_in_ui[False]
+14.28s call     tests/test_bench_next_ui.py::test_boundary_receipts_responses_and_freeze_in_ui[True]
+7.47s call     tests/test_bench_next_demo.py::test_native_separated_boundary_exercise_and_changed_evidence_refusal
+7.34s call     tests/test_assurance_workflow.py::test_complete_required_audit_survives_stamping_and_authorizes_only_audited_start
+802 passed in 714.05s (0:11:54)

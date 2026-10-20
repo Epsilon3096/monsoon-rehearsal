@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-10-14T09:57:42.567862+00:00",
+  "protocol_sha256": "932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5481fba2",
+  "source_sha256": {
+    "monsoon/observed_policy.py": "e605e2fe73dec5fc6278a38d88cc31c7a7b0f4f1a30c444d5ee75f7104efc90d",
+    "monsoon/policy_evaluation.py": "2c38ef9485e292c7f635efa1e331168622353384df476ded5b67bebd2e1c3f1b",
+    "monsoon/planning.py": "13eec8cb3d4993e5548e2aeb4ec306e0bed070192b89adce1b01b0c06dd1ec5a",
+    "monsoon/assurance.py": "71b45f3a7e15f024514dd8071a8a2d94d1050134be8bf31068d43c8c957e13b5",
+    "monsoon/assurance_hydraulics.py": "18b961f8db0f0dcb9bc3983bbbd8d94d94c3409cba2426076826172642e3bcb4",
+    "monsoon/case.py": "fe4f82249340a3ccfa90473e5ccd98643f1433b49f0ea8853fbba7db6a009d2a",
+    "monsoon/hydraulics.py": "0d108cc8080fe2c15de1484e4f05b5c5d827c90c706d7a0f7cfb8f86fd8bc8ef",
+    "monsoon/_swmm_worker.py": "f1d5773c00dd41d56e9b4b97951146f77856585d77ba3a3f489edbeb21fd1830",
+    "data/reference_case.json": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+    "tests/test_observed_policy.py": "3115ca21ce1d583ee5dccc684a220a89a46a41fd21deae93d6d344d1035c1b1d"
+  },
+  "engine": {
+    "engine": "EPA SWMM / Open Water Analytics toolkit",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "adapter_version": "1.0.1",
+    "routing": "DYNWAVE",
+    "units": "CMS / metres / m3",
+    "default_routing_step_s": 0.5,
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c"
+  },
+  "statement": "Implementation, observations, development profiles, evaluation inputs, baselines, metrics and gates were recorded before the first new v0.3 SWMM policy outcomes. No externally supervised seal or independent blindness is claimed.",
+  "prior_knowledge": "The v0.1/v0.2 topology, outcomes, H1/H2 and development sensitivities were known. No measured site, operator plan or instrumented rig measurements were supplied. No v0.3 hydraulic outcomes existed when this protocol was written.",
+  "evaluation_event_ids": [
+    "V3-E01",
+    "V3-E02",
+    "V3-E03",
+    "V3-E04",
+    "V3-E05",
+    "V3-E06",
+    "V3-E07",
+    "V3-E08",
+    "V3-E09",
+    "V3-E10"
+  ],
+  "freeze_sha256": "411ce36a77f88cdd4b22335617aa7b941973b3c2a7bc7393330fe94925911e03"
+}

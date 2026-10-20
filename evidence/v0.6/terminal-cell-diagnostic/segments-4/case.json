@@ -1,0 +1,75 @@
+{
+  "case_id": "segments-4",
+  "subdivisions": 4,
+  "node_ids": [
+    "A",
+    "S",
+    "O",
+    "D4_1",
+    "D4_2",
+    "D4_3"
+  ],
+  "link_ids": [
+    "L1",
+    "L2_1",
+    "L2_2",
+    "L2_3",
+    "L2_4"
+  ],
+  "terminal_link_id": "L2_4",
+  "link_connections": {
+    "L1": [
+      "A",
+      "S"
+    ],
+    "L2_1": [
+      "S",
+      "D4_1"
+    ],
+    "L2_2": [
+      "D4_1",
+      "D4_2"
+    ],
+    "L2_3": [
+      "D4_2",
+      "D4_3"
+    ],
+    "L2_4": [
+      "D4_3",
+      "O"
+    ]
+  },
+  "new_junctions": [
+    {
+      "id": "D4_1",
+      "invert_m": 0.015,
+      "max_depth_m": 0.25,
+      "initial_depth_m": 0,
+      "surcharge_depth_m": 0,
+      "ponded_area_m2": 0,
+      "declared_physical_storage_m3": 0
+    },
+    {
+      "id": "D4_2",
+      "invert_m": 0.01,
+      "max_depth_m": 0.25,
+      "initial_depth_m": 0,
+      "surcharge_depth_m": 0,
+      "ponded_area_m2": 0,
+      "declared_physical_storage_m3": 0
+    },
+    {
+      "id": "D4_3",
+      "invert_m": 0.005,
+      "max_depth_m": 0.25,
+      "initial_depth_m": 0,
+      "surcharge_depth_m": 0,
+      "ponded_area_m2": 0,
+      "declared_physical_storage_m3": 0
+    }
+  ],
+  "terminal_element_length_m": 0.2,
+  "terminal_half_cell_area_m2": 0.008,
+  "predicted_plateau_residual_m3": -0.00048,
+  "input_sha256": "5f686ed3b0035bb0238c3b61803d8561ae1680b9202e62c4a2ff4316f4617225"
+}

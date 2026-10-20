@@ -1,0 +1,1 @@
+The download_files field in download-verification.json counts all extracted entries: 18 files and 3 directories, for 21 entries. No evidence contents or qualification outcomes are affected. The final browser report distinguishes files from directories.

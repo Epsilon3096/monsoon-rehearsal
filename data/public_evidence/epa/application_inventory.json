@@ -1,0 +1,97 @@
+{
+  "outer_archive_sha256": "889dd60a53ac85f00ee90db947a67ddc6d0737f46acf818bf7c7c08ac272f0ea",
+  "input_files": [
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example1-Post.inp",
+      "sha256": "ab7203583f3966eaf3041b47aebbe2ed7c2204f1580fc13f15e8d3feb97c31fc",
+      "bytes": 16770,
+      "flow_units": "CFS",
+      "routing": "KINWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example1-Pre.inp",
+      "sha256": "490a951ec726cf068c3560c2b2c33a426586253aa52852f3b29a338967354357",
+      "bytes": 9150,
+      "flow_units": "CFS",
+      "routing": "KINWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example2-Post.inp",
+      "sha256": "2c797fa8e706d2570ad1c6bb776f2cc764fdac83475e8c1a1da04d97c4279895",
+      "bytes": 23853,
+      "flow_units": "CFS",
+      "routing": "KINWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example3.inp",
+      "sha256": "ece140eda259a9e68631a7c9d25d5060f9b3e69f133aec308d19ad339c9b0a1a",
+      "bytes": 26596,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example4.inp",
+      "sha256": "46bd4187494c2288f5bdc312cf09865f28060625ddecd86e55a8bbf28f71ab6d",
+      "bytes": 40674,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example5-EMC.inp",
+      "sha256": "7245e9299e376887b11a9fb8c0b54ca7e5e49f339368b12fb35815c4f263fa8b",
+      "bytes": 28718,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example5-EXP.inp",
+      "sha256": "0ad6dfba932e5aca398a7bd4f7946913eea0aecda8f396c9a7edc47074d48ad8",
+      "bytes": 28726,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example6-Final.inp",
+      "sha256": "fb6ca3c20628c6014a92c75b7751a90ebba6a517ea60067e9930ff285ac3ba78",
+      "bytes": 49667,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example6-Initial.inp",
+      "sha256": "46b5041106b836a1712ca663e2541c76948fd30eb9618dcf1bc1d718a63710e6",
+      "bytes": 48882,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example7-Final.inp",
+      "sha256": "7ba737bb5e55d31399e6294b1f33f75296a823ce1e118e7a0b87db1f3364552b",
+      "bytes": 175438,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example7-Initial.inp",
+      "sha256": "fdd95c2f7277381ff4c864e5df963a29ff31836c44d5aed682649717cdb92b4a",
+      "bytes": 175444,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example8.inp",
+      "sha256": "e9b0834b83f663a4bf5294f897f684b5268bf134f967fff905e723f8fe1533f6",
+      "bytes": 35998,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    },
+    {
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example9.inp",
+      "sha256": "5276aa870b844377687ee23f89875141af661191561b4ee051dd64ae5375637f",
+      "bytes": 26700,
+      "flow_units": "CFS",
+      "routing": "DYNWAVE"
+    }
+  ],
+  "input_file_count": 13
+}

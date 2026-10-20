@@ -1,0 +1,4513 @@
+{
+  "status": "passed",
+  "scope": "Event spill adequacy for planning and holdout cases; boundary diagnostics are reported separately.",
+  "engine": {
+    "engine": "EPA SWMM / Open Water Analytics toolkit",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "adapter_version": "1.0.1",
+    "routing": "DYNWAVE",
+    "units": "CMS / metres / m3",
+    "default_routing_step_s": 0.5,
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "adapter_sha256": "b8adf09ec0aaf7ed1b9d3ecfc3b87599e1e6dc864c3656176c466e4a75e8f391"
+  },
+  "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+  "routing_step_s": 0.5,
+  "horizon_minutes": 180,
+  "extended_horizon_minutes": 360,
+  "absolute_spill_tolerance_m3": 0.05,
+  "state_scenario_pairs": 144,
+  "engine_runs": 288,
+  "rows": [
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "2d68a2dfb03fbd28a8175c67f1c08506bad09bee0319fa6649b2754e2fad1bd6",
+      "extended_run_id": "bad33218a08a8d13bea8743c191d05d1a71b1a2f5e4c3b912c5be88b275e9950",
+      "spill_m3": 54.77585487771761,
+      "extended_spill_m3": 54.77585487771761,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.505758082535927,
+      "extended_final_storage_m3": 13.999136368947191,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "f8bbb491f558deb98f3e338c62a046d26d8d2fe8ebc3ca5e594ea1f670b8f38c",
+      "extended_run_id": "ff182651cafda1e330b1459cc2dd27fdf6ea4eb3b981e5d44d275c8c66e34914",
+      "spill_m3": 40.93028237563402,
+      "extended_spill_m3": 40.93028237563402,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.61451404121217,
+      "extended_final_storage_m3": 13.521865612801449,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "34962c409ad2b62280c27b997a7a7c56f85c7d151090eb00587bf39038e5d8dd",
+      "extended_run_id": "588517f0ce7b9be741870911a65d3a1ffcd26730e5f2953ddcf53f8889071c64",
+      "spill_m3": 53.95618731051111,
+      "extended_spill_m3": 53.95618731051111,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.52145148509199,
+      "extended_final_storage_m3": 14.002212244103152,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "640a92406553750598f734d69f6bd3aa4cf8b835571baeb871b3b5cee0684c86",
+      "extended_run_id": "5621f57ebe6b9a14326753c366a858defe9500608e768b0f4d6897742bb573d0",
+      "spill_m3": 48.76209948320715,
+      "extended_spill_m3": 48.76209948320715,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.601490455151342,
+      "extended_final_storage_m3": 14.024435261368914,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "f2c9ce3795e43d6611c91321202de5af238daf5a15237f7e78b8f3eafa1fc944",
+      "extended_run_id": "23ac9abafee2dee5095b3dcce82cd4f3ace8c98b825460d21d03d549bf947cb5",
+      "spill_m3": 0.5384892486539424,
+      "extended_spill_m3": 0.5384892486539424,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.620802561425826,
+      "extended_final_storage_m3": 14.611269346422354,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e8f2712b7c19df544855a5dc10256ac4b7e18810a33848da9e5584e06e3e7250",
+      "extended_run_id": "d13f7985ebbaa27bd38da346d9e742082d8434f7cd30c4ba4a107e3196f6d3b7",
+      "spill_m3": 40.15559302714027,
+      "extended_spill_m3": 40.15559302714027,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.63189621733119,
+      "extended_final_storage_m3": 13.527877555225665,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e33ce561aae4cfcbf812967edd86e4b3e37c254e05e2408c21faa2245b94800c",
+      "extended_run_id": "27e93f45e18846fd8ad3f856d1720817738ac88539065ab1bc1085e6d3c10c2f",
+      "spill_m3": 32.70242939754047,
+      "extended_spill_m3": 32.70242939754047,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.67523536660278,
+      "extended_final_storage_m3": 13.543119834006953,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "c934eda7852f86e89fb925866473648ef8e4d6dc3da83a8131c4e880fcaecc77",
+      "extended_run_id": "c89da022314796846d51bb47473ad3e193c8a79d11f3b41cdcaa83646c04a3da",
+      "spill_m3": 0.7501205157505605,
+      "extended_spill_m3": 0.7501205157505605,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.336704299736788,
+      "extended_final_storage_m3": 14.025163924446908,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "20ba5834edabb0b68ca0e1b5efe21b98bb94f9f75122b8ca363f55b8980514cc",
+      "extended_run_id": "7310b0b3b07fab2f53ec3342e59903849809432a94aed1a9627ea3038dd26454",
+      "spill_m3": 47.96926576243579,
+      "extended_spill_m3": 47.96926576243579,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.617155986682,
+      "extended_final_storage_m3": 14.02749995922947,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e43e6ae6abbac08d7147f2f8cc3db38be287ffe70cb5566a6104186f20ca54b7",
+      "extended_run_id": "0c9ebc13bfb8bf829d3350b702fed29b4abaa8695b1ee60e7b81c6179d8c3a5a",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.636154827196847,
+      "extended_final_storage_m3": 14.614260433163391,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "d0fc550cffdcc2608531b6c9fb20d43b5436bd7d6d0910d15bf1decbd75e76a3",
+      "extended_run_id": "8c83e465dc7a3aff503857d5c115ef88e095da7b764b9e2f9513daa47f93b666",
+      "spill_m3": 0.5384892486540153,
+      "extended_spill_m3": 0.5384892486540153,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.6526701154479,
+      "extended_final_storage_m3": 14.619490469441315,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "8eae4fd7c4e788ebef0da83ba11460bcdf6a2859972feafb2b6262689fb0e805",
+      "extended_run_id": "0747466ef0cd19bd0cc3787556c1d2422bf51d494c1f34a833cdb0f5f734546c",
+      "spill_m3": 31.897555361162322,
+      "extended_spill_m3": 31.897555361162322,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.692297978585763,
+      "extended_final_storage_m3": 13.549091008866128,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "fd7b04399766886029b366cb19b638d8b19130325002f05087a95b1bb804f31b",
+      "extended_run_id": "ccca59e7bb5753fe9f88586cfd2c14ef2ae95a61313bc3832899d352985837e7",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.35258814295816,
+      "extended_final_storage_m3": 14.031162697565009,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "0d1514e6a2b4d566e60a9043a076d1bb2c64dde035bf068446b8a7bff294275e",
+      "extended_run_id": "bec993b41c92868f7984e918a3b11fd281f210bd3f2483982a61b6ea8246739d",
+      "spill_m3": 0.7526618575355962,
+      "extended_spill_m3": 0.7526618575355962,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.349896289418794,
+      "extended_final_storage_m3": 14.029518577730716,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "268f76585ce29a06bc78d646fb804f62fab3bbd6dbca60deeb45ca84535be082",
+      "extended_run_id": "9e6e0d9832d29f6a933cd253d094a87f9a338d6c9bcb31a17e3ba94939e09f7f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.668067273512133,
+      "extended_final_storage_m3": 14.622491478488255,
+      "note": null
+    },
+    {
+      "scenario_id": "P1",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "1744ae7c98f021d801fc35fc1edc0f21f81fcae37ed7a4d5aff212d4ea5ef697",
+      "extended_run_id": "ceb28f9413422d4a63f90d45dfc4aea8eac4779fe6d5b75643cb7be1d433c761",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.36569705607294,
+      "extended_final_storage_m3": 14.035508594205838,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "97c8cd11a36cf82930d252e3bf5e2a58383f83027a9dde62320dba05fd664cec",
+      "extended_run_id": "7d61640b3f2269905ef52b72a34aa0be9dd6175ef75a5cdf986802955f88c14c",
+      "spill_m3": 108.79833958055502,
+      "extended_spill_m3": 108.79833958055502,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.157979299113542,
+      "extended_final_storage_m3": 13.91346239437841,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "ed35e0148c23c4e572bd3a58a3063eeda9f075187135a06b18fb2f82b4ae119b",
+      "extended_run_id": "f4a5445a98f062c498b42b2850643c2afb18e65a92e886517cf0aea704c4a6c7",
+      "spill_m3": 109.35174811641537,
+      "extended_spill_m3": 109.35174811641537,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.36379996911306,
+      "extended_final_storage_m3": 13.436878306918633,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "4ce30507dadf51b1432afb24eb9e511cdcce0982eaa1b51bc5afec02feb0bd86",
+      "extended_run_id": "a63098d69c5a421436a7c338faa4a41fcfb95876dd4ce42c2b9cfa29d76e69a0",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.228933234382026,
+      "extended_final_storage_m3": 13.930397928498941,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "4ae57fb9f5e3b991ff41e2b364669ec4ef78b076cc75bb49b6743dd41afa0909",
+      "extended_run_id": "10ba0e717e41a55f439b7126cfc77be726bd30c9315b432e4e33066242540c60",
+      "spill_m3": 108.79833958052669,
+      "extended_spill_m3": 108.79833958052669,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.211503561941797,
+      "extended_final_storage_m3": 13.929190021836664,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e27169044401146f0e0cfa0049a8fd2ce8e08e63e22a9421f047fc7d1d9dc0c7",
+      "extended_run_id": "ca98819083d43ed5e8c9557e6e8e6788fc8eaa6bcd24c47a8cd45a078a39b0f5",
+      "spill_m3": 108.79833958052089,
+      "extended_spill_m3": 108.79833958052089,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.162448072060762,
+      "extended_final_storage_m3": 14.500661935754419,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "579b811bf51267ced4d06833897b6d224cf74da05171803d29352cc4f24c48f8",
+      "extended_run_id": "dcba56b91d92d72a86e90639b2cf7ce1e88358506557aa026e3fe8f6b1ac9784",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.389560123146122,
+      "extended_final_storage_m3": 13.445650525324812,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "42a1ec86e0f46371d530b8dc82ab4bef130b91ed73a551740fa0e62bf4254773",
+      "extended_run_id": "7262f6a77cf7e72cd59fcf1893677fa845f0deb243a55211d001c965a88ef273",
+      "spill_m3": 109.3957608846258,
+      "extended_spill_m3": 109.3957608846258,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.408592892136753,
+      "extended_final_storage_m3": 13.455297463275773,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "55c4f99e148d621a4d4bb915a2ace58e5b375bd583d838e4b13a1d369bf1e705",
+      "extended_run_id": "17908624d68a8a8ab46000d3638c3c59b371dbc4deb123f8c422272b6157cf5e",
+      "spill_m3": 109.32574469001693,
+      "extended_spill_m3": 109.32574469001693,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.010988157670116,
+      "extended_final_storage_m3": 13.925926042167333,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "3de0968bef67c75b68d9572f7ddecc4dd8de56442b9a7706b8631acee4a164fa",
+      "extended_run_id": "3ce781ce5866dfaecfc5ec7462fa4e096b14f5e1a3d73792364f3c4097b30c45",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.282012419189144,
+      "extended_final_storage_m3": 13.945929898407956,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "0ec249b96d8fc57317ddbb21c5161c709adecef5c2ecbd01da467c1cd231787a",
+      "extended_run_id": "f58c419e99ff057e8d887fdffcf3a4ca07f04a3d7558325af525d0938e87d70f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.246656217880602,
+      "extended_final_storage_m3": 14.52070695054421,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "bb2711d5501e82c62f13d31875b1bcd6140ba1eff067cff77e35671f3e7c92ae",
+      "extended_run_id": "c425d9e52ea44134453acd3426128e7cb533d03ea95508dd3c03eb6498ccad86",
+      "spill_m3": 108.79833958054675,
+      "extended_spill_m3": 108.79833958054675,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.181673117760916,
+      "extended_final_storage_m3": 14.506132265880485,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a79480430735fe0231b5347922305ea9bf7d0747c6e5c91fcf777fdd26de4874",
+      "extended_run_id": "9999a43976483972fffcc79d2204a4ae4457d417701f1017dc2ded7cd04d1482",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.43418979854229,
+      "extended_final_storage_m3": 13.463995036554403,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "0cdab408e62afef250347e71b9e21d7864c6ab99e7826bb21676e83a0a2eb524",
+      "extended_run_id": "b27bbabb11be095b1517dc4cf10c89f130d517256b3e849deca23dd4386277a3",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.037180508274297,
+      "extended_final_storage_m3": 13.934974040085509,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b84274f412b3b1e5c1dbd3ec8dc319715f2f6726c9bda918e1f40dbc13e7de60",
+      "extended_run_id": "85a0374e7703827679b88af26d69106b1d531c1e556da30e1fc6f990168587ef",
+      "spill_m3": 109.33674538122114,
+      "extended_spill_m3": 109.33674538122114,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.024859629076065,
+      "extended_final_storage_m3": 13.931330985593034,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "6c1d2a2dbe43b47f5289655b51a04a4d07fdf100329e31cfd3e474dc25e318bf",
+      "extended_run_id": "f611e80dcf7ee4577bbd0458632bffc295bb3fd2385c75b60ddac7ce3dbfb88e",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.26800458028179,
+      "extended_final_storage_m3": 14.526661115420646,
+      "note": null
+    },
+    {
+      "scenario_id": "P2",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "08949d2b72aecd66f47fb2a4d4e363e1a9ef17171509663b1648c3a2dd559c21",
+      "extended_run_id": "bcacde3bd5d3b20664dda71561e56cabaf17ae94c096797c0585b1a9df6d968e",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.050913957582125,
+      "extended_final_storage_m3": 13.940325037155375,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "2aed518a4555d1166369c0afc0823b58bbb8a4ebd764f81c2991c5592404d4ed",
+      "extended_run_id": "c11b89c2ac2f2ac3f203b6c8d719d8e8e34eb0b34629e79a336ed61cdc19e497",
+      "spill_m3": 364.199497481332,
+      "extended_spill_m3": 364.199497481332,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.58784793031615,
+      "extended_final_storage_m3": 14.018836938603167,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "d33e726f7d4fad118fe87f00597b5718fe1674dd1a5159bd369440b0607f1623",
+      "extended_run_id": "fba80f7942a9d450636608794a5e734895f99fb0dc75877d25cf13ea228ca1b5",
+      "spill_m3": 355.5396085275201,
+      "extended_spill_m3": 355.5396085275201,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.81565074306454,
+      "extended_final_storage_m3": 13.580571001976978,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "c2bcda29959b785b479e6589133042498ea4fb60e226611387040da68e3559c7",
+      "extended_run_id": "7c03c9a5b23a961b792206759903184e973acd33b365de876946ffd208bd5b3b",
+      "spill_m3": 364.10448324963323,
+      "extended_spill_m3": 364.10448324963323,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.601273212282976,
+      "extended_final_storage_m3": 14.02139241036295,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e61444e5e1a24ec84c16f4e53854eda949fbf78e378af4d5deafea67759e0b2f",
+      "extended_run_id": "fde77ccdb41c1f00ab0c72ee6a1c72fcdcdaac320308083257ac0886e6befa5b",
+      "spill_m3": 352.1408301668757,
+      "extended_spill_m3": 352.1408301668757,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.69584994947977,
+      "extended_final_storage_m3": 14.04680384262221,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "2148a26be2a51532edc6f763e3bcfcb7028dd8d4b7b6aae528eed44a4e9a05d7",
+      "extended_run_id": "e6d058385fe9f11038495e45e7ab08759bbd5d4f9b5ec0eab83d48f2579524ee",
+      "spill_m3": 188.06934728018055,
+      "extended_spill_m3": 188.06934728018055,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.943337758877558,
+      "extended_final_storage_m3": 14.685420098919263,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "4ca50f06b14d4ff070ae755da1c64715859115f4f8009d1cf3c83fe14fb39dd5",
+      "extended_run_id": "d66f7bd82c43860da6f85eb0a8658e9b286a0d4f4f598d30a7798d167b15d930",
+      "spill_m3": 355.52307206295035,
+      "extended_spill_m3": 355.52307206295035,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.831011257150884,
+      "extended_final_storage_m3": 13.586211506915582,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "4f72844fa4e9a3ad1a9b9dce0321a828891646b5686fcf645e712861b3286318",
+      "extended_run_id": "61f7fe2f93b542e2a6f84064fbf98c9c986c5393ab2f87841c947d69cc6b338c",
+      "spill_m3": 343.40357253063223,
+      "extended_spill_m3": 343.40357253063223,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.889029788259556,
+      "extended_final_storage_m3": 13.602749192752801,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "248c6862c4e2687d051255066bac8b65f047db5b704b95852b18d2a1df75050b",
+      "extended_run_id": "182fadac71a69abdc08a45d9800f43b96f4d8a7758a8740e2b82281ef2e0db81",
+      "spill_m3": 158.0607027022057,
+      "extended_spill_m3": 158.0607027022057,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.844762561670144,
+      "extended_final_storage_m3": 14.13897838802071,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b710b8007f27e7ef05f76decd1a2f6bb3def7b12f24238d44b5030eb716ff96b",
+      "extended_run_id": "900ee0f1d2ab26d7be9e20bd75b000ad3fdf0de578a9f9efaceb1feb050714f8",
+      "spill_m3": 351.98360433975756,
+      "extended_spill_m3": 351.98360433975756,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 21.709147282260385,
+      "extended_final_storage_m3": 14.049329560909054,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "80a1ff35c1b50eb559ac6b98365290b66fa4b719e054864f86971251c8eea5d4",
+      "extended_run_id": "1f1be22f4c76846784c7db02442877baf048c6d7c52df7b71575d144336c3f66",
+      "spill_m3": 187.88911735210388,
+      "extended_spill_m3": 187.88911735210388,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 22.956909017046424,
+      "extended_final_storage_m3": 14.688020602250358,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "ffade82944ce90f92b05a3e97e96a2b12c3cf9bea9b924ecfd7abffa5f8a72b0",
+      "extended_run_id": "c08d556d2949e66a3e8c85433a8efd34c0cb1f84dc7825c61a71f81f46e7edca",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.396407837034666,
+      "extended_final_storage_m3": 14.785667596641709,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "1ff08e3c71d2de3f9e692bea674a1f5547709d36015fd111c7f35b8abadd8239",
+      "extended_run_id": "3a9ec008fa1d4ad3768629c61040427a10a3203570b696ef8630df2faeb7b370",
+      "spill_m3": 343.3706409042964,
+      "extended_spill_m3": 343.3706409042964,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 17.90386105236284,
+      "extended_final_storage_m3": 13.608327949876896,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b94ac65c146002ef214dae38ce98c89ee82afd4689f0a529bd8d26434871de53",
+      "extended_run_id": "1ac6403c19b9f14af2baa702ee2868428f5cf244c32d57e99ddc7f4d03cfb7f8",
+      "spill_m3": 158.01629484985435,
+      "extended_spill_m3": 158.01629484985435,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.855877508901198,
+      "extended_final_storage_m3": 14.144386534341104,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "2d79d056b4a9a839df9ed02688496b39989aa92bc05c00f817f4f64f3b5f03f8",
+      "extended_run_id": "94e8c74156a37d31b00f910ec137318aa8ff45dfbaf6e9bb9bb2ccaae1ba82a4",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 19.16253810601234,
+      "extended_final_storage_m3": 14.194876962538007,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "ebd06425ce07a167a74f02516d818951b7689456835a2d4a0d4f8b831d249fa4",
+      "extended_run_id": "d74557302a7163e63a80a52bb4cfe0d140869e3e86e43a083c5ee2c8fe9419f7",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.408983048682018,
+      "extended_final_storage_m3": 14.788058138004477,
+      "note": null
+    },
+    {
+      "scenario_id": "P3",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "8acead88dfe9f72f5a546325a16f46d588577ec3b5392e60a5278f25d82f7b7d",
+      "extended_run_id": "25a1b8170325c3838e9cc65ce54211b428c4ae2b1e75cc41478e23009ed86d7f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 19.17205757184722,
+      "extended_final_storage_m3": 14.200102511171785,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "71b4d11c3bfb98702118bd51efe5d3437c9c815deb926aa215b1cc3f15a185b9",
+      "extended_run_id": "6b84226cf3d0e1301fb2b826f21ed9be384c1b7bdac5dd1fa3d4c263bbcb8f64",
+      "spill_m3": 73.48958980698147,
+      "extended_spill_m3": 73.48958980698147,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 230.80781877777065,
+      "extended_final_storage_m3": 231.1287346822449,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "9196dc251321c8737d7f19653551c7ef2a4adb44ad008623dd4c167fb089ae69",
+      "extended_run_id": "b1cdd78e937c31c302ce08824984eba8c45ff3933a74a05499afa9f583e96b92",
+      "spill_m3": 49.32038813214512,
+      "extended_spill_m3": 49.32038813214512,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 264.54481749346303,
+      "extended_final_storage_m3": 264.614296359572,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b2da542dffa34062135a91e23d7ee56a49abebd988c64dcf1d732a70d111ad92",
+      "extended_run_id": "27d7ba37dabd34b75c4cb5e0c9421afd50ae5cf4b33b355cd2ad72454e6ab384",
+      "spill_m3": 72.62301638766945,
+      "extended_spill_m3": 72.62301638766945,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 230.82490971916792,
+      "extended_final_storage_m3": 231.12621348660218,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "f070c42030571bc3bef2d3bea262d79d44a8907323a3a13c5a3d3926369b2077",
+      "extended_run_id": "23f13ed0ee4feed2be65083865b4348428b71795f11b3cfecfa9e63a20d33899",
+      "spill_m3": 65.87150709231577,
+      "extended_spill_m3": 65.87150709231577,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 230.93255144568974,
+      "extended_final_storage_m3": 231.07188779872638,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "274a6af59de733a6707280235415fcd5b905df2e6fef918592a154c569af9295",
+      "extended_run_id": "70dcbcc5e14bd7778421ce331bb8f39bb133e8344f1f1b0eef02eccecc8b09c8",
+      "spill_m3": 0.538489248641712,
+      "extended_spill_m3": 0.538489248641712,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 234.98269086100123,
+      "extended_final_storage_m3": 234.69132424336524,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "893204470a1b668460c81f2e06165fac55abe726c722ffffbfb4a72e3c08f564",
+      "extended_run_id": "df101f85316c5135df4b9954a34854ff679fa6c9c5dd38d611ea040dcc1d0f21",
+      "spill_m3": 48.73813299406423,
+      "extended_spill_m3": 48.73813299406423,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 264.55395462384735,
+      "extended_final_storage_m3": 264.61741866381465,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a8e6bc69478c686253ee0e77f8205ee7f1bcafa2bb3b6eb1611f80918745b715",
+      "extended_run_id": "f10f466ff28624e3a145a12c2eac4b276beda33b317dd91bcd0c8caf87f46815",
+      "spill_m3": 44.19281069242523,
+      "extended_spill_m3": 44.19281069242523,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 264.7140037270166,
+      "extended_final_storage_m3": 264.6233512955639,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "6a2ba07c7cf4079985cea373cac517dbbc8c75d7bb4cbdd2000bdebedf00044a",
+      "extended_run_id": "c5595b60ce777b69cf82eaf32015557829ea6b625c5f09199fb9024f8562bedc",
+      "spill_m3": 0.538489248641712,
+      "extended_spill_m3": 0.538489248641712,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 268.6219204868228,
+      "extended_final_storage_m3": 268.51362996470164,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "91d1d6023d6e1ef2bc26d2b5ee511fc6e2da2660d136c853a07a5f9e29037eae",
+      "extended_run_id": "2ac0846e92e1e15be14e5d2fb6dc817bf6958bed24971c8b7a6fb15417eb71a9",
+      "spill_m3": 65.05989810368766,
+      "extended_spill_m3": 65.05989810368766,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 230.9536410952171,
+      "extended_final_storage_m3": 231.07033824386974,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "5e66814f0a85e16364cb6414db2d4b74ec5d45511f7f9729931686a98cc2d20c",
+      "extended_run_id": "e0585cd1638b13334ad34d768fef51134bed820f6e37cde499a3125e0c922997",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 235.00239892288403,
+      "extended_final_storage_m3": 234.69814359347598,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "103b12386e40380429017a471db2face3ce841764b5703b766473546fa41d163",
+      "extended_run_id": "264856111207d6df4bd02e19a33e7a2b7a58b624e0a1f3114b57b0e7d702b7c1",
+      "spill_m3": 0.538489248641712,
+      "extended_spill_m3": 0.538489248641712,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 235.03937221525564,
+      "extended_final_storage_m3": 234.7163271382786,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "d8bc1d53f9ea24d5681b42581217beb69829294d721dcc8d844e4c84f235ddf1",
+      "extended_run_id": "3b4753a47f3a27ef73777d7d7736200d5798a8305239f14a5dcefcd13bb8d285",
+      "spill_m3": 43.60128737164229,
+      "extended_spill_m3": 43.60128737164229,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 264.7236755101648,
+      "extended_final_storage_m3": 264.6266630029814,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "d408b09d916a69cb5e361ea29e4e32ff7c7d424544b2d9394e97679b58d85c87",
+      "extended_run_id": "b6031dcfd5d86337ea956431782e877f73817cd615ed1f80b1f6e40d4c28168f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 268.6320893574763,
+      "extended_final_storage_m3": 268.51642978476815,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "c95077e5a66d1c30465919fa7a1f766b078603df6e23ba0d53fd4a0a85f6d481",
+      "extended_run_id": "99acc8252213f5febaafcd173d4ef454f94e12617bf675578fc6712e08a0fc56",
+      "spill_m3": 0.538489248641712,
+      "extended_spill_m3": 0.538489248641712,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 268.6415525899647,
+      "extended_final_storage_m3": 268.5242497959581,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "5cebfef7ef7a72184dfd0bbb72c97d6c4acf0d113a1be73b7098a4c2353e3291",
+      "extended_run_id": "920e054af2c9fc1a87af4d5bf0bef7558bf879970b69f61a5ecdd7425392576d",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 235.05844732415036,
+      "extended_final_storage_m3": 234.72348875753823,
+      "note": null
+    },
+    {
+      "scenario_id": "P4",
+      "phase": "planning",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "803c11c691f7f3cbcdb4334c49daa450d576b2ec74046ebe4c3883fe41a38680",
+      "extended_run_id": "7c11127d1e711ca75b13f4fc5b6a6163fe0057627a7b37b294b1b4525fa5ab80",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 268.651734018438,
+      "extended_final_storage_m3": 268.52692254853355,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "74652010d57009b5f3738705b0aa7da00df7b655441c65dcb0412c4eea308649",
+      "extended_run_id": "7d391fdeb132e5e48df80916947b5db47a47bcc3dc1b08da233db35d94bd3ad1",
+      "spill_m3": 123.81696062432314,
+      "extended_spill_m3": 123.81696062432314,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 24.366901741527865,
+      "extended_final_storage_m3": 14.577118987658547,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b168cf5044482d5b7f38807c25413e095b4efa381a1717ef1f3167a5a4df00a7",
+      "extended_run_id": "2e886718e19d46982b871a192b97187de0df08f33e3c1d950a5c6fb4a6ab927f",
+      "spill_m3": 95.5373200231664,
+      "extended_spill_m3": 95.5373200231664,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 19.656050910785503,
+      "extended_final_storage_m3": 13.90190044909907,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "ce0bd8c9a9a9d1fabf5395f02bc05c6c6cb90a58b4cd3469b848a7b964afc1a6",
+      "extended_run_id": "baba13947feb9f1d7529e9351b744ce603a0c7c788ce42997d46156d6c0ad2da",
+      "spill_m3": 91.52422287129085,
+      "extended_spill_m3": 91.52422287129085,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 24.39641268158131,
+      "extended_final_storage_m3": 14.581681894601843,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "45f6ff480b8b39fe5c97af6f1aede1395a8f0b5b32fa01a8bf649d81836183d0",
+      "extended_run_id": "64a74b7355539388c5f9b004c1c761ee5371c7a939e9bb6ba5393c59be801bd9",
+      "spill_m3": 111.60244386379567,
+      "extended_spill_m3": 111.60244386379567,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 24.527576027895897,
+      "extended_final_storage_m3": 14.607497462549798,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a525223c2ea6ec72bf2a14ca3e733c1a77dc2bd0010cbf52f0580d173ff5e44e",
+      "extended_run_id": "01820f109e593e6aad91a22ca69e61f6b74db99e4f04a9b7936f48e1391c93cf",
+      "spill_m3": 34.188351351605306,
+      "extended_spill_m3": 34.188351351605306,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 25.787660115278186,
+      "extended_final_storage_m3": 15.232407779359624,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e9128014b46070298b8dba6bf1b4bd4d88142638af9aedc03307963348473012",
+      "extended_run_id": "107c4509b743a8848f84d11e6031cc41d3dbc485913c71b81b33dc37ccfda752",
+      "spill_m3": 61.439655931381665,
+      "extended_spill_m3": 61.439655931381665,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 19.67188424752595,
+      "extended_final_storage_m3": 13.908756428902418,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "1ac723b3021bd43788c4d2122fcec28ddbe31613242446d304807295c0cdaaab",
+      "extended_run_id": "f361c75a421dac3b2e5ccddb627039aabad1dd230ed2eb15d5358830f4894632",
+      "spill_m3": 82.92679249682604,
+      "extended_spill_m3": 82.92679249682604,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 19.791073682595783,
+      "extended_final_storage_m3": 13.924770435864804,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "ab1451dc8ac9a6746218f76861bc5a2be508e47eaa0591c12bd5c9da81ecde7c",
+      "extended_run_id": "1f1e8e8a6d43a5cf19e847531815f02c97f21c7643a52e7569dd23434e35fd75",
+      "spill_m3": 34.49694209422369,
+      "extended_spill_m3": 34.49694209422369,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 20.65292761140841,
+      "extended_final_storage_m3": 14.41794382559008,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "68cbd4cd9f9732d38f01a4a7d7cc5af1afa8e2cc7a6f37c9e66cc42c9ac640db",
+      "extended_run_id": "376d7af03376926b56cd4f25774b4d1c5cd110e9317c5749c4ee42fbfb1d3d32",
+      "spill_m3": 78.76301961115179,
+      "extended_spill_m3": 78.76301961115179,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 24.55798352360358,
+      "extended_final_storage_m3": 14.612184838135187,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "83c201f5480579285e10943487ed4b1209d0e798a042096f020d35c3681545d3",
+      "extended_run_id": "f199d613f52b105cf74a8c2f2a0ac70ca1721a634b506e861b72820d3204ae59",
+      "spill_m3": 0.0071945179382818586,
+      "extended_spill_m3": 0.0071945179382818586,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 25.824165598505044,
+      "extended_final_storage_m3": 15.238124674440376,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "3008ab954eb8cf771d22ee42f2d9cf18028761b4d939b07a657172dab6a5fadd",
+      "extended_run_id": "49274d43180a079348b699b9a6d48a3bee85c307956dc0952f1f4bb2e7d984ee",
+      "spill_m3": 34.18115683464524,
+      "extended_spill_m3": 34.18115683464524,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 25.850671236220272,
+      "extended_final_storage_m3": 15.243858010130584,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "9828446baa439317a4624b4e3746709667ad24a249a8470a56c55a17163979d8",
+      "extended_run_id": "8084b520c35edbbfc352b6fdf446effb016d67aeaf2d01052575018667da6e06",
+      "spill_m3": 48.82481021617429,
+      "extended_spill_m3": 48.82481021617429,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 19.807044159941555,
+      "extended_final_storage_m3": 13.931576652772769,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "67cdea7c903d01f3301f1f8840a0612862c9c45240ed741fbadb65743e65abe8",
+      "extended_run_id": "25a1858136596c33df64a75c9e715fdc1e8a11e3ee4107543222292c45148402",
+      "spill_m3": 0.007194639954770106,
+      "extended_spill_m3": 0.007194639954770106,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 20.669498657867763,
+      "extended_final_storage_m3": 14.424870277880496,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "935f01d4e3c46dc30d544c0f9bf00b19162ac25b35a6d1eb8b8a15e0bde0bd08",
+      "extended_run_id": "163f52abe9cd4abd290b8fd308e752cfd1cc32335bbcdcdc0a5429f043e92bca",
+      "spill_m3": 34.491519819889795,
+      "extended_spill_m3": 34.491519819889795,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 20.680015170103125,
+      "extended_final_storage_m3": 14.422763062555052,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "6af55e799b7808dd2c9d2b51786d4e29af6ecfef1c1640f68a5a8204c71c5740",
+      "extended_run_id": "0a7ea04923cad476514c3705c4a09426d6d42387438c2a920d36bf1cc59f5129",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 25.888717887737712,
+      "extended_final_storage_m3": 15.249818412915992,
+      "note": null
+    },
+    {
+      "scenario_id": "H1",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a505d1c4bd14c1feef281a91e9e1869a883e3561e9f0ba9223805c7691e4cd83",
+      "extended_run_id": "eee2bfd4447952714518c8ff702b23dcaa0121c0e700201ce1ce5a0e7e6b3242",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 20.696577396574472,
+      "extended_final_storage_m3": 14.429676117876852,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "efda0c605c55c1ada158130288cbb4dd74a57ca6aaccbbc122854dd10f7a4977",
+      "extended_run_id": "32682a1d039b038738bd61b49bf01a1a164f9a359df7d687e529d283b2ffb883",
+      "spill_m3": 1219.608507329018,
+      "extended_spill_m3": 1219.608507329018,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 95.06907801225587,
+      "extended_final_storage_m3": 86.88348221150558,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "18382f80e44275111e15c37ee6fad2d9c753b8756736a4b51871d79f78662c59",
+      "extended_run_id": "20e923db4c130d33f94932bbdc536ef78883dde5167f4de7c0c5733c791f65fa",
+      "spill_m3": 1036.2858090073325,
+      "extended_spill_m3": 1036.2858090073325,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 111.27408263034177,
+      "extended_final_storage_m3": 103.5080929518335,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b27d300ae4fd81197621e72c0c574c23698e5b208fedd18a8c396918ccf180dc",
+      "extended_run_id": "72a756f5c3a5d446f9b1afe3d563bdfa405128d8002cc1c53f5d29c006a0949f",
+      "spill_m3": 1218.9853739129614,
+      "extended_spill_m3": 1218.9853739129614,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 95.0881325544151,
+      "extended_final_storage_m3": 86.88804914180429,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "ad10ff23cddae90cf651027704daf5567aae2c03496ec6d7df5fa6cb3209e480",
+      "extended_run_id": "1be80b2b627a113b9ca2f5952058782a640ff346d4b4d6573628f066d86ee705",
+      "spill_m3": 1206.1065060096244,
+      "extended_spill_m3": 1206.1065060096244,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 95.21972960098095,
+      "extended_final_storage_m3": 86.91340366527254,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "9425db3df2305cfd2a086a4de8f00dd44fa0f5508810837180013f79da66747b",
+      "extended_run_id": "0df925baa3052ffc6ff63546beae85e24c6a5adb54317473477f928dedee4805",
+      "spill_m3": 893.7192354388532,
+      "extended_spill_m3": 893.7192354388532,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 96.88877448405525,
+      "extended_final_storage_m3": 87.38094380331688,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "c21f5809a70e5b5c34673184538d1946bb1791be995292609b759b907988625b",
+      "extended_run_id": "597c463c7f975cbb3b37c49d0c439cde979c1c59d53c935f13721a7b4bd675fb",
+      "spill_m3": 1036.2641221574024,
+      "extended_spill_m3": 1036.2641221574024,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 111.28425952432052,
+      "extended_final_storage_m3": 103.50656536307693,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a145692228388139e4d6537915d9f9502ff355a4a68011dd0b20c279bcee0da3",
+      "extended_run_id": "af586d751247dec4a551d30c322fe0272ceb217531bce5f71a1eab078575f36f",
+      "spill_m3": 1027.0590544779716,
+      "extended_spill_m3": 1027.0590544779716,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 111.00914021140663,
+      "extended_final_storage_m3": 103.29128920559629,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e097ccfe7001139728ab7086c40789ac5a3daa8fcfe5cc0e3edf6742288c0786",
+      "extended_run_id": "5808b7b3940aa03d74f2732d89c674c4650df9c9a854efbe5839e07f23c56d8b",
+      "spill_m3": 775.3061495091749,
+      "extended_spill_m3": 775.3061495091749,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 111.87939841132234,
+      "extended_final_storage_m3": 104.20406536485092,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "66d02e703bbc1ec27522e0af5db706b47154200e004f3c25d21d37f00fb76be9",
+      "extended_run_id": "2800593590d307df3ff615a770689f42440255441e3ebcf02c94e7ddbf2a6f7f",
+      "spill_m3": 1205.4965143658612,
+      "extended_spill_m3": 1205.4965143658612,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 95.23813579971454,
+      "extended_final_storage_m3": 86.91709029968604,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "218acd0fe13c399bbcec21e7797bbe93863ebd95fd823c2d5b74699934ede4d3",
+      "extended_run_id": "bb51edb549c8e5b0786a07e37ef345fbb419edef384a224f331415a4ef1d8955",
+      "spill_m3": 893.0722204386135,
+      "extended_spill_m3": 893.0722204386135,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 96.90693362475264,
+      "extended_final_storage_m3": 87.38473548838758,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a5697b773f674191892892f9942fa8c4905e216017c0ac9c950bb42fcb08651c",
+      "extended_run_id": "712444642c00176efaa17084a1ab695a36d842e9a66c29908650c042d9c5b046",
+      "spill_m3": 810.7718106724424,
+      "extended_spill_m3": 810.7718106724424,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 97.05016407760445,
+      "extended_final_storage_m3": 87.40907056817905,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "c0705855caa896e6d1187c5f687d3d00cef1ec1b1e7af36e321e1ed0c820d5d9",
+      "extended_run_id": "45c2d98e96ca84e356e6676346129994b663be5ee4360a03b99b1ddb9a4947c1",
+      "spill_m3": 1027.0369218570775,
+      "extended_spill_m3": 1027.0369218570775,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 111.01504254364187,
+      "extended_final_storage_m3": 103.29288931006275,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "0f60e5a1af969c2d6e223674e3d87ec58f0ed461a36e88cb075dc40a53482cf3",
+      "extended_run_id": "5bff52d70da02689952a75a0ea27219d61f4e9e25f89f42800c6717a79c9fe2b",
+      "spill_m3": 775.2769666374779,
+      "extended_spill_m3": 775.2769666374779,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 111.89155330348873,
+      "extended_final_storage_m3": 104.20627801136915,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "a32147bdd9b89710c3626245fbc6ddd6061f471e8829d2044a501c8a49d25a29",
+      "extended_run_id": "379728f9b9614109bca6755d55bd8d63b57dde3f14ac7c790e1141b5594a3417",
+      "spill_m3": 471.93159929774254,
+      "extended_spill_m3": 471.93159929774254,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 112.08523576020377,
+      "extended_final_storage_m3": 103.93198533480125,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "e497f08275dc92c41e0132429d1dde5e9c8478b7e5b8cc8de0612613d026325b",
+      "extended_run_id": "8842afef0213f2a9008bd41f7c563839263baf7a5f7ea694dd34b1c09e4b5eb9",
+      "spill_m3": 809.8100633660398,
+      "extended_spill_m3": 809.8100633660398,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 97.06727703240522,
+      "extended_final_storage_m3": 87.41304619810735,
+      "note": null
+    },
+    {
+      "scenario_id": "H2",
+      "phase": "holdout",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": true,
+      "run_id": "b9ba2a98026a056c1aea097b41f035af73c6d932f9f134dd3fb74c2aa9275d88",
+      "extended_run_id": "d1e382a728df7481c93b7e8729a37b0d197fd1a23af63add66c5d2b58b5fc563",
+      "spill_m3": 471.85352152280467,
+      "extended_spill_m3": 471.85352152280467,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 112.09762199032245,
+      "extended_final_storage_m3": 103.93527709997451,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "763ad76ddadfb3b21abd3883f575e208d3de32e133171574e548f78502469b5b",
+      "extended_run_id": "e68ffba3365b4c6e55259695668633bf513fdd4759085bb9edbc3f1766542805",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.80735402345834,
+      "extended_final_storage_m3": 4.80735402345834,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "64b472f09f322226fcb7a7101fc6e37b539120de416a495014f4f14ec3a0279b",
+      "extended_run_id": "c174ef5fa47959eccdccf4d321c9f10dc2f22778de56b1e05f686a2b2d7f9dcb",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.809061093539147,
+      "extended_final_storage_m3": 4.809061093539147,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "3ec732ec4280d2f5eb1bc740edb8aea9bc4241cb7fef80137f1e2d9708a59d21",
+      "extended_run_id": "ccec79eff84c8ee2ab383dd6f085bd6a4aa5d8fc1d3f3f3583fb2bdf9d776222",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.808588600927495,
+      "extended_final_storage_m3": 4.808588600927495,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "041289e3d191619d4eaeabac6842abf6e43e6724e72d42040582f3af6cb2c4e0",
+      "extended_run_id": "c042cf5bd056c6e045aa85c0e502fb0cbf4357a6069f23136197a1a67325937a",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.808207558498744,
+      "extended_final_storage_m3": 4.808207558498744,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "c5e08a1da9b36d4e460df8773cf9a2e6a49fd9a0b06d662c831f2229fa03dcea",
+      "extended_run_id": "6fe49788c61d97e625860db0631e590d666c34ca8d71a18916921ef7d0a3ba78",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.808085624921543,
+      "extended_final_storage_m3": 4.808085624921543,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "d34fe15889f9f85680c1b9cf685b634f7442d6113d63b85b6fc565b7de4d1705",
+      "extended_run_id": "19230274a080bbfcb1b2755626acd21f4d63dde04b8e50284287e74e1a78cc27",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.810295671008302,
+      "extended_final_storage_m3": 4.810295671008302,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "3fe2e5a0112e8eb88f79c04310e8957c250e5e2f77d5d5240fc4751c453f0eb0",
+      "extended_run_id": "42369cb60aa208ee4cab3a0bd2f0c3f24617f0bcda0d7e7702793592674547be",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.80991462857955,
+      "extended_final_storage_m3": 4.80991462857955,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "38cc86b4769573486db72e8cf01cf442d89e5584dffa13aa9336e27e86b3d0e2",
+      "extended_run_id": "1fb28db85aaf396f0feddf6deec65187ff14589847a6d46a00e79c4e64b3e612",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.80979269500235,
+      "extended_final_storage_m3": 4.80979269500235,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "afa33f98d4e0c867af37b643b1e7dbcd54fd9372fafe9cdb671cd87c457f7983",
+      "extended_run_id": "f450fa1878db67d8d78d38dcd3ce24341597a5ebec5d5b4052678f425c47476f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.809442135967899,
+      "extended_final_storage_m3": 4.809442135967899,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "5969c0755904752989552b481086aba638ed67895f2ae955025a55a8db8418f6",
+      "extended_run_id": "cb41f1d7d467a20a1413806203fcf2e1af4e780c9739d5fc58c0fbfdfe8f852a",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.8093202023906985,
+      "extended_final_storage_m3": 4.8093202023906985,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "877b7829b553158dfe5534c4e5d9932e8a571292ac9d34e8d7d58c1333e8fb81",
+      "extended_run_id": "2b6820bba620b7054853be556235fce6b7a75395f51c5f88b926861e8f05ac0d",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.808939159961946,
+      "extended_final_storage_m3": 4.808939159961946,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "6d430454cc56f86ad38f6db1b744cbdb90cdb3e98f814f78b72965c3262e030e",
+      "extended_run_id": "23eaeca4135132417e898aed73797079933c2254586544e08eb2caacd413165f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.8111492060487056,
+      "extended_final_storage_m3": 4.8111492060487056,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a4e7c5ba0a58aaa591df5c28ac5364247d5a21cacdad14061cda96b4c61394f2",
+      "extended_run_id": "1958a58833cbdee1311e53c0ec3c6d0a650ee320654dceb22f7791ccc747d00f",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.811027272471505,
+      "extended_final_storage_m3": 4.811027272471505,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "f6660e245eb4d1cb0ce9bb0c5f6be94b8d6a36b05c01a596e06ad9365c520cd4",
+      "extended_run_id": "878eb63d4628ef674da7df311076cd9e0901cef543094a1f9b81ed4b12665ac0",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.810646230042753,
+      "extended_final_storage_m3": 4.810646230042753,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "b0f48bd9ed2c94dd5ca7095eb62649e2bc028164bbc45e15370186f3b5dcd70b",
+      "extended_run_id": "b19bc54b9b625b55f4b85eca14cbbeeaf46fff83111130ee53124a816e10c5d8",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.810173737431102,
+      "extended_final_storage_m3": 4.810173737431102,
+      "note": null
+    },
+    {
+      "scenario_id": "D0",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "22870f3a98718e72523b7f23719852808ac4389334264f62eac8037b7adbb541",
+      "extended_run_id": "6f69e760d2ff9a2327fa16d84cb2037f711788938d7e584a0dc98ede5d43f9ff",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 4.811880807511908,
+      "extended_final_storage_m3": 4.811880807511908,
+      "note": null
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "ca153c02b5f2188518fd48adfcc453c155a77c885c17e99c5e18f9f016fecce6",
+      "extended_run_id": "9b9c4be130bbeab8bb281d5a4513160f4d2b5b3227012d27e4022e978021a219",
+      "spill_m3": 689.5929500710178,
+      "extended_spill_m3": 822.7520898219467,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.15913975092894
+      },
+      "final_storage_m3": 403.87594305509117,
+      "extended_final_storage_m3": 403.73955804536763,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "cebd46dbc820a0557f8f53e0a02384e7e55da98969ca795a6779624a6c519f12",
+      "extended_run_id": "36fb82e353d570e1b66c7fbce9d1075eaf19bc6cc61b56188371b6a4c5dc982a",
+      "spill_m3": 678.667647306074,
+      "extended_spill_m3": 811.9044533142556,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.2368060081817
+      },
+      "final_storage_m3": 459.6913632569017,
+      "extended_final_storage_m3": 459.8774999845697,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "3189dbed67b32f209e81a65bc4181d8818be06d968d0db6665a253df7b5fe7cc",
+      "extended_run_id": "762f64d623239070901c8b93e0c35387e851fc3a5f9144d28fbb8af74dc8ddfc",
+      "spill_m3": 689.5876059043887,
+      "extended_spill_m3": 822.7514674673632,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.1638615629745
+      },
+      "final_storage_m3": 403.8824595675785,
+      "extended_final_storage_m3": 403.7414513644297,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "96b68d339c7e151638acba5f931f78867fa384b56ac2708cf90a2f4411e80b39",
+      "extended_run_id": "2f6469c7c897709a3d9105bcc49bb83bd2b03256f88ebb433d0a70012f858f2e",
+      "spill_m3": 689.6134007911353,
+      "extended_spill_m3": 822.7376854990811,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.12428470794578
+      },
+      "final_storage_m3": 403.8570755249337,
+      "extended_final_storage_m3": 403.7545634331013,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "00f9695d19d8cffd81e00d96ceb71e2e8be7507c427f365611627c1f0114c9e2",
+      "extended_run_id": "296e85b1458532d2dccc7e5a24e6e1dab6cca04de81acaf373ebc8e5f6c3e349",
+      "spill_m3": 681.1164204331294,
+      "extended_spill_m3": 814.2077526776075,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.09133224447805
+      },
+      "final_storage_m3": 412.35044811151204,
+      "extended_final_storage_m3": 412.2802872316313,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "644680ecbb63da9609daa5992bcf3dd30a7ea7b44da9c4d3e4a8b0e5aa9d1c5c",
+      "extended_run_id": "63b23b8673c41deaa21e561652a9ceda92025b2896ca31b74614caf6039387cf",
+      "spill_m3": 682.1366656891354,
+      "extended_spill_m3": 815.4659154354326,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.32924974629725
+      },
+      "final_storage_m3": 459.7032472663866,
+      "extended_final_storage_m3": 459.8784860932091,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "6a1130bb34dc2bbf7acb5496c2284d6205dc49b578842d678a1eacf25c7920c8",
+      "extended_run_id": "caa4b7979f857a2a9a14721d1bec76482763698d019d79bd3e20574919ec059e",
+      "spill_m3": 678.6727044443455,
+      "extended_spill_m3": 811.9057056163293,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.2330011719838
+      },
+      "final_storage_m3": 459.6874584129208,
+      "extended_final_storage_m3": 459.87717670344546,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "9dab5a0961686e46432c6ae2f4b275d2f0164b931f22475e87820956d7181fc6",
+      "extended_run_id": "9557119db8674013502ea60986e3d65167d8542557b6092f36142dbec95d681c",
+      "spill_m3": 674.9205567057334,
+      "extended_spill_m3": 808.7069283693376,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.7863716636042
+      },
+      "final_storage_m3": 468.3762668971542,
+      "extended_final_storage_m3": 468.1996946863637,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "10773efae3197b3b200df2e6f24cacc940dc5165947cec79ac63bd864ea3100c",
+      "extended_run_id": "148e0596b80d10607df24feb5406f0778c0f7490b49477bf2adc70614c52dd99",
+      "spill_m3": 689.6085262562673,
+      "extended_spill_m3": 822.7363864981044,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.12786024183708
+      },
+      "final_storage_m3": 403.8631393317959,
+      "extended_final_storage_m3": 403.75709114476564,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "c2e5e17f340af8afa668b1c0c6d8d9331c2c386032c8f2f424b5ea64dde68e8a",
+      "extended_run_id": "48f3c68489ea26432b40a0852e51ff497c4f364c202ba5872b914910174c34de",
+      "spill_m3": 681.1118610659794,
+      "extended_spill_m3": 814.2058685123932,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.0940074464138
+      },
+      "final_storage_m3": 412.35629865540153,
+      "extended_final_storage_m3": 412.28340290973347,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "e93713ff9cc95c7d26ca8594ea009360652f9bd1881c74614e2609703e0d3029",
+      "extended_run_id": "e77df17f1e02ae8b1bedee0e82c9851da46803267979a2e0d4a050a04d89fbd8",
+      "spill_m3": 681.1461421081628,
+      "extended_spill_m3": 814.2221897065396,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.0760475983767
+      },
+      "final_storage_m3": 412.3225752372749,
+      "extended_final_storage_m3": 412.2670863786802,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "4b9bd3d44fe099263b04e5c0ce9d3a61fd3f5eed1baae0044f00af116ad35a32",
+      "extended_run_id": "c2a230636d32183e329e3e2e3ce1607337a49e1e797a58e42f00c02341544df0",
+      "spill_m3": 682.1407735174008,
+      "extended_spill_m3": 815.4670883178527,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.32631480045188
+      },
+      "final_storage_m3": 459.70028062968635,
+      "extended_final_storage_m3": 459.87827382428867,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "0c6be22550ee532e5b16096330c8c940f1845fb80d46d8b54c58b498ca5e9d55",
+      "extended_run_id": "960bac72fa6e97e7e98840cea1062f0088828a502a43ea6f890a3808129adaef",
+      "spill_m3": 677.9239294424711,
+      "extended_spill_m3": 811.7724548421911,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.84852539971996
+      },
+      "final_storage_m3": 468.3816624032438,
+      "extended_final_storage_m3": 468.2018683052404,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "5671663858a3013630bb1a1c2b4e98915d05ce66ea0133c51309e5913d70ac5d",
+      "extended_run_id": "38f62477f2ebdcd8138e979ed69e94b6d7dfe705a639c6e3677c238869cb4eb1",
+      "spill_m3": 674.9482812585063,
+      "extended_spill_m3": 808.707748696418,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.75946743791167
+      },
+      "final_storage_m3": 468.35038208219646,
+      "extended_final_storage_m3": 468.1996740785819,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "9205696c0b575e635d679f27733c84fb4ca0b498f10e52e2a6a37f28581d9f28",
+      "extended_run_id": "9d43e445d2e09ba0d053a9f04cdd7e82931bad214d70d7498049b9c19b076435",
+      "spill_m3": 681.140427451158,
+      "extended_spill_m3": 814.2205241093367,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.08009665817872
+      },
+      "final_storage_m3": 412.32947341601397,
+      "extended_final_storage_m3": 412.2699694566621,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "4b65a036412e0ce74fa625806c246fa1311f7f1d6c5ba1b61e2d0acd81e31abd",
+      "extended_run_id": "6791c3da0e0ac5454daf433ef0409f0ddb6c16c7a2606bd14021c54dd1f18b18",
+      "spill_m3": 677.9518474180319,
+      "extended_spill_m3": 811.7751296298844,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.82328221185253
+      },
+      "final_storage_m3": 468.35561514276844,
+      "extended_final_storage_m3": 468.19999143845814,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a6375cd8478327ffe0834a4b78507f6a8970082c064bd5443fd1e3e15d15e4a4",
+      "extended_run_id": "82b218a8006452f3701e1d7580c453dc4174f8fe1808ef54b576c634eae55d48",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 23.129327317410567,
+      "extended_final_storage_m3": 14.727277054074762,
+      "note": null
+    },
+    {
+      "scenario_id": "D2",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": true,
+      "required_for_event_adequacy": false,
+      "run_id": "a61aaf00d3e95ff50db30d085c06e7bf6892192d8a99b3abc4b4f3baa30ffc33",
+      "extended_run_id": "7ebf253e6fb2aa16625d0cd518741dda072d107aa02589e11f82eadbd43ab438",
+      "spill_m3": 0.0,
+      "extended_spill_m3": 0.0,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 0.0
+      },
+      "final_storage_m3": 18.649379708109016,
+      "extended_final_storage_m3": 14.103913343459334,
+      "note": null
+    }
+  ],
+  "failures": [],
+  "horizon_sensitive_diagnostics": [
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "ca153c02b5f2188518fd48adfcc453c155a77c885c17e99c5e18f9f016fecce6",
+      "extended_run_id": "9b9c4be130bbeab8bb281d5a4513160f4d2b5b3227012d27e4022e978021a219",
+      "spill_m3": 689.5929500710178,
+      "extended_spill_m3": 822.7520898219467,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.15913975092894
+      },
+      "final_storage_m3": 403.87594305509117,
+      "extended_final_storage_m3": 403.73955804536763,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "cebd46dbc820a0557f8f53e0a02384e7e55da98969ca795a6779624a6c519f12",
+      "extended_run_id": "36fb82e353d570e1b66c7fbce9d1075eaf19bc6cc61b56188371b6a4c5dc982a",
+      "spill_m3": 678.667647306074,
+      "extended_spill_m3": 811.9044533142556,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.2368060081817
+      },
+      "final_storage_m3": 459.6913632569017,
+      "extended_final_storage_m3": 459.8774999845697,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "3189dbed67b32f209e81a65bc4181d8818be06d968d0db6665a253df7b5fe7cc",
+      "extended_run_id": "762f64d623239070901c8b93e0c35387e851fc3a5f9144d28fbb8af74dc8ddfc",
+      "spill_m3": 689.5876059043887,
+      "extended_spill_m3": 822.7514674673632,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.1638615629745
+      },
+      "final_storage_m3": 403.8824595675785,
+      "extended_final_storage_m3": 403.7414513644297,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "96b68d339c7e151638acba5f931f78867fa384b56ac2708cf90a2f4411e80b39",
+      "extended_run_id": "2f6469c7c897709a3d9105bcc49bb83bd2b03256f88ebb433d0a70012f858f2e",
+      "spill_m3": 689.6134007911353,
+      "extended_spill_m3": 822.7376854990811,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.12428470794578
+      },
+      "final_storage_m3": 403.8570755249337,
+      "extended_final_storage_m3": 403.7545634331013,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "00f9695d19d8cffd81e00d96ceb71e2e8be7507c427f365611627c1f0114c9e2",
+      "extended_run_id": "296e85b1458532d2dccc7e5a24e6e1dab6cca04de81acaf373ebc8e5f6c3e349",
+      "spill_m3": 681.1164204331294,
+      "extended_spill_m3": 814.2077526776075,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.09133224447805
+      },
+      "final_storage_m3": 412.35044811151204,
+      "extended_final_storage_m3": 412.2802872316313,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "644680ecbb63da9609daa5992bcf3dd30a7ea7b44da9c4d3e4a8b0e5aa9d1c5c",
+      "extended_run_id": "63b23b8673c41deaa21e561652a9ceda92025b2896ca31b74614caf6039387cf",
+      "spill_m3": 682.1366656891354,
+      "extended_spill_m3": 815.4659154354326,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.32924974629725
+      },
+      "final_storage_m3": 459.7032472663866,
+      "extended_final_storage_m3": 459.8784860932091,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "6a1130bb34dc2bbf7acb5496c2284d6205dc49b578842d678a1eacf25c7920c8",
+      "extended_run_id": "caa4b7979f857a2a9a14721d1bec76482763698d019d79bd3e20574919ec059e",
+      "spill_m3": 678.6727044443455,
+      "extended_spill_m3": 811.9057056163293,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.2330011719838
+      },
+      "final_storage_m3": 459.6874584129208,
+      "extended_final_storage_m3": 459.87717670344546,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "9dab5a0961686e46432c6ae2f4b275d2f0164b931f22475e87820956d7181fc6",
+      "extended_run_id": "9557119db8674013502ea60986e3d65167d8542557b6092f36142dbec95d681c",
+      "spill_m3": 674.9205567057334,
+      "extended_spill_m3": 808.7069283693376,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.7863716636042
+      },
+      "final_storage_m3": 468.3762668971542,
+      "extended_final_storage_m3": 468.1996946863637,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "10773efae3197b3b200df2e6f24cacc940dc5165947cec79ac63bd864ea3100c",
+      "extended_run_id": "148e0596b80d10607df24feb5406f0778c0f7490b49477bf2adc70614c52dd99",
+      "spill_m3": 689.6085262562673,
+      "extended_spill_m3": 822.7363864981044,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.12786024183708
+      },
+      "final_storage_m3": 403.8631393317959,
+      "extended_final_storage_m3": 403.75709114476564,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "c2e5e17f340af8afa668b1c0c6d8d9331c2c386032c8f2f424b5ea64dde68e8a",
+      "extended_run_id": "48f3c68489ea26432b40a0852e51ff497c4f364c202ba5872b914910174c34de",
+      "spill_m3": 681.1118610659794,
+      "extended_spill_m3": 814.2058685123932,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.0940074464138
+      },
+      "final_storage_m3": 412.35629865540153,
+      "extended_final_storage_m3": 412.28340290973347,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "e93713ff9cc95c7d26ca8594ea009360652f9bd1881c74614e2609703e0d3029",
+      "extended_run_id": "e77df17f1e02ae8b1bedee0e82c9851da46803267979a2e0d4a050a04d89fbd8",
+      "spill_m3": 681.1461421081628,
+      "extended_spill_m3": 814.2221897065396,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.0760475983767
+      },
+      "final_storage_m3": 412.3225752372749,
+      "extended_final_storage_m3": 412.2670863786802,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "4b9bd3d44fe099263b04e5c0ce9d3a61fd3f5eed1baae0044f00af116ad35a32",
+      "extended_run_id": "c2a230636d32183e329e3e2e3ce1607337a49e1e797a58e42f00c02341544df0",
+      "spill_m3": 682.1407735174008,
+      "extended_spill_m3": 815.4670883178527,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.32631480045188
+      },
+      "final_storage_m3": 459.70028062968635,
+      "extended_final_storage_m3": 459.87827382428867,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "0c6be22550ee532e5b16096330c8c940f1845fb80d46d8b54c58b498ca5e9d55",
+      "extended_run_id": "960bac72fa6e97e7e98840cea1062f0088828a502a43ea6f890a3808129adaef",
+      "spill_m3": 677.9239294424711,
+      "extended_spill_m3": 811.7724548421911,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.84852539971996
+      },
+      "final_storage_m3": 468.3816624032438,
+      "extended_final_storage_m3": 468.2018683052404,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "5671663858a3013630bb1a1c2b4e98915d05ce66ea0133c51309e5913d70ac5d",
+      "extended_run_id": "38f62477f2ebdcd8138e979ed69e94b6d7dfe705a639c6e3677c238869cb4eb1",
+      "spill_m3": 674.9482812585063,
+      "extended_spill_m3": 808.707748696418,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.75946743791167
+      },
+      "final_storage_m3": 468.35038208219646,
+      "extended_final_storage_m3": 468.1996740785819,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "9205696c0b575e635d679f27733c84fb4ca0b498f10e52e2a6a37f28581d9f28",
+      "extended_run_id": "9d43e445d2e09ba0d053a9f04cdd7e82931bad214d70d7498049b9c19b076435",
+      "spill_m3": 681.140427451158,
+      "extended_spill_m3": 814.2205241093367,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.08009665817872
+      },
+      "final_storage_m3": 412.32947341601397,
+      "extended_final_storage_m3": 412.2699694566621,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    },
+    {
+      "scenario_id": "D1",
+      "phase": "diagnostic",
+      "completed_jobs": [
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ],
+      "valid": true,
+      "errors": [],
+      "horizon_stable": false,
+      "required_for_event_adequacy": false,
+      "run_id": "4b65a036412e0ce74fa625806c246fa1311f7f1d6c5ba1b61e2d0acd81e31abd",
+      "extended_run_id": "6791c3da0e0ac5454daf433ef0409f0ddb6c16c7a2606bd14021c54dd1f18b18",
+      "spill_m3": 677.9518474180319,
+      "extended_spill_m3": 811.7751296298844,
+      "per_node_additional_spill_m3": {
+        "A1": 0.0,
+        "A2": 0.0,
+        "B1": 0.0,
+        "B2": 0.0,
+        "S": 0.0,
+        "J": 0.0,
+        "T": 133.82328221185253
+      },
+      "final_storage_m3": 468.35561514276844,
+      "extended_final_storage_m3": 468.19999143845814,
+      "note": "Diagnostic boundary control remains horizon-sensitive; use only its explicitly timed spill, not a complete-event loss."
+    }
+  ]
+}

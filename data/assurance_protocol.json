@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "id": "development-stress-v0.2-2026-10-13",
+  "label": "Development robustness screen — revealed synthetic reference",
+  "evidence_class": "development_only_not_independent_validation",
+  "frozen_utc": "2026-10-13T14:35:35.039514+00:00",
+  "freeze_statement": "This protocol, perturbation values, evaluation rules and numerical settings were saved before the first v0.2 stress evaluation. H1/H2 and all v0.1 outcomes were already revealed. No independent-validation claim is made.",
+  "source_case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+  "source_model_version": "synthetic-1.0.0",
+  "anchor_scenario_id": "P1",
+  "selection_policy": "Select the priority queue from the planning ensemble before this audit. Replay it unchanged. Never rank, repair or replace it using stress outcomes. A user may explicitly audit another pre-existing queue, recorded as a development assessment.",
+  "reference_policy": "Same-scenario no additional discretionary work from the identical verified starting state; the same work deadline and return reserve apply.",
+  "screened_states": "Every achieved completed-work prefix and the final state from the shared causal replay, at every declared protected node.",
+  "passing_rule": "All selected planning cases and every required development case resolve and pass the common protected-node spill gate. Any missing/numerically invalid result is unresolved; a valid harmful prefix or final state fails. No averaging away failures.",
+  "epsilon_policy": "Use the unchanged case epsilon_m3 (0.05 m3 in the reference case) and the planner's 1e-9 m3 comparison allowance. Do not enlarge epsilon after outcomes.",
+  "numerical_settings": {
+    "routing_step_s": 0.5,
+    "half_step_s": 0.25,
+    "horizon_minutes": 180,
+    "extended_horizon_minutes": 360,
+    "engine_validity_required": true,
+    "node_spill_convergence_absolute_m3": 0.05,
+    "node_spill_convergence_relative": 0.02,
+    "horizon_extra_spill_tolerance_m3": 0.05,
+    "protected_decision_must_agree_at_both_steps": true,
+    "rule": "Every baseline and achieved prefix/final state must have valid default, half-step and extended-horizon engine runs with matching model, forcing and engine. Require per-node spill convergence within max(0.05 m3, 2% of the larger absolute default/half-step magnitude), extra spill within 0.05 m3 per protected node and total by 360 minutes, and identical protected-node pass/fail at both routing steps. Any missing check, failure or classification flip is unresolved."
+  },
+  "parameter_design": "Two-sided flow and roughness sensitivities; one-sided tighter current restrictions; less available storage; elevated receiving stage; existing maximum job times; one interaction corner. This compact deterministic design is neither exhaustive nor probabilistic and was not optimized for a favourable queue.",
+  "scenarios": [
+    {
+      "scenario": {
+        "id": "H1",
+        "title": "Revealed H1: double pulse",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.8,
+          "peak_b_cms": 0.6,
+          "hydrograph": "double",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 98,
+          "J2": 54,
+          "J3": 68,
+          "J4": 83
+        },
+        "description": "Separate double-pulse event family; fixed before planning outcomes."
+      },
+      "kind": "revealed_prespecified_holdout",
+      "base_scenario_id": "H1",
+      "rationale": "Preserve the original hydraulic forcing and durations. Already revealed in v0.1; this is development evidence, not a fresh independent holdout."
+    },
+    {
+      "scenario": {
+        "id": "H2",
+        "title": "Revealed H2: initially filled storage",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.4,
+          "peak_b_cms": 0.85,
+          "hydrograph": "plateau",
+          "tailwater_m": 100.1,
+          "initial_storage_depth_m": 1.25,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 88,
+          "J2": 43,
+          "J3": 62,
+          "J4": 78
+        },
+        "description": "Plateau event with pre-event stored water, separate mechanism family."
+      },
+      "kind": "revealed_prespecified_holdout",
+      "base_scenario_id": "H2",
+      "rationale": "Preserve the original hydraulic forcing and durations. Already revealed in v0.1; this is development evidence, not a fresh independent holdout."
+    },
+    {
+      "scenario": {
+        "id": "S_FLOW_LOW",
+        "title": "Balanced inflow peaks minus 20%",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.52,
+          "peak_b_cms": 0.44,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "A lower input can change where a restoration moves spill. Symmetric 20% flow perturbations probe response direction; they are illustrative sensitivities, not measured error bounds."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "A lower input can change where a restoration moves spill. Symmetric 20% flow perturbations probe response direction; they are illustrative sensitivities, not measured error bounds."
+    },
+    {
+      "scenario": {
+        "id": "S_FLOW_HIGH",
+        "title": "Balanced inflow peaks plus 20%",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.78,
+          "peak_b_cms": 0.66,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "The upper counterpart to the flow perturbation tests increased loading with the same hydrograph shape, timing and branch ratio."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "The upper counterpart to the flow perturbation tests increased loading with the same hydrograph shape, timing and branch ratio."
+    },
+    {
+      "scenario": {
+        "id": "S_ROUGH_LOW",
+        "title": "Conduit roughness minus 20%",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 0.8,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "Uniformly reduced resistance can transfer water downstream faster. The symmetric roughness pair tests a distinct hydraulic sensitivity without changing job geometry."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "Uniformly reduced resistance can transfer water downstream faster. The symmetric roughness pair tests a distinct hydraulic sensitivity without changing job geometry."
+    },
+    {
+      "scenario": {
+        "id": "S_ROUGH_HIGH",
+        "title": "Conduit roughness plus 20%",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.2,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "Uniformly increased resistance tests reduced conveyance. The range is illustrative and has no field-calibrated probability."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "Uniformly increased resistance tests reduced conveyance. The range is illustrative and has no field-calibrated probability."
+    },
+    {
+      "scenario": {
+        "id": "S_RESTRICTION",
+        "title": "Remaining blocked widths reduced by 25%",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 0.75
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "A one-sided tighter restriction tests uncertain current condition. Restored widths remain exactly as frozen; no width above the existing reference restriction is invented."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "A one-sided tighter restriction tests uncertain current condition. Restored widths remain exactly as frozen; no width above the existing reference restriction is invented."
+    },
+    {
+      "scenario": {
+        "id": "S_STORAGE",
+        "title": "Initial storage depth 1.5 m",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 1.5,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "A three-quarter-full designed store leaves less attenuation capacity. This prescribed synthetic initial level is within the 2 m model geometry, not a field observation."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "A three-quarter-full designed store leaves less attenuation capacity. This prescribed synthetic initial level is within the 2 m model geometry, not a field observation."
+    },
+    {
+      "scenario": {
+        "id": "S_STAGE",
+        "title": "Fixed receiving stage 100.6 m",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 100.6,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "An additional 0.2 m above the existing P4 stage probes downstream control. It is a non-equilibrated cold start and the spill metric is restricted to 180 minutes."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "An additional 0.2 m above the existing P4 stage probes downstream control. It is a non-equilibrated cold start and the spill metric is restricted to 180 minutes."
+    },
+    {
+      "scenario": {
+        "id": "S_DURATION_BOUND",
+        "title": "All jobs realise their existing duration bounds",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 100,
+          "J2": 55,
+          "J3": 70,
+          "J4": 85
+        },
+        "description": "Separate the effect of conservative work completion from hydraulic forcing. Existing dispatch bounds are unchanged; realised times only become available after dispatch."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "Separate the effect of conservative work completion from hydraulic forcing. Existing dispatch bounds are unchanged; realised times only become available after dispatch."
+    },
+    {
+      "scenario": {
+        "id": "S_COMPOUND",
+        "title": "Joint adverse loading and condition corner",
+        "phase": "development_stress",
+        "hydraulic": {
+          "peak_a_cms": 0.78,
+          "peak_b_cms": 0.66,
+          "hydrograph": "triangle",
+          "tailwater_m": 100.6,
+          "initial_storage_depth_m": 1.5,
+          "roughness_multiplier": 1.2,
+          "restriction_multiplier": 0.75
+        },
+        "durations": {
+          "J1": 100,
+          "J2": 55,
+          "J3": 70,
+          "J4": 85
+        },
+        "description": "One declared interaction corner combines the upper flow/roughness, tighter restriction, filled store, elevated receiving stage and bounded durations. It is not assumed to be the worst possible combination."
+      },
+      "kind": "prespecified_development_stress",
+      "base_scenario_id": "P1",
+      "rationale": "One declared interaction corner combines the upper flow/roughness, tighter restriction, filled store, elevated receiving stage and bounded durations. It is not assumed to be the worst possible combination."
+    }
+  ],
+  "limitations": [
+    "All cases use the same synthetic catchment. H1/H2 have already been revealed; no independent validation or field effectiveness is established.",
+    "The parameter values are illustrative engineering sensitivities, not calibrated uncertainty bounds, probabilities or return periods.",
+    "Spill is removed at named drainage-model boundaries. It is not mapped street flooding, damage or crew safety.",
+    "The hydraulic experiment starts cold. Horizon-sensitive cases fail numerical adequacy; agreement by 360 minutes does not establish field-valid antecedent conditions.",
+    "Engine validity, step-halving, doubled-horizon and protected-decision checks are mandatory for each achieved state. Numerical agreement is software evidence, not physical calibration.",
+    "Passing this finite set does not guarantee non-worsening between or beyond its members, under wet work, or on another catchment.",
+    "Hashes detect stale or altered local evidence; they are not a digital signature, role authentication or independent laboratory attestation."
+  ],
+  "prior_pre_evaluation_freeze_sha256": "e6f63902fd9271b046c958ee840ef377c89d09171a435f29cd1838ed124f043e",
+  "pre_evaluation_amendment": "Before any v0.2 evaluation, numerical adequacy was strengthened to require step halving, a doubled horizon and stable protected-node decisions. The symmetric convergence scale is identical to the existing numerical verification. No hydraulic stress outcome had been computed or inspected.",
+  "protocol_sha256": "6dc5857a0c31d17639012b2dcefe4f21b4b5d473f56f39f2433a6aac4f495b23"
+}

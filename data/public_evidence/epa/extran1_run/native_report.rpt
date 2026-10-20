@@ -1,0 +1,12 @@
+
+  EPA STORM WATER MANAGEMENT MODEL - VERSION 5.2 (Build 5.2.4)
+  PYSWMM TOOLKIT API - VERSION v1.0 (2026-02-26)
+  ------------------------------------------------------------
+
+  
+  ERROR 205: invalid keyword NO at line 26 of [OPTION] section:
+   NORMAL_FLOW_LIMITED
+
+  Analysis begun on:  Tue Oct 13 22:47:34 2026
+  Analysis ended on:  Tue Oct 13 22:47:34 2026
+  Total elapsed time: < 1 sec

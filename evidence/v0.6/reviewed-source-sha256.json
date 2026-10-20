@@ -1,0 +1,26 @@
+{
+  "schema_version": "monsoon.v06-reviewed-source-pins/1",
+  "review_date": "2026-10-15",
+  "interpretation": "Sources inspected during the focused same-development-team review, refreshed after the two new workers' guarded local-filename repair and the prepared-result exact native-inventory gate. Prior reviewed pins and report are preserved in portability-history. The release integration manifest determines the final packaged revision. This is not external certification or physical validation.",
+  "source_sha256": {
+    "monsoon/bench_initialization.py": "1ea615f2b1edb6c4b7ecbfcb2e49010f81a0444a140ef6232a1e6eb569d5dbb4",
+    "monsoon/_bench_initialization_worker.py": "1343da6654e7ee3cda0b4155bc27673c7102750fe388e2df80eb547144678b73",
+    "monsoon/bench_replay.py": "591b843389a61180a0895f57f9d4092bd90f1ecd088d57f0edaac72795eed79f",
+    "monsoon/bench_next_demo.py": "a04d92c5fc79d7a017886e5ceeb86960ffdf1b01409be37288346648f921b92d",
+    "monsoon/bench_next_ui.py": "7c575c07724c5e188e6d3c0e8b0efafb12fbf2b225a4af266e044aba6aa30b6a",
+    "monsoon/bench_balance_audit.py": "68c0e7f9afd9ee42507a1abdc3f3c50f045b7a9870afce4a9b0a9a1b3abddeae",
+    "monsoon/_bench_balance_worker.py": "9dda9879a8d7ab3ab3dcca81295118b5e5cc3bab8f5f443b44a5e29265380ea1",
+    "monsoon/bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+    "monsoon/_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+    "monsoon/site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5",
+    "tests/test_bench_balance_audit.py": "4949d2ac8c4814a4824bdd2bd036e7db62bf72c4244b58371842e16fdee008f6",
+    "tests/test_bench_initialization.py": "c676d5eb7f60f2fbe67eeab521eb6076e5a6cc86d056ea1bfa41e47ee88cb19c",
+    "BENCH_INITIALIZATION.md": "6b331dcd18bd2e7afa58e2ab341d357d349cceb219dfa908bd67e3fb7fd3ead0"
+  },
+  "physical_validation_established": false,
+  "operational_activation_allowed": false,
+  "independent_external_review": false,
+  "full_suite_performed_by_review_agent": false,
+  "portability_addendum": "PORTABILITY_ADDENDUM.md",
+  "previous_pins": "portability-history/reviewed-source-sha256.json"
+}

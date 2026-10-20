@@ -1,0 +1,129 @@
+.......................................................F                 [100%]
+================================== FAILURES ===================================
+________ test_all_frozen_states_conserve_and_converge_when_step_halved ________
+
+hydro_cache = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-03 parallel kwm5h67t/shard-3/pytest/real-swmm0')
+
+    def test_all_frozen_states_conserve_and_converge_when_step_halved(hydro_cache):
+>       report=verify_hydraulics(hydro_cache,all_states=True,workers=4)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_hydraulics.py:164: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+monsoon\hydraulics.py:233: in verify_hydraulics
+    rows=list(pool.map(check,tasks))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\concurrent\futures\_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\concurrent\futures\_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\concurrent\futures\_base.py:449: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\concurrent\futures\thread.py:59: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+monsoon\hydraulics.py:207: in check
+    b = run_state(state,scenario,cache_dir,routing_step=routing_step/2)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+completed_jobs = ['J1', 'J3']
+scenario = {'id': 'D2', 'title': 'Unrestricted outlet-dominated control', 'phase': 'diagnostic', 'hydraulic': {'peak_a_cms': 0.7, 'peak_b_cms': 0.7, 'hydrograph': 'triangle', 'tailwater_m': 99.3, ...}, ...}
+cache_dir = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-03 parallel kwm5h67t/shard-3/pytest/real-swmm0')
+routing_step = 0.25, horizon_minutes = 180, force = False
+
+    def run_state(completed_jobs, scenario, cache_dir, routing_step=0.5, horizon_minutes=180, force=False) -> dict:
+        completed = sorted(set(completed_jobs))
+        scenario_id = scenario.get("id", "unnamed")
+        try:
+            case = load_case()
+            inp = build_input(completed, scenario["hydraulic"], routing_step, horizon_minutes, _case=case)
+            info = engine_info()
+        except Exception as exc:
+            return {"run_id": None, "status": "invalid", "valid": False, "completed_jobs": completed, "scenario_id": scenario_id,
+                    "engine_version": None, "total_spill_m3": None, "nodes": {}, "diagnostics": {}, "files": {},
+                    "timeseries": [], "cache_hit": False, "errors": [str(exc)]}
+        request = {"input_sha256": hashlib.sha256(inp.encode()).hexdigest(), "engine": info,
+                   # Derived thresholds, node definitions and interpretation are part of
+                   # the cached result even when they leave the SWMM input unchanged.
+                   "case_snapshot_sha256": _hash(case),
+                   "adapter_sha256": hashlib.sha256(Path(__file__).read_bytes()+Path(__file__).with_name("_swmm_worker.py").read_bytes()).hexdigest()}
+        run_id = _hash(request)
+        base = Path(cache_dir).resolve()
+        base.mkdir(parents=True, exist_ok=True)
+        final = base / run_id
+        cached = final / "result.json"
+        if cached.exists() and not force:
+            try:
+                result = json.loads(cached.read_text(encoding="utf-8"))
+                if not isinstance(result, dict) or not isinstance(result.get("files"), dict):
+                    raise ValueError("Malformed cache result")
+                names = {"input": "model.inp", "report": "model.rpt", "output": "model.out",
+                         "manifest": "manifest.json", "result": "result.json", "log": "worker.log"}
+                if any(not isinstance(result["files"].get(key), str) for key in names):
+                    raise ValueError("Malformed cache file paths")
+                attempt = Path(result["files"]["manifest"]).resolve().parent
+                files_ok = (attempt.parent == base and
+                            all(Path(result["files"][key]).resolve() == attempt/name and (attempt/name).is_file()
+                                for key, name in names.items()))
+                manifest = json.loads((attempt/"manifest.json").read_text(encoding="utf-8"))
+                if not isinstance(manifest, dict) or not isinstance(manifest.get("file_sha256"), dict):
+                    raise ValueError("Malformed cache manifest")
+                checksums = manifest["file_sha256"]
+                required_raw = {"model.inp", "model.rpt", "model.out", "request.json", "worker.log"}
+                if not required_raw <= checksums.keys() or any(Path(name).name != name for name in checksums):
+                    raise ValueError("Incomplete cache evidence hashes")
+                hash_ok = hashlib.sha256(Path(result["files"]["input"]).read_bytes()).hexdigest() == request["input_sha256"]
+                raw_ok = all(hashlib.sha256((attempt/name).read_bytes()).hexdigest() == checksum
+                             for name,checksum in checksums.items())
+                saved_result = json.loads((attempt/"result.json").read_text(encoding="utf-8"))
+                result_ok = _hash(result) == _hash(saved_result) == manifest.get("result_sha256")
+                if (files_ok and hash_ok and raw_ok and result_ok and result.get("run_id") == run_id
+                        and manifest.get("request_fingerprint") == request):
+                    result.update(cache_hit=True, scenario_id=scenario_id, completed_jobs=completed)
+                    return result
+            except (OSError, ValueError, KeyError, TypeError):
+                pass
+        folder = Path(tempfile.mkdtemp(prefix=f"{run_id[:12]}-", dir=base))
+        (folder / "model.inp").write_text(inp, encoding="utf-8", newline="\n")
+        worker_request = {"run_id": run_id, "completed_jobs": completed, "scenario_id": scenario_id, "engine": info,
+                          "routing_step": routing_step, "horizon_minutes": horizon_minutes, "hydraulic": scenario["hydraulic"],
+                          "case": case, "request_fingerprint": request}
+        (folder / "request.json").write_text(json.dumps(worker_request, indent=2), encoding="utf-8")
+        started = time.perf_counter()
+        try:
+            proc = subprocess.run([sys.executable, str(Path(__file__).with_name("_swmm_worker.py")), str(folder)],
+                                  cwd=folder, capture_output=True, text=True, timeout=120,
+                                  creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+            (folder / "worker.log").write_text(proc.stdout + proc.stderr, encoding="utf-8")
+            if not (folder / "result.json").exists():
+                raise RuntimeError(f"SWMM worker exited {proc.returncode}: {proc.stderr[-1200:]}")
+            result = json.loads((folder / "result.json").read_text(encoding="utf-8"))
+        except Exception as exc:
+            result = {"run_id": run_id, "status": "failed", "valid": False, "engine_version": info["engine_version"],
+                      "total_spill_m3": None, "nodes": {}, "diagnostics": {}, "timeseries": [], "errors": [str(exc)]}
+        result.update(completed_jobs=completed, scenario_id=scenario_id, cache_hit=False, elapsed_seconds=time.perf_counter()-started)
+        # Private immutable attempt folders preserve logs on retries; the hash index is only a small result pointer.
+        result["files"] = {"input": str(folder/"model.inp"), "report": str(folder/"model.rpt"), "output": str(folder/"model.out"),
+                           "manifest": str(folder/"manifest.json"), "result": str(folder/"result.json"), "log": str(folder/"worker.log")}
+        manifest = {**worker_request, "created_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "status": result["status"], "files": result["files"], "result_sha256": _hash(result),
+                    "file_sha256": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in folder.iterdir() if p.is_file() and p.name != "result.json"}}
+        (folder / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        serial = json.dumps(result, indent=2, allow_nan=False)
+        (folder / "result.json").write_text(serial, encoding="utf-8")
+        final.mkdir(exist_ok=True)
+        temp = final / f"result-{os.getpid()}-{time.time_ns()}.tmp"
+        temp.write_text(serial, encoding="utf-8")
+>       os.replace(temp, cached)
+E       PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-03 parallel kwm5h67t\\shard-3\\pytest\\real-swmm0\\88a7a1f47dc5a9a9f326c3f2d2154e3523e1aa7b7d381a4b8e1e1bc16a74f5bc\\result-2376-1792212995864637800.tmp' -> 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-03 parallel kwm5h67t\\shard-3\\pytest\\real-swmm0\\88a7a1f47dc5a9a9f326c3f2d2154e3523e1aa7b7d381a4b8e1e1bc16a74f5bc\\result.json'
+
+monsoon\hydraulics.py:192: PermissionError
+=========================== short test summary info ===========================
+FAILED tests/test_hydraulics.py::test_all_frozen_states_conserve_and_converge_when_step_halved
+1 failed, 55 passed in 322.99s (0:05:22)

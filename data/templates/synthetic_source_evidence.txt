@@ -1,0 +1,1 @@
+SYNTHETIC ARITHMETIC FIXTURE. Every geometry, approval, sensor, event, date and observation in the companion example is invented. No real operator, laboratory or surveyed site is represented.

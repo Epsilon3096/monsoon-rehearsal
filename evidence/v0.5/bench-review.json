@@ -1,0 +1,323 @@
+{
+  "schema_version": "monsoon.bench-review/1",
+  "reviewed_utc": "2026-10-14T12:04:44.468867+00:00",
+  "review_date_local": "2026-10-14",
+  "reviewer": "Separate scientific/architecture review agent within the same development team",
+  "independence_limit": "Independent implementation review within this development session; not external scientific validation, a witnessed experiment, or an engineering approval.",
+  "scope": "v0.5 separate nominal-dry bench adapter, immutable calibration/freeze/withheld-response ledger, UI and explicitly synthetic software exercise",
+  "conclusion": "No unresolved substantive defect identified in the reviewed bounded slice. Ready for source freeze and project-wide release verification; no physical or operational acceptance is established.",
+  "unresolved_defects": [],
+  "fixed_findings": [
+    {
+      "id": "R01",
+      "severity": "P2",
+      "status": "fixed_and_verified",
+      "component": "monsoon/bench_study.py",
+      "issue": "Cross-partition response matching could be bypassed by renaming a sensor ID or changing series order.",
+      "reproduction": "Preserve quantity, location, unit, elapsed times and values; rename SENSOR-A. The earlier implementation generated a different response fingerprint.",
+      "fix": "Fingerprint sorted semantic quantity/location/unit/time/value content, excluding caller labels. Retain matching receipts as suspected reuse and unresolved; identical values are not proof of reuse.",
+      "evidence": [
+        "test_renaming_series_or_reordering_cannot_hide_partition_content_match",
+        "test_validation_content_cannot_become_calibration_in_another_study"
+      ]
+    },
+    {
+      "id": "R02",
+      "severity": "P2",
+      "status": "fixed_and_verified",
+      "component": "monsoon/bench_study.py",
+      "issue": "Freeze preparation could backdate the freeze to method entry and accept an event that started before preparation finished.",
+      "reproduction": "Advance the clock while computing lineage so a declared future event starts before the append. The earlier implementation retained its entry timestamp.",
+      "fix": "Read a fresh time after preparation and require each measured assignment to start at least 60 seconds later. The immutable event uses that final timestamp.",
+      "evidence": [
+        "test_freeze_rechecks_fresh_clock_after_lineage_preparation",
+        "test_measured_windows_are_prospective_without_public_clock_injection",
+        "test_server_clock_rollback_is_not_a_caller_override"
+      ]
+    },
+    {
+      "id": "R03",
+      "severity": "P2",
+      "status": "fixed_and_verified",
+      "component": "monsoon/bench_ui.py",
+      "issue": "The earlier export skipped nested base/half artifacts and did not validate changed or missing evidence before presenting cached success.",
+      "reproduction": "Export a paired run or alter a retained model.inp after calculation. The earlier basename-only export could silently omit pair files or export altered bytes.",
+      "fix": "Anchor the accepted manifest hash, verify current adapter identity and complete safe inventory, check each exported byte hash, preserve nested paths, and suppress cached success when verification fails.",
+      "evidence": [
+        "test_real_engine_example_result_stales_when_input_source_changes",
+        "test_manifest_verification_and_no_relabelling_or_tampering"
+      ]
+    },
+    {
+      "id": "R04",
+      "severity": "P2",
+      "status": "fixed_and_verified",
+      "component": "monsoon/bench_ui.py",
+      "issue": "A failed new software exercise could leave the previous successful result visible.",
+      "reproduction": "Seed a successful cached exercise, then make the next runner raise an exception.",
+      "fix": "Clear the previous current-attempt result before execution and verify stored study integrity before displaying a completed exercise.",
+      "evidence": [
+        "test_failed_new_exercise_cannot_display_previous_success"
+      ]
+    },
+    {
+      "id": "R05",
+      "severity": "P2",
+      "status": "fixed_by_inspection",
+      "component": "monsoon/bench_ui.py",
+      "issue": "The Water entering metric displayed only applied lateral inflow even when receiving backflow was positive.",
+      "reproduction": "The accepted backflow fixture has zero applied inflow and more than 0.01 m3 of receiving-water inflow.",
+      "fix": "Show applied inflow and receiving backflow separately.",
+      "evidence": [
+        "read-only inspection of _run_view",
+        "test_signed_receiving_backflow_and_later_discharge"
+      ]
+    },
+    {
+      "id": "R06",
+      "severity": "P2",
+      "status": "fixed_by_inspection",
+      "component": "monsoon/bench_ui.py",
+      "issue": "A trace labelled prescribed boundary used computed outlet node HEAD, which can differ from a receiving stage below the outlet invert.",
+      "reproduction": "Supply a receiver stage below outlet invert; hydraulic outlet head rules can clamp or otherwise alter node HEAD.",
+      "fix": "Draw the prescribed boundary trace from receiving_stage_m, and keep internal node responses distinct.",
+      "evidence": [
+        "read-only inspection of _run_view and worker column_roles"
+      ]
+    }
+  ],
+  "reviewed_file_sha256": {
+    "monsoon/bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+    "monsoon/_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+    "monsoon/bench_study.py": "dcab07cadd2117ab322e66107b8e45d3f1d903b9b5c8e03cdab63b71068f7ea1",
+    "monsoon/bench_ui.py": "361a0a3a58bd4ac8a4aa1017a6267de6febcd8754369024d68df7abb8cfe232c",
+    "monsoon/bench_demo.py": "8e9dfc2b6e943e892e6c63afc938ee752034fe0ba36499c01582e7829463f217",
+    "monsoon/site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5",
+    "monsoon/measurements.py": "970d055c3761ee1cd749eebcc9a8eff447a41459a3ad0dc1847b053a8a61331c",
+    "monsoon/validation_ui.py": "91af0506a5becc86692536cea600bc741a5c127519e2ef897310e4981d30d241",
+    "monsoon/service.py": "0b13f9eb797508ea0fbe9d387722a4fef0a841e82e714bda813f66fa8a376e2f",
+    "monsoon/verify.py": "e9088c92e4846b4ba0c1c4e14ca4c135c14ed62f8ed7b2fc8ab7be68790b66b2",
+    "monsoon/__init__.py": "8b7e9759aefcd33d95a55db81406cc48f81ddfaac24a05d0981da8245ffc1857",
+    "app.py": "be7166a927fe607a0dc19e7da1f9b14c0411ad9911b03bcad90f97a5b69bab29",
+    "pyproject.toml": "2aa76a45e34bea606194afd8c74f80b7515a19c0137f7aa34ce2d1d429b841e9",
+    "tests/test_bench_model.py": "7768e3b88a61c6e2191288a77e82b1686a5eee60d228250cfe3f26dd99492de5",
+    "tests/test_bench_study.py": "6c3e88b13b19f4a01e28eb6d67a6fa705145a16e0e86059e58a8c0ba14ad1ef3",
+    "tests/test_bench_ui.py": "5fe9787ddb8a15a1c8534fd6fb7bf98f31c73fafce39ef7ccc5c02eb9f768011",
+    "tests/test_bench_demo.py": "b28b533da360839516ab36740314834df09f8f3c5ea78b7f4e5d7dd941a69a42",
+    "data/templates/synthetic_bench_site_v1.json": "97bd071d16ed7bb4ebc0531340ec341c16af43caaecb8b6946e73fc4f52b3608",
+    "data/templates/synthetic_bench_model_v1.json": "25c6a7c6080ab46648c16cba0eace874cd51ecebb08bb227fa56fd538eb80553",
+    "data/templates/synthetic_bench_run_v1.json": "fc7d1efbd4583da51bcfe3e597be1cb1295a2555a5cbcda153d3acd0430e063e",
+    "data/templates/synthetic_bench_source_v1.txt": "70c1d9932a9f827239707c29d3ad8990f70c8d52b85f1c79e63c37c9c2628cf8",
+    "BENCH_MODEL.md": "a2413615e55c4e602d88e34f5d44397261cd980b3cdc622a0cb4cf7c93a8e1b3",
+    "BENCH_STUDY.md": "1424d4b0628c325c4eaa95a9c0e6e1158d154751ab5c406f1b19e25ec67664d1"
+  },
+  "engine_identity": {
+    "adapter_version": "1.0.0",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "source_sha256": {
+      "bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+      "_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+      "site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5"
+    },
+    "routing": "DYNWAVE",
+    "units": "CMS / m / m3"
+  },
+  "verification": {
+    "final_unique_targeted_test_count": 94,
+    "unique_test_files": {
+      "tests/test_bench_model.py": 42,
+      "tests/test_bench_study.py": 44,
+      "tests/test_bench_ui.py": 7,
+      "tests/test_bench_demo.py": 1
+    },
+    "counting_note": "Final corpus: 94 distinct targeted cases. The reviewer executed the earlier 93-case corpus plus a 42-case affected-file rerun; the root then reported 8 final UI/demo cases after adding one UI parameter case. These are separate scoped runs, not a single green 94-case invocation. Repeated cases are not new scientific observations, and this reviewer did not run the project-wide suite.",
+    "invocations": [
+      {
+        "started_utc": "2026-10-14T11:57:46.459289+00:00",
+        "completed_utc": "2026-10-14T11:58:19.966979+00:00",
+        "wall_seconds": 33.5,
+        "command": "python -m pytest tests/test_bench_model.py tests/test_bench_study.py tests/test_bench_ui.py tests/test_bench_demo.py -q",
+        "exit_code": 1,
+        "passed": 92,
+        "failed": 1,
+        "reported_test_seconds": 32.82,
+        "application_source_changes": [],
+        "changed_files": [
+          "tests/test_bench_model.py"
+        ],
+        "test_source_hash_at_start": "edc1e9b6db8a2e0e2a52cf6482980e78ed49b92ce8596b320e1692d6ec886c2c",
+        "failed_test": "test_real_engine_pulse_units_grid_conservation_and_step_halving",
+        "failure": "A new raw/live volume assertion used the exact physical conversion 0.028316846592 m3/ft3; raw initStorage times that factor was 4.8768e-06 versus live initial storage 4.877343088019509e-06. The toolkit uses rounded UCF(VOLUME)=0.02832. This pre-freeze test failure is retained, not relabelled a passing run.",
+        "resolution": "Implementation remained unchanged. The builder corrected the test against the documented upstream conversion and actual runtime; the affected test file was rerun after its explicit freeze."
+      },
+      {
+        "started_utc": "2026-10-14T11:59:35.842983+00:00",
+        "completed_utc": "2026-10-14T11:59:44.177696+00:00",
+        "wall_seconds": 8.344,
+        "command": "python -m pytest tests/test_bench_model.py -q",
+        "exit_code": 0,
+        "passed": 42,
+        "failed": 0,
+        "reported_test_seconds": 7.84,
+        "changed_files": [],
+        "test_source_sha256": "7768e3b88a61c6e2191288a77e82b1686a5eee60d228250cfe3f26dd99492de5"
+      },
+      {
+        "performed_by": "root implementation/integration agent; result reported to reviewer",
+        "command_scope": [
+          "tests/test_bench_ui.py",
+          "tests/test_bench_demo.py"
+        ],
+        "after_changes": [
+          "Two-column metric layout for narrow browser width",
+          "Visible unresolved record reasons",
+          "One added missing-reading withheld UI parameter case"
+        ],
+        "passed": 8,
+        "failed": 0,
+        "reported_test_seconds": 26.08,
+        "reviewer_check": "Reviewed the changed final UI and parameterized test source; within the 23-file review inventory, only those two hashes changed.",
+        "source_sha256": {
+          "monsoon/bench_ui.py": "361a0a3a58bd4ac8a4aa1017a6267de6febcd8754369024d68df7abb8cfe232c",
+          "tests/test_bench_ui.py": "5fe9787ddb8a15a1c8534fd6fb7bf98f31c73fafce39ef7ccc5c02eb9f768011"
+        }
+      }
+    ],
+    "additional_intake_check": {
+      "kind": "in-memory bounded contract substitutions",
+      "attempts": 1200,
+      "uncaught_exceptions": 0,
+      "engine_runs": 0,
+      "note": "Six malformed/type/extreme substitutions were applied at every traversed site/model/run path. This checks exception handling; it does not claim all substitutions were semantically invalid or represent physical experiments."
+    },
+    "actual_engine_coverage": [
+      "Explicit 7 L synthetic pulse, 121 report endpoints and 12000 primary routing intervals at 0.01 s, plus automatic 0.005 s refinement.",
+      "Node stage-area/live-volume relationships and inclusion of node plus conduit storage; nonzero numerical dry-link initialization retained.",
+      "Raw routing storage compared with live storage using the installed toolkit conversion; SI timing and flow accounting checked.",
+      "Narrower declared conduit produces a higher upstream stage in the synthetic geometry.",
+      "Receiving-water backflow followed by discharge preserves signed exchange and closed volume accounting.",
+      "Known 7 L retained below a raised outlet and a zero-forcing closed balance.",
+      "Unsupported open-channel lateral overtopping remains unresolved with both numerical attempts retained.",
+      "Actual paired solver calibration/freeze/validation integration, real Streamlit workflow, complete 18-file export, and explicitly circular same-solver offset exercise."
+    ],
+    "mocked_or_pure_coverage": [
+      "Immutable revisions, expected-version concurrency, missing readings, failed predictions, malformed and injected observation rejection.",
+      "Calibration-only selection and freeze, no post-freeze calibration, ordered single-use validation assignments, failure retention.",
+      "Semantic response reuse detection, raw observation and attachment hashes, runtime/source drift, altered prediction and artifact rejection.",
+      "Server clock rollback, retrospective windows and time advancing during freeze preparation.",
+      "Failure-cache clearing and explicit synthetic/physical claim separation."
+    ],
+    "reviewer_executed_unique_test_count": 93,
+    "project_wide_suite_status": "Root stopped an earlier full-suite invocation before a final UI change and retained its log at work/pytest-v05-pre-layout.log in the workspace. Root restarted the full suite under its final freeze; that run is not claimed complete by this review."
+  },
+  "historical_integrity": {
+    "checked_utc": "2026-10-14T12:00:20.730508+00:00",
+    "baseline_manifest": "evidence/v0.4/delivery-manifest.json",
+    "protected_data_and_evidence_file_count": 141,
+    "selected_historical_source_count": 13,
+    "changed_files": [],
+    "source_sha256": {
+      "monsoon/planning.py": "13eec8cb3d4993e5548e2aeb4ec306e0bed070192b89adce1b01b0c06dd1ec5a",
+      "monsoon/hydraulics.py": "0d108cc8080fe2c15de1484e4f05b5c5d827c90c706d7a0f7cfb8f86fd8bc8ef",
+      "monsoon/assurance.py": "71b45f3a7e15f024514dd8071a8a2d94d1050134be8bf31068d43c8c957e13b5",
+      "monsoon/assurance_hydraulics.py": "18b961f8db0f0dcb9bc3983bbbd8d94d94c3409cba2426076826172642e3bcb4",
+      "monsoon/case.py": "fe4f82249340a3ccfa90473e5ccd98643f1433b49f0ea8853fbba7db6a009d2a",
+      "monsoon/observed_policy.py": "e605e2fe73dec5fc6278a38d88cc31c7a7b0f4f1a30c444d5ee75f7104efc90d",
+      "monsoon/policy_evaluation.py": "2c38ef9485e292c7f635efa1e331168622353384df476ded5b67bebd2e1c3f1b",
+      "monsoon/policy_replay.py": "fc99888f58f9e1aa8eafa2cfb0a1f51f8df42acfd644dc16f195f15fc1129d81",
+      "monsoon/work_window.py": "09065fd825c36ed6e9d218d647385c7024f1f8a4f4212948999e2e505c92daea",
+      "monsoon/bench_preparation.py": "e22847ecad32cda4bc0f2e23c030780f9e2751a94146f805b0e6ba17a6cc9457",
+      "monsoon/site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5",
+      "monsoon/measurements.py": "970d055c3761ee1cd749eebcc9a8eff447a41459a3ad0dc1847b053a8a61331c",
+      "monsoon/_swmm_worker.py": "f1d5773c00dd41d56e9b4b97951146f77856585d77ba3a3f489edbeb21fd1830"
+    },
+    "archive_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\Monsoon_Rehearsal_Prototype_v0.4.zip",
+    "archive_sha256": "334e34cc6217b160ac4ceb2f37f7141b7661278058097764dda6b435e18078e5",
+    "expected_archive_sha256": "334e34cc6217b160ac4ceb2f37f7141b7661278058097764dda6b435e18078e5"
+  },
+  "scientific_claims": {
+    "established": [
+      "The software can validate explicit bounded bench contracts, execute isolated real SWMM primary/refined pairs, and retain numerical and provenance diagnostics.",
+      "The local ledger can preserve calibration candidates and observation bytes, freeze one declared model/plan, and report later response error summaries without automatically accepting model accuracy.",
+      "The UI preserves absent-data and unsupported-state distinctions and labels circular generated examples as synthetic."
+    ],
+    "not_established": [
+      "A built rig, authentic survey, calibrated sensors, measured response data, externally witnessed prospectivity, or physical model validation.",
+      "Completion of the unchanged 24-event physical protocol, uncertainty-aware acceptance, measured forcing reproduction, or field engineering approval.",
+      "A scheduling advantage: the unchanged v0.3 screened policies each abstained on all 10 events and tied no work on all 10; no new policy benefit is tested here."
+    ],
+    "measured_physical_runs_in_this_review": 0,
+    "operational_activation_allowed": false,
+    "physical_validation_established": false,
+    "full_protocol_completed": false
+  },
+  "remaining_scope_limits": [
+    "Only fixed geometry with nominal dry/zero-flow starts. Wet reset, hotstart and equilibrated-control mechanisms remain unsupported; do not omit or relabel the unsupported frozen protocol rows.",
+    "Model predictions use prescribed inflow and receiving-stage curves. Actual measured boundary reproduction is not checked, so response errors can include forcing mismatch.",
+    "Every internal compartment needs explicit volume geometry; absorbing node collectors and zero losses are assumptions. Unrepresented lateral escape, surface re-entry, receiving-tank storage and nonzero losses require additional reviewed representation.",
+    "Conservation and step refinement establish bounded numerical adequacy only. Fixed numerical floors may hide smaller effects; physical bench scaling and model-form suitability remain unassessed.",
+    "Local timestamps, source hashes and append-only records establish local consistency, not an authenticated external clock, observer identity, data authenticity or prospective collection.",
+    "Identical semantic response values can be legitimate repeated zero-response runs; matching receipts remain suspected reuse and unresolved, not proof of fraud.",
+    "The declared response uncertainty is retained but not used to perform the frozen physical protocol's acceptance assessment.",
+    "The demo uses this same solver plus explicit 1 mm calibration and 10 mm withheld offsets. Its known-error arithmetic is circular software verification, not independent hydraulic evidence."
+  ],
+  "primary_sources_consulted": [
+    {
+      "url": "https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/swmm5.c",
+      "use": "Elapsed swmm_step time is decimal days; final return and routing endpoint behavior."
+    },
+    {
+      "url": "https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/dynwave.c",
+      "use": "Minimum numerical surface area is not a measured storage-volume curve."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/OpenWaterAnalytics/Stormwater-Management-Model/develop/src/solver/toolkit.c",
+      "use": "Maintainer live result conversions; local installed-runtime tests remain necessary."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/OpenWaterAnalytics/Stormwater-Management-Model/develop/src/solver/swmm5.c",
+      "use": "Maintainer conversion table includes rounded SI volume factor 0.02832; verified against local raw/live results."
+    }
+  ],
+  "next_gate": "Root-owned project-wide tests and release integrity checks, followed by prospective physical preparation and data collection under a reviewed supported protocol. This review grants no field-use authorization.",
+  "review_revisions": [
+    {
+      "at_utc": "2026-10-14T12:01:14.636746+00:00",
+      "reason": "Initial review after numerical test correction, before the final UI refinement.",
+      "note": "The initial targeted corpus contained 93 unique cases."
+    },
+    {
+      "at_utc": "2026-10-14T12:04:44.468867+00:00",
+      "reason": "Root refined the narrow-screen metric layout and made unresolved response-record reasons explicit; a new missing-reading UI parameter case was added.",
+      "changed_reviewed_files": {
+        "monsoon/bench_ui.py": {
+          "previous": "6022dfe4fb8084ebcdc42775a829679a24e59f21059e94d50f7caad12648947a",
+          "current": "361a0a3a58bd4ac8a4aa1017a6267de6febcd8754369024d68df7abb8cfe232c"
+        },
+        "tests/test_bench_ui.py": {
+          "previous": "b2630d455611162c31f5bc5b226e2aa5e2c23c9ccd5121d5093a72b2beae8e5c",
+          "current": "5fe9787ddb8a15a1c8534fd6fb7bf98f31c73fafce39ef7ccc5c02eb9f768011"
+        }
+      },
+      "verification": "Reviewer inspected changed UI and test code; root reported 8 UI/demo cases passed in 26.08 seconds. Application model/worker/study sources remained unchanged."
+    }
+  ]
+}

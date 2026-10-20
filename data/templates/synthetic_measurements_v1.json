@@ -1,0 +1,294 @@
+{
+  "schema_version": "monsoon.measurements/1",
+  "dataset_id": "SYNTHETIC-ARITHMETIC",
+  "site_id": "SYNTHETIC-BENCH",
+  "site_package_sha256": "1ccf08de8bd840575933da315e9d8c8130fe8ba6adaf4a5233da9bbb42a19841",
+  "evidence_kind": "synthetic_fixture",
+  "vertical_datum": "SYNTHETIC-BENCH-BASE-ZERO",
+  "protocol_id": "MONSOON-BENCH-01",
+  "protocol_sha256": "cc7f5c8eb301f0be18aa54d43a93420d54dbf5237aa8d520acc994063ea83d26",
+  "recorded_at": "2026-10-15T12:00:00+08:00",
+  "model": {
+    "id": "SYNTHETIC-IDENTITY-PREDICTIONS",
+    "sha256": "3cfdb2247bbb35578fd58b8404317ce411f995f470c0fe3f346ef7a8ac4647e5",
+    "frozen_at": "2026-10-15T10:00:00+08:00",
+    "calibration_event_ids": [
+      "FIXTURE-CAL-01"
+    ],
+    "freeze_evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08"
+  },
+  "control_volume": {
+    "boundary_inventory_complete": true,
+    "inventory_evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+    "unmeasured_loss_upper_bound_m3": 0,
+    "loss_bound_evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+    "storage_scope": "all_water_inside_control_volume_including_links_and_nodes",
+    "timestamp_uncertainty_s": 0.001
+  },
+  "sensors": [
+    {
+      "id": "QIN",
+      "quantity": "inflow_m3_s",
+      "location_id": "A",
+      "unit": "m3/s",
+      "vertical_datum": null,
+      "calibration": {
+        "record_id": "SYN-CAL-QIN",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 1e-07,
+        "coverage_factor": 2
+      }
+    },
+    {
+      "id": "QOUT",
+      "quantity": "outflow_m3_s",
+      "location_id": "O",
+      "unit": "m3/s",
+      "vertical_datum": null,
+      "calibration": {
+        "record_id": "SYN-CAL-QOUT",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 1e-07,
+        "coverage_factor": 2
+      }
+    },
+    {
+      "id": "QSPILL",
+      "quantity": "spill_m3_s",
+      "location_id": "S",
+      "unit": "m3/s",
+      "vertical_datum": null,
+      "calibration": {
+        "record_id": "SYN-CAL-QSPILL",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 1e-07,
+        "coverage_factor": 2
+      }
+    },
+    {
+      "id": "VA",
+      "quantity": "storage_m3",
+      "location_id": "SYSTEM",
+      "unit": "m3",
+      "vertical_datum": null,
+      "calibration": {
+        "record_id": "SYN-CAL-VA",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 1e-06,
+        "coverage_factor": 2
+      }
+    },
+    {
+      "id": "HA",
+      "quantity": "stage_m",
+      "location_id": "A",
+      "unit": "m",
+      "vertical_datum": "SYNTHETIC-BENCH-BASE-ZERO",
+      "calibration": {
+        "record_id": "SYN-CAL-HA",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 0.0001,
+        "coverage_factor": 2
+      }
+    },
+    {
+      "id": "HS",
+      "quantity": "stage_m",
+      "location_id": "S",
+      "unit": "m",
+      "vertical_datum": "SYNTHETIC-BENCH-BASE-ZERO",
+      "calibration": {
+        "record_id": "SYN-CAL-HS",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 0.0001,
+        "coverage_factor": 2
+      }
+    },
+    {
+      "id": "HO",
+      "quantity": "stage_m",
+      "location_id": "O",
+      "unit": "m",
+      "vertical_datum": "SYNTHETIC-BENCH-BASE-ZERO",
+      "calibration": {
+        "record_id": "SYN-CAL-HO",
+        "calibrated_at": "2026-10-15T08:00:00+08:00",
+        "valid_until": "2026-10-16T08:00:00+08:00",
+        "evidence_sha256": "fcf91d532b48312c37dc656455fc6aa42736df0da2fe668339ebe4aa97e66f08",
+        "expanded_uncertainty_abs": 0.0001,
+        "coverage_factor": 2
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "FIXTURE-CAL-01",
+      "partition": "calibration",
+      "mechanism": "equilibrated_control",
+      "state": "current",
+      "completed_job_ids": [],
+      "paired_event_id": null,
+      "forcing_sha256": "b271bdf33df67ee7c06342ca6fd110bda781c76b9982eb536719472bbd0b4abf",
+      "raw_data_sha256": "b2208237e4f877d7107b9a9b15a82dcc95722da455c35dcdb703d21f433685a6",
+      "start_at": "2026-10-15T09:00:00+08:00",
+      "end_at": "2026-10-15T09:00:05+08:00",
+      "initialisation": "observed_equilibrated",
+      "samples": [
+        {
+          "timestamp": "2026-10-15T09:00:00+08:00",
+          "observed": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.01,
+            "HA": 0.15,
+            "HS": 0.12,
+            "HO": 0.05
+          },
+          "predicted": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.01,
+            "HA": 0.15,
+            "HS": 0.12,
+            "HO": 0.05
+          }
+        },
+        {
+          "timestamp": "2026-10-15T09:00:02+08:00",
+          "observed": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0102,
+            "HA": 0.15,
+            "HS": 0.122,
+            "HO": 0.05
+          },
+          "predicted": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0102,
+            "HA": 0.15,
+            "HS": 0.122,
+            "HO": 0.05
+          }
+        },
+        {
+          "timestamp": "2026-10-15T09:00:05+08:00",
+          "observed": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0105,
+            "HA": 0.15,
+            "HS": 0.125,
+            "HO": 0.05
+          },
+          "predicted": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0105,
+            "HA": 0.15,
+            "HS": 0.125,
+            "HO": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "FIXTURE-VAL-01",
+      "partition": "validation",
+      "mechanism": "equilibrated_control",
+      "state": "current",
+      "completed_job_ids": [],
+      "paired_event_id": null,
+      "forcing_sha256": "c9acbb0a99d5a810f67d08f654c5598b23674486549b8d13afb4aac64e56b781",
+      "raw_data_sha256": "ccb1d33d0ba548c6eb378b4c99c5e2793aca80a86cac25fd4f13c847d33e1759",
+      "start_at": "2026-10-15T11:00:00+08:00",
+      "end_at": "2026-10-15T11:00:05+08:00",
+      "initialisation": "observed_equilibrated",
+      "samples": [
+        {
+          "timestamp": "2026-10-15T11:00:00+08:00",
+          "observed": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.01,
+            "HA": 0.15,
+            "HS": 0.12,
+            "HO": 0.05
+          },
+          "predicted": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.01,
+            "HA": 0.15,
+            "HS": 0.12,
+            "HO": 0.05
+          }
+        },
+        {
+          "timestamp": "2026-10-15T11:00:02+08:00",
+          "observed": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0102,
+            "HA": 0.15,
+            "HS": 0.122,
+            "HO": 0.05
+          },
+          "predicted": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0102,
+            "HA": 0.15,
+            "HS": 0.122,
+            "HO": 0.05
+          }
+        },
+        {
+          "timestamp": "2026-10-15T11:00:05+08:00",
+          "observed": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0105,
+            "HA": 0.15,
+            "HS": 0.125,
+            "HO": 0.05
+          },
+          "predicted": {
+            "QIN": 0.0002,
+            "QOUT": 0.0001,
+            "QSPILL": 0,
+            "VA": 0.0105,
+            "HA": 0.15,
+            "HS": 0.125,
+            "HO": 0.05
+          }
+        }
+      ]
+    }
+  ],
+  "notes": "All data invented for arithmetic checks. Exact predicted/observed equality is deliberate and is not an experiment, model fit, validation result, or forecast. Dates are fictional."
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "segments-2",
+  "subdivisions": 2,
+  "node_ids": [
+    "A",
+    "S",
+    "O",
+    "D2_1"
+  ],
+  "link_ids": [
+    "L1",
+    "L2_1",
+    "L2_2"
+  ],
+  "terminal_link_id": "L2_2",
+  "link_connections": {
+    "L1": [
+      "A",
+      "S"
+    ],
+    "L2_1": [
+      "S",
+      "D2_1"
+    ],
+    "L2_2": [
+      "D2_1",
+      "O"
+    ]
+  },
+  "new_junctions": [
+    {
+      "id": "D2_1",
+      "invert_m": 0.01,
+      "max_depth_m": 0.25,
+      "initial_depth_m": 0,
+      "surcharge_depth_m": 0,
+      "ponded_area_m2": 0,
+      "declared_physical_storage_m3": 0
+    }
+  ],
+  "terminal_element_length_m": 0.4,
+  "terminal_half_cell_area_m2": 0.016,
+  "predicted_plateau_residual_m3": -0.00096,
+  "input_sha256": "86c63079d968ead74316b3a43683f043ef084b8eb1807087b302b9a50d16f1d7"
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "acquired_utc": "2026-10-13T14:50:37.385656+00:00",
+  "items": [
+    {
+      "path": "data/public_evidence/jps/jps_selangor_rainfall_page.html.txt",
+      "source_url": "https://publicinfobanjir.water.gov.my/hujan/data-hujan/?state=SEL&lang=en",
+      "retrieved_at_utc": "2026-10-13T14:41:23.479950+00:00",
+      "sha256": "4c3226af22a5b5cc9300eccaccc6d2ef8f77891b3b85017617df9e87bc1d31d4",
+      "bytes": 78678,
+      "publisher": "Department of Irrigation and Drainage Malaysia (JPS/DID)",
+      "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse.",
+      "evidence_class": "Public portal documentation snapshot; inert HTML source"
+    },
+    {
+      "path": "data/public_evidence/jps/jps_selangor_rainfall_table.html.txt",
+      "source_url": "https://publicinfobanjir.water.gov.my/wp-content/themes/shapely/agency/searchresultrainfall.php?state=SEL&district=ALL&station=ALL&loginStatus=0&language=1",
+      "retrieved_at_utc": "2026-10-13T14:42:19.572934+00:00",
+      "sha256": "5c7845aa2c8025494997a2906e540ee124a78dde45446d836e113912f61e1c5a",
+      "bytes": 90768,
+      "publisher": "Department of Irrigation and Drainage Malaysia (JPS/DID)",
+      "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse.",
+      "access": "Anonymous public page's documented request with loginStatus=0; no login or terms acceptance",
+      "evidence_class": "Public reported station observations; quality/provisional status not supplied",
+      "units": "Rainfall accumulations: mm. Last-updated timestamps have no explicit offset in the response."
+    },
+    {
+      "path": "data/public_evidence/jps/jps_selangor_rainfall_snapshot.csv",
+      "source_url": "https://publicinfobanjir.water.gov.my/wp-content/themes/shapely/agency/searchresultrainfall.php?state=SEL&district=ALL&station=ALL&loginStatus=0&language=1",
+      "retrieved_at_utc": "2026-10-13T14:42:19.572934+00:00",
+      "sha256": "3301c505fb8f25c55ca8483c4e389bebbd18fc8c40c30ba1186f4659f5a2afd6",
+      "bytes": 23293,
+      "evidence_class": "Derived CSV; exact published cell text retained",
+      "raw_source_sha256": "5c7845aa2c8025494997a2906e540ee124a78dde45446d836e113912f61e1c5a",
+      "rows": 246,
+      "columns": 13,
+      "units": "Rainfall columns are mm, not mm/hour or m3/s; last_one_hour_mm is accumulated depth over the latest hour.",
+      "missing_data": "Text '-', empty and nonnumeric cells remain raw strings, never coerced to zero.",
+      "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse."
+    },
+    {
+      "path": "data/public_evidence/jps/summary.json",
+      "source_url": "https://publicinfobanjir.water.gov.my/wp-content/themes/shapely/agency/searchresultrainfall.php?state=SEL&district=ALL&station=ALL&loginStatus=0&language=1",
+      "retrieved_at_utc": "2026-10-13T14:50:37.287520+00:00",
+      "sha256": "47b22d1a795dc001bc2cb2c85eb4c3771f5aa65fff9638b7ddd60802f762e062",
+      "bytes": 4577,
+      "evidence_class": "Acquisition and parsing summary"
+    },
+    {
+      "path": "data/public_evidence/epa/epaswmm5_qa.zip",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:42:21.960097+00:00",
+      "sha256": "a18a5303a0faa44fe30527b7256d4bde83a36c17f3bcf460fc20a9f46bbb7253",
+      "bytes": 2758982,
+      "publisher": "United States Environmental Protection Agency",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "catalogue_url": "https://www.epa.gov/water-research/storm-water-management-model-swmm",
+      "catalogue_description": "Quality Assurance Report for Dynamic Wave Flow Routing (19 September 2006)",
+      "evidence_class": "Official external software comparison benchmark; not Malaysian field validation"
+    },
+    {
+      "path": "data/public_evidence/epa/extran1/extran1_y.dat",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:42:21.960097+00:00",
+      "sha256": "ada74516d0e8121ac39e59267a7a4ff10f0905031b6547ba8e213638099f85c8",
+      "bytes": 4656,
+      "archive_member": "data.zip/extran1.zip/extran1_y.dat",
+      "evidence_class": "Unmodified EPA QA package member",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "units": "Native US customary example: flow CFS (ft3/s), depth/elevation ft. Do not relabel as SI."
+    },
+    {
+      "path": "data/public_evidence/epa/extran1/extran1.dat",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:42:21.960097+00:00",
+      "sha256": "b7ecd0b85e138650f2aa990e0c6e81c7cb83ac843c6b23786e2524e3b759b2e9",
+      "bytes": 1606,
+      "archive_member": "data.zip/extran1.zip/extran1.dat",
+      "evidence_class": "Unmodified EPA QA package member",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "units": "Native US customary example: flow CFS (ft3/s), depth/elevation ft. Do not relabel as SI."
+    },
+    {
+      "path": "data/public_evidence/epa/extran1/extran1.ini",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:42:21.960097+00:00",
+      "sha256": "8de44ac2b541ad2d4c2516a1bcd616f18d9dd8ca26792e2f2f49bdf26dc557aa",
+      "bytes": 3993,
+      "archive_member": "data.zip/extran1.zip/extran1.ini",
+      "evidence_class": "Unmodified EPA QA package member",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "units": "Native US customary example: flow CFS (ft3/s), depth/elevation ft. Do not relabel as SI."
+    },
+    {
+      "path": "data/public_evidence/epa/extran1/extran1.inp",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:42:21.960097+00:00",
+      "sha256": "0ea379ffce7d8675057e79148c4e113f8874191c4c3a87ca9f1108917c67bc7b",
+      "bytes": 6918,
+      "archive_member": "data.zip/extran1.zip/extran1.inp",
+      "evidence_class": "Unmodified EPA QA package member",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "units": "Native US customary example: flow CFS (ft3/s), depth/elevation ft. Do not relabel as SI."
+    },
+    {
+      "path": "data/public_evidence/epa/extran1/extran1_q.dat",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:42:21.960097+00:00",
+      "sha256": "08d7771721cc272a8c0066f2d83073fbc66bfdf805ab445ed9f0f0812c282296",
+      "bytes": 4752,
+      "archive_member": "data.zip/extran1.zip/extran1_q.dat",
+      "evidence_class": "Unmodified EPA QA package member",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "units": "Native US customary example: flow CFS (ft3/s), depth/elevation ft. Do not relabel as SI."
+    },
+    {
+      "path": "data/public_evidence/epa/archive_inventory.json",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_qa.zip",
+      "retrieved_at_utc": "2026-10-13T14:50:37.334594+00:00",
+      "sha256": "63b1ddf48078d0030437ea4f7523881ed6c46aa4c27304dce1ebcc891c594d59",
+      "bytes": 20634,
+      "evidence_class": "Derived archive inventory and member hashes"
+    },
+    {
+      "path": "data/public_evidence/epa/epaswmm5_apps_manual.zip",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_apps_manual.zip",
+      "retrieved_at_utc": "2026-10-13T14:49:38.051695+00:00",
+      "sha256": "889dd60a53ac85f00ee90db947a67ddc6d0737f46acf818bf7c7c08ac272f0ea",
+      "bytes": 6586620,
+      "publisher": "United States Environmental Protection Agency",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "catalogue_url": "https://www.epa.gov/water-research/storm-water-management-model-swmm",
+      "evidence_class": "Official application examples and manual; separate software research fixtures"
+    },
+    {
+      "path": "data/public_evidence/epa/application_example2/Example2-Post.inp",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_apps_manual.zip",
+      "retrieved_at_utc": "2026-10-13T14:49:38.051695+00:00",
+      "sha256": "2c797fa8e706d2570ad1c6bb776f2cc764fdac83475e8c1a1da04d97c4279895",
+      "bytes": 23853,
+      "archive_member": "epaswmm5_apps_manual/files.zip/Example2-Post.inp",
+      "evidence_class": "Unmodified application-manual example: surface drainage hydraulics after development",
+      "licence_status": "Official EPA public download. No separate licence text in the downloaded QA archive was identified. EPA source-code public-domain statements must not be assumed to cover all externally supplied test data. Inspect individual source notices before external redistribution/commercial use.",
+      "units": "Native US customary example: CFS (ft3/s), ft, acres and rainfall inches. Not Malaysian measurements."
+    },
+    {
+      "path": "data/public_evidence/epa/application_inventory.json",
+      "source_url": "https://www.epa.gov/sites/default/files/2014-05/epaswmm5_apps_manual.zip",
+      "retrieved_at_utc": "2026-10-13T14:50:37.379653+00:00",
+      "sha256": "e7b80003203503289e90543cc1a190b209c7c563cfb1d7889ec6baf58f7050da",
+      "bytes": 3464,
+      "evidence_class": "Derived application example inventory and member hashes"
+    }
+  ],
+  "scope": "Separate public-source evidence packet. No contents were injected into the frozen synthetic case, planning scenarios or approval protocol.",
+  "access": "All requests were anonymous HTTPS GETs. No account, credentials, legal acceptance, contact request or outbound message was used.",
+  "next_required": [
+    "Choose and obtain authorisation for a real site.",
+    "Acquire surveyed drainage, asset condition, datum and boundary records.",
+    "Obtain quality-controlled interval rainfall plus paired flow/level observations for that site.",
+    "Measure intervention and crew-time behaviour."
+  ],
+  "run_records": [
+    {
+      "path": "data/public_evidence/epa/application_example2_run/run_manifest.json",
+      "sha256": "f0d4702d81550eafa4a47ec7c4389e3c59ca9b373d7436c40000cfc04c326807",
+      "evidence_class": "Recorded unchanged-input external engine attempt"
+    },
+    {
+      "path": "data/public_evidence/epa/extran1_run/run_manifest.json",
+      "sha256": "4c9693c088828dc59b25d241afa011d046c3917248d2961afa0fb04d5ae22ca8",
+      "evidence_class": "Recorded unchanged-input external engine attempt"
+    }
+  ]
+}

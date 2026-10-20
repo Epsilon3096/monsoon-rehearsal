@@ -1,0 +1,900 @@
+{
+  "status": "completed",
+  "physical_validation_established": false,
+  "operational_activation_allowed": false,
+  "routing_steps": 12000,
+  "checked_endpoints": 12001,
+  "R50_m3": -0.000475447335211915,
+  "predicted_R50_m3": -0.00048,
+  "R50_prediction_relative_error": 0.009484718308510403,
+  "conservation_passed": false,
+  "violating_endpoints": 7791,
+  "worst_balance": {
+    "elapsed_s": 4.2,
+    "residual_m3": -0.0001001626786597709,
+    "native_residual_m3": -0.0001001626786597709,
+    "tolerance_m3": 1e-06,
+    "ratio": 100.1626786597709
+  },
+  "maximum_clock_difference_s": 1.4210854715202004e-14,
+  "maximum_native_live_storage_difference_m3": 3.469446951953614e-18,
+  "maximum_independent_native_residual_difference_m3": 1.1622647289044608e-16,
+  "nonconverged_count": {
+    "A": 0,
+    "S": 0,
+    "D4_1": 0,
+    "D4_2": 0,
+    "D4_3": 0
+  },
+  "warnings": [],
+  "max_added_junction_storage_m3": {
+    "D4_1": 0.0,
+    "D4_2": 0.0,
+    "D4_3": 0.0
+  },
+  "added_junction_minimum_area_floor_endpoint_counts": {
+    "D4_1": 1,
+    "D4_2": 1,
+    "D4_3": 1
+  },
+  "initial_storage_m3": 4.877343088019509e-06,
+  "final_storage_m3": 3.2817099301159425e-05,
+  "final_residual_m3": 4.565316557315701e-06,
+  "samples": [
+    {
+      "elapsed_s": 0.0,
+      "nodes": {
+        "A": {
+          "stage_m": 0.04,
+          "depth_m": 0.0,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.02,
+          "depth_m": 0.0,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.0,
+          "depth_m": 0.0,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.015,
+          "depth_m": 0.0,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.01,
+          "depth_m": 0.0,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.005,
+          "depth_m": 0.0,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": 0.0,
+          "depth_m": 3.0480000000000003e-05,
+          "storage_m3": 2.9264058528117054e-06,
+          "us_surface_area_m2": 0.0,
+          "ds_surface_area_m2": 0.0,
+          "froude": 0.0
+        },
+        "L2_1": {
+          "flow_m3_s": 0.0,
+          "depth_m": 3.0480000000000003e-05,
+          "storage_m3": 4.877343088019509e-07,
+          "us_surface_area_m2": 0.0,
+          "ds_surface_area_m2": 0.0,
+          "froude": 0.0
+        },
+        "L2_2": {
+          "flow_m3_s": 0.0,
+          "depth_m": 3.0480000000000003e-05,
+          "storage_m3": 4.877343088019509e-07,
+          "us_surface_area_m2": 0.0,
+          "ds_surface_area_m2": 0.0,
+          "froude": 0.0
+        },
+        "L2_3": {
+          "flow_m3_s": 0.0,
+          "depth_m": 3.0480000000000003e-05,
+          "storage_m3": 4.877343088019509e-07,
+          "us_surface_area_m2": 0.0,
+          "ds_surface_area_m2": 0.0,
+          "froude": 0.0
+        },
+        "L2_4": {
+          "flow_m3_s": 0.0,
+          "depth_m": 3.0480000000000003e-05,
+          "storage_m3": 4.877343088019509e-07,
+          "us_surface_area_m2": 0.0,
+          "ds_surface_area_m2": 0.0,
+          "froude": 0.0
+        }
+      },
+      "storage_m3": 4.877343088019509e-06,
+      "outfall_signed_flow_m3_s": 0.0,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.0,
+        "outflow": 0.0,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.00017222256666735554,
+        "pctError": 1e-06
+      },
+      "residual_m3": 0.0,
+      "native_residual_m3": 0.0,
+      "tolerance_m3": 1e-06,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.0,
+      "cumulative_discharge_m3": 0.0,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 0.0,
+      "diagnostic_residual_plus_half_cell_m3": 0.0
+    },
+    {
+      "elapsed_s": 20.0,
+      "nodes": {
+        "A": {
+          "stage_m": 0.04990965754529051,
+          "depth_m": 0.009909657545290511,
+          "storage_m3": 0.00014864486317935766,
+          "inflow_m3_s": 0.0004092668498203685,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.060033779196688716,
+          "depth_m": 0.04003377919668871,
+          "storage_m3": 0.0016013511678675486,
+          "inflow_m3_s": 0.0005939812243646782,
+          "outflow_m3_s": 0.0004092668498203685,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.06,
+          "depth_m": 0.06,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.000719043799603137,
+          "outflow_m3_s": 0.000719043799603137,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.06014920109422866,
+          "depth_m": 0.04514920109422866,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.000628895891224656,
+          "outflow_m3_s": 0.0005939812243646782,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.060218681786644516,
+          "depth_m": 0.050218681786644515,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.000669652044560785,
+          "outflow_m3_s": 0.000628895891224656,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.06006343494729941,
+          "depth_m": 0.055063434947299414,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 0.000719043799603137,
+          "outflow_m3_s": 0.000669652044560785,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": -0.0004092668498203685,
+          "depth_m": 0.024971709913515758,
+          "storage_m3": 0.0023975511169825655,
+          "us_surface_area_m2": 0.047999999999999994,
+          "ds_surface_area_m2": 0.047999999999999994,
+          "froude": 0.4130768891821332
+        },
+        "L2_1": {
+          "flow_m3_s": -0.0005939812243646782,
+          "depth_m": 0.042591493235069944,
+          "storage_m3": 0.000681539780638117,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.26946520689613385
+        },
+        "L2_2": {
+          "flow_m3_s": -0.000628895891224656,
+          "depth_m": 0.0476839356061769,
+          "storage_m3": 0.0007630279322124485,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.24083980880754607
+        },
+        "L2_3": {
+          "flow_m3_s": -0.000669652044560785,
+          "depth_m": 0.05264105341984754,
+          "storage_m3": 0.0008423506497485537,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.2210813546537557
+        },
+        "L2_4": {
+          "flow_m3_s": -0.000719043799603137,
+          "depth_m": 0.05753171628105553,
+          "storage_m3": 0.0009206099696368296,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.20777397411610074
+        }
+      },
+      "storage_m3": 0.007355075480265421,
+      "outfall_signed_flow_m3_s": -0.000719043799603137,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.006874562913912114,
+        "outflow": 0.0,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.25971311724101065,
+        "pctError": 1e-06
+      },
+      "residual_m3": -0.0004756352232652833,
+      "native_residual_m3": -0.00047563522326528763,
+      "tolerance_m3": 6.879440257000137e-05,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.006874562913912119,
+      "cumulative_discharge_m3": 0.0,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 0.00048,
+      "diagnostic_residual_plus_half_cell_m3": 4.364776734716721e-06
+    },
+    {
+      "elapsed_s": 49.989999999999995,
+      "nodes": {
+        "A": {
+          "stage_m": 0.054035115019798095,
+          "depth_m": 0.014035115019798093,
+          "storage_m3": 0.00021052672529697138,
+          "inflow_m3_s": 0.00030742773193588076,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.06273543923386865,
+          "depth_m": 0.04273543923386865,
+          "storage_m3": 0.0017094175693547458,
+          "inflow_m3_s": 9.616760309828518e-05,
+          "outflow_m3_s": 0.00030742773193588076,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.06,
+          "depth_m": 0.06,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 3.9040104605677045e-05,
+          "outflow_m3_s": 3.9040104605677045e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.0624323266801988,
+          "depth_m": 0.047432326680198804,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 8.060957587056914e-05,
+          "outflow_m3_s": 9.616760309828518e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.06192907362997767,
+          "depth_m": 0.051929073629977666,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 5.908712000601424e-05,
+          "outflow_m3_s": 8.060957587056914e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.06099986415974052,
+          "depth_m": 0.05599986415974052,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 3.9040104605677045e-05,
+          "outflow_m3_s": 5.908712000601424e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": -0.00030742773193588076,
+          "depth_m": 0.02838527648025965,
+          "storage_m3": 0.0027252900008369516,
+          "us_surface_area_m2": 0.047999999999999994,
+          "ds_surface_area_m2": 0.047999999999999994,
+          "froude": 0.25635088947851875
+        },
+        "L2_1": {
+          "flow_m3_s": -9.616760309828518e-05,
+          "depth_m": 0.045083884978980436,
+          "storage_m3": 0.0007214224894465118,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.040088959396755004
+        },
+        "L2_2": {
+          "flow_m3_s": -8.060957587056914e-05,
+          "depth_m": 0.04968069940204816,
+          "storage_m3": 0.0007949797107498509,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.029050135790541325
+        },
+        "L2_3": {
+          "flow_m3_s": -5.908712000601424e-05,
+          "depth_m": 0.05396446640458401,
+          "storage_m3": 0.0008635276155415316,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.018808406181281767
+        },
+        "L2_4": {
+          "flow_m3_s": -3.9040104605677045e-05,
+          "depth_m": 0.05799993027671156,
+          "storage_m3": 0.0009281022278239259,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.011147632697486025
+        }
+      },
+      "storage_m3": 0.00795326633905049,
+      "outfall_signed_flow_m3_s": -3.9040104605677045e-05,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.01271894703476024,
+        "outflow": 0.005246005385284551,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.28083567581392965,
+        "pctError": 1e-06
+      },
+      "residual_m3": -0.0004754473464868075,
+      "native_residual_m3": -0.0004754473464867815,
+      "tolerance_m3": 0.0001272381212724228,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.01271893478415426,
+      "cumulative_discharge_m3": 0.005245993134678598,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 0.00048,
+      "diagnostic_residual_plus_half_cell_m3": 4.552653513192515e-06
+    },
+    {
+      "elapsed_s": 50.0,
+      "nodes": {
+        "A": {
+          "stage_m": 0.05408400249094701,
+          "depth_m": 0.014084002490947005,
+          "storage_m3": 0.00021126003736420508,
+          "inflow_m3_s": 0.000308692193505862,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.06271334362021186,
+          "depth_m": 0.04271334362021186,
+          "storage_m3": 0.0017085337448084746,
+          "inflow_m3_s": 9.558865361277228e-05,
+          "outflow_m3_s": 0.000308692193505862,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.06,
+          "depth_m": 0.06,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 3.677198752807027e-05,
+          "outflow_m3_s": 3.677198752807027e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.062422467619419296,
+          "depth_m": 0.047422467619419297,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 7.95943756949987e-05,
+          "outflow_m3_s": 9.558865361277228e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.06191531869648704,
+          "depth_m": 0.05191531869648704,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 5.710119326076168e-05,
+          "outflow_m3_s": 7.95943756949987e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.060987244406851306,
+          "depth_m": 0.05598724440685131,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 3.677198752807027e-05,
+          "outflow_m3_s": 5.710119326076168e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": -0.000308692193505862,
+          "depth_m": 0.028398672410004797,
+          "storage_m3": 0.0027265761533044725,
+          "us_surface_area_m2": 0.047999999999999994,
+          "ds_surface_area_m2": 0.047999999999999994,
+          "froude": 0.2572231722162963
+        },
+        "L2_1": {
+          "flow_m3_s": -9.558865361277228e-05,
+          "depth_m": 0.04506790768799156,
+          "storage_m3": 0.0007211668243225947,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.0398690164983847
+        },
+        "L2_2": {
+          "flow_m3_s": -7.95943756949987e-05,
+          "depth_m": 0.04966889233722713,
+          "storage_m3": 0.0007947907766750654,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.028694894480939537
+        },
+        "L2_3": {
+          "flow_m3_s": -5.710119326076168e-05,
+          "depth_m": 0.053951278968240146,
+          "storage_m3": 0.0008633165930628556,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.018182896400628326
+        },
+        "L2_4": {
+          "flow_m3_s": -3.677198752807027e-05,
+          "depth_m": 0.057993620409055265,
+          "storage_m3": 0.0009280012586985985,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.010501421416861065
+        }
+      },
+      "storage_m3": 0.007953645388236267,
+      "outfall_signed_flow_m3_s": -3.677198752807027e-05,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.012719326095220909,
+        "outflow": 0.005246005385284551,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.2808490603190772,
+        "pctError": 1e-06
+      },
+      "residual_m3": -0.000475447335211915,
+      "native_residual_m3": -0.000475447335211889,
+      "tolerance_m3": 0.0001272419118770295,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.01271931384461493,
+      "cumulative_discharge_m3": 0.005245993134678598,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 0.00048,
+      "diagnostic_residual_plus_half_cell_m3": 4.552664788084993e-06
+    },
+    {
+      "elapsed_s": 50.01,
+      "nodes": {
+        "A": {
+          "stage_m": 0.054133089469006544,
+          "depth_m": 0.014133089469006538,
+          "storage_m3": 0.00021199634203509807,
+          "inflow_m3_s": 0.00030994207633115137,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.06269105791627462,
+          "depth_m": 0.04269105791627462,
+          "storage_m3": 0.001707642316650985,
+          "inflow_m3_s": 9.503132847759576e-05,
+          "outflow_m3_s": 0.00030994207633115137,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.059984999327195115,
+          "depth_m": 0.059984999327195115,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 3.4512033986829245e-05,
+          "outflow_m3_s": 3.4512033986829245e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.06241232677839631,
+          "depth_m": 0.04741232677839631,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 7.857132090180866e-05,
+          "outflow_m3_s": 9.503132847759576e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.06190096054561796,
+          "depth_m": 0.05190096054561795,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 5.5119014230535673e-05,
+          "outflow_m3_s": 7.857132090180866e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.060974453053916085,
+          "depth_m": 0.05597445305391609,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 3.4512033986829245e-05,
+          "outflow_m3_s": 5.5119014230535673e-05,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": -0.00030994207633115137,
+          "depth_m": 0.028412073048537483,
+          "storage_m3": 0.002727862757865938,
+          "us_surface_area_m2": 0.047999999999999994,
+          "ds_surface_area_m2": 0.047999999999999994,
+          "froude": 0.2580819681831316
+        },
+        "L2_1": {
+          "flow_m3_s": -9.503132847759576e-05,
+          "depth_m": 0.045051694456603696,
+          "storage_m3": 0.0007209073837318994,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.039658184753195734
+        },
+        "L2_2": {
+          "flow_m3_s": -7.857132090180866e-05,
+          "depth_m": 0.049656642766819,
+          "storage_m3": 0.0007945947617224366,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.028336932740751667
+        },
+        "L2_3": {
+          "flow_m3_s": -5.5119014230535673e-05,
+          "depth_m": 0.05393770579800253,
+          "storage_m3": 0.0008630993981545848,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.017558293077162966
+        },
+        "L2_4": {
+          "flow_m3_s": -3.4512033986829245e-05,
+          "depth_m": 0.05797972608092655,
+          "storage_m3": 0.0009277789246918359,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.00986538258014193
+        }
+      },
+      "storage_m3": 0.007953881884852777,
+      "outfall_signed_flow_m3_s": -3.4512033986829245e-05,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.012719682515328483,
+        "outflow": 0.005246005385284551,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.2808574111883043,
+        "pctError": 1e-06
+      },
+      "residual_m3": -0.00047532741172085207,
+      "native_residual_m3": -0.00047532741172082605,
+      "tolerance_m3": 0.00012724547607810525,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.012719670264722503,
+      "cumulative_discharge_m3": 0.005245993134678598,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 0.00047987999461756095,
+      "diagnostic_residual_plus_half_cell_m3": 4.55258289670888e-06
+    },
+    {
+      "elapsed_s": 90.0,
+      "nodes": {
+        "A": {
+          "stage_m": 0.040182548582647304,
+          "depth_m": 0.0001825485826473033,
+          "storage_m3": 2.7382287397095494e-06,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 5.043588947738856e-07,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.020637338721521563,
+          "depth_m": 0.0006373387215215624,
+          "storage_m3": 2.54935488608625e-05,
+          "inflow_m3_s": 5.043588947738856e-07,
+          "outflow_m3_s": 4.927794312324004e-06,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.0008540732158464942,
+          "depth_m": 0.0008540732158464942,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 7.989747141799605e-06,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.015699042087356282,
+          "depth_m": 0.0006990420873562815,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 4.927794312324004e-06,
+          "outflow_m3_s": 5.7425325396492584e-06,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.010763040005965435,
+          "depth_m": 0.0007630400059654345,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 5.7425325396492584e-06,
+          "outflow_m3_s": 6.638300693253047e-06,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.005853419265161011,
+          "depth_m": 0.0008534192651610108,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 6.638300693253047e-06,
+          "outflow_m3_s": 7.989747141799605e-06,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": 5.043588947738856e-07,
+          "depth_m": 0.00040994361240140564,
+          "storage_m3": 3.9358969378420164e-05,
+          "us_surface_area_m2": 0.047999999999999994,
+          "ds_surface_area_m2": 0.047999999999999994,
+          "froude": 0.2425147553440166
+        },
+        "L2_1": {
+          "flow_m3_s": 4.927794312324004e-06,
+          "depth_m": 0.0006681903284132541,
+          "storage_m3": 1.0692235826010074e-05,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 1.1389078341967653
+        },
+        "L2_2": {
+          "flow_m3_s": 5.7425325396492584e-06,
+          "depth_m": 0.0007310409623926112,
+          "storage_m3": 1.1697957955986654e-05,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 1.1597890234270214
+        },
+        "L2_3": {
+          "flow_m3_s": 6.638300693253047e-06,
+          "depth_m": 0.0008082293945428078,
+          "storage_m3": 1.2933110403568098e-05,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 1.153306632267998
+        },
+        "L2_4": {
+          "flow_m3_s": 7.989747141799605e-06,
+          "depth_m": 0.0008539573982100737,
+          "storage_m3": 1.3664839939708091e-05,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 1.2783824369489465
+        }
+      },
+      "storage_m3": 0.00011657889110426513,
+      "outfall_signed_flow_m3_s": 7.989747141799605e-06,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.013879927677613054,
+        "outflow": 0.013768728640163012,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.004116486267805972,
+        "pctError": 1e-06
+      },
+      "residual_m3": -5.025105663049355e-07,
+      "native_residual_m3": -5.025105662025868e-07,
+      "tolerance_m3": 0.00013884779671939444,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.013879902328851425,
+      "cumulative_discharge_m3": 0.013768703291401485,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 6.832585726771954e-06,
+      "diagnostic_residual_plus_half_cell_m3": 6.330075160467019e-06
+    },
+    {
+      "elapsed_s": 120.0,
+      "nodes": {
+        "A": {
+          "stage_m": 0.04007093110007373,
+          "depth_m": 7.093110007372821e-05,
+          "storage_m3": 1.0639665011059232e-06,
+          "inflow_m3_s": 0.0,
+          "outflow_m3_s": 1.0452854452184631e-07,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "S": {
+          "stage_m": 0.020174206055343487,
+          "depth_m": 0.0001742060553434862,
+          "storage_m3": 6.968242213739447e-06,
+          "inflow_m3_s": 1.0452854452184631e-07,
+          "outflow_m3_s": 5.714350346373648e-07,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "O": {
+          "stage_m": 0.00022188917509391985,
+          "depth_m": 0.00022188917509391985,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 8.493200906349511e-07,
+          "outflow_m3_s": 0.0,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_1": {
+          "stage_m": 0.01518935806503484,
+          "depth_m": 0.000189358065034841,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 5.714350346373648e-07,
+          "outflow_m3_s": 6.564865396144882e-07,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_2": {
+          "stage_m": 0.0102049817462487,
+          "depth_m": 0.0002049817462486991,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 6.564865396144882e-07,
+          "outflow_m3_s": 7.49030385447042e-07,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        },
+        "D4_3": {
+          "stage_m": 0.005221068861547848,
+          "depth_m": 0.00022106886154784751,
+          "storage_m3": 0.0,
+          "inflow_m3_s": 7.49030385447042e-07,
+          "outflow_m3_s": 8.493200906349511e-07,
+          "lateral_m3_s": 0.0,
+          "spill_m3_s": 0.0
+        }
+      },
+      "links": {
+        "L1": {
+          "flow_m3_s": 1.0452854452184631e-07,
+          "depth_m": 0.0001225685758416548,
+          "storage_m3": 1.1767893625781296e-05,
+          "us_surface_area_m2": 0.047999999999999994,
+          "ds_surface_area_m2": 0.047999999999999994,
+          "froude": 0.3073810019668668
+        },
+        "L2_1": {
+          "flow_m3_s": 5.714350346373648e-07,
+          "depth_m": 0.00018178205711920793,
+          "storage_m3": 2.9088368104210515e-06,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.9303951608628579
+        },
+        "L2_2": {
+          "flow_m3_s": 6.564865396144882e-07,
+          "depth_m": 0.0001971699022782706,
+          "storage_m3": 3.1550697507952926e-06,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.946220894474448
+        },
+        "L2_3": {
+          "flow_m3_s": 7.49030385447042e-07,
+          "depth_m": 0.00021302530023027455,
+          "storage_m3": 3.408784368935074e-06,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 0.9613483910502264
+        },
+        "L2_4": {
+          "flow_m3_s": 8.493200906349511e-07,
+          "depth_m": 0.00022149446093178176,
+          "storage_m3": 3.5443060303813424e-06,
+          "us_surface_area_m2": 0.008,
+          "ds_surface_area_m2": 0.008,
+          "froude": 1.028148192470322
+        }
+      },
+      "storage_m3": 3.2817099301159425e-05,
+      "outfall_signed_flow_m3_s": 8.493200906349511e-07,
+      "external_inflow_m3_s": 0.0,
+      "spill_m3_s": 0.0,
+      "raw_native": {
+        "exInflow": 0.013879927677613054,
+        "outflow": 0.013847422604842554,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.0011587958792782281,
+        "pctError": 1e-06
+      },
+      "residual_m3": 4.565316557315701e-06,
+      "native_residual_m3": 4.565316557360804e-06,
+      "tolerance_m3": 0.00013884779671939444,
+      "cumulative_external_inflow_m3": 0.0,
+      "cumulative_backflow_m3": 0.013879902328851425,
+      "cumulative_discharge_m3": 0.01384739725608097,
+      "cumulative_spill_m3": 0.0,
+      "diagnostic_boundary_half_cell_change_m3": 1.7751134007513587e-06,
+      "diagnostic_residual_plus_half_cell_m3": 6.3404299580670595e-06
+    }
+  ],
+  "per_step_flow_classification": "Not exposed by toolkit; native report aggregates retained, with live end areas/depth/Froude in trace."
+}

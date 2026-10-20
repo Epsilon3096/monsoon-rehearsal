@@ -1,0 +1,418 @@
+........................................................................ [ 17%]
+........................................................................ [ 35%]
+.....................................FFFFFFFFFFF.....F...F.............. [ 53%]
+........................................................................ [ 71%]
+........................................................................ [ 89%]
+..........................................                               [100%]
+================================== FAILURES ===================================
+___________ test_exact_frozen_event_reaches_mocked_runner_unchanged ___________
+
+    def _load_study():
+        """Read each record once and check the original local study identities."""
+        try:
+            protocol = parse_json(Path(_PROTOCOL_PATH).read_bytes())
+            freeze = parse_json(Path(_FREEZE_PATH).read_bytes())
+            development = parse_json(Path(_DEVELOPMENT_PATH).read_bytes())
+            validate_protocol(protocol)
+            if protocol.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Protocol is not the recorded v0.3 study.")
+            if freeze.get("freeze_sha256") != FREEZE_SHA256 or fingerprint({k: v for k, v in freeze.items() if k != "freeze_sha256"}) != FREEZE_SHA256:
+                raise ValueError("Implementation freeze identity differs from the recorded study.")
+            if freeze.get("protocol_sha256") != PROTOCOL_SHA256 or freeze.get("source_sha256") != source_fingerprints():
+>               raise ValueError("Frozen source or protocol differs from the recorded study.")
+E               ValueError: Frozen source or protocol differs from the recorded study.
+
+monsoon\policy_replay.py:40: ValueError
+
+The above exception was the direct cause of the following exception:
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC1DB5BC0>)
+
+    def test_exact_frozen_event_reaches_mocked_runner_unchanged(study):
+        policies, protocol, case, calls, callback = study
+        original = deepcopy((policies["LOW"], case, protocol["evaluation_events"][0]))
+>       result = policy_replay.replay_frozen_event(*original, callback)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_policy_replay.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+monsoon\policy_replay.py:66: in replay_frozen_event
+    protocol, freeze, recorded = _load_study()
+                                 ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def _load_study():
+        """Read each record once and check the original local study identities."""
+        try:
+            protocol = parse_json(Path(_PROTOCOL_PATH).read_bytes())
+            freeze = parse_json(Path(_FREEZE_PATH).read_bytes())
+            development = parse_json(Path(_DEVELOPMENT_PATH).read_bytes())
+            validate_protocol(protocol)
+            if protocol.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Protocol is not the recorded v0.3 study.")
+            if freeze.get("freeze_sha256") != FREEZE_SHA256 or fingerprint({k: v for k, v in freeze.items() if k != "freeze_sha256"}) != FREEZE_SHA256:
+                raise ValueError("Implementation freeze identity differs from the recorded study.")
+            if freeze.get("protocol_sha256") != PROTOCOL_SHA256 or freeze.get("source_sha256") != source_fingerprints():
+                raise ValueError("Frozen source or protocol differs from the recorded study.")
+            if freeze.get("engine") != engine_info():
+                raise ValueError("Engine differs from the recorded implementation freeze.")
+            if development.get("freeze_sha256") != FREEZE_SHA256 or development.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Recorded policy lineage differs from the study freeze.")
+            if fingerprint(development.get("policies")) != RECORDED_POLICIES_SHA256:
+                raise ValueError("Recorded policy identities were changed.")
+            return protocol, freeze, development["policies"]
+        except (OSError, ValueError, TypeError, KeyError, UnicodeError, OverflowError, RecursionError) as exc:
+>           raise ValueError(f"Recorded-study binding failed: {exc}") from exc
+E           ValueError: Recorded-study binding failed: Frozen source or protocol differs from the recorded study.
+
+monsoon\policy_replay.py:49: ValueError
+________________ test_canonical_event_ignores_object_key_order ________________
+
+    def _load_study():
+        """Read each record once and check the original local study identities."""
+        try:
+            protocol = parse_json(Path(_PROTOCOL_PATH).read_bytes())
+            freeze = parse_json(Path(_FREEZE_PATH).read_bytes())
+            development = parse_json(Path(_DEVELOPMENT_PATH).read_bytes())
+            validate_protocol(protocol)
+            if protocol.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Protocol is not the recorded v0.3 study.")
+            if freeze.get("freeze_sha256") != FREEZE_SHA256 or fingerprint({k: v for k, v in freeze.items() if k != "freeze_sha256"}) != FREEZE_SHA256:
+                raise ValueError("Implementation freeze identity differs from the recorded study.")
+            if freeze.get("protocol_sha256") != PROTOCOL_SHA256 or freeze.get("source_sha256") != source_fingerprints():
+>               raise ValueError("Frozen source or protocol differs from the recorded study.")
+E               ValueError: Frozen source or protocol differs from the recorded study.
+
+monsoon\policy_replay.py:40: ValueError
+
+The above exception was the direct cause of the following exception:
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E00E0>)
+
+    def test_canonical_event_ignores_object_key_order(study):
+        policies, protocol, case, calls, callback = study
+        event = dict(reversed(list(protocol["evaluation_events"][0].items())))
+>       assert policy_replay.replay_frozen_event(policies["LOW"], case, event, callback)["event_id"] == "V3-E01"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_policy_replay.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+monsoon\policy_replay.py:66: in replay_frozen_event
+    protocol, freeze, recorded = _load_study()
+                                 ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def _load_study():
+        """Read each record once and check the original local study identities."""
+        try:
+            protocol = parse_json(Path(_PROTOCOL_PATH).read_bytes())
+            freeze = parse_json(Path(_FREEZE_PATH).read_bytes())
+            development = parse_json(Path(_DEVELOPMENT_PATH).read_bytes())
+            validate_protocol(protocol)
+            if protocol.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Protocol is not the recorded v0.3 study.")
+            if freeze.get("freeze_sha256") != FREEZE_SHA256 or fingerprint({k: v for k, v in freeze.items() if k != "freeze_sha256"}) != FREEZE_SHA256:
+                raise ValueError("Implementation freeze identity differs from the recorded study.")
+            if freeze.get("protocol_sha256") != PROTOCOL_SHA256 or freeze.get("source_sha256") != source_fingerprints():
+                raise ValueError("Frozen source or protocol differs from the recorded study.")
+            if freeze.get("engine") != engine_info():
+                raise ValueError("Engine differs from the recorded implementation freeze.")
+            if development.get("freeze_sha256") != FREEZE_SHA256 or development.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Recorded policy lineage differs from the study freeze.")
+            if fingerprint(development.get("policies")) != RECORDED_POLICIES_SHA256:
+                raise ValueError("Recorded policy identities were changed.")
+            return protocol, freeze, development["policies"]
+        except (OSError, ValueError, TypeError, KeyError, UnicodeError, OverflowError, RecursionError) as exc:
+>           raise ValueError(f"Recorded-study binding failed: {exc}") from exc
+E           ValueError: Recorded-study binding failed: Frozen source or protocol differs from the recorded study.
+
+monsoon\policy_replay.py:49: ValueError
+_______________ test_low_policy_cannot_replay_high_observation ________________
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E36A0>)
+
+    def test_low_policy_cannot_replay_high_observation(study):
+        policies, protocol, case, calls, callback = study
+>       with pytest.raises(ValueError, match="observation_id"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'observation_id'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:49: AssertionError
+_____ test_unknown_or_modified_event_is_rejected_before_runner[<lambda>0] _____
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E39C0>)
+change = <function <lambda> at 0x0000026EE8B58180>
+
+    @pytest.mark.parametrize("change", [
+        lambda event: event.update(id="UNSEALED-REVIEW-SENTINEL"),
+        lambda event: event["hydraulic"].update(tailwater_m=99.99),
+        lambda event: event["durations"].update(J1=1),
+        lambda event: event.update(observation_id="HIGH"),
+        lambda event: event.update(phase="planning"),
+        lambda event: event.update(unrecognised_future_information=True),
+    ])
+    def test_unknown_or_modified_event_is_rejected_before_runner(study, change):
+        policies, protocol, case, calls, callback = study
+        event = deepcopy(protocol["evaluation_events"][0])
+        change(event)
+>       with pytest.raises(ValueError, match="exact canonical member"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact canonical member'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:66: AssertionError
+_____ test_unknown_or_modified_event_is_rejected_before_runner[<lambda>1] _____
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E3A60>)
+change = <function <lambda> at 0x0000026EE8B58CC0>
+
+    @pytest.mark.parametrize("change", [
+        lambda event: event.update(id="UNSEALED-REVIEW-SENTINEL"),
+        lambda event: event["hydraulic"].update(tailwater_m=99.99),
+        lambda event: event["durations"].update(J1=1),
+        lambda event: event.update(observation_id="HIGH"),
+        lambda event: event.update(phase="planning"),
+        lambda event: event.update(unrecognised_future_information=True),
+    ])
+    def test_unknown_or_modified_event_is_rejected_before_runner(study, change):
+        policies, protocol, case, calls, callback = study
+        event = deepcopy(protocol["evaluation_events"][0])
+        change(event)
+>       with pytest.raises(ValueError, match="exact canonical member"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact canonical member'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:66: AssertionError
+_____ test_unknown_or_modified_event_is_rejected_before_runner[<lambda>2] _____
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E0C20>)
+change = <function <lambda> at 0x0000026EE8B5A700>
+
+    @pytest.mark.parametrize("change", [
+        lambda event: event.update(id="UNSEALED-REVIEW-SENTINEL"),
+        lambda event: event["hydraulic"].update(tailwater_m=99.99),
+        lambda event: event["durations"].update(J1=1),
+        lambda event: event.update(observation_id="HIGH"),
+        lambda event: event.update(phase="planning"),
+        lambda event: event.update(unrecognised_future_information=True),
+    ])
+    def test_unknown_or_modified_event_is_rejected_before_runner(study, change):
+        policies, protocol, case, calls, callback = study
+        event = deepcopy(protocol["evaluation_events"][0])
+        change(event)
+>       with pytest.raises(ValueError, match="exact canonical member"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact canonical member'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:66: AssertionError
+_____ test_unknown_or_modified_event_is_rejected_before_runner[<lambda>3] _____
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E2980>)
+change = <function <lambda> at 0x0000026EE8B5A660>
+
+    @pytest.mark.parametrize("change", [
+        lambda event: event.update(id="UNSEALED-REVIEW-SENTINEL"),
+        lambda event: event["hydraulic"].update(tailwater_m=99.99),
+        lambda event: event["durations"].update(J1=1),
+        lambda event: event.update(observation_id="HIGH"),
+        lambda event: event.update(phase="planning"),
+        lambda event: event.update(unrecognised_future_information=True),
+    ])
+    def test_unknown_or_modified_event_is_rejected_before_runner(study, change):
+        policies, protocol, case, calls, callback = study
+        event = deepcopy(protocol["evaluation_events"][0])
+        change(event)
+>       with pytest.raises(ValueError, match="exact canonical member"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact canonical member'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:66: AssertionError
+_____ test_unknown_or_modified_event_is_rejected_before_runner[<lambda>4] _____
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E16C0>)
+change = <function <lambda> at 0x0000026EE8B58540>
+
+    @pytest.mark.parametrize("change", [
+        lambda event: event.update(id="UNSEALED-REVIEW-SENTINEL"),
+        lambda event: event["hydraulic"].update(tailwater_m=99.99),
+        lambda event: event["durations"].update(J1=1),
+        lambda event: event.update(observation_id="HIGH"),
+        lambda event: event.update(phase="planning"),
+        lambda event: event.update(unrecognised_future_information=True),
+    ])
+    def test_unknown_or_modified_event_is_rejected_before_runner(study, change):
+        policies, protocol, case, calls, callback = study
+        event = deepcopy(protocol["evaluation_events"][0])
+        change(event)
+>       with pytest.raises(ValueError, match="exact canonical member"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact canonical member'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:66: AssertionError
+_____ test_unknown_or_modified_event_is_rejected_before_runner[<lambda>5] _____
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E0CC0>)
+change = <function <lambda> at 0x0000026EE8B58D60>
+
+    @pytest.mark.parametrize("change", [
+        lambda event: event.update(id="UNSEALED-REVIEW-SENTINEL"),
+        lambda event: event["hydraulic"].update(tailwater_m=99.99),
+        lambda event: event["durations"].update(J1=1),
+        lambda event: event.update(observation_id="HIGH"),
+        lambda event: event.update(phase="planning"),
+        lambda event: event.update(unrecognised_future_information=True),
+    ])
+    def test_unknown_or_modified_event_is_rejected_before_runner(study, change):
+        policies, protocol, case, calls, callback = study
+        event = deepcopy(protocol["evaluation_events"][0])
+        change(event)
+>       with pytest.raises(ValueError, match="exact canonical member"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact canonical member'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:66: AssertionError
+_________ test_resigned_policy_cannot_masquerade_as_recorded_decision _________
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC20E3880>)
+
+    def test_resigned_policy_cannot_masquerade_as_recorded_decision(study):
+        policies, protocol, case, calls, callback = study
+        edited = deepcopy(policies["LOW"])
+        edited["policies"]["observed_robust"]["queue"] = ["J1"]
+        edited["snapshot_sha256"] = fingerprint({k: v for k, v in edited.items() if k != "snapshot_sha256"})
+>       with pytest.raises(ValueError, match="exact recorded policy"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'exact recorded policy'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:76: AssertionError
+________________ test_modified_case_is_rejected_before_runner _________________
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC22B4040>)
+
+    def test_modified_case_is_rejected_before_runner(study):
+        policies, protocol, case, calls, callback = study
+        case["epsilon_m3"] = 1
+>       with pytest.raises(ValueError, match="case differs"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'case differs'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:84: AssertionError
+______________________ test_changed_engine_fails_closed _______________________
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC22B47C0>)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000026E8195E780>
+
+    def test_changed_engine_fails_closed(study, monkeypatch):
+        policies, protocol, case, calls, callback = study
+        monkeypatch.setattr(policy_replay, "engine_info", lambda: {"engine": "changed"})
+>       with pytest.raises(ValueError, match="Engine differs"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'Engine differs'
+E         Actual message: 'Recorded-study binding failed: Frozen source or protocol differs from the recorded study.'
+
+tests\test_policy_replay.py:108: AssertionError
+_______ test_input_snapshots_survive_caller_mutation_during_validation ________
+
+    def _load_study():
+        """Read each record once and check the original local study identities."""
+        try:
+            protocol = parse_json(Path(_PROTOCOL_PATH).read_bytes())
+            freeze = parse_json(Path(_FREEZE_PATH).read_bytes())
+            development = parse_json(Path(_DEVELOPMENT_PATH).read_bytes())
+            validate_protocol(protocol)
+            if protocol.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Protocol is not the recorded v0.3 study.")
+            if freeze.get("freeze_sha256") != FREEZE_SHA256 or fingerprint({k: v for k, v in freeze.items() if k != "freeze_sha256"}) != FREEZE_SHA256:
+                raise ValueError("Implementation freeze identity differs from the recorded study.")
+            if freeze.get("protocol_sha256") != PROTOCOL_SHA256 or freeze.get("source_sha256") != source_fingerprints():
+>               raise ValueError("Frozen source or protocol differs from the recorded study.")
+E               ValueError: Frozen source or protocol differs from the recorded study.
+
+monsoon\policy_replay.py:40: ValueError
+
+The above exception was the direct cause of the following exception:
+
+study = ({'LOW': {'version': '0.3.0-research-1', 'protocol_sha256': '932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5...ted benefit.', 'model_version': 'synthetic-1.0.0', ...}, [], <function study.<locals>.forbidden at 0x0000026EC22B4220>)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000026EC226F830>
+
+    def test_input_snapshots_survive_caller_mutation_during_validation(study, monkeypatch):
+        policies, protocol, case, calls, callback = study
+        snapshot, event = deepcopy(policies["LOW"]), deepcopy(protocol["evaluation_events"][0])
+        original = deepcopy((snapshot, case, event))
+        real_load = policy_replay._load_study
+        def mutate_originals():
+            snapshot["policies"]["observed_robust"]["queue"] = ["J1"]
+            case["epsilon_m3"] = 5
+            event["durations"]["J1"] = 1
+            return real_load()
+        monkeypatch.setattr(policy_replay, "_load_study", mutate_originals)
+>       policy_replay.replay_frozen_event(snapshot, case, event, callback)
+
+tests\test_policy_replay.py:147: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+monsoon\policy_replay.py:66: in replay_frozen_event
+    protocol, freeze, recorded = _load_study()
+                                 ^^^^^^^^^^^^^
+tests\test_policy_replay.py:145: in mutate_originals
+    return real_load()
+           ^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def _load_study():
+        """Read each record once and check the original local study identities."""
+        try:
+            protocol = parse_json(Path(_PROTOCOL_PATH).read_bytes())
+            freeze = parse_json(Path(_FREEZE_PATH).read_bytes())
+            development = parse_json(Path(_DEVELOPMENT_PATH).read_bytes())
+            validate_protocol(protocol)
+            if protocol.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Protocol is not the recorded v0.3 study.")
+            if freeze.get("freeze_sha256") != FREEZE_SHA256 or fingerprint({k: v for k, v in freeze.items() if k != "freeze_sha256"}) != FREEZE_SHA256:
+                raise ValueError("Implementation freeze identity differs from the recorded study.")
+            if freeze.get("protocol_sha256") != PROTOCOL_SHA256 or freeze.get("source_sha256") != source_fingerprints():
+                raise ValueError("Frozen source or protocol differs from the recorded study.")
+            if freeze.get("engine") != engine_info():
+                raise ValueError("Engine differs from the recorded implementation freeze.")
+            if development.get("freeze_sha256") != FREEZE_SHA256 or development.get("protocol_sha256") != PROTOCOL_SHA256:
+                raise ValueError("Recorded policy lineage differs from the study freeze.")
+            if fingerprint(development.get("policies")) != RECORDED_POLICIES_SHA256:
+                raise ValueError("Recorded policy identities were changed.")
+            return protocol, freeze, development["policies"]
+        except (OSError, ValueError, TypeError, KeyError, UnicodeError, OverflowError, RecursionError) as exc:
+>           raise ValueError(f"Recorded-study binding failed: {exc}") from exc
+E           ValueError: Recorded-study binding failed: Frozen source or protocol differs from the recorded study.
+
+monsoon\policy_replay.py:49: ValueError
+=========================== short test summary info ===========================
+FAILED tests/test_policy_replay.py::test_exact_frozen_event_reaches_mocked_runner_unchanged
+FAILED tests/test_policy_replay.py::test_canonical_event_ignores_object_key_order
+FAILED tests/test_policy_replay.py::test_low_policy_cannot_replay_high_observation
+FAILED tests/test_policy_replay.py::test_unknown_or_modified_event_is_rejected_before_runner[<lambda>0]
+FAILED tests/test_policy_replay.py::test_unknown_or_modified_event_is_rejected_before_runner[<lambda>1]
+FAILED tests/test_policy_replay.py::test_unknown_or_modified_event_is_rejected_before_runner[<lambda>2]
+FAILED tests/test_policy_replay.py::test_unknown_or_modified_event_is_rejected_before_runner[<lambda>3]
+FAILED tests/test_policy_replay.py::test_unknown_or_modified_event_is_rejected_before_runner[<lambda>4]
+FAILED tests/test_policy_replay.py::test_unknown_or_modified_event_is_rejected_before_runner[<lambda>5]
+FAILED tests/test_policy_replay.py::test_resigned_policy_cannot_masquerade_as_recorded_decision
+FAILED tests/test_policy_replay.py::test_modified_case_is_rejected_before_runner
+FAILED tests/test_policy_replay.py::test_changed_engine_fails_closed - Assert...
+FAILED tests/test_policy_replay.py::test_input_snapshots_survive_caller_mutation_during_validation
+13 failed, 389 passed in 424.23s (0:07:04)

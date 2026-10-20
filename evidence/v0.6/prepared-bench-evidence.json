@@ -1,0 +1,1243 @@
+{
+  "schema_version": "monsoon.prepared-bench-evidence-summary/1",
+  "evidence_kind": "synthetic_fixture",
+  "physical_validation_established": false,
+  "physical_equilibration_established": false,
+  "operational_activation_allowed": false,
+  "prepared_engine_identity": {
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "source_sha256": {
+      "bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+      "_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+      "site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5",
+      "bench_initialization.py": "1ea615f2b1edb6c4b7ecbfcb2e49010f81a0444a140ef6232a1e6eb569d5dbb4",
+      "_bench_initialization_worker.py": "1343da6654e7ee3cda0b4155bc27673c7102750fe388e2df80eb547144678b73"
+    },
+    "routing": "DYNWAVE",
+    "units": "CMS / m / m3",
+    "base_adapter_version": "1.0.0",
+    "prepared_adapter_version": "1.0.0"
+  },
+  "focused_test_result": "tests/test_bench_initialization.py: 37 passed in 8.48 s (2026-10-15)",
+  "cases": [
+    {
+      "valid": true,
+      "status": "succeeded",
+      "errors": [],
+      "simulation_sha256": "392978fc913178316095dcb055cb60f0c5eaef83cf1844e036157b4d4a8584ee",
+      "initial_state": {
+        "elapsed_s": 0.0,
+        "inflow_m3_s": {
+          "A": 0.0
+        },
+        "link_depth_m": {
+          "L1": 3.0480000000000003e-05
+        },
+        "link_flow_m3_s": {
+          "L1": 0.0
+        },
+        "link_storage_m3": {
+          "L1": 2.9264058528117054e-06
+        },
+        "node_depth_m": {
+          "A": 0.0699793557593154,
+          "O": 0.0
+        },
+        "node_lateral_inflow_m3_s": {
+          "A": 0.0,
+          "O": 0.0
+        },
+        "node_storage_m3": {
+          "A": 0.00699793557593154,
+          "O": 0.0
+        },
+        "node_total_inflow_m3_s": {
+          "A": 0.0,
+          "O": 0.0
+        },
+        "node_total_outflow_m3_s": {
+          "A": 0.0,
+          "O": 0.0
+        },
+        "outflow_m3_s": {
+          "O": 0.0
+        },
+        "prescribed_inflow_m3_s": {
+          "A": 0.0
+        },
+        "receiving_stage_m": {
+          "O": 0.22
+        },
+        "simulation_elapsed_s": 100.0,
+        "spill_m3_s": {
+          "A": 0.0
+        },
+        "stage_m": {
+          "A": 0.10997935575931539,
+          "O": 0.22
+        },
+        "storage_m3": 0.0070008619817843514
+      },
+      "phase_balances": {
+        "evaluation": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 6001,
+            "failed_endpoints": 0,
+            "first_failed_simulation_elapsed_s": null,
+            "last_failed_simulation_elapsed_s": null,
+            "maximum_absolute_residual_m3": 5.883505794241489e-07,
+            "maximum_residual_to_tolerance_ratio": 0.00653660292851162,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 0.009000861546260635,
+              "mass_balance_residual_m3": 5.883505794241489e-07,
+              "mass_balance_tolerance_m3": 9.000861546260634e-05,
+              "simulation_elapsed_s": 115.01,
+              "storage_m3": 0.00900027319568121
+            }
+          },
+          "cumulative_balance_passed": true,
+          "discharge_by_outfall_m3": {
+            "O": 0.0
+          },
+          "discharge_m3": 0.0,
+          "duration_s": 60.0,
+          "end_simulation_elapsed_s": 160.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.0019999995644762827
+          },
+          "external_inflow_m3": 0.0019999995644762827,
+          "final_storage_m3": 0.00900027319568121,
+          "initial_storage_m3": 0.0070008619817843514,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 5.883505794241489e-07,
+          "mass_balance_tolerance_m3": 9.000861546260634e-05,
+          "maximum_link_depth_m": {
+            "L1": 3.0480000000000003e-05
+          },
+          "maximum_stage_m": {
+            "A": 0.12997346789828398,
+            "O": 0.22
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.002,
+          "receiving_backflow_m3": 0.0,
+          "routing_steps": 6000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.0,
+          "spill_by_node_m3": {
+            "A": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 100.0
+        },
+        "preparation": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 10001,
+            "failed_endpoints": 0,
+            "first_failed_simulation_elapsed_s": null,
+            "last_failed_simulation_elapsed_s": null,
+            "maximum_absolute_residual_m3": 2.0592259471511817e-06,
+            "maximum_residual_to_tolerance_ratio": 0.029405242270578665,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 0.007002921207731503,
+              "mass_balance_residual_m3": 2.0592259471511817e-06,
+              "mass_balance_tolerance_m3": 7.002921207731502e-05,
+              "simulation_elapsed_s": 49.989999999999995,
+              "storage_m3": 0.0070008619817843514
+            }
+          },
+          "cumulative_balance_passed": true,
+          "discharge_by_outfall_m3": {
+            "O": 0.0
+          },
+          "discharge_m3": 0.0,
+          "duration_s": 100.0,
+          "end_simulation_elapsed_s": 100.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.006999994801878691
+          },
+          "external_inflow_m3": 0.006999994801878691,
+          "final_storage_m3": 0.0070008619817843514,
+          "initial_storage_m3": 2.9264058528117054e-06,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 2.0592259471511817e-06,
+          "mass_balance_tolerance_m3": 7.002921207731502e-05,
+          "maximum_link_depth_m": {
+            "L1": 3.0480000000000003e-05
+          },
+          "maximum_stage_m": {
+            "A": 0.10997935575931539,
+            "O": 0.22
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.007,
+          "receiving_backflow_m3": 0.0,
+          "routing_steps": 10000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.0,
+          "spill_by_node_m3": {
+            "A": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 0.0
+        },
+        "whole": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 16001,
+            "failed_endpoints": 0,
+            "first_failed_simulation_elapsed_s": null,
+            "last_failed_simulation_elapsed_s": null,
+            "maximum_absolute_residual_m3": 2.647576526581402e-06,
+            "maximum_residual_to_tolerance_ratio": 0.02940797318526369,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 0.009002920772207792,
+              "mass_balance_residual_m3": 2.647576526581402e-06,
+              "mass_balance_tolerance_m3": 9.002920772207792e-05,
+              "simulation_elapsed_s": 115.01,
+              "storage_m3": 0.00900027319568121
+            }
+          },
+          "cumulative_balance_passed": true,
+          "discharge_by_outfall_m3": {
+            "O": 0.0
+          },
+          "discharge_m3": 0.0,
+          "duration_s": 160.0,
+          "end_simulation_elapsed_s": 160.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.00899999436635498
+          },
+          "external_inflow_m3": 0.00899999436635498,
+          "final_storage_m3": 0.00900027319568121,
+          "initial_storage_m3": 2.9264058528117054e-06,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 2.647576526581402e-06,
+          "mass_balance_tolerance_m3": 9.002920772207792e-05,
+          "maximum_link_depth_m": {
+            "L1": 3.0480000000000003e-05
+          },
+          "maximum_stage_m": {
+            "A": 0.12997346789828398,
+            "O": 0.22
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.009000000000000001,
+          "receiving_backflow_m3": 0.0,
+          "routing_steps": 16000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.0,
+          "spill_by_node_m3": {
+            "A": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 0.0
+        }
+      },
+      "equilibrium": {
+        "complete_window": true,
+        "constant_forcing_contract_checked": true,
+        "end_simulation_elapsed_s": 100,
+        "expected_routing_state_samples": 2001,
+        "interpretation": "Every actual-routing endpoint in the declared constant-forcing window was checked. Bounded numerical stationarity only, not measured equilibration or proof of future steadiness.",
+        "metrics": [
+          {
+            "maximum": 3.0480000000000003e-05,
+            "metric": "link_depth_m:L1",
+            "minimum": 3.0480000000000003e-05,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 0.0001
+          },
+          {
+            "maximum": 0.0,
+            "metric": "link_flow_m3_s:L1",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 2.9264058528117054e-06,
+            "metric": "link_storage_m3:L1",
+            "minimum": 2.9264058528117054e-06,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-06
+          },
+          {
+            "maximum": 0.0699793557593154,
+            "metric": "node_depth_m:A",
+            "minimum": 0.0699793557593154,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 0.0001
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_depth_m:O",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 0.0001
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_lateral_inflow_m3_s:A",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_lateral_inflow_m3_s:O",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.00699793557593154,
+            "metric": "node_storage_m3:A",
+            "minimum": 0.00699793557593154,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-06
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_storage_m3:O",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-06
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_total_inflow_m3_s:A",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_total_inflow_m3_s:O",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_total_outflow_m3_s:A",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.0,
+            "metric": "node_total_outflow_m3_s:O",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.0,
+            "metric": "outflow_m3_s:O",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.0,
+            "metric": "spill_m3_s:A",
+            "minimum": 0.0,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-07
+          },
+          {
+            "maximum": 0.10997935575931539,
+            "metric": "stage_m:A",
+            "minimum": 0.10997935575931539,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 0.0001
+          },
+          {
+            "maximum": 0.22,
+            "metric": "stage_m:O",
+            "minimum": 0.22,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 0.0001
+          },
+          {
+            "maximum": 0.0070008619817843514,
+            "metric": "storage_m3:SYSTEM",
+            "minimum": 0.0070008619817843514,
+            "passed": true,
+            "range": 0.0,
+            "tolerance": 1e-06
+          }
+        ],
+        "passed": true,
+        "physical_equilibration_established": false,
+        "required": true,
+        "routing_state_samples": 2001,
+        "start_simulation_elapsed_s": 80,
+        "status": "numerically_stationary_window"
+      },
+      "label": "prepared-analytic",
+      "original_manifest_sha256": "f30036c69453d529a9ab51fc8159be7e75a4ca6afb90f30e46cdfd16304f7435",
+      "archive": "prepared-analytic-native.zip",
+      "archive_sha256": "8c97a63e0e8f3ed40ab4ae69e76606de75d788eaa1be36c8414260cee48cc8f6",
+      "archive_bytes": 124171,
+      "integrity": {
+        "valid": true,
+        "status": "local_artifact_integrity_verified",
+        "errors": [],
+        "operational_activation_allowed": false,
+        "physical_validation_established": false,
+        "engineering_approval_established": false,
+        "physical_equilibration_established": false
+      },
+      "matches_preserved_inputs_and_numerical_outputs": true
+    },
+    {
+      "valid": false,
+      "status": "numerically_unresolved",
+      "errors": [
+        {
+          "code": "cumulative_mass_balance",
+          "message": "whole cumulative balance fails at one or more actual-routing endpoints; later cancellation does not establish conservation.",
+          "path": "$.simulation"
+        },
+        {
+          "code": "cumulative_mass_balance",
+          "message": "preparation cumulative balance fails at one or more actual-routing endpoints; later cancellation does not establish conservation.",
+          "path": "$.simulation"
+        },
+        {
+          "path": "$.step_halving",
+          "code": "step_halving_unresolved",
+          "message": "Both complete histories, phase balances, requested stationarity windows, and common-grid comparisons must pass."
+        }
+      ],
+      "simulation_sha256": "e202f89ef600759f2c846f6cc15caec0e87978428bdef8a3d9dfa0f222cb7970",
+      "initial_state": {
+        "elapsed_s": 0.0,
+        "inflow_m3_s": {
+          "A": 0.0
+        },
+        "link_depth_m": {
+          "L1": 0.04502818600856695,
+          "L2": 3.0480000000000003e-05
+        },
+        "link_flow_m3_s": {
+          "L1": 8.439438157198224e-05,
+          "L2": 0.0
+        },
+        "link_storage_m3": {
+          "L1": 0.0043231872400578885,
+          "L2": 1.9509372352078038e-06
+        },
+        "node_depth_m": {
+          "A": 0.036997716762374816,
+          "O": 0.0,
+          "S": 0.05305865533231689
+        },
+        "node_lateral_inflow_m3_s": {
+          "A": 0.0,
+          "O": 0.0,
+          "S": 0.0
+        },
+        "node_storage_m3": {
+          "A": 0.0005549657514356222,
+          "O": 0.0,
+          "S": 0.002122346213292676
+        },
+        "node_total_inflow_m3_s": {
+          "A": 0.0,
+          "O": 0.0,
+          "S": 8.439438157198224e-05
+        },
+        "node_total_outflow_m3_s": {
+          "A": 8.439438157198224e-05,
+          "O": 0.0,
+          "S": 0.0
+        },
+        "outflow_m3_s": {
+          "O": 0.0
+        },
+        "prescribed_inflow_m3_s": {
+          "A": 0.0
+        },
+        "receiving_stage_m": {
+          "O": 0.22
+        },
+        "simulation_elapsed_s": 100.0,
+        "spill_m3_s": {
+          "A": 0.0,
+          "S": 0.0
+        },
+        "stage_m": {
+          "A": 0.07699771676237482,
+          "O": 0.22,
+          "S": 0.0730586553323169
+        },
+        "storage_m3": 0.007002450142021394
+      },
+      "phase_balances": {
+        "evaluation": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 6001,
+            "failed_endpoints": 0,
+            "first_failed_simulation_elapsed_s": null,
+            "last_failed_simulation_elapsed_s": null,
+            "maximum_absolute_residual_m3": 2.943945631855849e-07,
+            "maximum_residual_to_tolerance_ratio": 0.00327016059832137,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 0.009002449706497677,
+              "mass_balance_residual_m3": 2.943945631855849e-07,
+              "mass_balance_tolerance_m3": 9.002449706497678e-05,
+              "simulation_elapsed_s": 115.39,
+              "storage_m3": 0.009002155311934492
+            }
+          },
+          "cumulative_balance_passed": true,
+          "discharge_by_outfall_m3": {
+            "O": 0.0
+          },
+          "discharge_m3": 0.0,
+          "duration_s": 60.0,
+          "end_simulation_elapsed_s": 160.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.0019999995644762827
+          },
+          "external_inflow_m3": 0.0019999995644762827,
+          "final_storage_m3": 0.0090021775516232,
+          "initial_storage_m3": 0.007002450142021394,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 2.7215487447690423e-07,
+          "mass_balance_tolerance_m3": 9.002449706497678e-05,
+          "maximum_link_depth_m": {
+            "L1": 0.05832906067569497,
+            "L2": 3.0480000000000003e-05
+          },
+          "maximum_stage_m": {
+            "A": 0.09065111414841596,
+            "O": 0.22,
+            "S": 0.08992126214798168
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.002,
+          "receiving_backflow_m3": 0.0,
+          "routing_steps": 6000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.0,
+          "spill_by_node_m3": {
+            "A": 0.0,
+            "S": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 100.0
+        },
+        "preparation": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 10001,
+            "failed_endpoints": 154,
+            "first_failed_simulation_elapsed_s": 2.2600000000000002,
+            "last_failed_simulation_elapsed_s": 3.79,
+            "maximum_absolute_residual_m3": 2.4815800796669507e-06,
+            "maximum_residual_to_tolerance_ratio": 1.480562628320133,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 9.980064458646489e-05,
+              "mass_balance_residual_m3": 1.480562628320133e-06,
+              "mass_balance_tolerance_m3": 1e-06,
+              "simulation_elapsed_s": 3.09,
+              "storage_m3": 9.832008195814476e-05
+            }
+          },
+          "cumulative_balance_passed": false,
+          "discharge_by_outfall_m3": {
+            "O": 0.0
+          },
+          "discharge_m3": 0.0,
+          "duration_s": 100.0,
+          "end_simulation_elapsed_s": 100.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.006999994801878691
+          },
+          "external_inflow_m3": 0.006999994801878691,
+          "final_storage_m3": 0.007002450142021394,
+          "initial_storage_m3": 4.877343088019509e-06,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 2.422002945316054e-06,
+          "mass_balance_tolerance_m3": 7.00487214496671e-05,
+          "maximum_link_depth_m": {
+            "L1": 0.04520033341152851,
+            "L2": 3.0480000000000003e-05
+          },
+          "maximum_stage_m": {
+            "A": 0.07820921128785943,
+            "O": 0.22,
+            "S": 0.0772210131128425
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.007,
+          "receiving_backflow_m3": 0.0,
+          "routing_steps": 10000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.0,
+          "spill_by_node_m3": {
+            "A": 0.0,
+            "S": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 0.0
+        },
+        "whole": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 16001,
+            "failed_endpoints": 154,
+            "first_failed_simulation_elapsed_s": 2.2600000000000002,
+            "last_failed_simulation_elapsed_s": 3.79,
+            "maximum_absolute_residual_m3": 2.716397508508578e-06,
+            "maximum_residual_to_tolerance_ratio": 1.480562628320133,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 9.980064458646489e-05,
+              "mass_balance_residual_m3": 1.480562628320133e-06,
+              "mass_balance_tolerance_m3": 1e-06,
+              "simulation_elapsed_s": 3.09,
+              "storage_m3": 9.832008195814476e-05
+            }
+          },
+          "cumulative_balance_passed": false,
+          "discharge_by_outfall_m3": {
+            "O": 0.0
+          },
+          "discharge_m3": 0.0,
+          "duration_s": 160.0,
+          "end_simulation_elapsed_s": 160.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.00899999436635498
+          },
+          "external_inflow_m3": 0.00899999436635498,
+          "final_storage_m3": 0.0090021775516232,
+          "initial_storage_m3": 4.877343088019509e-06,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 2.6941578197998972e-06,
+          "mass_balance_tolerance_m3": 9.004871709443001e-05,
+          "maximum_link_depth_m": {
+            "L1": 0.05832906067569497,
+            "L2": 3.0480000000000003e-05
+          },
+          "maximum_stage_m": {
+            "A": 0.09065111414841596,
+            "O": 0.22,
+            "S": 0.08992126214798168
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.009000000000000001,
+          "receiving_backflow_m3": 0.0,
+          "routing_steps": 16000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.0,
+          "spill_by_node_m3": {
+            "A": 0.0,
+            "S": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 0.0
+        }
+      },
+      "equilibrium": {
+        "interpretation": "Finite continuous preparation only; no numerical or physical equilibrium claim.",
+        "metrics": [],
+        "passed": null,
+        "physical_equilibration_established": false,
+        "required": false,
+        "status": "not_claimed"
+      },
+      "label": "prepared-oscillating-unresolved",
+      "original_manifest_sha256": "2d620f06366285bc2f4d1d6fa0fab8942b2ee46121be30ddc6c701ae86743d9a",
+      "archive": "prepared-oscillating-unresolved-native.zip",
+      "archive_sha256": "eaa89668795cda783b57283c09742d724154994d7ddb2c22f71b4488a6e001f3",
+      "archive_bytes": 249431,
+      "integrity": {
+        "valid": true,
+        "status": "local_artifact_integrity_verified",
+        "errors": [],
+        "operational_activation_allowed": false,
+        "physical_validation_established": false,
+        "engineering_approval_established": false,
+        "physical_equilibration_established": false
+      },
+      "matches_preserved_inputs_and_numerical_outputs": true
+    },
+    {
+      "valid": false,
+      "status": "numerically_unresolved",
+      "errors": [
+        {
+          "code": "cumulative_mass_balance",
+          "message": "whole cumulative balance fails at one or more actual-routing endpoints; later cancellation does not establish conservation.",
+          "path": "$.simulation"
+        },
+        {
+          "code": "phase_mass_balance",
+          "message": "preparation independent balance exceeds max(1 mL, 1% of its initial storage plus entering water).",
+          "path": "$.simulation"
+        },
+        {
+          "code": "cumulative_mass_balance",
+          "message": "preparation cumulative balance fails at one or more actual-routing endpoints; later cancellation does not establish conservation.",
+          "path": "$.simulation"
+        },
+        {
+          "code": "phase_mass_balance",
+          "message": "evaluation independent balance exceeds max(1 mL, 1% of its initial storage plus entering water).",
+          "path": "$.simulation"
+        },
+        {
+          "code": "cumulative_mass_balance",
+          "message": "evaluation cumulative balance fails at one or more actual-routing endpoints; later cancellation does not establish conservation.",
+          "path": "$.simulation"
+        },
+        {
+          "path": "$.step_halving",
+          "code": "step_halving_unresolved",
+          "message": "Both complete histories, phase balances, requested stationarity windows, and common-grid comparisons must pass."
+        }
+      ],
+      "simulation_sha256": "8a5e23ad514e727574a77acc731439bf1aa0246b3320baeab2b24c103d912ff1",
+      "initial_state": {
+        "elapsed_s": 0.0,
+        "inflow_m3_s": {
+          "A": 0.0
+        },
+        "link_depth_m": {
+          "L1": 0.028300328592583492,
+          "L2": 0.051503707544812025
+        },
+        "link_flow_m3_s": {
+          "L1": -0.0002596215363579369,
+          "L2": -0.00018516889862872337
+        },
+        "link_storage_m3": {
+          "L1": 0.002717134095466889,
+          "L2": 0.0032966043569693858
+        },
+        "node_depth_m": {
+          "A": 0.01359324825938726,
+          "O": 0.06,
+          "S": 0.04300741166690037
+        },
+        "node_lateral_inflow_m3_s": {
+          "A": 0.0,
+          "O": 0.0,
+          "S": 0.0
+        },
+        "node_storage_m3": {
+          "A": 0.0002038987238908089,
+          "O": 0.0,
+          "S": 0.001720296466676015
+        },
+        "node_total_inflow_m3_s": {
+          "A": 0.0002596215363579369,
+          "O": 0.00018516889862872337,
+          "S": 0.00018516889862872337
+        },
+        "node_total_outflow_m3_s": {
+          "A": 0.0,
+          "O": 0.00018516889862872337,
+          "S": 0.0002596215363579369
+        },
+        "outflow_m3_s": {
+          "O": -0.00018516889862872337
+        },
+        "prescribed_inflow_m3_s": {
+          "A": 0.0
+        },
+        "receiving_stage_m": {
+          "O": 0.06
+        },
+        "simulation_elapsed_s": 50.0,
+        "spill_m3_s": {
+          "A": 0.0,
+          "S": 0.0
+        },
+        "stage_m": {
+          "A": 0.053593248259387265,
+          "O": 0.06,
+          "S": 0.06300741166690038
+        },
+        "storage_m3": 0.0079379336430031
+      },
+      "phase_balances": {
+        "evaluation": {
+          "backflow_by_outfall_m3": {
+            "O": 0.0014121087923772441
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": false,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 7001,
+            "failed_endpoints": 6833,
+            "first_failed_simulation_elapsed_s": 51.68,
+            "last_failed_simulation_elapsed_s": 120.0,
+            "maximum_absolute_residual_m3": 0.001914925552510498,
+            "maximum_residual_to_tolerance_ratio": 20.480394241468506,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 0.009350042435380344,
+              "mass_balance_residual_m3": 0.001914925552510498,
+              "mass_balance_tolerance_m3": 9.350042435380345e-05,
+              "simulation_elapsed_s": 120.0,
+              "storage_m3": 3.82081182417303e-05
+            }
+          },
+          "cumulative_balance_passed": false,
+          "discharge_by_outfall_m3": {
+            "O": 0.007396908764628116
+          },
+          "discharge_m3": 0.007396908764628116,
+          "duration_s": 70.0,
+          "end_simulation_elapsed_s": 120.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.0
+          },
+          "external_inflow_m3": 0.0,
+          "final_storage_m3": 3.82081182417303e-05,
+          "initial_storage_m3": 0.0079379336430031,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 0.001914925552510498,
+          "mass_balance_tolerance_m3": 9.350042435380345e-05,
+          "maximum_link_depth_m": {
+            "L1": 0.031506769650538315,
+            "L2": 0.051503707544812025
+          },
+          "maximum_stage_m": {
+            "A": 0.06754366225730099,
+            "O": 0.06,
+            "S": 0.06300741166690038
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.0,
+          "receiving_backflow_m3": 0.0014121087923772441,
+          "routing_steps": 7000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": 0.005984799972250872,
+          "spill_by_node_m3": {
+            "A": 0.0,
+            "S": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 50.0
+        },
+        "preparation": {
+          "backflow_by_outfall_m3": {
+            "O": 0.011009492250136987
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": false,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 5001,
+            "failed_endpoints": 4998,
+            "first_failed_simulation_elapsed_s": 0.030000000000000002,
+            "last_failed_simulation_elapsed_s": 50.0,
+            "maximum_absolute_residual_m3": 0.00191511246482271,
+            "maximum_residual_to_tolerance_ratio": 883.2460674972656,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 9.947761451055751e-05,
+              "mass_balance_residual_m3": -0.0008832460674972656,
+              "mass_balance_tolerance_m3": 1e-06,
+              "simulation_elapsed_s": 9.219999999999999,
+              "storage_m3": 0.000982723682007823
+            }
+          },
+          "cumulative_balance_passed": false,
+          "discharge_by_outfall_m3": {
+            "O": 0.004990885872314162
+          },
+          "discharge_m3": 0.004990885872314162,
+          "duration_s": 50.0,
+          "end_simulation_elapsed_s": 50.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.0
+          },
+          "external_inflow_m3": 0.0,
+          "final_storage_m3": 0.0079379336430031,
+          "initial_storage_m3": 4.877343088019509e-06,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": -0.0019144499220922553,
+          "mass_balance_tolerance_m3": 0.00011014369593225007,
+          "maximum_link_depth_m": {
+            "L1": 0.03851234025824359,
+            "L2": 0.0532587151164662
+          },
+          "maximum_stage_m": {
+            "A": 0.07297925506155632,
+            "O": 0.06,
+            "S": 0.06651742686509861
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.0,
+          "receiving_backflow_m3": 0.011009492250136987,
+          "routing_steps": 5000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": -0.006018606377822824,
+          "spill_by_node_m3": {
+            "A": 0.0,
+            "S": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 0.0
+        },
+        "whole": {
+          "backflow_by_outfall_m3": {
+            "O": 0.012421601042514236
+          },
+          "balance_method": "Actual routing intervals, trapezoidal lateral/spill flows and signed outfall zero-crossing splits. The shared event boundary is a state, not a second volume input.",
+          "balance_passed": true,
+          "cumulative_balance_audit": {
+            "checked_endpoints": 12001,
+            "failed_endpoints": 8723,
+            "first_failed_simulation_elapsed_s": 0.030000000000000002,
+            "last_failed_simulation_elapsed_s": 87.25,
+            "maximum_absolute_residual_m3": 0.00191511246482271,
+            "maximum_residual_to_tolerance_ratio": 883.2460674972656,
+            "worst_endpoint": {
+              "initial_plus_entering_water_m3": 9.947761451055751e-05,
+              "mass_balance_residual_m3": -0.0008832460674972656,
+              "mass_balance_tolerance_m3": 1e-06,
+              "simulation_elapsed_s": 9.219999999999999,
+              "storage_m3": 0.000982723682007823
+            }
+          },
+          "cumulative_balance_passed": false,
+          "discharge_by_outfall_m3": {
+            "O": 0.01238779463694225
+          },
+          "discharge_m3": 0.01238779463694225,
+          "duration_s": 120.0,
+          "end_simulation_elapsed_s": 120.0,
+          "evaporation_m3": 0.0,
+          "external_inflow_by_node_m3": {
+            "A": 0.0
+          },
+          "external_inflow_m3": 0.0,
+          "final_storage_m3": 3.82081182417303e-05,
+          "initial_storage_m3": 4.877343088019509e-06,
+          "leakage_m3": 0.0,
+          "loss_assumption": "Explicit excluded_zero model declaration; engine zero evaporation/seepage totals are checked for the whole history.",
+          "mass_balance_residual_m3": 4.7563041827637686e-07,
+          "mass_balance_tolerance_m3": 0.00012426478385602256,
+          "maximum_link_depth_m": {
+            "L1": 0.03851234025824359,
+            "L2": 0.0532587151164662
+          },
+          "maximum_stage_m": {
+            "A": 0.07297925506155632,
+            "O": 0.06,
+            "S": 0.06651742686509861
+          },
+          "numerical_qa_only": true,
+          "prescribed_inflow_m3": 0.0,
+          "receiving_backflow_m3": 0.012421601042514236,
+          "routing_steps": 12000,
+          "seepage_m3": 0.0,
+          "signed_outfall_exchange_m3": -3.3806405571986525e-05,
+          "spill_by_node_m3": {
+            "A": 0.0,
+            "S": 0.0
+          },
+          "spill_m3": 0.0,
+          "start_simulation_elapsed_s": 0.0
+        }
+      },
+      "equilibrium": {
+        "interpretation": "Finite continuous preparation only; no numerical or physical equilibrium claim.",
+        "metrics": [],
+        "passed": null,
+        "physical_equilibration_established": false,
+        "required": false,
+        "status": "not_claimed"
+      },
+      "label": "prepared-tailwater-unresolved",
+      "original_manifest_sha256": "7e4a2f0a351d93137a535bd40ce5597bcc5e0b1c5275bae57037acb5ce6c8b89",
+      "archive": "prepared-tailwater-unresolved-native.zip",
+      "archive_sha256": "c68bf8ffa1e8ec66f0c51ec2ac24989a3841b27a60d000d045f62c3690f972f5",
+      "archive_bytes": 284830,
+      "integrity": {
+        "valid": true,
+        "status": "local_artifact_integrity_verified",
+        "errors": [],
+        "operational_activation_allowed": false,
+        "physical_validation_established": false,
+        "engineering_approval_established": false,
+        "physical_equilibration_established": false
+      },
+      "matches_preserved_inputs_and_numerical_outputs": true
+    }
+  ],
+  "retained_development_attempts": [
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\analytic-compartment-prefix-audit\\prepared-bench-pair-ll4xjgi_",
+      "manifest_sha256": "d7412508552ddbc888992588100372eb345a3fb6cfa7534439605628b866c0e0",
+      "stored_result_sha256": "d2592e6c9cdff07f33bb9e2ed840fc391d47e2542c9102683cbc024454eb96b9",
+      "simulation_sha256": "0c9e458c23395e2c552de35f2f502e7ae8f95435f991142fc5d0819e260ae7f3",
+      "status_at_attempt": "succeeded",
+      "valid_at_attempt": true,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\closed-event100\\prepared-bench-pair-b7x8xy99",
+      "manifest_sha256": "b544c082e994b7f1bf22244c568291ccf3c8e354ed80d2fe899a792437c6e8ae",
+      "stored_result_sha256": "a44503b67f0842909e5d12ff3c6b6f45b454eb94ade3b463608459ecf90046ca",
+      "simulation_sha256": "56017cedf94881bf08fd762d015d013a17e9f0ad19e90cdc8df1cce2562b0bf1",
+      "status_at_attempt": "succeeded",
+      "valid_at_attempt": true,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\closed-stationary\\prepared-bench-pair-o7hmmlnh",
+      "manifest_sha256": "e1e1fc618b0962557eb7b510c10093df3ff8876ce722e051779d4627fe7284f7",
+      "stored_result_sha256": "bc81ecd3e99885f53c5af8bff9d24fd6924be3846f708335629c0c3e853e5d21",
+      "simulation_sha256": "c90e937e1b9d599aa4aac4a4a668eaab3642deced61ec1d357d628aeb8ab25df",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\default\\prepared-bench-pair-3srhax0g",
+      "manifest_sha256": "0cd28b96dc6b98ba41e6cda84db8c79ff914b6c897a137fedb996cc45c482361",
+      "stored_result_sha256": "675a4aacae9d3f431a10f45ba4a367e283af49c5cf7801ea732ec73c9b06d491",
+      "simulation_sha256": "824bb46e5ab338728bbbf7a58c6f33b178babbe2d1ab3a3001eaa2bb8f4b53fc",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\default-prefix-audit\\prepared-bench-pair-kmsc_8cy",
+      "manifest_sha256": "4374707d578a31caa08c49fbb5c2c36dd743b2c44a057c36c90243e3892c23c2",
+      "stored_result_sha256": "29a6579c520511df7d742780b38b14d91c3283825c543e91cd08ef094390d497",
+      "simulation_sha256": "9058262dedef27f0e33d5b38d5063788fe3457f4c41decc12dd21e913c4fb7fc",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\default-pulse\\prepared-bench-pair-sv6asd_j",
+      "manifest_sha256": "006196c1c773e47485f2414006bc06be568624e81c96886327412ef3d1d07289",
+      "stored_result_sha256": "ef96a5ff7be257bdc4e87d35e490aa22d3f5d07cca8f31076bf9e5eb8c48e806",
+      "simulation_sha256": "bea44d02da4482bc7a0e5e6da6610e860f5fa9d085623976574993489848e4d1",
+      "status_at_attempt": "succeeded",
+      "valid_at_attempt": true,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\final-prepared-analytic\\prepared-bench-pair-75bvl5lu",
+      "manifest_sha256": "14d51fee4561d4ffff3f873fd1acd73541422ea6bd231ca4f8ddaf10778c02c4",
+      "stored_result_sha256": "1a6595ab9be26b4f4ceb80aac6a84f6c9fde58c84cf7279bee1bc2e9cab89aa2",
+      "simulation_sha256": "2faf4e2cff5d0a526d918e8e640cff5030cb2be03dfef1ade1ecd92b5bdad136",
+      "status_at_attempt": "succeeded",
+      "valid_at_attempt": true,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\final-prepared-oscillating-unresolved\\prepared-bench-pair-uuxjyl34",
+      "manifest_sha256": "aa07c2ff5056fd2c2919dd8040cebe38f10700b71ab89a659d1635965072c8f4",
+      "stored_result_sha256": "153cac9cd0987652026685eb60b3a9302b2c3f03354b03b1d4151df1f7c19a8d",
+      "simulation_sha256": "9058262dedef27f0e33d5b38d5063788fe3457f4c41decc12dd21e913c4fb7fc",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\final-prepared-tailwater-unresolved\\prepared-bench-pair-w_p0wzu3",
+      "manifest_sha256": "79ee9260a4ffbe5cb777801a354e82379f4f73ec9437da8265a4cc36b5ae94f4",
+      "stored_result_sha256": "858b0316f890a849cf05b7e16d34ed63c1480b85ef54364a874f7da2d92965fc",
+      "simulation_sha256": "d7831a7434f3d429b6ba3d3e360b4902911367159b77b04e8307455341fb1f61",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\pulse\\prepared-bench-pair-avvxftge",
+      "manifest_sha256": "ce813c65e3ae8d9d7d7741aa63c36b0ab6e3f74f56fe35ed9bea22d09132bce2",
+      "stored_result_sha256": "aeb4ab8b04ccc16c922635146e69994afbcb285439aef97b7199e643f08b4d70",
+      "simulation_sha256": "6660371d03ecf736593859e9edc5aabe3df8eb5e77846e8ac4fa0af85984552d",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\retained-pulse\\prepared-bench-pair-6ynvv4fu",
+      "manifest_sha256": "96aad387c0321cd878b60d81dc27a3c13b7967db21db926fdd8b0c6917123db5",
+      "stored_result_sha256": "ab7c2613d10402ffd7137588a4bd46a23ccc5ef5bfec259ac49e385faa985537",
+      "simulation_sha256": "9790ed63ee79dcd2041faaa91a368d0553d775d5d25437add47b8cb29892907e",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\short-connector-prefix-audit\\prepared-bench-pair-k2ny6jje",
+      "manifest_sha256": "57e8ce2c19c38b39a79b2d23ce684f56b52947f01722b0ae55f0eaaa58ec8bbd",
+      "stored_result_sha256": "7a18e3380366635e3e2976b0ab119432cb0210b74ce937f73ccfde2609039192",
+      "simulation_sha256": "03fc9a0341ddea17667c37f1a0255a3c966d64163ef0eeb517d97d0cef5e9d23",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\short-rough-connector-prefix-audit\\prepared-bench-pair-r_gr04hm",
+      "manifest_sha256": "00d146cef96f041f1516028da5f80697b12d464719bb6d929b24e11fd0480882",
+      "stored_result_sha256": "6ab699eab30dfaf751cb86c20ef586ba44af82c971bd7c497eb51c6551e16ef3",
+      "simulation_sha256": "6e73e21d2f37d52db588ad6bfaf2e6847269603a121e36abb8398e20bcb726fe",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    },
+    {
+      "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\steady-flow\\prepared-bench-pair-bu0apmth",
+      "manifest_sha256": "67d74d5de11d7a9fb49405d8524b8b41b9b3b60c72f6c131824e7c29f619f1cb",
+      "stored_result_sha256": "4d26224ea3cd8c8c76310aa0747a705243aba304ce6a89338392bd311331882c",
+      "simulation_sha256": "48d417cd87961468b24910fc553dacbb641648f1039aa00fb52b51bbd53674f8",
+      "status_at_attempt": "numerically_unresolved",
+      "valid_at_attempt": false,
+      "source_matches_final_adapter": false,
+      "meaning": "Historical development outcome under its recorded checks; an earlier pass is not a pass under later cumulative checks."
+    }
+  ],
+  "interpretation": "A passing analytical wet-compartment case establishes bounded software accounting only. Conduit water is limited to the retained numerical dry floor in that positive case. Complex wet-conduit, rapid tailwater, and initialization-transition candidates remain unresolved. No model tuning against physical data or relaxed thresholds.",
+  "superseded_release_summary": {
+    "path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-pre-portability\\evidence\\prepared-bench-evidence.json",
+    "sha256": "a343fd2eb3c64b6716db705240e507a109b98253c793161188588db17ceb0da5",
+    "preservation": "Original release summary, archives and all historical native attempts retained unchanged."
+  },
+  "native_path_portability": {
+    "change": "The new isolated preparation worker uses guarded local native filenames within the original artifact directory.",
+    "input_bytes_and_numerical_settings_changed": false,
+    "scientific_tolerances_changed": false,
+    "regression": "A 264-character native output path retains all 18 sealed exported artifacts and exactly matches short-path input bytes, full trajectory and phase balances.",
+    "working_directory_limit": "Windows must still accept the child working directory itself; an over-limit process working directory fails without qualification.",
+    "worker_before_sha256": "e491a6a1a10d86b4775c1af3e306af8dfc52705b65b6c6289a559ade5bf1c095",
+    "worker_after_sha256": "1343da6654e7ee3cda0b4155bc27673c7102750fe388e2df80eb547144678b73",
+    "required_inventory_gate": "Exactly 18 expected native/evidence filenames are required; consistent altered checksums cannot substitute missing or renamed native output."
+  },
+  "superseded_portability_revision": {
+    "folder": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\portability-before-inventory-gate",
+    "file_sha256": {
+      "prepared-bench-evidence.json": "f86840c0c85527b1e177ffe82636c0274de100f308b425df7d4567785675055a",
+      "prepared-analytic-native.zip": "5909a67a23e9058dd96759f941851a4f67234d0fd30de32de9a6159ae036d398",
+      "prepared-oscillating-unresolved-native.zip": "a5eadf685e89f77083dc6e2476246e7efde5ef3c8636a98ceaac7a043466b3d6",
+      "prepared-tailwater-unresolved-native.zip": "c2995ff1773f92f4abf54e9499430438f9164b8b728684214fb0628263ca590c"
+    },
+    "retained_native_attempts": [
+      {
+        "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\portability-prepared-analytic\\prepared-bench-pair-7qti84wq",
+        "manifest_sha256": "170788cec9ec59da53334ec0852d8b0cc3344328cd8baba0086939173de04487",
+        "stored_result_sha256": "5b9a0d9b12bf87f67653e6d305438eb9cd6aa1b90669db4a20cc84711130341b",
+        "status_at_attempt": "succeeded",
+        "valid_at_attempt": true
+      },
+      {
+        "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\portability-prepared-oscillating-unresolved\\prepared-bench-pair-9f8wqjnf",
+        "manifest_sha256": "8519c82d4e67f0893505ae07997c0093730c6c5d9f61133879975564073d9099",
+        "stored_result_sha256": "79ead00b5b528f35ec9de99dedd17b3e180fcb307c970e9fd742b3d7e7917f35",
+        "status_at_attempt": "numerically_unresolved",
+        "valid_at_attempt": false
+      },
+      {
+        "pair_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-wet\\portability-prepared-tailwater-unresolved\\prepared-bench-pair-vm186hq_",
+        "manifest_sha256": "ec30e76cb5bd8d98c00a59bd47822fda6a99d9878799868a692d9ccaf50c4eb5",
+        "stored_result_sha256": "beafdd07da2ca6fbc83fd9b759dad301f4aa86c3455b439ace89e3519ffd420a",
+        "status_at_attempt": "numerically_unresolved",
+        "valid_at_attempt": false
+      }
+    ],
+    "meaning": "Untouched intermediate relative-filename evidence, superseded by the exact required-artifact verifier gate."
+  }
+}

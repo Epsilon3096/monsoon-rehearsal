@@ -1,0 +1,17 @@
+Verifying every physical state and scenario at two routing steps...
+Hydraulics: passed, 144 state/scenario pairs.
+Horizon adequacy: passed; diagnostic sensitivities retained.
+{
+  "status": "passed",
+  "counts": {
+    "enumerated_queues": 65,
+    "remaining_jobs": 4,
+    "planning_scenarios": 4,
+    "supported_plans": 28,
+    "inadmissible_plans": 37,
+    "unresolved_plans": 0,
+    "hydraulic_callback_calls": 64
+  },
+  "workflow": "passed",
+  "evidence": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\monsoon-rehearsal\\evidence\\v0.8.1\\product-20261017-05"
+}

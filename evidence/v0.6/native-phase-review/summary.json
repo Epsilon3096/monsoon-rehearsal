@@ -1,0 +1,32 @@
+{
+  "evidence_kind": "synthetic_fixture",
+  "purpose": "Independent direct installed-engine audit of cancellation across a 50 second split",
+  "conclusion": "Direct native cumulative totals, live node+link storage and independent signed-flow integration agree on a large transient imbalance. The preparation splitter is not responsible; the result remains numerically unresolved under separate phase checks. No physical cause is inferred.",
+  "source_review": "OWA massbal_getFlowError suppresses residuals below 1 internal cubic foot. The installed binary reports tiny pctError despite a much larger bench-relative cumulative balance residual.",
+  "physical_validation_established": false,
+  "operational_activation_allowed": false,
+  "attempts": [
+    {
+      "attempt": "primary",
+      "step_s": 0.01,
+      "maximum_clock_difference_s": 1.4210854715202004e-14,
+      "split_storage_m3": 0.0079379336430031,
+      "split_native_storage_m3": 0.0079379336430031,
+      "split_independent_residual_m3": -0.0019144499220922406,
+      "split_native_residual_m3": -0.001914449922092225,
+      "native_reported_error_percent_at_split": 1e-06,
+      "whole_residual_m3": 4.7563041824446066e-07
+    },
+    {
+      "attempt": "half",
+      "step_s": 0.005,
+      "maximum_clock_difference_s": 1.4210854715202004e-14,
+      "split_storage_m3": 0.007937653485450414,
+      "split_native_storage_m3": 0.007937653485450415,
+      "split_independent_residual_m3": -0.001915509917564024,
+      "split_native_residual_m3": -0.001915509917564037,
+      "native_reported_error_percent_at_split": 1e-06,
+      "whole_residual_m3": -1.616343793541039e-06
+    }
+  ]
+}

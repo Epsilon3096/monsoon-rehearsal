@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "id": "observed-bench-research-v0.3-2026-10-14",
+  "created_utc": "2026-10-14T09:53:38.151Z",
+  "evidence_class": "prespecified_synthetic_same_topology_research",
+  "source_case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+  "freeze_rule": "Persist this protocol and exact policy/evaluation/planning/hydraulic source hashes before any new development or evaluation SWMM outcomes. Evaluation inputs are designed and visible in this file, not independently concealed. Never revise after seeing results without preserving this study and registering a separate study or disclosed correction.",
+  "prior_knowledge": "The v0.1/v0.2 topology, outcomes, H1/H2 and development sensitivities were known. No measured site, operator plan or instrumented rig measurements were supplied. No v0.3 hydraulic outcomes existed when this protocol was written.",
+  "hypothesis": "Conditioning on available prescribed initial storage and controlled receiving stage may permit supported work in some contexts while rejecting hazardous contexts. No superiority or positive outcome is presumed.",
+  "observation_contract": {
+    "maximum_age_minutes": 15,
+    "minimum_uncertainty_m": {
+      "storage": 0.03,
+      "receiving_stage": 0.02
+    },
+    "uncertainty_interpretation": "Illustrative synthetic observation errors, not instrument calibration. Each unobserved hydraulic profile is crossed with all four storage/stage interval corners, plus a nominal centre. Finite endpoints do not prove interior worst cases.",
+    "boundary_scope": "Hypothetical controlled bench experiment: initial storage is prescribed at event release and downstream stage held fixed throughout. The controller is assumed to preserve that initial state until release. This does not model natural stage evolution, in-work water conservation, or a physically validated rig."
+  },
+  "development_profiles": [
+    {
+      "id": "P1",
+      "hydraulic": {
+        "peak_a_cms": 0.65,
+        "peak_b_cms": 0.55,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "P2",
+      "hydraulic": {
+        "peak_a_cms": 0.9,
+        "peak_b_cms": 0.3,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "P3",
+      "hydraulic": {
+        "peak_a_cms": 0.3,
+        "peak_b_cms": 0.9,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "H1_REVEALED",
+      "hydraulic": {
+        "peak_a_cms": 0.8,
+        "peak_b_cms": 0.6,
+        "hydrograph": "double",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "H2_REVEALED",
+      "hydraulic": {
+        "peak_a_cms": 0.4,
+        "peak_b_cms": 0.85,
+        "hydrograph": "plateau",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "FLOW_LOW",
+      "hydraulic": {
+        "peak_a_cms": 0.52,
+        "peak_b_cms": 0.44,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "FLOW_HIGH",
+      "hydraulic": {
+        "peak_a_cms": 0.78,
+        "peak_b_cms": 0.66,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "ROUGH_LOW",
+      "hydraulic": {
+        "peak_a_cms": 0.65,
+        "peak_b_cms": 0.55,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 0.8,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "ROUGH_HIGH",
+      "hydraulic": {
+        "peak_a_cms": 0.65,
+        "peak_b_cms": 0.55,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1.2,
+        "restriction_multiplier": 1
+      }
+    },
+    {
+      "id": "RESTRICTION",
+      "hydraulic": {
+        "peak_a_cms": 0.65,
+        "peak_b_cms": 0.55,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1,
+        "restriction_multiplier": 0.75
+      }
+    },
+    {
+      "id": "COMPOUND",
+      "hydraulic": {
+        "peak_a_cms": 0.78,
+        "peak_b_cms": 0.66,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1.2,
+        "restriction_multiplier": 0.75
+      }
+    }
+  ],
+  "development_split": "Known/revealed unobserved profiles retained in full after deduplicating identical forcing/roughness/restriction combinations; new observation centres/corners produce new development hydraulic configurations. Every profile is crossed with nominal and existing upper-bound duration vectors. No new evaluation hydraulic tuple or realised duration vector enters selection.",
+  "observations": {
+    "LOW": {
+      "id": "LOW",
+      "observed_at": "2026-10-14T00:00:00+00:00",
+      "available_at": "2026-10-14T00:01:00+00:00",
+      "decision_at": "2026-10-14T00:05:00+00:00",
+      "quality": "accepted",
+      "source_kind": "synthetic_bench_observation",
+      "source_id": "protocol-prescribed-LOW",
+      "boundary_contract": "prescribed_initial_storage_and_controlled_fixed_stage",
+      "storage": {
+        "value_m": 0.12,
+        "uncertainty_m": 0.03,
+        "unit": "m",
+        "datum": "depth_above_storage_invert"
+      },
+      "receiving_stage": {
+        "value_m": 99.38,
+        "uncertainty_m": 0.02,
+        "unit": "m",
+        "datum": "synthetic_model_vertical_datum"
+      }
+    },
+    "HIGH": {
+      "id": "HIGH",
+      "observed_at": "2026-10-14T00:00:00+00:00",
+      "available_at": "2026-10-14T00:01:00+00:00",
+      "decision_at": "2026-10-14T00:05:00+00:00",
+      "quality": "accepted",
+      "source_kind": "synthetic_bench_observation",
+      "source_id": "protocol-prescribed-HIGH",
+      "boundary_contract": "prescribed_initial_storage_and_controlled_fixed_stage",
+      "storage": {
+        "value_m": 1.37,
+        "uncertainty_m": 0.03,
+        "unit": "m",
+        "datum": "depth_above_storage_invert"
+      },
+      "receiving_stage": {
+        "value_m": 100.24,
+        "uncertainty_m": 0.02,
+        "unit": "m",
+        "datum": "synthetic_model_vertical_datum"
+      }
+    },
+    "MISSING": {
+      "id": "MISSING",
+      "observed_at": "2026-10-14T00:00:00+00:00",
+      "available_at": "2026-10-14T00:01:00+00:00",
+      "decision_at": "2026-10-14T00:05:00+00:00",
+      "quality": "accepted",
+      "source_kind": "synthetic_bench_observation",
+      "source_id": "protocol-prescribed-MISSING",
+      "boundary_contract": "prescribed_initial_storage_and_controlled_fixed_stage",
+      "storage": {
+        "value_m": 0.12,
+        "uncertainty_m": 0.03,
+        "unit": "m",
+        "datum": "depth_above_storage_invert"
+      }
+    },
+    "STALE": {
+      "id": "STALE",
+      "observed_at": "2026-10-13T23:30:00+00:00",
+      "available_at": "2026-10-13T23:31:00+00:00",
+      "decision_at": "2026-10-14T00:05:00+00:00",
+      "quality": "accepted",
+      "source_kind": "synthetic_bench_observation",
+      "source_id": "protocol-prescribed-STALE",
+      "boundary_contract": "prescribed_initial_storage_and_controlled_fixed_stage",
+      "storage": {
+        "value_m": 1.37,
+        "uncertainty_m": 0.03,
+        "unit": "m",
+        "datum": "depth_above_storage_invert"
+      },
+      "receiving_stage": {
+        "value_m": 100.24,
+        "uncertainty_m": 0.02,
+        "unit": "m",
+        "datum": "synthetic_model_vertical_datum"
+      }
+    }
+  },
+  "evaluation_events": [
+    {
+      "id": "V3-E01",
+      "phase": "evaluation",
+      "observation_id": "LOW",
+      "design_role": "new balanced double pulse",
+      "hydraulic": {
+        "peak_a_cms": 0.69,
+        "peak_b_cms": 0.57,
+        "hydrograph": "double",
+        "roughness_multiplier": 1.08,
+        "restriction_multiplier": 0.93,
+        "initial_storage_depth_m": 0.13,
+        "tailwater_m": 99.37
+      },
+      "durations": {
+        "J1": 92,
+        "J2": 46,
+        "J3": 61,
+        "J4": 76
+      }
+    },
+    {
+      "id": "V3-E02",
+      "phase": "evaluation",
+      "observation_id": "LOW",
+      "design_role": "new A-dominant triangular event",
+      "hydraulic": {
+        "peak_a_cms": 0.86,
+        "peak_b_cms": 0.37,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 0.88,
+        "restriction_multiplier": 0.82,
+        "initial_storage_depth_m": 0.1,
+        "tailwater_m": 99.39
+      },
+      "durations": {
+        "J1": 98,
+        "J2": 52,
+        "J3": 68,
+        "J4": 83
+      }
+    },
+    {
+      "id": "V3-E03",
+      "phase": "evaluation",
+      "observation_id": "LOW",
+      "design_role": "new B-dominant plateau",
+      "hydraulic": {
+        "peak_a_cms": 0.38,
+        "peak_b_cms": 0.83,
+        "hydrograph": "plateau",
+        "roughness_multiplier": 1.14,
+        "restriction_multiplier": 0.79,
+        "initial_storage_depth_m": 0.14,
+        "tailwater_m": 99.365
+      },
+      "durations": {
+        "J1": 84,
+        "J2": 42,
+        "J3": 57,
+        "J4": 72
+      }
+    },
+    {
+      "id": "V3-E04",
+      "phase": "evaluation",
+      "observation_id": "LOW",
+      "design_role": "zero-inflow tie/control; stored water still represented",
+      "hydraulic": {
+        "peak_a_cms": 0,
+        "peak_b_cms": 0,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1.06,
+        "restriction_multiplier": 0.91,
+        "initial_storage_depth_m": 0.11,
+        "tailwater_m": 99.39
+      },
+      "durations": {
+        "J1": 90,
+        "J2": 45,
+        "J3": 60,
+        "J4": 75
+      }
+    },
+    {
+      "id": "V3-E05",
+      "phase": "evaluation",
+      "observation_id": "HIGH",
+      "design_role": "new filled-store balanced double pulse",
+      "hydraulic": {
+        "peak_a_cms": 0.67,
+        "peak_b_cms": 0.61,
+        "hydrograph": "double",
+        "roughness_multiplier": 1.12,
+        "restriction_multiplier": 0.84,
+        "initial_storage_depth_m": 1.38,
+        "tailwater_m": 100.23
+      },
+      "durations": {
+        "J1": 95,
+        "J2": 50,
+        "J3": 65,
+        "J4": 80
+      }
+    },
+    {
+      "id": "V3-E06",
+      "phase": "evaluation",
+      "observation_id": "HIGH",
+      "design_role": "new filled-store B plateau",
+      "hydraulic": {
+        "peak_a_cms": 0.44,
+        "peak_b_cms": 0.81,
+        "hydrograph": "plateau",
+        "roughness_multiplier": 0.9,
+        "restriction_multiplier": 0.92,
+        "initial_storage_depth_m": 1.35,
+        "tailwater_m": 100.25
+      },
+      "durations": {
+        "J1": 87,
+        "J2": 43,
+        "J3": 61,
+        "J4": 77
+      }
+    },
+    {
+      "id": "V3-E07",
+      "phase": "evaluation",
+      "observation_id": "HIGH",
+      "design_role": "new joint condition near observation upper stage",
+      "hydraulic": {
+        "peak_a_cms": 0.71,
+        "peak_b_cms": 0.64,
+        "hydrograph": "double",
+        "roughness_multiplier": 1.18,
+        "restriction_multiplier": 0.77,
+        "initial_storage_depth_m": 1.39,
+        "tailwater_m": 100.255
+      },
+      "durations": {
+        "J1": 100,
+        "J2": 55,
+        "J3": 70,
+        "J4": 85
+      }
+    },
+    {
+      "id": "V3-E08",
+      "phase": "evaluation",
+      "observation_id": "LOW",
+      "design_role": "duration-overrun exception control; any dispatch exceeds its bound",
+      "hydraulic": {
+        "peak_a_cms": 0.73,
+        "peak_b_cms": 0.59,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1.04,
+        "restriction_multiplier": 0.87,
+        "initial_storage_depth_m": 0.12,
+        "tailwater_m": 99.38
+      },
+      "durations": {
+        "J1": 111,
+        "J2": 66,
+        "J3": 81,
+        "J4": 96
+      }
+    },
+    {
+      "id": "V3-E09",
+      "phase": "evaluation",
+      "observation_id": "MISSING",
+      "design_role": "missing receiving observation must close dispatch",
+      "hydraulic": {
+        "peak_a_cms": 0.64,
+        "peak_b_cms": 0.56,
+        "hydrograph": "triangle",
+        "roughness_multiplier": 1.01,
+        "restriction_multiplier": 0.96,
+        "initial_storage_depth_m": 0.12,
+        "tailwater_m": 99.38
+      },
+      "durations": {
+        "J1": 90,
+        "J2": 45,
+        "J3": 60,
+        "J4": 75
+      }
+    },
+    {
+      "id": "V3-E10",
+      "phase": "evaluation",
+      "observation_id": "STALE",
+      "design_role": "stale observation must close dispatch",
+      "hydraulic": {
+        "peak_a_cms": 0.63,
+        "peak_b_cms": 0.58,
+        "hydrograph": "double",
+        "roughness_multiplier": 1.03,
+        "restriction_multiplier": 0.89,
+        "initial_storage_depth_m": 1.37,
+        "tailwater_m": 100.24
+      },
+      "durations": {
+        "J1": 90,
+        "J2": 45,
+        "J3": 60,
+        "J4": 75
+      }
+    }
+  ],
+  "original_queue_diagnostic": [
+    "J4",
+    "J1",
+    "J3",
+    "J2"
+  ],
+  "baselines": {
+    "observed_robust": "Enumerate all 65 priority queues. Every dispatch is screened using the identical frozen state table. Worst grid spill then grid mean, crew time, cost and ID using original minimum-relative 0.05 m3 bands.",
+    "screened_marginal": "At each observed completed state choose positive development-grid mean marginal spill reduction / incremental nominal crew time from the same safe candidates; use elapsed time and existing upper bounds, never future realised durations.",
+    "screened_downstream": "Topology rank, nominal duration, stable ID; consider only identical numerically resolved protected-node-screened candidates and common bound gate. Explicit heuristic, not a real operator baseline.",
+    "screened_nominal": "Same observation and whole-grid safety screen as all competitors; choose exact priority queue using nominal-centre spill, nominal crew time, cost and stable ID.",
+    "no_work": "Same initial condition, event, observed clock and return/deadline contract.",
+    "original_queue_diagnostic": "Historical J4-J1-J3-J2 queue replayed unchanged with original bound gate. Explicitly unscreened development diagnostic and excluded from superiority baseline claims."
+  },
+  "numerical_gates": {
+    "routing_step_s": 0.5,
+    "half_step_s": 0.25,
+    "horizon_minutes": 180,
+    "extended_horizon_minutes": 360,
+    "spill_absolute_tolerance_m3": 0.05,
+    "spill_relative_tolerance": 0.02,
+    "no_worsening_tolerance_m3": 0.05,
+    "half_step_protected_node_classification_must_match": true,
+    "raw_provenance_must_match": true,
+    "source": "Unchanged assurance._prepare_hydraulic and assurance_hydraulics.checked_state. Every scored baseline/state requires valid default, half-step and extended horizon, checked raw provenance, all-node spill convergence, horizon completeness and stable protected-node eligibility."
+  },
+  "selection_gates": "All reachable safe prefixes are evaluated. A failed/unresolved candidate state is pruned at its first rejection certificate. Only states passing every required development case receive a score. Failure to resolve no-work closes the entire decision. No ranking claim over unresolved candidates. Empty work is legitimate. Evaluation checks every achieved prefix against its matching no-work state.",
+  "compute_limits": {
+    "workers": 4,
+    "development_state_event_pairs": 400,
+    "evaluation_state_event_pairs": 96,
+    "rule": "Shared exact physical-input cache across methods, nominal/bound-duration labels, and contexts. Hard ceiling on expensive numerical triplets; budget exhaustion leaves evidence unresolved. No post-result expansion. Baseline configurations precomputed once before state exploration."
+  },
+  "metrics": [
+    "per-node spill_m3",
+    "per-node maximum depth_m",
+    "per-node duration_above_threshold_min",
+    "total spill_m3",
+    "every achieved prefix violation",
+    "completed jobs",
+    "crew minutes",
+    "duration bounds violated",
+    "return/deadline failure",
+    "abstention",
+    "unresolved evidence",
+    "computation wall time",
+    "distinct run identities"
+  ],
+  "reporting_rule": "Report designed event rows, method-event rows and distinct hydraulic configurations separately. Numerical refinements, baselines and same-topology synthetic events are not independent samples. Give positive/tie/loss/abstention/unresolved counts, paired outcomes, all per-node results and all duration exceptions. No statistical intervals or representative-frequency claims.",
+  "limitations": [
+    "All results reuse one synthetic topology. Ten designed event rows include observation and duration controls; they are not ten independent catchments, random storms, measured events or statistical replicates.",
+    "Prior reference outcomes and stress failures informed the research question. Inputs and source were locally frozen before outcomes, but no independent custodian or externally blinded seal is claimed.",
+    "The prescribed storage and fixed receiving stage are hypothetical controlled bench inputs. Natural time-varying receiving levels, conservation through work and physical bench response remain unvalidated.",
+    "Observation uncertainty, roughness and restriction ranges are illustrative. All retained development profiles are kept under conditioning, but the finite grid is neither exhaustive nor a probability distribution.",
+    "Every prefix and numerical gate is unchanged. Any protective failure is a loss regardless of improved total spill; errors and overruns remain unresolved.",
+    "Depth-threshold durations are descriptive outputs; the present decision gate protects spill only. Lower total spill does not establish safe depths, damage reduction or crew safety.",
+    "The original queue is a historical diagnostic. There is no invented operator baseline or real operator validation.",
+    "Conditioning on stage/storage is not permission to inspect future forcing or realised durations. Choosers receive only the frozen table, verified completed set, eligible jobs and elapsed time.",
+    "Raw SWMM outputs are retained locally under var and excluded from source bundles. Hashes establish local integrity, not independent attestation.",
+    "If the revised method ties simpler baselines or abstains, report that result and favour the simpler supported policy; no algorithmic superiority is presumed."
+  ],
+  "protocol_sha256": "932dca0d0dae352ea7b3b863c796670cc1bfd9c18025fc8bfe60d81b5481fba2"
+}

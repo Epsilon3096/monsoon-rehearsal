@@ -1,0 +1,135 @@
+- button "keyboard_double_arrow_left":
+  - generic: keyboard_double_arrow_left
+- heading "Monsoon" [level=3]
+- heading "Rehearsal" [level=3]
+- paragraph: Plan the achievable work.
+- radiogroup "Workspace":
+  - radio "Rehearse"
+  - paragraph: Rehearse
+  - radio "Work window"
+  - paragraph: Work window
+  - radio "Work tickets"
+  - paragraph: Work tickets
+  - radio "Validation" [checked]
+  - paragraph: Validation
+  - radio "Evidence"
+  - paragraph: Evidence
+- separator
+- paragraph: REFERENCE CATCHMENT
+- paragraph: Monsoon Rehearsal · synthetic reference catchment
+- paragraph: Synthetic data · one crew · four jobs
+- paragraph: Local research prototype v0.7
+- banner:
+  - button "keyboard_double_arrow_right":
+    - generic: keyboard_double_arrow_right
+  - button "Deploy":
+    - generic: Deploy
+  - button "Main menu":
+- heading "Validation workspace" [level=1]:
+  - text: Validation workspace
+  - link "Link to heading":
+    - /url: "#validation-workspace"
+- paragraph: Collect the evidence that turns a synthetic demonstration into a defensible operational decision.
+- paragraph: Validation area
+- radiogroup "Validation area":
+  - radio "Readiness"
+  - paragraph: Readiness
+  - radio "Bench preparation"
+  - paragraph: Bench preparation
+  - radio "Bench model"
+  - paragraph: Bench model
+  - radio "Wet preparation"
+  - paragraph: Wet preparation
+  - radio "Boundary replay"
+  - paragraph: Boundary replay
+  - radio "Conservative bench" [checked]
+  - paragraph: Conservative bench
+  - radio "Site & measurements"
+  - paragraph: Site & measurements
+  - radio "Policy comparison"
+  - paragraph: Policy comparison
+  - radio "Operator & shadow"
+  - paragraph: Operator & shadow
+- heading "Track every water transfer" [level=3]:
+  - text: Track every water transfer
+  - link "Link to heading":
+    - /url: "#track-every-water-transfer"
+- paragraph: A separate conservative bench engine for rectangular open channels. Each channel and compartment shares the same recorded transfer at their connection.
+- status:
+  - paragraph: The earlier SWMM failures remain part of the evidence. This workspace uses a different numerical method; it does not mark those runs as corrected.
+- paragraph: Conservative input source
+- radiogroup "Conservative input source":
+  - radio "Supplied files" [checked]
+  - paragraph: Supplied files
+  - radio "Synthetic example"
+  - paragraph: Synthetic example
+- paragraph: Site package file
+- region "Site package file":
+  - button "file upload"
+  - button "upload Upload":
+    - generic: upload
+    - paragraph: Upload
+  - generic: 5MB per file • JSON
+- paragraph: Or paste site package JSON
+- textbox "Or paste site package JSON":
+  - /placeholder: ""
+  - text: "{ \"schema_version\": \"monsoon.site/1\", \"site_id\": \"SYNTHETIC-ADAPTER-RIG\", \"revision\": \"r1\", \"supersedes_sha256\": null, \"title\": \"Invented three-node bench adapter verification rig; no physical apparatus\", \"evidence_kind\": \"synthetic_fixture\", \"contract_status\": \"draft_pending_operator_acceptance\", \"created_at\": \"2026-10-14T00:00:00Z\", \"crs\": { \"identifier\": \"LOCAL:SYNTHETIC-ADAPTER\", \"definition\": \"Invented local metre coordinates for a software fixture only.\", \"axis_order\": \"easting_northing\", \"horizontal_unit\": \"m\" }, \"vertical_datum\": \"SYNTHETIC-ADAPTER-ZERO\", \"units\": { \"length\": \"m\", \"area\": \"m2\", \"volume\": \"m3\", \"flow\": \"m3/s\", \"time\": \"s\", \"roughness\": \"s/m^(1/3)\" }, \"sources\": [ { \"id\": \"SYN-BENCH-SOURCE\", \"kind\": \"synthetic_fixture\", \"uri\": \"fixture://synthetic_bench_source_v1.txt\", \"sha256\": \"70c1d9932a9f827239707c29d3ad8990f70c8d52b85f1c79e63c37c9c2628cf8\", \"observed_at\": \"2026-10-14T00:00:00Z\", \"author\": \"SYNTHETIC SOFTWARE FIXTURE\", \"description\": \"Invented dimensions and assumptions only; no measured apparatus.\" } ], \"nodes\": [ { \"id\": \"A\", \"kind\": \"junction\", \"x_m\": 0, \"y_m\": 0, \"invert_m\": 0.04, \"ground_m\": 0.29, \"survey_source_id\": \"SYN-BENCH-SOURCE\", \"storage_stage_area\": null, \"designed_outlet_link_id\": null }, { \"id\": \"S\", \"kind\": \"storage\", \"x_m\": 1.2, \"y_m\": 0, \"invert_m\": 0.02, \"ground_m\": 0.27, \"survey_source_id\": \"SYN-BENCH-SOURCE\", \"storage_stage_area\": [ { \"stage_m\": 0.02, \"area_m2\": 0.04 }, { \"stage_m\": 0.27, \"area_m2\": 0.04 } ], \"designed_outlet_link_id\": \"L2\" }, { \"id\": \"O\", \"kind\": \"outfall\", \"x_m\": 2, \"y_m\": 0, \"invert_m\": 0, \"ground_m\": 0.25, \"survey_source_id\": \"SYN-BENCH-SOURCE\", \"storage_stage_area\": null, \"designed_outlet_link_id\": null } ], \"links\": [ { \"id\": \"L1\", \"from_node\": \"A\", \"to_node\": \"S\", \"length_m\": 1.2, \"inlet_invert_m\": 0.04, \"outlet_invert_m\": 0.02, \"roughness_n\": 0.012, \"cross_section\": { \"shape\": \"open_rectangle\", \"width_m\": 0.08, \"height_m\": 0.25 }, \"survey_source_id\": \"SYN-BENCH-SOURCE\" }, { \"id\": \"L2\", \"from_node\": \"S\", \"to_node\": \"O\", \"length_m\": 0.8, \"inlet_invert_m\": 0.02, \"outlet_invert_m\": 0, \"roughness_n\": 0.012, \"cross_section\": { \"shape\": \"open_rectangle\", \"width_m\": 0.08, \"height_m\": 0.25 }, \"survey_source_id\": \"SYN-BENCH-SOURCE\" } ], \"jobs\": [], \"boundaries\": { \"inflow_node_ids\": [ \"A\" ], \"outfall_node_ids\": [ \"O\" ], \"spill_node_ids\": [ \"A\", \"S\" ], \"inventory_source_id\": \"SYN-BENCH-SOURCE\" }, \"notes\": \"Entirely synthetic software verification fixture, distinct from the historical reference and frozen bench experiment. No real dimensions or readings are represented.\" }"
+- paragraph: Model specification file
+- region "Model specification file":
+  - button "file upload"
+  - button "upload Upload":
+    - generic: upload
+    - paragraph: Upload
+  - generic: 5MB per file • JSON
+- paragraph: Or paste model specification JSON
+- textbox "Or paste model specification JSON":
+  - /placeholder: ""
+  - text: "{ \"schema_version\": \"monsoon.bench-model/1\", \"model_id\": \"SYNTHETIC-ADAPTER-MODEL\", \"site_package_sha256\": \"87953254609675027011207c7d2c4e8d5c229700c885c3dbb6d43f9274e8b097\", \"evidence_kind\": \"synthetic_fixture\", \"completed_job_ids\": [], \"junction_storage\": [ { \"node_id\": \"A\", \"stage_area\": [ { \"stage_m\": 0.04, \"area_m2\": 0.015 }, { \"stage_m\": 0.29, \"area_m2\": 0.015 } ], \"source_id\": \"SYN-BENCH-SOURCE\" } ], \"link_parameters\": [ { \"link_id\": \"L1\", \"roughness_n\": 0.012, \"entrance_loss_coefficient\": 0.0, \"exit_loss_coefficient\": 0.0, \"average_loss_coefficient\": 0.0, \"source_id\": \"SYN-BENCH-SOURCE\" }, { \"link_id\": \"L2\", \"roughness_n\": 0.012, \"entrance_loss_coefficient\": 0.0, \"exit_loss_coefficient\": 0.0, \"average_loss_coefficient\": 0.0, \"source_id\": \"SYN-BENCH-SOURCE\" } ], \"overflow\": [ { \"node_id\": \"A\", \"destination\": \"external_absorbing_collector\", \"source_id\": \"SYN-BENCH-SOURCE\" }, { \"node_id\": \"S\", \"destination\": \"external_absorbing_collector\", \"source_id\": \"SYN-BENCH-SOURCE\" } ], \"losses\": { \"evaporation\": \"excluded_zero\", \"seepage\": \"excluded_zero\", \"leakage\": \"excluded_zero\", \"source_id\": \"SYN-BENCH-SOURCE\" }, \"numerics\": { \"routing_step_s\": 0.01, \"report_step_s\": 1, \"head_tolerance_m\": 1e-06, \"minimum_surface_area_m2\": 1e-06, \"max_trials\": 100, \"inertial_damping\": \"NONE\", \"normal_flow_limited\": \"BOTH\", \"initial_numerical_storage_tolerance_m3\": 1e-05 }, \"notes\": \"Invented software test parameters, including zero losses. No calibration or validation occurred.\" }"
+- paragraph: Run boundaries file
+- region "Run boundaries file":
+  - button "file upload"
+  - button "upload Upload":
+    - generic: upload
+    - paragraph: Upload
+  - generic: 5MB per file • JSON
+- paragraph: Or paste run boundaries JSON
+- textbox "Or paste run boundaries JSON":
+  - /placeholder: ""
+  - text: "{\"schema_version\":\"monsoon.bench-run/1\",\"run_id\":\"SYNTHETIC-BROWSER-DRY\",\"model_sha256\":\"d741596e33806a2e716860bc92d6b1434a89a0dc86d1073a2008a035c804edb5\",\"duration_s\":2,\"initial_conditions\":{\"kind\":\"dry_zero_flow\",\"source_id\":\"SYN-BENCH-SOURCE\"},\"inflows\":[{\"node_id\":\"A\",\"points\":[{\"elapsed_s\":0,\"value_m3_s\":0},{\"elapsed_s\":2,\"value_m3_s\":0}]}],\"receiving_stages\":[{\"node_id\":\"O\",\"points\":[{\"elapsed_s\":0,\"stage_m\":0},{\"elapsed_s\":2,\"stage_m\":0}]}],\"notes\":\"Two-second dry software workflow check only; no measured water or physical validation.\"}"
+- paragraph: Phase boundaries in seconds (comma separated; blank for the whole run)
+- textbox "Phase boundaries in seconds (comma separated; blank for the whole run)":
+  - /placeholder: ""
+  - text: "1"
+- paragraph: "Fixed verification: 128 cells, a smaller time step and a separate 256-cell run. Every routing endpoint uses the original 1 mL or 1% water limit. Time and mesh agreement use the unchanged 2% and absolute limits."
+- button "Check conservative model":
+  - paragraph: Check conservative model
+- status:
+  - paragraph: The supplied contract is within the conservative engine's declared scope.
+- button "Run fixed three-part verification" [active]:
+  - paragraph: Run fixed three-part verification
+- status:
+  - paragraph: This run passed the fixed water-accounting, time-step and mesh checks.
+- paragraph: Numerical qualification only. These results do not establish physical accuracy, operator acceptance or a scheduling advantage.
+- button "Show/hide columns":
+- button "Download as CSV":
+- button "Search":
+- button "Fullscreen":
+- toolbar:
+  - button "Download plot as a PNG":
+  - button "Zoom":
+  - button "Pan":
+  - button "Zoom in":
+  - button "Zoom out":
+  - button "Autoscale":
+  - button "Reset axes":
+  - button "Fullscreen":
+- generic "keyboard_arrow_right Time and mesh checks, phase budgets and retained issues":
+  - generic: keyboard_arrow_right
+  - paragraph: Time and mesh checks, phase budgets and retained issues
+- button "Download complete conservative evidence":
+  - paragraph: Download complete conservative evidence
+- generic "keyboard_arrow_right Method, scope and verification guide":
+  - generic: keyboard_arrow_right
+  - paragraph: Method, scope and verification guide
+- button "Download conservative bench guide":
+  - paragraph: Download conservative bench guide

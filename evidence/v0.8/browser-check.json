@@ -1,0 +1,20 @@
+{
+  "date_local": "2026-10-17",
+  "url": "http://127.0.0.1:8513/",
+  "method": "Observed in-app browser interactions, DOM/accessibility inspection and screenshots",
+  "app_sha256": "18199a9cdf57248e773ae2ae061991afe10cd64f962a0569bb296854f934a7f3",
+  "default_pages": ["Rehearse", "Work window", "Work tickets", "Evidence"],
+  "checks": {
+    "default_research_toggle_off": true,
+    "three_historical_decision_cards_visible": true,
+    "benefit_harm_and_numerical_uncertainty_distinguished": true,
+    "custom_solver_failure_visible_on_evidence_page": true,
+    "research_opt_in_adds_validation": true,
+    "conservative_bench_has_explicit_unqualified_warning": true,
+    "turning_research_off_from_validation_returns_to_rehearse": true,
+    "validation_removed_when_research_off": true
+  },
+  "screenshots_in_workspace_outputs": ["Monsoon_Rehearsal_v0.8_Evidence.jpg", "Monsoon_Rehearsal_v0.8_Decision.jpg"],
+  "limitations": "No hydraulic experiment, physical trial, plan approval or ticket dispatch was executed through this browser check. Narrow-panel tables use horizontal scrolling. Sidebar animation required waiting for visible controls before interaction. Numerical and workflow verification is recorded separately.",
+  "final_view": "Evidence; research tools disabled"
+}

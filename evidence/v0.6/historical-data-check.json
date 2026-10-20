@@ -1,0 +1,10 @@
+{
+  "schema_version": "monsoon.v06-historical-data-check/1",
+  "source_manifest": "evidence/v0.5/delivery-manifest.json",
+  "source_manifest_sha256": "80834fc998c7b2823a826407e22f15d232dabc62dd8b17626257e59f1811afca",
+  "checked_entries": 166,
+  "changed_entries": [],
+  "passed": true,
+  "physical_validation_established": false,
+  "operational_activation_allowed": false
+}

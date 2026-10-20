@@ -1,0 +1,67 @@
+{
+  "schema_version": "monsoon.native-path-portability-regression/1",
+  "evidence_kind": "synthetic_fixture",
+  "original_parent_integrity_verified": true,
+  "long_path_audit_integrity_verified": true,
+  "native_qualified": true,
+  "expected_audit_file_count": 18,
+  "observations": {
+    "base": {
+      "original_working_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-audit-portability\\final-regression\\test_native_audit_keeps_comple0\\packaged evidence with spaces\\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\bench-balance-audit-mcs8f7ny\\base",
+      "working_directory_characters": 257,
+      "original_output_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-audit-portability\\final-regression\\test_native_audit_keeps_comple0\\packaged evidence with spaces\\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\bench-balance-audit-mcs8f7ny\\base\\model.out",
+      "output_path_characters": 267,
+      "output_bytes": 22084,
+      "input_bytes_equal": true,
+      "diagnostics_equal_to_short_path": true,
+      "report_samples_equal_to_short_path": true,
+      "actual_file_names": [
+        "manifest.json",
+        "model.inp",
+        "model.out",
+        "model.rpt",
+        "request.json",
+        "result.json",
+        "worker-result.json",
+        "worker.log"
+      ]
+    },
+    "half": {
+      "original_working_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-audit-portability\\final-regression\\test_native_audit_keeps_comple0\\packaged evidence with spaces\\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\bench-balance-audit-mcs8f7ny\\half",
+      "working_directory_characters": 257,
+      "original_output_path": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-audit-portability\\final-regression\\test_native_audit_keeps_comple0\\packaged evidence with spaces\\xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\\bench-balance-audit-mcs8f7ny\\half\\model.out",
+      "output_path_characters": 267,
+      "output_bytes": 22084,
+      "input_bytes_equal": true,
+      "diagnostics_equal_to_short_path": true,
+      "report_samples_equal_to_short_path": true,
+      "actual_file_names": [
+        "manifest.json",
+        "model.inp",
+        "model.out",
+        "model.rpt",
+        "request.json",
+        "result.json",
+        "worker-result.json",
+        "worker.log"
+      ]
+    }
+  },
+  "separate_overlong_cwd_process_launch_failure": {
+    "base": {
+      "original_working_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-audit-portability\\post-fix-regression\\test_native_audit_keeps_comple0\\packaged evidence with spaces\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\bench-balance-audit-rm3gmqwl\\base",
+      "working_directory_characters": 353,
+      "worker_started": false,
+      "retained_log": "NotADirectoryError: [WinError 267] The directory name is invalid\n"
+    },
+    "half": {
+      "original_working_directory": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\v06-audit-portability\\post-fix-regression\\test_native_audit_keeps_comple0\\packaged evidence with spaces\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\deep-receipt-artifact-directory\\bench-balance-audit-rm3gmqwl\\half",
+      "working_directory_characters": 353,
+      "worker_started": false,
+      "retained_log": "NotADirectoryError: [WinError 267] The directory name is invalid\n"
+    }
+  },
+  "archive_path_note": "Copied bundles preserve every original byte and historical absolute path. Verification above was performed at their original live locations; the archive inventory binds copied bytes without claiming relocated-path validity.",
+  "physical_validation_established": false,
+  "operational_activation_allowed": false
+}

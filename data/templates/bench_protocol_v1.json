@@ -1,0 +1,49 @@
+{
+  "protocol_id": "MONSOON-BENCH-01",
+  "protocol_version": "1.0",
+  "frozen_at": "2026-10-14T09:49:32Z",
+  "status": "prospective_project_protocol_pending_lab_and_operator_review",
+  "purpose": "Instrumented bench mechanism checks; no measured results supplied. These project acceptance thresholds are not engineering standards.",
+  "thresholds": {
+    "maximum_sample_gap_s": 5.0,
+    "mass_balance_absolute_m3": 0.0005,
+    "mass_balance_relative": 0.03,
+    "stage_rmse_m": 0.01,
+    "flow_rmse_m3_s": 0.00002,
+    "storage_rmse_m3": 0.0005,
+    "spill_volume_absolute_m3": 0.0005,
+    "spill_volume_relative": 0.1,
+    "minimum_validation_events_per_mechanism": 4
+  },
+  "mechanisms": [
+    "H2_risk_transfer",
+    "roughness",
+    "restriction",
+    "receiving_high",
+    "cold_start",
+    "equilibrated_control"
+  ],
+  "partition_rule": "Whole events are assigned before collection. Calibration events end before model freeze; validation events begin afterwards. No fitting, threshold change, sample exclusion or partition relabelling using validation outcomes.",
+  "event_plan": {
+    "calibration_prefix": "BENCH-CAL-",
+    "validation_prefix": "BENCH-VAL-",
+    "validation_ids": [
+      "BENCH-VAL-H2-01", "BENCH-VAL-H2-02", "BENCH-VAL-H2-03", "BENCH-VAL-H2-04",
+      "BENCH-VAL-ROUGH-01", "BENCH-VAL-ROUGH-02", "BENCH-VAL-ROUGH-03", "BENCH-VAL-ROUGH-04",
+      "BENCH-VAL-RESTRICT-01", "BENCH-VAL-RESTRICT-02", "BENCH-VAL-RESTRICT-03", "BENCH-VAL-RESTRICT-04",
+      "BENCH-VAL-STAGE-01", "BENCH-VAL-STAGE-02", "BENCH-VAL-STAGE-03", "BENCH-VAL-STAGE-04",
+      "BENCH-VAL-COLD-01", "BENCH-VAL-COLD-02", "BENCH-VAL-COLD-03", "BENCH-VAL-COLD-04",
+      "BENCH-VAL-EQUIL-01", "BENCH-VAL-EQUIL-02", "BENCH-VAL-EQUIL-03", "BENCH-VAL-EQUIL-04"
+    ],
+    "interpretation": "For each mechanism, 01/02 are independently reset current/restored runs, 03/04 repeat those two states with a separate reset. Freeze exact forcing, geometry, state, pairing and analysis windows in a witnessed lab run sheet before data collection. This template does not establish that witness or collection happened."
+  },
+  "uncertainty_rule": "Instrument expanded absolute uncertainty at coverage factor 2, conservative linear bounds, plus timestamp uncertainty and declared unmeasured-loss bound. Pass requires error upper bound within threshold; fail requires lower bound above threshold; overlap is unresolved.",
+  "integration_rule": "Trapezoidal integration at actual adjacent timestamp intervals only, with no missing values, no interval above maximum_sample_gap_s, and no extrapolation. Receiving-boundary outflow is signed positive outward, negative for backflow.",
+  "limitations": [
+    "No measured experiment has been completed by freezing this protocol.",
+    "Bench scale is not a similarity proof for township hydraulics.",
+    "The checks do not establish work-site safety or operational permission.",
+    "Source and calibration authenticity require independent human review.",
+    "Threshold or instrumentation changes require a new protocol version before new validation events; previous failures remain in the record."
+  ]
+}

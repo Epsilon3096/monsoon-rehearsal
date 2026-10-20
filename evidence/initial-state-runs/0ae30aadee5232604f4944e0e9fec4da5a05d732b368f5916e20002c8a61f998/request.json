@@ -1,0 +1,515 @@
+{
+  "run_id": "0ae30aadee5232604f4944e0e9fec4da5a05d732b368f5916e20002c8a61f998",
+  "completed_jobs": [],
+  "scenario_id": "P4-equilibrium-initial-level",
+  "engine": {
+    "engine": "EPA SWMM / Open Water Analytics toolkit",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "adapter_version": "1.0.1",
+    "routing": "DYNWAVE",
+    "units": "CMS / metres / m3",
+    "default_routing_step_s": 0.5,
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c"
+  },
+  "routing_step": 0.5,
+  "horizon_minutes": 360,
+  "hydraulic": {
+    "peak_a_cms": 0,
+    "peak_b_cms": 0,
+    "hydrograph": "triangle",
+    "tailwater_m": 100.4,
+    "initial_storage_depth_m": 0.3,
+    "roughness_multiplier": 1.0,
+    "restriction_multiplier": 1.0
+  },
+  "case": {
+    "id": "synthetic-two-branch-v1",
+    "title": "Monsoon Rehearsal \u00b7 synthetic reference catchment",
+    "description": "Two prescribed inflow branches, a shared trunk and online designed storage. Concept verification only; no surveyed site, rainfall forecast, inundation map or calibrated benefit.",
+    "model_version": "synthetic-1.0.0",
+    "evidence_status": "synthetic",
+    "jobs": [
+      {
+        "id": "J1",
+        "title": "Restore shared trunk",
+        "asset_id": "TRUNK",
+        "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+        "nominal_minutes": 90,
+        "max_minutes": 100,
+        "downstream_rank": 0,
+        "prerequisites": [],
+        "cost_rm": 1080,
+        "evidence_status": "synthetic"
+      },
+      {
+        "id": "J2",
+        "title": "Restore Branch A reach",
+        "asset_id": "A_REACH",
+        "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+        "nominal_minutes": 45,
+        "max_minutes": 55,
+        "downstream_rank": 3,
+        "prerequisites": [],
+        "cost_rm": 540,
+        "evidence_status": "synthetic"
+      },
+      {
+        "id": "J3",
+        "title": "Restore Branch B upstream reach",
+        "asset_id": "B_REACH",
+        "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+        "nominal_minutes": 60,
+        "max_minutes": 70,
+        "downstream_rank": 2,
+        "prerequisites": [],
+        "cost_rm": 720,
+        "evidence_status": "synthetic"
+      },
+      {
+        "id": "J4",
+        "title": "Restore designed storage inlet",
+        "asset_id": "STORE_IN",
+        "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+        "nominal_minutes": 75,
+        "max_minutes": 85,
+        "downstream_rank": 1,
+        "prerequisites": [],
+        "cost_rm": 900,
+        "evidence_status": "synthetic"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "A1",
+        "label": "Branch A inlet",
+        "x": 0,
+        "y": 3,
+        "kind": "junction",
+        "invert_m": 101.4,
+        "max_depth_m": 1.0
+      },
+      {
+        "id": "A2",
+        "label": "Branch A junction",
+        "x": 2,
+        "y": 3,
+        "kind": "junction",
+        "invert_m": 100.8,
+        "max_depth_m": 1.0
+      },
+      {
+        "id": "B1",
+        "label": "Branch B inlet",
+        "x": 0,
+        "y": 0,
+        "kind": "junction",
+        "invert_m": 101.2,
+        "max_depth_m": 1.1
+      },
+      {
+        "id": "B2",
+        "label": "Storage approach",
+        "x": 2,
+        "y": 0,
+        "kind": "junction",
+        "invert_m": 100.8,
+        "max_depth_m": 1.1
+      },
+      {
+        "id": "S",
+        "label": "Designed storage",
+        "x": 4,
+        "y": 0,
+        "kind": "storage",
+        "invert_m": 100.1,
+        "max_depth_m": 2.0
+      },
+      {
+        "id": "J",
+        "label": "Shared confluence",
+        "x": 5,
+        "y": 2,
+        "kind": "junction",
+        "invert_m": 100.0,
+        "max_depth_m": 1.2
+      },
+      {
+        "id": "T",
+        "label": "Trunk downstream",
+        "x": 7,
+        "y": 2,
+        "kind": "junction",
+        "invert_m": 99.6,
+        "max_depth_m": 1.2
+      },
+      {
+        "id": "O",
+        "label": "Receiving water",
+        "x": 9,
+        "y": 2,
+        "kind": "outfall",
+        "invert_m": 99.2,
+        "max_depth_m": 0.0
+      }
+    ],
+    "links": [
+      {
+        "id": "A_REACH",
+        "from_node": "A1",
+        "to_node": "A2",
+        "job_id": "J2",
+        "length_m": 90,
+        "depth_m": 1,
+        "blocked_width_m": 0.35,
+        "restored_width_m": 0.8,
+        "shape": "RECT_OPEN",
+        "roughness_n": 0.015
+      },
+      {
+        "id": "A_LOWER",
+        "from_node": "A2",
+        "to_node": "J",
+        "job_id": null,
+        "length_m": 100,
+        "depth_m": 1,
+        "blocked_width_m": 0.8,
+        "restored_width_m": 0.8,
+        "shape": "RECT_OPEN",
+        "roughness_n": 0.015
+      },
+      {
+        "id": "B_REACH",
+        "from_node": "B1",
+        "to_node": "B2",
+        "job_id": "J3",
+        "length_m": 70,
+        "depth_m": 1.1,
+        "blocked_width_m": 0.3,
+        "restored_width_m": 0.7,
+        "shape": "RECT_OPEN",
+        "roughness_n": 0.015
+      },
+      {
+        "id": "STORE_IN",
+        "from_node": "B2",
+        "to_node": "S",
+        "job_id": "J4",
+        "length_m": 40,
+        "depth_m": 1.1,
+        "blocked_width_m": 0.2,
+        "restored_width_m": 0.8,
+        "shape": "RECT_OPEN",
+        "roughness_n": 0.015
+      },
+      {
+        "id": "STORE_OUT",
+        "from_node": "S",
+        "to_node": "J",
+        "job_id": null,
+        "length_m": 60,
+        "depth_m": 0.5,
+        "blocked_width_m": 0,
+        "restored_width_m": 0,
+        "shape": "CIRCULAR",
+        "roughness_n": 0.015
+      },
+      {
+        "id": "TRUNK",
+        "from_node": "J",
+        "to_node": "T",
+        "job_id": "J1",
+        "length_m": 80,
+        "depth_m": 1.2,
+        "blocked_width_m": 0.4,
+        "restored_width_m": 1.1,
+        "shape": "RECT_OPEN",
+        "roughness_n": 0.015
+      },
+      {
+        "id": "OUTLET",
+        "from_node": "T",
+        "to_node": "O",
+        "job_id": null,
+        "length_m": 80,
+        "depth_m": 1.2,
+        "blocked_width_m": 1.2,
+        "restored_width_m": 1.2,
+        "shape": "RECT_OPEN",
+        "roughness_n": 0.015
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "P1",
+        "title": "Balanced design event",
+        "phase": "planning",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "Synthetic symmetric 50-minute triangular inflows; low tailwater; nominal work durations."
+      },
+      {
+        "id": "P2",
+        "title": "Branch A dominant event",
+        "phase": "planning",
+        "hydraulic": {
+          "peak_a_cms": 0.9,
+          "peak_b_cms": 0.3,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 100,
+          "J2": 55,
+          "J3": 70,
+          "J4": 85
+        },
+        "description": "Synthetic A-dominant triangular inflows; upper-bound durations."
+      },
+      {
+        "id": "P3",
+        "title": "Branch B dominant event",
+        "phase": "planning",
+        "hydraulic": {
+          "peak_a_cms": 0.3,
+          "peak_b_cms": 0.9,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 80,
+          "J2": 40,
+          "J3": 55,
+          "J4": 70
+        },
+        "description": "Synthetic B-dominant triangular inflows; shorter observed work durations."
+      },
+      {
+        "id": "P4",
+        "title": "Elevated receiving water",
+        "phase": "planning",
+        "hydraulic": {
+          "peak_a_cms": 0.65,
+          "peak_b_cms": 0.55,
+          "hydrograph": "triangle",
+          "tailwater_m": 100.4,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 95,
+          "J2": 50,
+          "J3": 65,
+          "J4": 80
+        },
+        "description": "Elevated fixed tailwater with otherwise balanced inflow. Backflow is allowed."
+      },
+      {
+        "id": "H1",
+        "title": "Withheld double pulse",
+        "phase": "holdout",
+        "hydraulic": {
+          "peak_a_cms": 0.8,
+          "peak_b_cms": 0.6,
+          "hydrograph": "double",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 98,
+          "J2": 54,
+          "J3": 68,
+          "J4": 83
+        },
+        "description": "Separate double-pulse event family; fixed before planning outcomes."
+      },
+      {
+        "id": "H2",
+        "title": "Withheld initially filled storage",
+        "phase": "holdout",
+        "hydraulic": {
+          "peak_a_cms": 0.4,
+          "peak_b_cms": 0.85,
+          "hydrograph": "plateau",
+          "tailwater_m": 100.1,
+          "initial_storage_depth_m": 1.25,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 88,
+          "J2": 43,
+          "J3": 62,
+          "J4": 78
+        },
+        "description": "Plateau event with pre-event stored water, separate mechanism family."
+      },
+      {
+        "id": "D0",
+        "title": "Dry network control",
+        "phase": "diagnostic",
+        "hydraulic": {
+          "peak_a_cms": 0,
+          "peak_b_cms": 0,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "Zero prescribed inflow, low receiving stage, initially empty storage."
+      },
+      {
+        "id": "D1",
+        "title": "Tailwater-only backflow",
+        "phase": "diagnostic",
+        "hydraulic": {
+          "peak_a_cms": 0,
+          "peak_b_cms": 0,
+          "hydrograph": "triangle",
+          "tailwater_m": 100.8,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "Zero prescribed inflow; receiving water alone introduces reverse flow."
+      },
+      {
+        "id": "D2",
+        "title": "Unrestricted outlet-dominated control",
+        "phase": "diagnostic",
+        "hydraulic": {
+          "peak_a_cms": 0.7,
+          "peak_b_cms": 0.7,
+          "hydrograph": "triangle",
+          "tailwater_m": 99.3,
+          "initial_storage_depth_m": 0,
+          "roughness_multiplier": 1.0,
+          "restriction_multiplier": 1.0,
+          "pre_restored_jobs": [
+            "J2",
+            "J3",
+            "J4"
+          ]
+        },
+        "durations": {
+          "J1": 90,
+          "J2": 45,
+          "J3": 60,
+          "J4": 75
+        },
+        "description": "Other reaches restored in boundary condition; isolate shared-trunk job response."
+      }
+    ],
+    "default_deadline_minutes": 180,
+    "travel_minutes": 10,
+    "protected_nodes": [
+      "A1",
+      "A2",
+      "B1",
+      "B2",
+      "S",
+      "J",
+      "T"
+    ],
+    "epsilon_m3": 0.05,
+    "tie_m3": 0.05,
+    "storage_area_m2": 300,
+    "depth_threshold_fraction": 0.8,
+    "model_assumptions": [
+      "CMS inflows prescribed at A1 and B1; inlet capture is not modelled.",
+      "Conveyance restrictions are synthetic lateral encroachment represented only by clear rectangular width.",
+      "All node flooding crosses an absorbing collector boundary; no surface ponding or re-entry.",
+      "All maintenance completes dry before the 3-hour hydraulic event; no transient in-work geometry.",
+      "Storage has fixed 300 m2 surface area and unchanged 0.5 m circular outlet.",
+      "Initial storage depth is observed hydraulic state, not manipulated to justify a job.",
+      "No flap gate at outfall; dynamic-wave routing permits reverse flow.",
+      "Coordinates are a schematic, not surveyed geospatial positions."
+    ],
+    "frozen_before_outcome_comparison": true,
+    "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436"
+  },
+  "request_fingerprint": {
+    "input_sha256": "3c820452167083c15e08cebfb19fb2e1601400fb80f97639c2114c99be49c043",
+    "engine": {
+      "engine": "EPA SWMM / Open Water Analytics toolkit",
+      "engine_version": "5.2.4",
+      "engine_version_int": 52004,
+      "toolkit_version": "0.17.0",
+      "adapter_version": "1.0.1",
+      "routing": "DYNWAVE",
+      "units": "CMS / metres / m3",
+      "default_routing_step_s": 0.5,
+      "runtime_file_sha256": {
+        "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+        "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+        "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+        "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+        "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+        "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+        "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+        "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+        "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+        "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+        "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+        "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+        "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+        "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+      },
+      "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c"
+    },
+    "case_snapshot_sha256": "3fc9924a662c6cb338f1241eaab317ae1fffad97214341ba0d778f6ecf8cfb17",
+    "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c"
+  }
+}

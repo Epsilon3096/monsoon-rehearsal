@@ -1,0 +1,90 @@
+{
+  "schema_version": "monsoon.bench-replay-recipe/1",
+  "recipe_id": "SYNTHETIC-REPLAY-COMPARTMENT-RECIPE",
+  "model_sha256": "33230b8317130ace60569288b0896fd9a22773e7af9731f1dc4edccc67edf7cf",
+  "duration_s": 120,
+  "initial_conditions": {
+    "kind": "dry_zero_flow",
+    "source_id": "SYN-BENCH-SOURCE"
+  },
+  "clock": {
+    "kind": "synthetic_virtual_elapsed",
+    "origin": "window_start",
+    "time_unit": "s",
+    "max_synchronization_uncertainty_s": 0.01,
+    "source_id": "SYN-BENCH-SOURCE"
+  },
+  "units": {
+    "time": "s",
+    "stage": "m",
+    "flow": "m3/s",
+    "volume": "m3"
+  },
+  "vertical_datum": "SYNTHETIC-ADAPTER-ZERO",
+  "interpolation": {
+    "kind": "piecewise_linear",
+    "knots": "integer_seconds",
+    "max_gap_s": 10,
+    "extrapolation": "forbidden",
+    "missing_policy": "unresolved_no_fill",
+    "response_alignment": "exact_report_grid_no_interpolation"
+  },
+  "boundary_series": [
+    {
+      "id": "INPUT-A",
+      "quantity": "inflow_m3_s",
+      "location_id": "A",
+      "unit": "m3/s",
+      "expanded_uncertainty_abs": 1e-06,
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    {
+      "id": "RECEIVING-O",
+      "quantity": "receiving_stage_m",
+      "location_id": "O",
+      "unit": "m",
+      "expanded_uncertainty_abs": 0.001,
+      "source_id": "SYN-BENCH-SOURCE"
+    }
+  ],
+  "response_series": [
+    {
+      "id": "STAGE-A",
+      "quantity": "stage_m",
+      "location_id": "A",
+      "unit": "m",
+      "expanded_uncertainty_abs": 0.001,
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    {
+      "id": "FLOW-O",
+      "quantity": "outflow_m3_s",
+      "location_id": "O",
+      "unit": "m3/s",
+      "expanded_uncertainty_abs": 1e-06,
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    {
+      "id": "SPILL-A",
+      "quantity": "spill_m3_s",
+      "location_id": "A",
+      "unit": "m3/s",
+      "expanded_uncertainty_abs": 1e-06,
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    {
+      "id": "STORAGE",
+      "quantity": "storage_m3",
+      "location_id": "SYSTEM",
+      "unit": "m3",
+      "expanded_uncertainty_abs": 1e-06,
+      "source_id": "SYN-BENCH-SOURCE"
+    }
+  ],
+  "sign_convention": {
+    "inflow": "positive_into_control_volume",
+    "outfall_exchange": "positive_outward_negative_backflow",
+    "spill": "positive_outward"
+  },
+  "notes": "Invented whole-event cold-start analytical compartment replay recipe. Geometry chosen during software development after retained flowing-candidate numerical failure. No real measured trace, physical calibration or wet-conduit accuracy claim."
+}

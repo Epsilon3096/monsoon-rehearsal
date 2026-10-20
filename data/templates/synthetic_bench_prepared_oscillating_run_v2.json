@@ -1,0 +1,83 @@
+{
+  "schema_version": "monsoon.bench-prepared-run/1",
+  "prepared_run_id": "SYNTHETIC-PREPARED-WET",
+  "evidence_kind": "synthetic_fixture",
+  "continuous_run": {
+    "schema_version": "monsoon.bench-run/1",
+    "run_id": "SYNTHETIC-PREPARED-CONTINUOUS-HISTORY",
+    "model_sha256": "4da0c548266c59f43d69424b894ecf91f0cd43d237f1461ed8bf94d9a68e3de5",
+    "duration_s": 160,
+    "initial_conditions": {
+      "kind": "dry_zero_flow",
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    "inflows": [
+      {
+        "node_id": "A",
+        "points": [
+          {
+            "elapsed_s": 0,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 10,
+            "value_m3_s": 0.0002
+          },
+          {
+            "elapsed_s": 30,
+            "value_m3_s": 0.0002
+          },
+          {
+            "elapsed_s": 50,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 100,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 105,
+            "value_m3_s": 0.0002
+          },
+          {
+            "elapsed_s": 110,
+            "value_m3_s": 0.0002
+          },
+          {
+            "elapsed_s": 115,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 160,
+            "value_m3_s": 0
+          }
+        ]
+      }
+    ],
+    "receiving_stages": [
+      {
+        "node_id": "O",
+        "points": [
+          {
+            "elapsed_s": 0,
+            "stage_m": 0.22
+          },
+          {
+            "elapsed_s": 160,
+            "stage_m": 0.22
+          }
+        ]
+      }
+    ],
+    "notes": "Synthetic complete dry-start history: 7 L preparation pulse followed by 2 L event pulse. Same geometry throughout; nominal-dry numerical water retained."
+  },
+  "event_start_s": 100,
+  "preparation": {
+    "kind": "continuous_dry_start",
+    "source_id": "SYN-BENCH-SOURCE",
+    "equilibrium": {
+      "kind": "not_claimed"
+    }
+  },
+  "notes": "Invented finite wet preparation carries approximately 7 L plus actual numerical initialization water into a 2 L evaluation pulse. The wet initial state includes moving water; equilibrium is not claimed."
+}

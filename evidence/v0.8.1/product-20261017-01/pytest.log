@@ -1,0 +1,40 @@
+........................................................................ [ 11%]
+........................................................................ [ 23%]
+........................................................................ [ 34%]
+........................................................................ [ 46%]
+........................................................................ [ 57%]
+........................................................................ [ 69%]
+..........................................F............................. [ 81%]
+........................................................................ [ 92%]
+..............................................                           [100%]
+================================== FAILURES ===================================
+____ test_cached_ui_audit_does_not_follow_a_different_plan_or_stale_inputs ____
+
+tmp_path = WindowsPath('C:/Users/kingy/AppData/Local/Temp/pytest-of-kingy/pytest-136/test_cached_ui_audit_does_not_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001F4731C9CD0>
+
+    @pytest.mark.integration
+    def test_cached_ui_audit_does_not_follow_a_different_plan_or_stale_inputs(tmp_path, monkeypatch):
+        from streamlit.testing.v1 import AppTest
+        from test_app import button, use_arithmetic_app_hydraulics
+    
+        monkeypatch.setenv("MONSOON_DATA_DIR", str(tmp_path / "app"))
+        use_arithmetic_app_hydraulics(monkeypatch, tmp_path)
+        app = AppTest.from_file(str(service.ROOT / "app.py"), default_timeout=180).run()
+        button(app, "Run rehearsal").click().run()
+        assert not app.exception and not app.error
+        original = app.session_state["selected_plan"]["id"]
+        button(app, "Audit selected plan").click().run()
+        assert not app.exception and not app.error
+>       assert any("passes the required development checks" in item.value for item in app.success)
+E       assert False
+E        +  where False = any(<generator object test_cached_ui_audit_does_not_follow_a_different_plan_or_stale_inputs.<locals>.<genexpr> at 0x000001F470D7E740>)
+
+tests\test_v2_integration_review.py:195: AssertionError
+---------------------------- Captured stderr call -----------------------------
+2026-10-17 12:44:47.786 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+------------------------------ Captured log call ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:483 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+=========================== short test summary info ===========================
+FAILED tests/test_v2_integration_review.py::test_cached_ui_audit_does_not_follow_a_different_plan_or_stale_inputs
+1 failed, 621 passed in 703.08s (0:11:43)

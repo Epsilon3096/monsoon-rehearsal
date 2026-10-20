@@ -1,0 +1,61 @@
+NEXT-STAGE INVESTIGATION NOTE — 15 October 2026
+Terminal conduit / imposed outfall depth: a specific discrete accounting hypothesis
+
+Scope and status
+
+This is a work-only follow-up, outside the v0.6 release evidence. No native model was rerun, no source/test/data file or tolerance was changed, and no failed result was reclassified. The work inspected existing probe records and the public EPA v5.2.4 solver source, then performed scalar arithmetic on those retained values. The installed OWA toolkit binary identifies as SWMM 5.2.4; correspondence of every binary instruction to the EPA tag has not been established.
+
+Established observations in the retained synthetic probe
+
+Reference: outputs/monsoon-rehearsal/evidence/v0.6/native-phase-review/primary/probe.json, its half-step counterpart, and the retained model.inp. The terminal open rectangular conduit L2 is 0.8 m long and 0.08 m wide, with zero offsets/loss coefficients and a prescribed receiving stage at O. External prescribed inflow is zero.
+
+The cumulative residual is R(t) = initial storage + cumulative incoming water - cumulative outgoing water - current total storage. At 50 s the primary result is -0.0019144499220922406 m3. The independent signed-flow integral and native cumulative totals agree on that discrepancy to approximately 1e-17 m3; live storage and converted native storage also agree. Halving the time step changes the 50 s result to -0.001915509917564024 m3. The final primary residual nearly cancels, to +4.7563041824446066e-7 m3.
+
+The 0.06 m stage plateau produces approximately the same large residual at 20 s and 50 s despite internal hydraulic motion. From 50 to 50.01 s, the retained O stage declines from 0.06 to 0.059984999327195115 m and R increases by 4.799655687849277e-7 m3. These are existing observations, not outputs of a new run.
+
+Specific primary-source observations
+
+1. EPA dwflow.c, dwflow_findConduitFlow and findSurfArea: the ordinary conduit calculation stores one q at both ends, while new conduit volume uses the average of the two end areas times length. For a wetted rectangular subcritical section, each end contributes B*L/2 to the corresponding nodal surface area. This is a staggered, lumped continuity representation, not two independently reported end-face discharges.
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/dwflow.c#L258-L267
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/dwflow.c#L425-L435
+
+2. EPA dynwave.c, updateNodeFlows: the same link q enters the two nodal flow accumulators and the link surface-area contributions enter the nodal effective areas. findNodeDepths skips OUTFALL nodes; their depths come from the boundary condition. For an unsurcharged interior node, setNodeDepth uses the trapezoidal net-flow volume divided by its effective area. Thus the interior half-conduit storage responds through continuity, whereas the boundary-associated half does not receive that same depth-continuity solve.
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/dynwave.c#L489-L535
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/dynwave.c#L550-L647
+
+3. EPA node.c, node_getSystemOutflow: the outfall's system exchange comes from its accumulated link flow; reverse exchange is negative, and its own node volume is set to zero. It does not add a derivative of the boundary-associated conduit storage there. routing.c classifies this reported exchange into external inflow or outflow totals.
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/node.c#L409-L440
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/routing.c#L806-L843
+
+4. EPA massbal.c, massbal_getStorage: full node and conduit volumes remain in system storage. The terminal link is not shortened to its interior-associated half for that calculation.
+https://github.com/USEPA/Stormwater-Management-Model/blob/v5.2.4/src/solver/massbal.c#L592-L617
+
+Derived explanation, conditional on that wet rectangular regime
+
+Write W_O = (B*L_terminal/2)*y_O for the boundary-associated part of terminal link storage. The complete discrete storage is S = S_interior + W_O. Summing interior nodal continuity approximately gives dS_interior/dt = I - Q_reported, because internal link flows cancel. Therefore
+
+  dR/dt approximately equals -(B*L_terminal/2)*dy_O/dt,
+  R(t)-R(t0) approximately equals -[W_O(t)-W_O(t0)].
+
+This is a candidate mismatch between the control volume represented by reported terminal flow and the full volume included in storage. In that interpretation, a physical boundary-face flux for the full control volume would differ from the reported link flux by -dW_O/dt. This algebra is a diagnostic hypothesis, NOT a justified correction to apply to release outputs or acceptance checks.
+
+For the existing geometry, B*L/2 = 0.032 m2. Raising O by 0.06 m predicts -0.001920 m3 (-1.920 L). The observed 50 s residual is -1.914449922 L, a difference of 5.550078 mL. More sharply, the retained 50-to-50.01 s change predicts
+
+  0.032*(0.06 - 0.059984999327195115)
+    = 4.80021529756236e-7 m3,
+
+against observed 4.799655687849277e-7 m3: a relative difference of about 0.01166%. Rounded internal/SI volume conversion, non-converged-within-tolerance iteration error and changing flow regimes can affect the remaining small difference; none has been isolated here. This close incremental match is substantially more specific than merely noting that half of a conduit happens to have a similar volume.
+
+Limits of the explanation
+
+The source-derived term explains the sign, leading magnitude, dependence on outfall depth, persistence on the high-stage plateau, and cancellation when the boundary falls. It is not a full explanation of every millilitre or all earlier pulse failures. Critical-depth substitution, dry-end clamps, changing flow classification and iteration tolerance alter the simple wet rectangular derivation. The retained terminal head is not exactly the prescribed zero stage near the end. Interior under-relaxation and flow oscillations also remain to be assessed. The positive analytical compartment deliberately avoids a hydraulically wet terminal link, so it does not discriminate among these mechanisms. Do not infer independent hydraulic accuracy, a general SWMM defect, or a validated software repair from this note.
+
+Single best discriminating experiment for the next stage — terminal spatial refinement
+
+Preregister one diagnostic family, in a new isolated investigation copy: represent the SAME 0.8 m terminal channel as 1, 2 and 4 equal collinear conduit elements. Preserve total length, bed profile, rectangular width/depth, roughness, losses, upstream compartment geometry, boundary trace, routing step, convergence settings, losses and physical control volume. Insert ordinary zero-physical-storage junctions at interpolated invert elevations; explicitly retain/account for numerical area floors. Do not change the boundary, shorten the physical reach, add a reservoir, relax a budget or fit a parameter.
+
+Retain every actual-step stage, all node/link volumes, signed exchange, cumulative residual and flow classification. Use the same primary routing step to isolate spatial rather than temporal refinement. The existing half-time-step case already supplies evidence that temporal halving alone does not remove the leading discrepancy.
+
+The hypothesis predicts that the high-stage residual scales mainly with the final element adjoining O: approximately -1.920, -0.960 and -0.480 L, respectively, up to separately reported numerical/flow-regime remainder. It also predicts that R(t) + (B*L_terminal/2)*[y_O(t)-y_O(0)] loses most of the boundary-ramp signature; retain this only as a diagnostic trace, not an adjusted acceptance metric. A residual independent of terminal element length, or a different time signature after accounting for regime changes, would challenge this explanation and redirect the investigation toward internal iteration/initialization or flow semantics. Even the predicted scaling would identify a discrete mechanism, not establish physical accuracy or authorize use of those predictions.
+
+End of bounded follow-up. The v0.6 rejection gate and all release evidence remain unchanged.

@@ -1,0 +1,27 @@
+........................................................................ [  9%]
+........................................................................ [ 18%]
+..................................F..................................... [ 27%]
+........................................................................ [ 36%]
+........................................................................ [ 45%]
+........................................................................ [ 54%]
+........................................................................ [ 63%]
+........................................................................ [ 72%]
+........................................................................ [ 81%]
+........................................................................ [ 90%]
+........................................................................ [ 99%]
+.....                                                                    [100%]
+================================== FAILURES ===================================
+__________ test_boundary_receipts_responses_and_freeze_in_ui[False] ___________
+tests\test_bench_next_ui.py:162: in test_boundary_receipts_responses_and_freeze_in_ui
+    assert saved["bytes"] == store.export_evidence(state["study_id"])
+E   AssertionError: assert b'PK\x03\x04\...5\x00\x00\x00' == b'PK\x03\x04\...5\x00\x00\x00'
+E     
+E     At index 10 diff: b'q' != b'r'
+E     Use -v to get more diff
+---------------------------- Captured stderr setup ----------------------------
+2026-10-15 20:43:20.749 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+----------------------------- Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:483 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+=========================== short test summary info ===========================
+FAILED tests/test_bench_next_ui.py::test_boundary_receipts_responses_and_freeze_in_ui[False]
+1 failed, 796 passed in 780.67s (0:13:00)

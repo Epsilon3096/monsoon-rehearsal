@@ -1,0 +1,40 @@
+Monsoon Rehearsal — assessment of the revised Gemini reply
+
+The revised reply addresses the main objections to its first assessment. We broadly agree with its product direction and have implemented the agreed interface improvements. We do not yet have evidence that its proposed numerical changes would fix the custom solver. That research remains paused; the product continues to use EPA SWMM for its rehearsal calculations.
+
+This assessment refers to the exact revised response.txt with SHA256:
+c0b899a91339f588160edac3a074cee90f798617fd700ffb7cd09a6f63cb6e75
+
+The reply now correctly acknowledges that the earlier study already conditioned scenarios on storage and receiving-water levels. It also separates the synthetic model's adverse maintenance outcomes from the unrelated custom-solver research. The prototype can help a reviewer understand consequences, intermediate completed-work states and reasons for refusal. These capabilities do not establish that its scheduler outperforms a simpler rule, or that the model is validated for a real site.
+
+The agreed UI changes are now implemented:
+
+• The selected plan's verdict and audit actions appear before the detailed comparisons. A planning candidate, a blocked audit, unresolved evidence and a stale record have distinct wording. None is presented as approval.
+
+• The audit inspector uses the exact audited case and achieved work state. It displays the affected node, baseline spill, resulting spill, signed change and applicable limit, with prefix and state status. It does not substitute a planning scenario for a stress-audit result. Depth traces are shown only when their saved bytes and run identity match the audit; unavailable traces are identified explicitly.
+
+• “No additional work” is an explicit selection that requires its own audit. A passing empty plan may be saved for the separate review and approval process, but cannot issue a work ticket. Baseline flood risk remains. Selecting it does not imply that every alternative has been exhaustively rejected in the current context.
+
+• Reported completion remains an unresolved physical condition until verification. Restoration is not credited merely because someone reports finishing, and further supported planning remains blocked while the condition is unresolved.
+
+• The scenario schematic distinguishes absolute spill from change against the matching no-additional-work result. Symbols, labels and a companion table make the findings readable without relying on colour. The schematic now includes previously verified restorations as well as newly achieved work, so the drawn state matches the hydraulic results. Its displayed allowance follows the loaded case.
+
+Full verification also exposed a Windows sharing-lock error while publishing the optional cache index after the simulation evidence was already sealed. That separate software fault is fixed with bounded retries and preservation of the exact sealed result when the index remains locked. Failed simulations remain failed, and other I/O errors still propagate. Ten injected-error tests cover this change. Hydraulic calculations and numerical acceptance rules are unchanged.
+
+The changed adapter has a new source identity. The strict historical v0.3 replay correctly refuses it; reproducing that recorded study requires the preserved v0.8 source and matching environment. Historical records and product binding checks remain unchanged. The mocked replay tests explicitly use the recorded identity to exercise their existing guard cases; separate tests require rejection of today's changed source and engine identity. This release does not claim to have reproduced the historical research with a different implementation.
+
+The updated product profile passed 634 tests with no failures, errors or skips, and the original SWMM numerical/workflow verification passed. Exact scope and remaining limits are recorded in monsoon-rehearsal/evidence/v0.8.1/VERIFICATION.md. This is not qualification of the separate bench research.
+
+The numerical reasoning is much improved. The revised reply no longer treats the 57%/43% decomposition of one saved point value as a causal allocation of the trajectory error. It uses the actual comparison formula, acknowledges that rejected internal states were not saved, and recognises that depth positivity alone does not prove the stronger source- and network-coupled invariant requirements. It also frames stopping as a project-value decision rather than proof that a solver is mathematically unfixable.
+
+A few technical statements still need narrowing:
+
+• A first-order replacement does not make every blend fail the geometry check. Some zero-slope states produce identical geometry. The general incompatibility is real, but it is conditional on the actual arrays differing.
+
+• For an interior blend weight, omitting the source interpolation produces an error proportional to the difference between the high and low source terms. It breaks an otherwise balanced lake where that difference is nonzero. It does not universally break every lake, and a small resulting momentum error need not trip the separate invariant guard. Lake balance and guard acceptance are different properties.
+
+• The proposed H1/H2 diagnostic is not exhaustive. Identical applied states can have equal donor factors below one; equality does not require both factors to be one. A useful investigation would record state equality, donor-factor differences and first-order feasibility separately, using the actual inputs to each integration stage and the same original comparison bounds.
+
+• That diagnostic would require new numerical evolution with instrumentation. It is not extraction from the retained files: those files lack the rejected cell arrays, failing-cell indices and invariant margins. Reproducing all three retained trajectories would require corresponding replay runs. The proposed diagnostic has not been executed, and this assessment does not authorise it.
+
+The practical decision is therefore unchanged: accept the clearer product reasoning and implemented UI improvements, retain the adverse research evidence, and keep the custom solver paused. The revised reply supplies ideas for a possible separately scoped research investigation; it does not supply a demonstrated hydraulic fix.

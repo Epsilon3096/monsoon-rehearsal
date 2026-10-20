@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link id="fontLink" rel="stylesheet" media="all">
+  <link rel="shortcut icon" type="image/x-icon" href="/wp-content/themes/enlighten/images/favicon.ico" />
+
+  <link rel="stylesheet" href="/wp-content/themes/enlighten/headercss.css">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://publicinfobanjir.water.gov.my/xmlrpc.php">
+
+
+
+
+<meta name="google-site-verification" content="g9Kz-7miHf6Gpjy1fr0KFAP10zR29YlRqlvgRAyXM6k" />
+<meta name="description" content="Public Infobanjir system works by collecting real-time rainfall water level data from nearly 200 hydrological stations across the country. Hydrological data from each station is transmitted to the Telemetry Database / servers in each state and then transmitted to Infobanjir. Initially, the infobanjir system operations focused or monitored and used internally, i.e: rainfall information and water levels would be monitored by DID officers only.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Rainfall Data &#8211; The Official Web of Public Infobanjir</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Official Web of Public Infobanjir &raquo; Feed" href="https://publicinfobanjir.water.gov.my/feed/?lang=en" />
+<link rel="alternate" type="application/rss+xml" title="The Official Web of Public Infobanjir &raquo; Comments Feed" href="https://publicinfobanjir.water.gov.my/comments/feed/?lang=en" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/publicinfobanjir.water.gov.my\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='clean-login-css-css'  href='https://publicinfobanjir.water.gov.my/wp-content/plugins/clean-login/content/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighten-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%7CRaleway%3A400%2C600%2C300%2C700%2C400italic%2C500italic%7CTitillium+Web%3A400%2C300%2C200%2C600%2C400italic%7COswald%7CLato%3A400%2C100%2C100italic%2C300%2C300italic%2C400italic%2C700%2C700italic%2C900&#038;ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighten-style-css'  href='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='bxslider-css'  href='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/bxslider/jquery.bxslider.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/owl-carousel/owl.carousel.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighten-responsive-css'  href='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/css/responsive.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='superfish-css'  href='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/superfish/superfish.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/wow/animate.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wppb_stylesheet-css'  href='https://publicinfobanjir.water.gov.my/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=3.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/youtube-video/jquery.mb.YTPlayer.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/superfish/superfish.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/sticky-sidebar/theia-sticky-sidebar.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/wow/wow.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/superfish/hoverIntent.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/waypoint/jquery.waypoints.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/bxslider/jquery.bxslider.js?ver=1.8.2'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/owl-carousel/owl.carousel.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/counter-up/jquery.counterup.js?ver=4.9.7'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/custom.js?ver=4.9.7'></script>
+<link rel='https://api.w.org/' href='https://publicinfobanjir.water.gov.my/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://publicinfobanjir.water.gov.my/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://publicinfobanjir.water.gov.my/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.7" />
+<link rel="canonical" href="https://publicinfobanjir.water.gov.my/hujan/data-hujan/?lang=en" />
+<link rel='shortlink' href='https://publicinfobanjir.water.gov.my/?p=508' />
+<link rel="alternate" type="application/json+oembed" href="https://publicinfobanjir.water.gov.my/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpublicinfobanjir.water.gov.my%2Fhujan%2Fdata-hujan%2F%3Flang%3Den" />
+<link rel="alternate" type="text/xml+oembed" href="https://publicinfobanjir.water.gov.my/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpublicinfobanjir.water.gov.my%2Fhujan%2Fdata-hujan%2F%3Flang%3Den&#038;format=xml" />
+<style type="text/css">
+.qtranxs_flag_en {background-image: url(https://publicinfobanjir.water.gov.my/wp-content/plugins/qtranslate-x/flags/gb.png); background-repeat: no-repeat;}
+.qtranxs_flag_my {background-image: url(https://publicinfobanjir.water.gov.my/wp-content/plugins/qtranslate-x/flags/my.png); background-repeat: no-repeat;}
+</style>
+<link hreflang="en" href="https://publicinfobanjir.water.gov.my/hujan/data-hujan/?state=SEL&lang=en" rel="alternate" />
+<link hreflang="my" href="https://publicinfobanjir.water.gov.my/hujan/data-hujan/?state=SEL&lang=my" rel="alternate" />
+<link hreflang="x-default" href="https://publicinfobanjir.water.gov.my/hujan/data-hujan/?state=SEL" rel="alternate" />
+<meta name="generator" content="qTranslate-X 3.4.6.8" />
+	<style type="text/css">
+			.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	<link rel="icon" href="https://publicinfobanjir.water.gov.my/wp-content/uploads/export/upload/wordpress/2019/04/gov.png" sizes="32x32" />
+<link rel="icon" href="https://publicinfobanjir.water.gov.my/wp-content/uploads/export/upload/wordpress/2019/04/gov.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://publicinfobanjir.water.gov.my/wp-content/uploads/export/upload/wordpress/2019/04/gov.png" />
+<meta name="msapplication-TileImage" content="https://publicinfobanjir.water.gov.my/wp-content/uploads/export/upload/wordpress/2019/04/gov.png" />
+        <style>
+.header-banner-container{
+    background-image: url(https://forecast.water.gov.my/wp-content/uploads/2018/07/new.png);
+    background-repeat: no-repeat;
+}
+        
+        </style>
+        		<style type="text/css" id="wp-custom-css">
+			.post-edit-link {
+    display: none;
+}
+		</style>
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96195931-1"></script>-->
+<!--<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-96195931-1');
+</script>-->
+
+
+
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="REDACTED_PUBLIC_PAGE_TELEMETRY_KEY",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"REDACTED_PUBLIC_PAGE_TELEMETRY_KEY";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eaaq6qajoaltujqacqj3aaaaazvm4qyr-f-e000815eb-clienttons-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1906152","ak.ai":parseInt("1276631",10),"ak.ol":"0","ak.cr":15,"ak.ipv":6,"ak.proto":"http/1.1","ak.rid":"137414f8","ak.r":44716,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.cport":59440,"ak.gh":"23.193.104.202","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1791902481","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==iYF+cffybhy/9fUKYLjyUYyX3xT14mTaLURg6Hr6tYmYZMmzX3e0f/yKOZeuZ0xc5FJtu+/QfD04thKyhf2+H0HS1T6nxvtnfCgWxRKTLS/yZN4CCVWWKLosvlsadxQkbn/91VfqIXhc1QYY6a9LNt9v+VcBXdlEvsGg4whh9lc6mvi2cr8L6RxJVkCFV4vXl7m+AVL16jBTc0JBsfBaJQMLATD3xRlFQPd7IR4/WNCYKoZWAu1dpw0zywumGVrb1kUyQMzSjjfc3HXBgJEKTjlP4ULkAiOdNwsTeRwwo7Zw39a7MV2gBTiN8Qisc/p1G9vUovifZkvFPeseucUyTfp0sHk1S7HHYt+WR408ZQtvh0c54Y+SaDQFG6s5rcq92cQBHHFfQT3ObWwzR9GHCH/GOF+/u6T5E1M2hNbrkEk=","ak.pv":"12","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<style>
+.card{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#d1f4fa;background-clip:border-box;border-radius:0 rem;margin-bottom:1px}.card > hr{margin-right:0;margin-left:0}.card > .list-group:first-child .list-group-item:first-child{border-top-left-radius:0;border-top-right-radius:0}.card > .list-group:last-child .list-group-item:last-child{border-bottom-right-radius:0;border-bottom-left-radius:0}.card-body{font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;font-weight:700;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem}.card-title{margin-bottom:.75rem}.card-subtitle{margin-top:-.375rem;margin-bottom:0}.card-text:last-child{margin-bottom:0}.card-link:hover{text-decoration:none}.card-link + .card-link{margin-left:1.25rem}.card-header{padding:.75rem 1.25rem;margin-bottom:0;background-color:#73d2f3;border-bottom:0 solid rgba(0,0,0,0);border:none}.card-header:first-child{border-radius:0}.card-header + .list-group .list-group-item:first-child{border-top:0}.card-footer{padding:.75rem 1.25rem;background-color:rgba(255,255,255,0.445);border-top:1px solid rgba(0,0,0,0.125)}.card-footer:last-child{border-radius:0 0 calc(0.25rem - 1px) calc(0.25rem - 1px)}.card-header-tabs{margin-right:-.625rem;margin-bottom:-.75rem;margin-left:-.625rem;border-bottom:0}.card-header-pills{margin-right:-.625rem;margin-left:-.625rem}.card-img-overlay{position:absolute;top:0;right:0;bottom:0;left:0;padding:1.25rem}.card-img{width:100%;border-radius:calc(0.25rem - 1px)}.card-img-top{width:100%;border-top-left-radius:calc(0.25rem - 1px);border-top-right-radius:calc(0.25rem - 1px)}.card-img-bottom{width:100%;border-bottom-right-radius:calc(0.25rem - 1px);border-bottom-left-radius:calc(0.25rem - 1px)}.card-deck{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.card-deck .card{margin-bottom:15px}@media (min-width: 576px){.card-deck{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;margin-right:-15px;margin-left:-15px}.card-deck .card{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex:1 0 0;flex:1 0 0;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-right:15px;margin-bottom:0;margin-left:15px}}.card-group{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.card-group > .card{margin-bottom:15px}@media (min-width: 576px){.card-group{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap}.card-group > .card{-webkit-box-flex:1;-ms-flex:1 0 0;flex:1 0 0;margin-bottom:0}.card-group > .card + .card{margin-left:0;border-left:0}.card-group > .card:first-child{border-top-right-radius:0;border-bottom-right-radius:0}.card-group > .card:first-child .card-img-top,.card-group > .card:first-child .card-header{border-top-right-radius:0}.card-group > .card:first-child .card-img-bottom,.card-group > .card:first-child .card-footer{border-bottom-right-radius:0}.card-group > .card:last-child{border-top-left-radius:0;border-bottom-left-radius:0}.card-group > .card:last-child .card-img-top,.card-group > .card:last-child .card-header{border-top-left-radius:0}.card-group > .card:last-child .card-img-bottom,.card-group > .card:last-child .card-footer{border-bottom-left-radius:0}.card-group > .card:only-child{border-radius:.25rem}.card-group > .card:only-child .card-img-top,.card-group > .card:only-child .card-header{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.card-group > .card:only-child .card-img-bottom,.card-group > .card:only-child .card-footer{border-bottom-right-radius:.25rem;border-bottom-left-radius:.25rem}.card-group > .card:not(:first-child):not(:last-child):not(:only-child){border-radius:0}.card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top,.card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,.card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-header,.card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-footer{border-radius:0}}.card-columns .card{margin-bottom:.75rem}@media (min-width: 576px){.card-columns{-webkit-column-count:3;-moz-column-count:3;column-count:3;-webkit-column-gap:1.25rem;-moz-column-gap:1.25rem;column-gap:1.25rem}.card-columns .card{display:inline-block;width:100%}}span.select2-selection__clear{display:none}header#masthead{background:url(/wp-content/themes/enlighten/assets/images/bg3.jpg)}.accessibility_block{margin-left:3px;width:20px!important;height:20px!important;border-radius:50%}.font_color_front_block{width:16px;height:16px;text-align:center;border-style:solid;border-width:1px;border-color:#000;float:left;margin-left:5px;background-color:#989A9F;font-size:10pt}.accessibility_block{cursor:pointer}.invert--1{background-color:#d30f93!important;border-color:#f8f8d2!important;background-image:none;color:#f8f8d2!important}.invert--2{background-color:#fff!important;border-color:#000!important;background-image:none;color:#000!important}.invert--3{color:#fff!important;border-color:#fff!important;background-image:none;background-color:#000!important}.invert--4{color:#fff!important;border-color:#fff!important;background-image:none;background-color:red!important}.invert--5{color:#000!important;border-color:#fff!important;background-image:none;background-color:#ff0!important}.invert--6{color:#fff!important;border-color:#fff!important;background-image:none; background-color:#008000!important}a.custom-logo-link.highlight-1{background-color:#fff}.fontcolor-1{color:red!important}.fontcolor-2{color:green!important}.fontcolor-3{color:blue!important}.fontcolor-4{color:#ff0!important}.fontcolor-5{color:#fff!important}.fontcolor-6{color:#000!important}.backgroundimage-1{background:url(/wp-content/themes/enlighten/assets/images/bg1.jpg)!important}.backgroundimage-2{background:url(/wp-content/themes/enlighten/assets/images/bg4.jpg)!important}.backgroundimage-3{background:#fff!important}.backgroundimage-4{background:url(/wp-content/themes/enlighten/assets/images/bg5.jpg)!important}.highlight-1{background-color:#ff0!important;color:#000!important;outline:dotted thin!important}.margin-none{margin:0!important}.visible{visibility:visible!important}.inner-model .fa{font-size:150%;color:#444}.inner-contrast{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%}.row.columns-master.modal-grid{cursor:pointer}.col-1-2,.col-1-3,.col-1-1,.col-1-4{visibility:hidden;flex:1;background-color:#429442;margin:0 1px;height:5px}.col-xs-12.reset.text-center{flex:1 1 50%;height:100px;border:solid 1px #ddd;display:flex;justify-content:center;align-items:center}.modal-grid .col-xs-12:hover,.modal-grid .col-xs-6:hover{background:#ecfbff;-webkit-box-shadow:inset 0 0 0 1px #003d68;box-shadow:inset 0 0 0 1px #003d68}.col-xs-6{flex:1 1 50%;height:100px;border:solid 1px #ddd;display:flex;justify-content:center;align-items:center}.sitename{background:url(/bg-head-left-abstract.png) 0 100% no-repeat!important;position:relative!important;border-top:1px solid #bababa!important}.sitename .layer{position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;background-color:rgba(13,62,91,.90)!important}.sitename h1{color:#FFF!important;margin:0!important;padding:.4em 0!important;font-size:1.4em!important;font-family:inherit}.breadcrumb{background-color:#e8e8e8!important}.breadcrumbs{background-color:#e8e8e8!important;padding:0 0 6px!important}.breadcrumb{padding:0!important;margin-bottom:0!important;display:block!important;padding-top:.5em!important;color:#6f6f6f!important}.breadcrumb h1{font-weight:200!important;margin-bottom:0!important;padding:.5em 0 0!important;font-size:2.4em!important}.breadcrumb a{background:transparent;color:#6f6f6f}.breadcrumb a:hover{background:transparent!important;color:#0A6DA6!important}@media screen and (min-width: 600px){.phone_header{display:-webkit-box}}span.line{display:inline-block}.list-unstyled{padding-left:0;list-style:none}.list-inline li{display:inline-block;padding-right:5px;padding-left:5px;margin-bottom:10px}.social-icons .fa{font-size:1em;width:25px;height:25px;line-height:25px;text-align:center;color:#FFF;color:rgba(255,255,255,0.8);-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.social-icons.icon-circle .fa{border-radius:50%}.social-icons.icon-rounded .fa{border-radius:5px}.social-icons.icon-flat .fa{border-radius:0}.social-icons .fa:hover,.social-icons .fa:active{color:#FFF;-webkit-box-shadow:1px 1px 3px #333;-moz-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333}.social-icons.icon-zoom .fa:hover,.social-icons.icon-zoom .fa:active{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1)}.social-icons.icon-rotate .fa:hover,.social-icons.icon-rotate .fa:active{-webkit-transform:scale(1.1) rotate(360deg);-moz-transform:scale(1.1) rotate(360deg);-ms-transform:scale(1.1) rotate(360deg);-o-transform:scale(1.1) rotate(360deg);transform:scale(1.1) rotate(360deg)}.social-icons .fa-adn{background-color:#504e54}.social-icons .fa-apple{background-color:#aeb5c5}.social-icons .fa-android{background-color:#A5C63B}.social-icons .fa-bitbucket,.social-icons .fa-bitbucket-square{background-color:#036}.social-icons .fa-bitcoin,.social-icons .fa-btc{background-color:#F7931A}.social-icons .fa-css3{background-color:#1572B7}.social-icons .fa-dribbble{background-color:#F46899}.social-icons .fa-dropbox{background-color:#018BD3}.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F}.social-icons .fa-flickr{background-color:#FF0084}.social-icons .fa-foursquare{background-color:#0086BE}.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709}.social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E}.social-icons .fa-html5{background-color:#E54D26}.social-icons .fa-instagram{background-color:#A1755C}.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE}.social-icons .fa-linux{background-color:#FBC002;color:#333}.social-icons .fa-maxcdn{background-color:#F6AE1C}.social-icons .fa-pagelines{background-color:#241E20;color:#3984EA}.social-icons .fa-pinterest,.social-icons .fa-pinterest-square{background-color:#CC2127}.social-icons .fa-renren{background-color:#025DAC}.social-icons .fa-skype{background-color:#01AEF2}.social-icons .fa-stack-exchange{background-color:#245590}.social-icons .fa-stack-overflow{background-color:#FF7300}.social-icons .fa-trello{background-color:#265A7F}.social-icons .fa-tumblr,.social-icons .fa-tumblr-square{background-color:#314E6C}.social-icons .fa-x-twitter{background-color:#000000;font-style:normal;font-weight:bold;display:inline-block;vertical-align:middle;line-height:25px;}.social-icons .fa-vimeo-square{background-color:#229ACC}.social-icons .fa-vk{background-color:#375474}.social-icons .fa-weibo{background-color:#D72B2B}.social-icons .fa-windows{background-color:#12B6F3}.social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C}.social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30}
+</style>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+
+<body class="page-template page-template-page2 page-template-page2-php page page-id-508 page-parent page-child parent-pageid-72 wp-custom-logo">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+<style>
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.row.columns-master {
+    margin: 0 auto;
+}
+
+#top-bar {
+		display: none;
+    background: #333;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    color: #b3b3b3;
+    -moz-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+	#top-bar {
+	display: block;
+	}
+
+}
+</style>
+<div id='lang' style="display:none">en</div>
+	<div id="top-bar" >
+  		  <div class="row">
+  		    <div class="col-md-12">
+  		      		      <div class="top-bar-content">
+                          <p style="text-align: center;">
+                            <span tooltip=Change Language flow="down" class="title_location"><i class="fa fa-languages" aria-hidden="true" ></i><a href="/index.php?lang=my" style="color: white;" class="sf-with-ul">Malay </a> / <a href="/index.php?lang=en" style="color: white;">English</a> </span>
+                            <!-- <img class="wpml-ls-flag" src="/wp-content/plugins/qtranslate-x/flags/gb.png" alt="en" title="English">
+                            <img class="wpml-ls-flag" src="/wp-content/plugins/qtranslate-x/flags/my.png" alt="ms" title="Melayu"> -->
+                          </p>
+                          <p style ="text-align: center;">
+                                                        <a style="color: white;" href="/index.php/login/">LOG IN</a>
+                                                      </p>
+                          <p style ="text-align: center;" class="social-icons icon-circle list-unstyled list-inline">
+                            <span tooltip="Accessibility" flow="down"><a data-target="#AccModal" data-toggle="modal"><i class="fa fa-wheelchair" style="cursor: pointer;font-weight: bold; background-color: #cca8e3;"></i></a></span>
+                            <span tooltip="User Guide" flow="down"><a data-target="#UGModal" data-toggle="modal"><i class="fa fa-book" style="cursor: pointer; background-color: #0087ff;"></i></a></span>
+                            <span tooltip="Instagram" flow="down"><a target="_blank" href="https://www.instagram.com/jps_malaysia/"><i class="fa fa-instagram"></i></a></span>
+                            <span tooltip="X" flow="down"><a target="_blank" href="https://x.com/jps_malaysia"><i class="fa fa-x-twitter">𝕏</i></a></span>
+                            <span tooltip="Facebook" flow="down"><a target="_blank" href="https://www.facebook.com/publicinfobanjir"><i class="fa fa-facebook"></i></a></span>
+                          </p>
+  		        </div>
+
+  		    </div>
+  		  </div>
+  		</div>
+	<header id="masthead" class="site-header" role="banner">
+
+        <!-- Site Logo -->
+        <div class="ak-container">
+                        <div class="social_htext_wrap">
+                            <div class="header_text">
+																			<div class="phone_header wow fadeIn">
+												<div class="title_phone">
+														<span class="pnone_title"><i class="fa fa-phone" aria-hidden="true" style="  margin: 0px 10px;"></i></span>
+														<span tooltip="Call Us"flow="down" class="phone"><font style="font-size: 95%;" my="my">+603-8682 9200/9300</font></span>
+                                                    </div>
+
+                                                    <div class="title_email_wrap">
+														<span class="title_email"><i class="fa fa-envelope-o" aria-hidden="true" style="  margin: 0px 10px;"></i></span>
+														<span tooltip="Email Us"flow="down" class="email_address">pro@water.gov.my</span>
+
+                                                </div>
+
+																								                                                <div class="title_location_wrap">
+                                                <span tooltip="Change Language"flow="down" class="title_location"><i class="fa fa-languages" aria-hidden="true" style=" margin: 0px 10px;"></i><a href="?lang=my"style="color: white; color: white;position: relative;font-size: 90%;font-family: inherit;">Malay<a/> / <a href="?lang=en"style="color: white;color: white;position: relative;font-size: 90%;font-family: inherit;">English</a> </span>
+                                                </div>
+                                                <div class="title_location_wrap">
+                                                <span class="title_location">
+                                                                                                    <i class="fa fa-sign-ins" aria-hidden="true" style="  margin: 0px 10px;"></i>
+                                                    <a style="color: white;" href="/index.php/login/">LOG IN</a>
+                                                                                                    </span>
+                                                </div>
+
+
+
+
+
+
+																								<ul style=" margin-left: 30px;"class="social-icons icon-circle list-unstyled list-inline">
+																									<li> <span tooltip="Accessibility" flow="down"><a data-target="#AccModal" data-toggle="modal"><i class="fa fa-wheelchair" style="cursor: pointer;font-weight: bold; background-color: #cca8e3;"></i></a></span></li>
+																									<li> <span tooltip="User Guide" flow="down"><a data-target="#UGModal" data-toggle="modal"><i class="fa fa-book" style="cursor: pointer; background-color: #0087ff;"></i></a></span></li>
+																									<li> <span tooltip="Instagram" flow="down"><a target="_blank" href="https://www.instagram.com/jps_malaysia/"><i class="fa fa-instagram"></i></a></span></li>
+																									<li>	<span tooltip="X" flow="down"><a target="_blank" href="https://x.com/jps_malaysia"><i class="fa fa-x-twitter">𝕏</i></a></span></li>
+																									<li> <span tooltip="Facebook" flow="down"><a target="_blank" href="https://www.facebook.com/publicinfobanjir"><i class="fa fa-facebook"></i></a></span></li>
+																								</ul>
+										</div>
+									                </div>
+
+            
+            </div>
+            
+            <div aria-hidden="true" aria-labelledby="AccModalLabel" class="modal fade" id="UGModal" role="dialog" tabindex="-1">
+              <div class="modal-content" style=" width: 50%;">
+                <div class="modal-header" style=" padding: 12px 16px !important;">
+                  <div aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></div>
+                  <div class="modal-title" style=" font-size: 150%;" id="AccModalLabel">User Guide</div>
+                </div>
+                <div class="modal-body">
+									<div id="pp">..</div>
+                </div>
+              </div>
+            </div>
+
+
+
+	<div aria-hidden="true" aria-labelledby="AccModalLabel" class="modal fade" id="AccModal" role="dialog" tabindex="-1">
+		<div class="modal-content" style=" width: 50%;">
+			<div class="modal-header" style=" padding: 12px 16px !important;">
+				<div aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></div>
+				<div class="modal-title" style=" font-size: 150%;" id="AccModalLabel">Accessibility Menu</div>
+			</div>
+			<div class="modal-body">
+				<div class="row columns-master modal-grid">
+					<div class="col-xs-6 text-center contrast column-mode">
+						<div class="inner-model">
+							<div id="contrastClick" style="display: none;">0</div>
+							<i aria-hidden="true" class="fa fa-desktop"></i>
+							<p>Contrast +</p>
+							<div class="inner-contrast">
+								<div class="col-1-2"></div>
+								<div class="col-1-2"></div>
+								<div class="col-1-2"></div>
+								<div class="col-1-2"></div>
+								<div class="col-1-2"></div>
+								<div class="col-1-2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 big-text text-center">
+						<div class="inner-model">
+							<div id="bigtextClick" style="display: none;">0</div>
+							<i aria-hidden="true" class="fa fa-text-height"></i>
+							<p>Bigger Text</p>
+							<div class="inner-contrast">
+								<div class="col-1-3"></div>
+								<div class="col-1-3"></div>
+								<div class="col-1-3"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 highlight-links text-center">
+						<div class="inner-model">
+							<div id="highlightClick" style="display: none;"></div>
+							<i aria-hidden="true" class="fa fa-link"></i>
+							<p>Highlight Links</p>
+							<div class="inner-contrast">
+								<div class="col-1-1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 text-center" style="cursor: auto;">
+						<div class="inner-model">
+							<div id="legibleClick" style="display: none;">0</div>
+							<i aria-hidden="true" class="fa fa-font"></i>
+							<br>Legible Fonts							<div class="inner-contrast">
+                <select id="select_fontfamily" style="width: 230px;"></select>
+							</div>
+						</div>
+					</div>
+          <div class="col-xs-6 fontcolor text-center" style="cursor: auto;">
+						<div class="inner-model">
+							<div style="display: none;">0</div>
+							<i aria-hidden="true" class="fa fa-font"></i>
+							<p>Font color</p>
+							<div class="inner-contrast">
+                  <ul id="fontcolor1" class="accessibility_block font_color_front_block" style="color:red;margin: 1px;">T</ul>
+                  <ul id="fontcolor2" class="accessibility_block font_color_front_block" style="color:green;margin: 1px;">T</ul>
+                  <ul id="fontcolor3" class="accessibility_block font_color_front_block" style="color:blue;margin: 1px;">T</ul>
+                  <ul id="fontcolor4" class="accessibility_block font_color_front_block" style="color:yellow;margin: 1px;">T</ul>
+                  <ul id="fontcolor5" class="accessibility_block font_color_front_block" style="color:white;margin: 1px;">T</ul>
+                  <ul id="fontcolor6" class="accessibility_block font_color_front_block" style="color:black;margin: 1px;">T</ul>
+                </div>
+						</div>
+					</div>
+					<div class="col-xs-6 backgroundimage text-center">
+						<div class="inner-model">
+							<div id="backgroundimage" style="display: none;">0</div>
+							<i aria-hidden="true" class="fa fa-picture-o"></i>
+							<p>Background image</p>
+							<div class="inner-contrast">
+								<div class="col-1-4"></div>
+								<div class="col-1-4"></div>
+								<div class="col-1-4"></div>
+                <div class="col-1-4"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 reset text-center">
+						<div class="inner-model">
+							<div id="resetClick" style="display: none;">0</div>
+							<i aria-hidden="true" class="fa fa-refresh green-text"></i>
+							<p class="green-text">Reset</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+
+
+            <div class="logo_info_wrap">
+                              <div class="header-logo-container">
+                    <a href="https://publicinfobanjir.water.gov.my/" class="custom-logo-link" rel="home" itemprop="url"><img width="248" height="70" src="https://publicinfobanjir.water.gov.my/wp-content/uploads/export/upload/wordpress/2018/07/new.png" class="custom-logo" alt="The Official Web of Public Infobanjir" itemprop="logo" /></a>                </div>
+                                  <div class="header_info_wrap">
+												<h3 class="Head1"><SPAN CLASS='LINE'>THE OFFICIAL WEB OF PUBLIC INFOBANJIR</SPAN></h3>
+                        <h5 class="Head2"><SPAN CLASS='LINE'>DEPARTMENT OF IRRIGATION AND DRAINAGE MALAYSIA, MINISTRY OF ENERGY TRANSITION AND WATER TRANSFORMATION</SPAN></h5>
+                      </div>
+                        </div>
+        </div>
+        		<nav id="site-navigation" class="main-navigation center top" role="navigation">
+			<div class="ak-container-fluid">
+                <div class="mb-ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-menu-1-container mmenu-wrapper"><ul id="primary-menu" class="menu"><li id="menu-item-4300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4300"><a href="https://publicinfobanjir.water.gov.my/?lang=en">Home</a></li>
+<li id="menu-item-2274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2274"><a href="#">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-4315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4315"><a href="https://publicinfobanjir.water.gov.my/mengenai-kami/public-infobanjir/?lang=en">Public Infobanjir</a></li>
+	<li id="menu-item-4306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4306"><a href="https://publicinfobanjir.water.gov.my/mengenai-kami/mesej-ketua-pengarah/?lang=en">Director General&#8217;s Message</a></li>
+	<li id="menu-item-4312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4312"><a href="https://publicinfobanjir.water.gov.my/mengenai-kami/prabn/?lang=en">PRABN</a></li>
+	<li id="menu-item-4309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4309"><a href="https://publicinfobanjir.water.gov.my/mengenai-kami/prab/?lang=en">PRAB</a></li>
+	<li id="menu-item-4303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4303"><a href="https://publicinfobanjir.water.gov.my/mengenai-kami/hubungi-kami/?lang=en">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-2278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2278"><a href="#">Observation</a>
+<ul class="sub-menu">
+	<li id="menu-item-4324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4324"><a href="https://publicinfobanjir.water.gov.my/cerapan/amaran-semasa/?lang=en">Current Alert</a></li>
+	<li id="menu-item-4345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4345"><a href="https://publicinfobanjir.water.gov.my/cerapan/siren/?lang=en">Siren</a></li>
+</ul>
+</li>
+<li id="menu-item-2282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2282"><a href="#">Forecast</a>
+<ul class="sub-menu">
+	<li id="menu-item-4349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4349"><a href="https://publicinfobanjir.water.gov.my/ramalan/amaran-banjir/?lang=en">Flood Alert</a></li>
+	<li id="menu-item-4361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4361"><a href="https://publicinfobanjir.water.gov.my/ramalan/met-alert/?lang=en">Weather Alert (Met)</a></li>
+	<li id="menu-item-4355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4355"><a href="https://publicinfobanjir.water.gov.my/ramalan/pernyataan-media/?lang=en">Media Statement</a></li>
+</ul>
+</li>
+<li id="menu-item-4366" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-4366"><a href="https://publicinfobanjir.water.gov.my/hujan/?lang=en">Rainfall</a></li>
+<li id="menu-item-4372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4372"><a href="https://publicinfobanjir.water.gov.my/aras-air/?lang=en">Water Level</a></li>
+<li id="menu-item-2294" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2294"><a href="#">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-4383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4383"><a href="https://publicinfobanjir.water.gov.my/perkhidmatan/daftar-amaran-banjir/?lang=en">Flood Alert Registration</a></li>
+	<li id="menu-item-4386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4386"><a href="https://publicinfobanjir.water.gov.my/perkhidmatan/perkongsian-maklumat/?lang=en">Knowledge Sharing</a></li>
+	<li id="menu-item-4377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4377"><a href="https://publicinfobanjir.water.gov.my/perkhidmatan/pengumuman/?lang=en">Announcement</a></li>
+</ul>
+</li>
+<li id="menu-item-404" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-404"><a href="#">Drought Info</a>
+<ul class="sub-menu">
+	<li id="menu-item-408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-408"><a target="_blank" href="http://infokemarau.water.gov.my/drought_monitor.cfm">Storage Dam</a></li>
+	<li id="menu-item-412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-412"><a target="_blank" href="http://infokemarau.water.gov.my/river_monitor2.cfm">River Monitor</a></li>
+</ul>
+</li>
+<li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-92"><a href="#">Other Links</a>
+<ul class="sub-menu">
+	<li id="menu-item-320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-320"><a href="#">State Telemetry Website</a>
+	<ul class="sub-menu">
+		<li id="menu-item-324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-324"><a target="_blank" href="http://hydrologyperak.selfip.com/">Perak</a></li>
+		<li id="menu-item-328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-328"><a target="_blank" href="http://infobanjirjps.selangor.gov.my/index.html">Selangor</a></li>
+		<li id="menu-item-332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-332"><a target="_blank" href="http://telemetry.didkedah.gov.my/">Kedah</a></li>
+		<li id="menu-item-336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-336"><a target="_blank" href="http://hydrologywp.selfip.com/v2/hydrology_kl/real_data">WP Kuala Lumpur</a></li>
+		<li id="menu-item-1430" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1430"><a target="_blank" href="https://ihydro.sarawak.gov.my/iHydro/en/index.jsp">Sarawak</a></li>
+		<li id="menu-item-51150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51150"><a target="_blank" href="http://infobanjir.scadatron.com/MADA/">MADA</a></li>
+	</ul>
+</li>
+	<li id="menu-item-132255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-132255"><a href="#">SPHTN</a>
+	<ul class="sub-menu">
+		<li id="menu-item-132260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132260"><a target="_blank" href="https://infobanjirjpsjohor.water.gov.my">Johor</a></li>
+		<li id="menu-item-132265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132265"><a target="_blank" href="https://infobanjir.sabah.gov.my">Sabah</a></li>
+		<li id="menu-item-132270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132270"><a target="_blank" href="https://infobanjirjps.penang.gov.my">Pulau Pinang</a></li>
+		<li id="menu-item-132275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132275"><a target="_blank" href="https://infobanjirjpsperak.water.gov.my">Perak</a></li>
+		<li id="menu-item-132280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132280"><a target="_blank" href="https://infobanjirjpslbn.water.gov.my">WP Labuan</a></li>
+		<li id="menu-item-132285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132285"><a target="_blank" href="https://infobanjir.terengganu.gov.my">Terengganu</a></li>
+		<li id="menu-item-132290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132290"><a target="_blank" href="https://infobanjirjpskelantan.water.gov.my">Kelantan</a></li>
+		<li id="menu-item-132295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132295"><a target="_blank" href="https://infobanjirjps.perlis.gov.my">Perlis</a></li>
+		<li id="menu-item-132300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132300"><a target="_blank" href="https://infobanjirjps.pahang.gov.my">Pahang</a></li>
+		<li id="menu-item-132305" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132305"><a target="_blank" href="https://infobanjirjpsmelaka.water.gov.my">Melaka</a></li>
+		<li id="menu-item-132310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132310"><a target="_blank" href="https://infobanjirjpskl.water.gov.my">WP Kuala Lumpur</a></li>
+		<li id="menu-item-132315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132315"><a target="_blank" href="https://infobanjirjpsns.water.gov.my">Negeri Sembilan</a></li>
+	</ul>
+</li>
+	<li id="menu-item-196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-196"><a target="_blank" href="https://www.water.gov.my/">JPS Malaysia</a></li>
+	<li id="menu-item-216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-216"><a target="_blank" href="http://h2o.water.gov.my/v2/">Hydrological Network</a></li>
+	<li id="menu-item-220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-220"><a target="_blank" href="http://sprhin.water.gov.my/bin/utama/index.cfm?CFID=9144e3d9-4552-4e8f-83db-b2681bd80869&#038;CFTOKEN=0">SPRHiN</a></li>
+	<li id="menu-item-22199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22199"><a href="https://nawabs.water.gov.my">NAWABS</a></li>
+	<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a target="_blank" href="http://www.debrismudflow.water.gov.my/Home/Forecast?Period=0">DMFWS Cameron Highland</a></li>
+	<li id="menu-item-340" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-340"><a href="#">External Agency</a>
+	<ul class="sub-menu">
+		<li id="menu-item-256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256"><a target="_blank" href="https://www.kasa.gov.my/">NRECC</a></li>
+		<li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"><a target="_blank" href="http://portalbencana.nadma.gov.my/">Portal Bencana</a></li>
+		<li id="menu-item-284" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-284"><a target="_blank" href="http://www.met.gov.my/">METMalaysia</a></li>
+		<li id="menu-item-268" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268"><a target="_blank" href="http://bencana.met.gov.my/bencana/radar.html">METMalaysia Weather Image</a></li>
+		<li id="menu-item-288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-288"><a target="_blank" href="http://bencanaalam.jkr.gov.my/">Pusat Bencana JKR</a></li>
+		<li id="menu-item-296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-296"><a target="_blank" href="https://earth.nullschool.net/">Global Map of Ocean Condition</a></li>
+		<li id="menu-item-292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-292"><a target="_blank" href="http://www.fourmilab.ch/cgi-bin/uncgi/Earth/action?opt=-p">Weather SAT Imagery</a></li>
+		<li id="menu-item-300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-300"><a target="_blank" href="https://severeweather.wmo.int/tc/wnp/index.html">WMO Severe Weather Information Centre</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+</ul></div>            </div>
+		</nav><!-- #site-navigation -->
+
+        						<div class="sitename ms-dialogHidden">
+												<div class="layer"></div>
+                                                <div class="container" style="position:relative">
+                                                    <h1>
+                                                   Rainfall Data                                                    </h1>
+                                                </div>
+						</div>
+				<div class="breadcrumbs ms-dialogHidden">
+                                                <div class="breadcrumb">
+                                                    <div class="container">
+																			<!-- Breadcrumb NavXT 6.0.4 -->
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to The Official Web of Public Infobanjir." href="https://publicinfobanjir.water.gov.my" class="home"><span property="name">Home</span></a><meta property="position" content="1"></span> / <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Rainfall." href="https://publicinfobanjir.water.gov.my/hujan/?lang=en" class="post post-page"><span property="name">Rainfall</span></a><meta property="position" content="2"></span> / <span property="itemListElement" typeof="ListItem"><span property="name">Rainfall Data</span><meta property="position" content="3"></span>                                                    </div>
+                                                </div>
+                                            </div>
+															</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+		
+		<div class="loading-bg" id="app-loader">
+			<div class="loading-vspace">
+		<img src="/wp-content/themes/enlighten/jpsL.gif">
+		</div>
+		</div>
+
+		<script src="/wp-content/themes/enlighten/headerjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var lang = document.getElementById('lang').innerHTML;
+        $("#pp").load("/wp-content/themes/enlighten/userguide.php?lang="+lang+"");
+
+        $('#station').select2({
+        });
+
+        });
+    </script><div class="ak-container-no ak-container-fluid">
+        <div id="primary" class="content-area no">
+    	<main id="main" class="site-main" role="main">
+
+    		
+<article id="post-508" class="post-508 page type-page status-publish hentry">
+		<div class="entry-content page">
+		
+<script type="text/javascript">
+
+    let languangeStr = window.location.href.substr(window.location.href.length-2, 2); 
+    console.log(languangeStr); 
+
+    
+    // Disable right-click
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+
+    // Prevents the default action for the F12 key press
+    // (typically opens browser developer tools)
+    document.onkeydown = (e) => {
+    
+        // Prevents F12 key press
+        if (e.key == 123) {
+            e.preventDefault();
+        }
+
+        // Prevents Ctrl+Shift+I key combination
+        if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+            e.preventDefault();
+        }
+
+        // Prevents Ctrl+Shift+C key combination
+        if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+            e.preventDefault();
+        }
+
+        // Prevents Ctrl+Shift+J key combination
+        if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+            e.preventDefault();
+        }
+
+        // Prevents Ctrl+U or Ctrl+u key press
+        if ((e.ctrlKey && e.key == 'U') || (e.ctrlKey && e.key == 'u')) {
+            e.preventDefault();
+        }
+
+        // Prevents Ctrl+Shift+I key combination (alternative check)
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+            e.preventDefault();
+        }
+    };
+
+    
+  
+
+</script> <!-- server ip // to show which server is serving the page -->
+
+  <!-- tableExport -->
+<script type="text/javascript">
+
+//pdf function
+function pdf(){
+    var doc = new jsPDF('l', 'mm', 'a3');
+
+    // var res = doc.autoTableHtmlToJson(document.getElementById('normaltable1'));
+    // doc.autoTable(res.columns, res.data);
+    // var res2 = doc.autoTableHtmlToJson(document.getElementById('normaltable2'));
+    // doc.autoTable(res2.columns, res2.data, {
+    // startY: doc.lastAutoTable.finalY + 50
+    // });
+    // doc.save('PP-Hujan.pdf');
+    // doc.text(20, 50, 'Do you like that?');
+    var res = doc.autoTableHtmlToJson(document.getElementById('normaltable1'));
+    doc.text(7, 15, "Public Portal - Hujan/Rainfall");
+        doc.autoTable({html: '#normaltable1',
+          startY: 20,
+          margin: {horizontal: 7},
+        });
+
+        var res2 = doc.autoTableHtmlToJson(document.getElementById('normaltable2'));
+        doc.autoTable({html: '#normaltable2',
+            //startY: doc.lastAutoTable.finally + 50
+            // startY: typeof doc.autoTable.finalY === 'undefined' ? 130 : doc.autoTable.finalY + 20,
+            // margin: {
+            //   top: 20, // This number and the true value of startY above should match
+            //   bottom: 15
+            // }
+            startY: doc.autoTableEndPosY() + 10,
+            margin: {horizontal: 7},
+            styles: { overflow: 'linebreak'},
+        });
+        doc.save('PP-Hujan/Rainfall.pdf');
+}
+//SheetJS
+function excel1(){
+  var wb = XLSX.utils.table_to_book(document.getElementById('normaltable1'),{raw : true});
+  XLSX.writeFile(wb, 'Public Portal - Hujan/Rainfall.xlsx');
+  return false;
+}
+// //csv function
+// function excel1(){
+// 				$("#normaltable1").tableExport({
+// 				headings: true,                    // (Boolean), display table headings (th/td elements) in the <thead>
+// 				footers: true,                     // (Boolean), display table footers (th/td elements) in the <tfoot>
+// 				formats: ["csv"],    // (String[]), filetypes for the export
+// 				fileName: "Public Portal - Hujan",                    // (id, String), filename for the downloaded file
+// 				bootstrap: true,                   // (Boolean), style buttons using bootstrap
+// 				position: "well" ,                // (top, bottom), position of the caption element relative to table
+// 				//ignoreRows: null,                  // (Number, Number[]), row indices to exclude from the exported file
+// 				//ignoreCols: null,                 // (Number, Number[]), column indices to exclude from the exported file
+// 				ignoreCSS: ".tableexport-ignore"   // (selector, selector[]), selector(s) to exclude from the exported file
+// 			});
+// 			}
+
+  </script>
+
+<input type='hidden' id='loginStatus' value='0'><input type='hidden' id='language' value='1'><style>
+ol {
+
+}
+</style>
+
+<link rel="stylesheet" href="../../../wp-content/themes/intentionally-blank/css/bootstrap-datetimepicker.css" type='text/css' media='all' >
+<link rel="stylesheet" href="/wp-content/themes/enlighten/style.css" type='text/css'>
+<!-- For export js lib -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/TableExport/5.2.0/js/tableexport.min.js"></script>
+
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/FileSaver/FileSaver.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/js-xlsx/xlsx.core.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/jsPDF/jspdf.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/tableExport.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.1.0/jspdf.plugin.autotable.js"></script>
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/autoTable.js"></script>
+<!-- For IE support include es6-promise before html2canvas -->
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/es6-promise/es6-promise.auto.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/enlighten/libs/html2canvas/html2canvas.min.js"></script>
+<div class = "container-fluid" style="margin-top:10px; margin:5px;">
+  <div id ="ML">
+    <a href='/index.php/data-hujan-lanjutan?state=' target='_blank'></a>  </div>
+  <div id="lang" style="display: none;">en</div>
+	<div class="row">
+    <table class='normaltable' border="1" style="margin-bottom:5px;">
+    <thead>
+      <!--
+      <tr>
+
+          <th style="color:white; background: linear-gradient(#0c6fa4, #1092d8);"> <center>
+            <h4 class="testbox">Rainfall Data</h4></center></th>
+      </tr>-->
+      <tr>
+        <th style="background-color:#f0eeeb; padding:7px;">
+
+                     <div class="form-group"> <!----OPEN FORM WATER LEVEL------>
+                  <label class="col-md-1 control-label" for="state">State:</label>
+                  <div class="col-md-3">
+                    <select id="state" name="state" onChange="searchDistrict();" class="form-control input-md">
+                      <option value='PLS'>Perlis</option><option value='KDH'>Kedah</option><option value='PNG'>Pulau Pinang</option><option value='PRK'>Perak</option><option value='SEL' selected='selected'>Selangor</option><option value='WLH'>Wilayah Persekutuan Kuala Lumpur </option><option value='PTJ'>Wilayah Persekutuan Putrajaya</option><option value='NSN'>Negeri Sembilan</option><option value='MLK'>Melaka</option><option value='JHR'>Johor</option><option value='PHG'>Pahang</option><option value='TRG'>Terengganu</option><option value='KEL'>Kelantan</option><option value='SRK'>Sarawak</option><option value='SAB'>Sabah</option><option value='WLP'>Wilayah Persekutuan Labuan</option><option value='MCK'>Mockup/Pengujian</option>                  </select>
+                </div>
+
+
+                <label class="col-md-1 control-label" for="distinct">District:</label>
+                <div class="col-md-3">
+                  <select id="district" name="district" onChange="searchStation(); " class="form-control input-md">
+                    <option value='ALL'>ALL</option><option value='Gombak'>Gombak</option><option value='Hulu Langat'>Hulu Langat</option><option value='Hulu Selangor'>Hulu Selangor</option><option value='Klang'>Klang</option><option value='Kuala Langat'>Kuala Langat</option><option value='Kuala Selangor'>Kuala Selangor</option><option value='Petaling'>Petaling</option><option value='Sabak Bernam'>Sabak Bernam</option><option value='Sepang'>Sepang</option>                  </select>
+                </div>
+                                <label class="col-md-1 control-label" for="distinct">Station:</label>
+                <div class="col-md-2">
+                  <select id="station" name="station" class="form-control input-md" onChange="searchResult(); ">
+                    <option value='ALL'>ALL</option>                  </select>
+                </div>
+                          </div><!----CLOSE FORM WATER LEVEL------>
+
+        </th>
+      </tr>
+    </thead>
+  </table>
+  <div id="result">
+  </div>
+			<!-- Select DropDown -->
+      <br>
+
+      <p>*Convective rain more than 60 mm in 2 to 4 hours duration (typical) may cause flash floods. However, monsoon rains are typically
+                      of long duration with intermittent heavy bursts and the intensity can occasionally exceed several hundred mm in 24 hours.</p>
+
+
+      <div class='box' style='margin-bottom: 25px;'>
+      <ol class='legend horiz' style="padding-right:17px; padding-left:5px;
+                                margin-top: 20px; margin-bottom: 5px;">
+      <p style="text-decoration:underline;">Categorization of Rainfall Intensity (in one hour.)<p>
+      <table>
+      <tr>
+      <td>Light</td>
+      <td>1-10 (mm)</td>
+      <td class='key one'></td>
+      </tr>
+      <tr>
+      <td>Moderate</td>
+      <td>11-30 (mm)</td>
+      <td class='key two'></td>
+      </tr>
+      <tr>
+      <td>Heavy</td>
+      <td>31-60 (mm)</td>
+      <td class='key three'></td>
+      </tr>
+      <tr>
+      <td>Very Heavy</td>
+      <td>>60 (mm)</td>
+      <td class='key four'></td>
+      </tr>
+        <!--<tr>
+      <td>Tiada Hujan</td>
+      <td></td>
+      <td class='key five'></td>
+    </tr>-->
+      </table>
+         </ol>
+         </div>
+           <!----OPEN RESULT RAINFALL------>
+
+             </div>
+           <!----CLOSE RESULT RAINFALL------>
+
+	</div>
+
+
+
+
+  <style>
+
+.nav ul { display: none; list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+.nav ul li { display: inline-block; text-align: left; }
+.nav ul li a { display: block; padding: 15px 10px; text-decoration: none; color: #444; }
+.nav ul li a:hover { background-color: #ccc; }
+
+.anchor-link { display: inline-block; text-align: center; padding: 10px 15px; color: #fff; background-color: #0084B4; text-decoration: none; margin: 3px; float: right; }
+
+.example-footer { font-size: 1.1em; }
+#mobile-nav { display: block; }
+#mobile-nav ul { list-style: none; margin: 0px; padding: 0px; }
+#mobile-nav ul li { list-style: none; text-align: center; }
+#mobile-nav ul li a { color: white; display: block; padding: 12px 10px; border-bottom: 1px solid #ccc; text-decoration: none; }
+#mobile-nav ul li a:hover { background-color: #ccc; color: Black; }
+
+@media all and (min-width:48em){
+	footer.example-footer {
+	    display: none;
+	}
+}
+@media (max-width:992px){
+	.bottomMenu{ visibility: hidden; height: 10px;}
+}
+.bottomMenu { text-align: center;}
+.bottomMenu ul { float: none;border-left: none; text-align: center;}
+.bottomMenu li { float: none; display: inline; font-size: 90%; }
+.bottomMenu li a {
+	color:white;
+	line-height:15px;
+	text-decoration:none;
+	font-weight:normal;
+	border-right: thin solid #000;
+	padding: 0 7px 0 3px;
+}
+.bottomMenu li a:hover { color:#ccc; text-decoration:underline;}
+.bottomMenu li:last-child > a {border-right: none;} /* remove pipe from last item */
+</style>
+
+
+	</div><!-- #content -->
+<footer id="colophon" class="site-footer " role="contentinfo">
+	<div class="ak-container">
+		<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-2"></div>
+</div>
+<footer class="example-footer">
+
+<nav id="mobile-nav">
+
+
+<div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-820"><a href="https://publicinfobanjir.water.gov.my/notis-privasi/?lang=en">Privacy Statement</a></li>
+<li id="menu-item-816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-816"><a href="https://publicinfobanjir.water.gov.my/dasar-keselamatan/?lang=en">Security Policy</a></li>
+<li id="menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-812"><a href="https://publicinfobanjir.water.gov.my/penafian/?lang=en">Disclaimer</a></li>
+<li id="menu-item-808" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="https://publicinfobanjir.water.gov.my/soalan-lazim/?lang=en">FAQ</a></li>
+<li id="menu-item-804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-804"><a href="https://publicinfobanjir.water.gov.my/peta-laman/?lang=en">Sitemap</a></li>
+</ul></div>
+</nav>
+
+</footer>
+        <div id="step3" class="bottomMenu">
+        <div class="menu-footer-container"><ul id="menu-footer-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-820"><a href="https://publicinfobanjir.water.gov.my/notis-privasi/?lang=en">Privacy Statement</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-816"><a href="https://publicinfobanjir.water.gov.my/dasar-keselamatan/?lang=en">Security Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-812"><a href="https://publicinfobanjir.water.gov.my/penafian/?lang=en">Disclaimer</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="https://publicinfobanjir.water.gov.my/soalan-lazim/?lang=en">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-804"><a href="https://publicinfobanjir.water.gov.my/peta-laman/?lang=en">Sitemap</a></li>
+</ul></div>        </div>
+
+         <!--   <div class="site-info">
+            <p style="text-align: center;">Copyright © 2017, Department of Irrigation and Drainage Malaysia. All Rights Reserved. Department of Irrigation and Drainage, Km 7, Jalan Ampang, 68000 Ampang, Kuala Lumpur, Malaysia Tel: (603)-4289 5505 Fax: (603)-4256 3735 Best viewed using Internet Explorer 8.0 &amp; Google Chrome width resolution 1024x768
+        	</div> .site-info -->
+
+
+					<div class="row">
+					  <div class="col-sm-2"></div>
+					  <div class="col-sm-8" style="text-align:  center; font-size: 90%;">
+							Copyright © 2019, Department of Irrigation and Drainage Malaysia. All Rights Reserved. <br> Department of Irrigation and Drainage, Km 7, Jalan Ampang, 68000 Ampang, Kuala Lumpur, Malaysia <br>Tel: (603)-4289 5585 Fax: (603)-4256 4037 <br>Best viewed using Safari, Google Chrome & Firefox with resolution 1280x1024					  </div>
+					  <div class="col-sm-2"></div>
+					</div>
+
+					
+ 					</div>
+					<div class="row">
+					  <div class="col-sm-2"></div>
+					  <div class="col-sm-8" style="text-align:  center; font-size: 90%;">
+					    Last Update:  13/10/2026 22:45					  </div>
+					  <div class="col-sm-2"></div>
+					</div>
+					<br>
+
+
+					</div>
+
+
+        </div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/navigation.js?ver=20151215'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-content/themes/enlighten/js/skip-link-focus-fix.js?ver=20151215'></script>
+<script type='text/javascript' src='https://publicinfobanjir.water.gov.my/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+<script>        
+        var wppbRecaptchaCallback = function() {
+            if( typeof window.wppbRecaptchaCallbackExecuted == "undefined" ){//see if we executed this before
+                jQuery(".wppb-recaptcha-element").each(function(){
+                    recID = grecaptcha.render( jQuery(this).attr("id"), {
+                        "sitekey" : "REDACTED_PUBLIC_PAGE_SITE_KEY",                        
+                        "error-callback": wppbRecaptchaInitializationError,
+                                                
+                     });                 
+                });
+                window.wppbRecaptchaCallbackExecuted = true;//we use this to make sure we only run the callback once
+            }
+        };
+        
+        /* the callback function for when the captcha does not load propperly, maybe network problem or wrong keys  */
+        function wppbRecaptchaInitializationError(){            
+            window.wppbRecaptchaInitError = true;
+            //add a captcha field so we do not just let the form submit if we do not have a captcha response
+            jQuery( ".wppb-recaptcha-element" ).after('<input type="hidden" id="wppb_recaptcha_load_error" name="wppb_recaptcha_load_error" value="da1cf68d74" />');
+        }
+        
+        /* compatibility with other plugins that may include recaptcha with an onload callback. if their script loads first then our callback will not execute so call it explicitly  */        
+        jQuery( window ).on( "load", function() {
+            wppbRecaptchaCallback();
+        });
+    </script><script src="https://www.google.com/recaptcha/api.js?onload=wppbRecaptchaCallback&render=explicit" async defer></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "REDACTED_PUBLIC_PAGE_TOKEN"}'></script>
+
+
+</body>
+</html>
+<script>
+
+            window.onload = MM;
+              function MM(){
+              }
+</script>
+
+<!--- RAINFALL SCRIPT -------------------------->
+
+<script>
+
+
+window.onload = searchDistrict;
+  var request=new XMLHttpRequest();
+  function searchDistrict(){
+    var name=document.getElementById( "state" ).value;
+    /*
+    document.getElementById('ML').innerHTML="<a href='/index.php/data-hujan-lanjutan?state="+name+"' target='_blank'></a>";
+    var url="/wp-content/themes/shapely/agency/searchdistrictRF.php?name="+name;
+    try{
+      request.onreadystatechange=function(){
+        if(request.readyState==4){
+          var val=request.responseText;
+          document.getElementById('district').innerHTML=val;
+					searchResult();
+      //alert('1');
+					searchStation();
+        }
+      }//end of function
+      request.open("GET",url,true);
+      request.send();
+    }catch(e){alert("Unable to connect to server");}
+//location.replace("http://forecast.water.gov.my/index.php/hujan/data-hujan/data-hujan-lanjutan/?state="name);
+//location.replace("http://forecast.water.gov.my/index.php/hujan/data-hujan/?state="+name);
+*/
+const urlParams = new URLSearchParams(window.location.search);
+var mockup = '';
+if(urlParams.has('type'))
+  mockup = '&type='+urlParams.get('type');
+location.replace("/index.php/hujan/data-hujan/?state="+name+mockup);
+  }
+  function searchStation(){
+    var name=document.getElementById( "district" ).value;
+    var lang=document.getElementById( "lang" ).innerHTML;
+    var loginStatus=document.getElementById( "loginStatus" ).value;
+    var url="/wp-content/themes/shapely/agency/searchstationRF.php?name="+name+"&lang="+lang+"&loginStatus="+loginStatus;
+    try{
+      request.onreadystatechange=function(){
+        if(request.readyState==4){
+          var val=request.responseText;
+          document.getElementById('station').innerHTML=val;
+
+          searchResult();
+        }
+      }//end of function
+      request.open("GET",url,true);
+      request.send();
+    }catch(e){alert("Unable to connect to server");}
+  }
+
+
+  function searchResult(){
+
+    var state = document.getElementById( "state" ).value;
+    var station=document.getElementById( "station" ).value;
+    var district=document.getElementById( "district" ).value;
+    var loginStatus=document.getElementById( "loginStatus" ).value;
+    var language=document.getElementById( "language" ).value;
+    //add mockup params
+    const urlParams = new URLSearchParams(window.location.search);
+    var mockup = '';
+    if(urlParams.has('type') && (urlParams.get('type') == 'MOCKUP'))
+      mockup = '&type='+urlParams.get('type');
+
+    var url="/wp-content/themes/shapely/agency/searchresultrainfall.php?state="+state+"&district="+district+"&station="+station
+    +"&loginStatus="+loginStatus+"&language="+language+mockup;
+    //alert(language);
+  // console.log(url);
+    try{
+      request.onreadystatechange=function(){
+        if(request.readyState==4){
+          document.getElementById('app-loader').style.display = 'none';
+          var val=request.responseText;
+          document.getElementById('result').innerHTML=val;
+            var $kira2 = 1;
+            $("#result table").each(function() {
+                $(this).attr("id", "normaltable" + $kira2);
+                $kira2++;
+                // alert($(this).attr("id"));
+            });
+        }
+      }//end of function
+      document.getElementById('app-loader').style.display = 'block';
+      //    document.getElementById("app-loader").style.display = "none";
+      request.open("GET",url,true);
+      request.send();
+    }catch(e){alert("Unable to connect to server");}
+    }
+
+/*
+  function searchResult(){
+    var state = document.getElementById( "state" ).value;
+    var station=document.getElementById( "station" ).value;
+    var district=document.getElementById( "district" ).value;
+    var url="/wp-content/themes/shapely/agency/searchresultwaterlevel.php?state="+state+"&district="+district+"&station="+station;
+  console.log(url);
+    try{
+      request.onreadystatechange=function(){
+        if(request.readyState==4){
+          var val=request.responseText;
+          document.getElementById('result').innerHTML=val;
+
+        }
+      }//end of function
+      request.open("GET",url,true);
+      request.send();
+    }catch(e){alert("Unable to connect to server");}
+  }
+*/
+
+</script>
+  <script>
+      $(document).ready(function () {
+          var $kira = 1;
+          $("#result table").each(function() {
+              $(this).attr("id", "normaltable" + $kira);
+              $kira++;
+              // alert($(this).attr("id"));
+          });
+          const urlParams = new URLSearchParams(window.location.search);
+          const type = urlParams.get('type');
+          var currentPosition = $('.breadcrumb .container span[property="itemListElement"]').length + 1;
+          if (type == 'MOCKUP'){
+              var newBreadcrumb = ' / ' +
+                '<span property="itemListElement" typeof="ListItem">' +
+                  '<a property="item" typeof="WebPage" title="" href="#">' +
+                    '<span property="name">Mockup</span>' +
+                  '</a>' +
+                  '<meta property="position" content="' + currentPosition + '">' +
+                '</span>';
+
+              $('.breadcrumb .container').append(newBreadcrumb);
+          } else if(type == 'NEGERI'){
+              var newBreadcrumb = ' / ' +
+                '<span property="itemListElement" typeof="ListItem">' +
+                  '<a property="item" typeof="WebPage" title="" href="#">' +
+                    '<span property="name">State</span>' +
+                  '</a>' +
+                  '<meta property="position" content="' + currentPosition + '">' +
+                '</span>';
+
+              $('.breadcrumb .container').append(newBreadcrumb);
+          } else if(type == 'AGENCY'){
+              var newBreadcrumb = ' / ' +
+                '<span property="itemListElement" typeof="ListItem">' +
+                  '<a property="item" typeof="WebPage" title="" href="#">' +
+                    '<span property="name">Agency</span>' +
+                  '</a>' +
+                  '<meta property="position" content="' + currentPosition + '">' +
+                '</span>';
+
+              $('.breadcrumb .container').append(newBreadcrumb);
+          }
+      });
+  </script>
+
+ <script>
+  window.onload = searchResult();
+  </script> <script type="text/javascript">
+ 
+    var ip = "11.1.200.126";
+    console.log(ip);
+
+</script> <!-- server ip -->
+<!--------------------------WATER LEVEL AGENCY SCRIPT CLOSE -------------------------->
+
+
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+    	</main><!-- #main -->
+    </div><!-- #primary -->
+    </div>

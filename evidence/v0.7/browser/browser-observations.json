@@ -1,0 +1,12 @@
+{
+  "core_sha256": "ae817c13e99ede0aa03dbb00ef3c0d92f3f7e2b718b5a1c9c3a3a36db16ce461",
+  "url": "http://127.0.0.1:8513/",
+  "observed_at": "2026-10-16T11:16:35.386Z",
+  "blank_supplied_forms": true,
+  "blank_actions_disabled": true,
+  "valid_supplied_contract": true,
+  "three_run_success": true,
+  "download_observed": "C:\\Users\\kingy\\Downloads\\monsoon-conservative-bench-evidence (1).zip",
+  "changed_phase_input_hides_success_and_export": true,
+  "scope": "Two-second exactly dry synthetic browser workflow only; complete complex bench qualification is separate."
+}

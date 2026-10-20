@@ -1,0 +1,5 @@
+{
+  "first_started_utc": "2026-10-14T09:57:46.833874+00:00",
+  "freeze_sha256": "411ce36a77f88cdd4b22335617aa7b941973b3c2a7bc7393330fe94925911e03",
+  "statement": "This marker precedes the first new hydraulic outcome. Restart with identical frozen sources may reuse verified raw caches; it does not create a new evaluation."
+}

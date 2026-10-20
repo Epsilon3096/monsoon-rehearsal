@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "evidence_class": "Unmodified official EPA application example smoke run; no site/maintenance validation",
+  "input": "data\\public_evidence\\epa\\application_example2\\Example2-Post.inp",
+  "input_sha256": "2c797fa8e706d2570ad1c6bb776f2cc764fdac83475e8c1a1da04d97c4279895",
+  "started_utc": "2026-10-13T14:51:32.037892+00:00",
+  "finished_utc": "2026-10-13T14:51:32.076142+00:00",
+  "elapsed_seconds": 0.03747999999905005,
+  "engine": {
+    "engine": "EPA SWMM / Open Water Analytics toolkit",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "adapter_version": "1.0.1",
+    "routing": "DYNWAVE",
+    "units": "CMS / metres / m3",
+    "default_routing_step_s": 0.5,
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c"
+  },
+  "input_modified": false,
+  "native_flow_units": "CFS (ft3/s)",
+  "native_length_units": "ft",
+  "native_routing": "KINWAVE",
+  "native_routing_step_seconds": 15,
+  "horizon_hours": 12,
+  "completed_without_reported_error": true,
+  "exception": null,
+  "native_error_lines": [],
+  "reported_continuity_errors_percent_in_report_order": [
+    -0.077,
+    -0.034
+  ],
+  "limitations": [
+    "This is an EPA application example, not Malaysian field observations.",
+    "This input was run without geometry, forcing, routing-step, or horizon changes.",
+    "No acceptance tolerance was selected from the result. A completed run is a portability check, not a new scientific pass.",
+    "No validation against a measured hydrograph, laboratory data or an independent engine was performed for this smoke run.",
+    "Not injected into Monsoon Rehearsal's frozen reference case, planning set or stress protocol."
+  ],
+  "files": {
+    "input": {
+      "path": "data\\public_evidence\\epa\\application_example2\\Example2-Post.inp",
+      "sha256": "2c797fa8e706d2570ad1c6bb776f2cc764fdac83475e8c1a1da04d97c4279895",
+      "bytes": 23853
+    },
+    "report": {
+      "path": "data\\public_evidence\\epa\\application_example2_run\\native_report.rpt",
+      "sha256": "ec6ea7e81d06f084c18256b3812b98d7b47f749b5a5f797e93dec3cf21a34dc3",
+      "bytes": 10248
+    },
+    "output": {
+      "path": "data\\public_evidence\\epa\\application_example2_run\\native_output.out",
+      "sha256": "209eb792296fa41c9aba3a79f6c9a5fe648da06d3743f091bfb36a6798d2b84c",
+      "bytes": 576840
+    }
+  }
+}

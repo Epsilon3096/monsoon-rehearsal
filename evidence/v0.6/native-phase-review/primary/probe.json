@@ -1,0 +1,267 @@
+{
+  "evidence_kind": "synthetic_fixture",
+  "purpose": "Independent native cumulative balance/clock/storage probe; not physical validation",
+  "source_sha256": "5bd22564b23c4969ab2ae88c85124d01a8691afdd8dff44767e78496c5745fc4",
+  "engine_identity": {
+    "adapter_version": "1.0.0",
+    "engine_version": "5.2.4",
+    "engine_version_int": 52004,
+    "toolkit_version": "0.17.0",
+    "runtime_file_sha256": {
+      "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+      "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+      "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+      "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+      "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+      "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+      "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+      "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+      "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+      "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+      "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+      "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+      "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    "source_sha256": {
+      "bench_model.py": "8586bdcf3902edcd786d92b7768cbc167dd6ea9e9f0636a2890def81cb5925ba",
+      "_bench_worker.py": "f3eb14cbab51303322d3cfd0936b3f30ee806a22c5c2bf0cc62383bf24bbab55",
+      "site_data.py": "c4aed0a4e3cef340be50b9bbc4df6209c2e4adcc3fbf17406a4060a80c7633c5"
+    },
+    "routing": "DYNWAVE",
+    "units": "CMS / m / m3"
+  },
+  "step_s": 0.01,
+  "routing_steps": 12000,
+  "maximum_clock_difference_s": 1.4210854715202004e-14,
+  "initial_state": {
+    "elapsed_s": 0,
+    "storage_m3": 4.877343088019509e-06,
+    "node_storage_m3": {
+      "A": 0.0,
+      "S": 0.0,
+      "O": 0.0
+    },
+    "link_storage_m3": {
+      "L1": 2.9264058528117054e-06,
+      "L2": 1.9509372352078038e-06
+    },
+    "outfall_exchange_m3_s": 0.0,
+    "outfall_total_inflow_m3_s": 0.0,
+    "outfall_total_outflow_m3_s": 0.0,
+    "outfall_link_flow_m3_s": 0.0,
+    "stage_m": {
+      "A": 0.04,
+      "S": 0.02,
+      "O": 0.0
+    }
+  },
+  "records": [
+    {
+      "elapsed_s": 20.0,
+      "storage_m3": 0.007413039131303476,
+      "node_storage_m3": {
+        "A": 0.00018692234746307948,
+        "S": 0.0015691119838200944,
+        "O": 0.0
+      },
+      "link_storage_m3": {
+        "L1": 0.0024813613571091843,
+        "L2": 0.003175643442911118
+      },
+      "outfall_exchange_m3_s": -0.0005783888686442452,
+      "outfall_total_inflow_m3_s": 0.0005783888686442452,
+      "outfall_total_outflow_m3_s": 0.0005783888686442452,
+      "outfall_link_flow_m3_s": -0.0005783888686442452,
+      "stage_m": {
+        "A": 0.052461489830871975,
+        "S": 0.05922779959550235,
+        "O": 0.06
+      },
+      "raw_routing_totals": {
+        "exInflow": 0.005493049323392758,
+        "outflow": 0.0,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.2617598563313374,
+        "pctError": 1e-06
+      },
+      "raw_storage_as_m3": 0.007413039131303476,
+      "independent_cumulative_signed_outflow_m3": -0.005493049323392747,
+      "independent_residual_m3": -0.001915112464822709,
+      "native_cumulative_residual_m3": -0.0019151124648226986
+    },
+    {
+      "elapsed_s": 49.989999999999995,
+      "storage_m3": 0.007936074042585813,
+      "node_storage_m3": {
+        "A": 0.00020328258601849783,
+        "S": 0.0017205392481726728,
+        "O": 0.0
+      },
+      "link_storage_m3": {
+        "L1": 0.002715453605312798,
+        "L2": 0.0032967986030818445
+      },
+      "outfall_exchange_m3_s": -0.00018675494859293908,
+      "outfall_total_inflow_m3_s": 0.00018675494859293908,
+      "outfall_total_outflow_m3_s": 0.00018675494859293908,
+      "outfall_link_flow_m3_s": -0.00018675494859293908,
+      "stage_m": {
+        "A": 0.05355217240123319,
+        "S": 0.06301348120431682,
+        "O": 0.06
+      },
+      "raw_routing_totals": {
+        "exInflow": 0.011007645609355264,
+        "outflow": 0.004990898850768518,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.2802286031986516,
+        "pctError": 1e-06
+      },
+      "raw_storage_as_m3": 0.007936074042585815,
+      "independent_cumulative_signed_outflow_m3": -0.006016746758586731,
+      "independent_residual_m3": -0.001914449940911063,
+      "native_cumulative_residual_m3": -0.0019144499409110482
+    },
+    {
+      "elapsed_s": 50.0,
+      "storage_m3": 0.0079379336430031,
+      "node_storage_m3": {
+        "A": 0.0002038987238908089,
+        "S": 0.001720296466676015,
+        "O": 0.0
+      },
+      "link_storage_m3": {
+        "L1": 0.002717134095466889,
+        "L2": 0.0032966043569693858
+      },
+      "outfall_exchange_m3_s": -0.00018516889862872337,
+      "outfall_total_inflow_m3_s": 0.00018516889862872337,
+      "outfall_total_outflow_m3_s": 0.00018516889862872337,
+      "outfall_link_flow_m3_s": -0.00018516889862872337,
+      "stage_m": {
+        "A": 0.053593248259387265,
+        "S": 0.06300741166690038,
+        "O": 0.06
+      },
+      "raw_routing_totals": {
+        "exInflow": 0.011009505228591373,
+        "outflow": 0.004990898850768518,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.28029426705519417,
+        "pctError": 1e-06
+      },
+      "raw_storage_as_m3": 0.0079379336430031,
+      "independent_cumulative_signed_outflow_m3": -0.00601860637782284,
+      "independent_residual_m3": -0.0019144499220922406,
+      "native_cumulative_residual_m3": -0.001914449922092225
+    },
+    {
+      "elapsed_s": 50.01,
+      "storage_m3": 0.007939297302792987,
+      "node_storage_m3": {
+        "A": 0.00020451854373523627,
+        "S": 0.0017200432253185777,
+        "O": 0.0
+      },
+      "link_storage_m3": {
+        "L1": 0.0027188138464257737,
+        "L2": 0.0032959216873133987
+      },
+      "outfall_exchange_m3_s": -0.00018355617310572255,
+      "outfall_total_inflow_m3_s": 0.00018355617310572255,
+      "outfall_total_outflow_m3_s": 0.00018355617310572255,
+      "outfall_link_flow_m3_s": -0.00018355617310572255,
+      "stage_m": {
+        "A": 0.053634569582349086,
+        "S": 0.06300108063296445,
+        "O": 0.059984999327195115
+      },
+      "raw_routing_totals": {
+        "exInflow": 0.011011348853950045,
+        "outflow": 0.004990898850768518,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.28034241888393313,
+        "pctError": 1e-06
+      },
+      "raw_storage_as_m3": 0.007939297302792987,
+      "independent_cumulative_signed_outflow_m3": -0.006020450003181512,
+      "independent_residual_m3": -0.0019139699565234557,
+      "native_cumulative_residual_m3": -0.0019139699565234392
+    },
+    {
+      "elapsed_s": 90.0,
+      "storage_m3": 0.00013395511555039198,
+      "node_storage_m3": {
+        "A": 2.6969847374112796e-06,
+        "S": 3.22628051558519e-05,
+        "O": 0.0
+      },
+      "link_storage_m3": {
+        "L1": 4.735098546038038e-05,
+        "L2": 5.164434019674843e-05
+      },
+      "outfall_exchange_m3_s": 7.276022763525901e-06,
+      "outfall_total_inflow_m3_s": 7.276022763525901e-06,
+      "outfall_total_outflow_m3_s": 0.0,
+      "outfall_link_flow_m3_s": 7.276022763525901e-06,
+      "stage_m": {
+        "A": 0.04017979898249408,
+        "S": 0.020806570128896296,
+        "O": 0.0008068530159750584
+      },
+      "raw_routing_totals": {
+        "exInflow": 0.012421620004569306,
+        "outflow": 0.012310771117117258,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.004730053515197457,
+        "pctError": 1e-06
+      },
+      "raw_storage_as_m3": 0.000133955115550392,
+      "independent_cumulative_signed_outflow_m3": -0.00011084888745195801,
+      "independent_residual_m3": -1.822888501041447e-05,
+      "native_cumulative_residual_m3": -1.8228885010324047e-05
+    },
+    {
+      "elapsed_s": 120.0,
+      "storage_m3": 3.82081182417303e-05,
+      "node_storage_m3": {
+        "A": 1.055368747521573e-06,
+        "S": 8.880426173236174e-06,
+        "O": 0.0
+      },
+      "link_storage_m3": {
+        "L1": 1.4035253994703129e-05,
+        "L2": 1.4237069326269422e-05
+      },
+      "outfall_exchange_m3_s": 8.553448775058791e-07,
+      "outfall_total_inflow_m3_s": 8.553448775058791e-07,
+      "outfall_total_outflow_m3_s": 0.0,
+      "outfall_link_flow_m3_s": 8.553448775058791e-07,
+      "stage_m": {
+        "A": 0.04007035791650144,
+        "S": 0.020222010654330904,
+        "O": 0.00022281732684659625
+      },
+      "raw_routing_totals": {
+        "exInflow": 0.012421620004569306,
+        "outflow": 0.012387813598997289,
+        "flooding": 0.0,
+        "initStorage": 0.00017222256666735554,
+        "finalStorage": 0.0013491567175752221,
+        "pctError": 1e-06
+      },
+      "raw_storage_as_m3": 3.8208118241730295e-05,
+      "independent_cumulative_signed_outflow_m3": -3.380640557195525e-05,
+      "independent_residual_m3": 4.7563041824446066e-07,
+      "native_cumulative_residual_m3": 4.7563041830760866e-07
+    }
+  ],
+  "physical_validation_established": false,
+  "operational_activation_allowed": false
+}

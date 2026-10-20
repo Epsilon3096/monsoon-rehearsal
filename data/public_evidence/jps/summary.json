@@ -1,0 +1,136 @@
+{
+  "publisher": "JPS/DID Malaysia",
+  "selection": "Selangor public rainfall table; illustrative acquisition, not a chosen project catchment",
+  "rows": 246,
+  "header_daily_dates": [
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-10",
+    "2026-10-11",
+    "2026-10-12"
+  ],
+  "midnight_date": "2026-10-13",
+  "columns": [
+    "source_row_number",
+    "station_id",
+    "station_name",
+    "district",
+    "last_updated_as_published",
+    "daily_rainfall_mm_2026-10-07",
+    "daily_rainfall_mm_2026-10-08",
+    "daily_rainfall_mm_2026-10-09",
+    "daily_rainfall_mm_2026-10-10",
+    "daily_rainfall_mm_2026-10-11",
+    "daily_rainfall_mm_2026-10-12",
+    "rainfall_since_midnight_mm_2026-10-13",
+    "last_one_hour_mm"
+  ],
+  "last_updated_min_as_published": "13/10/2026 03:15:00",
+  "last_updated_max_as_published": "13/10/2026 22:45:00",
+  "time_zone": "No explicit offset in source. Malaysia/Asia_Kuala_Lumpur is context only; timestamps are preserved verbatim.",
+  "quality": "No measurement calibration, QC flags, interval-completeness guarantee, or catchment representativeness supplied.",
+  "parser": "HTML table has irregular row closures. Rows begin at explicit data-th=No cells; assert 13 cells each, six dated columns, unique source row numbers. Missing/duplicated station IDs are retained and flagged. No value interpolation, deduplication or zero filling.",
+  "missing_station_id_rows": 86,
+  "duplicated_nonempty_station_ids": {
+    "3717101": [
+      {
+        "source_row_number": "47",
+        "station_name": "Bukit Fraser (F2)"
+      },
+      {
+        "source_row_number": "113",
+        "station_name": "Bukit Fraser"
+      }
+    ],
+    "3014095": [
+      {
+        "source_row_number": "49",
+        "station_name": "Kg. Delek (F2)"
+      },
+      {
+        "source_row_number": "198",
+        "station_name": "Kg. Delek"
+      }
+    ],
+    "3813001": [
+      {
+        "source_row_number": "124",
+        "station_name": "Tanjung Malim"
+      },
+      {
+        "source_row_number": "126",
+        "station_name": "Jambatan SKC"
+      }
+    ],
+    "3013002": [
+      {
+        "source_row_number": "162",
+        "station_name": "Taman Desa Kundang"
+      },
+      {
+        "source_row_number": "203",
+        "station_name": "Jln. Benteng Kapar"
+      }
+    ],
+    "3115084": [
+      {
+        "source_row_number": "186",
+        "station_name": "Kg. Melayu Subang"
+      },
+      {
+        "source_row_number": "213",
+        "station_name": "Taman TTDI Grove"
+      }
+    ]
+  },
+  "non_numeric_rainfall_cells": 11,
+  "hydraulic_use": "Not used in frozen SWMM case. These accumulations are not resolved hyetographs or drainage inflow hydrographs.",
+  "sample_rows": [
+    {
+      "source_row_number": "1",
+      "station_id": "0240571RF",
+      "station_name": "Genting Peres (F2)",
+      "district": "Hulu Langat",
+      "last_updated_as_published": "13/10/2026 22:30:00",
+      "daily_rainfall_mm_2026-10-07": "0.0",
+      "daily_rainfall_mm_2026-10-08": "0.0",
+      "daily_rainfall_mm_2026-10-09": "0.0",
+      "daily_rainfall_mm_2026-10-10": "0.5",
+      "daily_rainfall_mm_2026-10-11": "0.5",
+      "daily_rainfall_mm_2026-10-12": "5.0",
+      "rainfall_since_midnight_mm_2026-10-13": "0.0",
+      "last_one_hour_mm": "0.0"
+    },
+    {
+      "source_row_number": "2",
+      "station_id": "0240731RF",
+      "station_name": "Kolam Takungan Sg. Merab (F2)",
+      "district": "Sepang",
+      "last_updated_as_published": "13/10/2026 22:30:00",
+      "daily_rainfall_mm_2026-10-07": "0.0",
+      "daily_rainfall_mm_2026-10-08": "2.0",
+      "daily_rainfall_mm_2026-10-09": "0.0",
+      "daily_rainfall_mm_2026-10-10": "3.5",
+      "daily_rainfall_mm_2026-10-11": "2.0",
+      "daily_rainfall_mm_2026-10-12": "12.5",
+      "rainfall_since_midnight_mm_2026-10-13": "7.0",
+      "last_one_hour_mm": "0.0"
+    },
+    {
+      "source_row_number": "3",
+      "station_id": "0241221RF",
+      "station_name": "Kg. Sg. Ramal Dalam (F2)",
+      "district": "Hulu Langat",
+      "last_updated_as_published": "13/10/2026 22:30:00",
+      "daily_rainfall_mm_2026-10-07": "0.0",
+      "daily_rainfall_mm_2026-10-08": "0.0",
+      "daily_rainfall_mm_2026-10-09": "0.5",
+      "daily_rainfall_mm_2026-10-10": "20.0",
+      "daily_rainfall_mm_2026-10-11": "1.0",
+      "daily_rainfall_mm_2026-10-12": "24.5",
+      "rainfall_since_midnight_mm_2026-10-13": "9.5",
+      "last_one_hour_mm": "0.0"
+    }
+  ]
+}

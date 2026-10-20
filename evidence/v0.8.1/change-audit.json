@@ -1,0 +1,22 @@
+{
+  "compared_archive": "Monsoon_Rehearsal_Prototype_v0.8.zip",
+  "changed_existing_files": [
+    "app.py",
+    "monsoon/__init__.py",
+    "monsoon/charts.py",
+    "monsoon/hydraulics.py",
+    "PRODUCT_SCOPE.md",
+    "pyproject.toml",
+    "README.md",
+    "tests/test_policy_replay.py",
+    "tests/test_v2_integration_review.py"
+  ],
+  "missing_existing_files": [],
+  "existing_test_changes": {
+    "tests/test_v2_integration_review.py": "Update intended UI copy/status expectations; strengthen absence checks to reject any success indicator after queue switch or stale inputs",
+    "tests/test_policy_replay.py": "Explicit recorded-identity fixture for mocked replay guard tests, preserving all existing assertions; additional real-current-identity refusal tests verify the historical study cannot run with the changed adapter"
+  },
+  "hydraulic_computations_scheduling_approval_and_inputs_unchanged": true,
+  "hydraulics_adapter_io_change": "Bounded retries only for Windows sharing/lock errors publishing the optional cache index; immutable result and manifest remain unchanged; other errors propagate",
+  "custom_solver_unchanged_and_unqualified": true
+}

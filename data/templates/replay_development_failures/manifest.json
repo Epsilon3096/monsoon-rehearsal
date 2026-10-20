@@ -1,0 +1,15 @@
+{
+  "kind": "retained_synthetic_replay_development_failure",
+  "status": "additional_every_step_balance_audit_unresolved",
+  "physical_measurements": false,
+  "explanation": "Earlier flowing three-node candidate passes v1 end-of-event checks but fails additive every-step audit. No successful validation is inferred. Exact pre-audit replay input bytes retained here; old source site/model unchanged.",
+  "original_site": "../synthetic_bench_site_v1.json",
+  "original_model": "../synthetic_bench_model_v1.json",
+  "file_sha256": {
+    "synthetic_bench_replay_calibration_boundaries_v1.json": "a10574ddbcb220e71082c41f5bf3225182c020cfde2990a69bfc018f15016503",
+    "synthetic_bench_replay_calibration_event_v1.json": "804f155cd9c8421905e47112052540c2e6321304db982313cdb17fe2b26d646f",
+    "synthetic_bench_replay_recipe_v1.json": "4ffec097d4b4c6cc2abd7767779ba0e36f05525b17db3ff4194e4a70d007d176",
+    "synthetic_bench_replay_validation_boundaries_v1.json": "a40536094165d178bc95dcbb23afc9d283e7d63a63a7fbe4a343a66113d127a9",
+    "synthetic_bench_replay_validation_event_v1.json": "f7cd880c784d7bcf91b4132b9846ca9d428158906189f22f4625af2d6cb65696"
+  }
+}

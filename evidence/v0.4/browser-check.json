@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "Actual localhost browser navigation and downloaded blank pack; no physical or participant evidence.",
+  "url": "http://127.0.0.1:8513/",
+  "work_window": "Stop 120\u219230 changed exposed job J3\u2192J4; predicted completion did not credit restoration; observed forms empty.",
+  "bench_preparation": "Draft generated without supplied participants/equipment; 19 missing items, 24 blank sheets, fixed pairs; complete ZIP downloaded.",
+  "download_sha256": "43c494e9685f990e759d1bb3873d3d5e7aa056c9b5fa4414bffb76f788a0ef63",
+  "download_files_verified": 30,
+  "protocol_sha256": "cc7f5c8eb301f0be18aa54d43a93420d54dbf5237aa8d520acc994063ea83d26",
+  "screenshots": {
+    "Monsoon_Rehearsal_v0.4_Work_Window.png": "1a18ac3804bb775da8913ed47d4300db33ff273efd03dd29702dddce339ec941",
+    "Monsoon_Rehearsal_v0.4_Bench_Preparation.png": "a23c2591802d2f452b21b5c6e68e4351d3321f5ee0283ffae3f8d21ed24d7bdd"
+  }
+}

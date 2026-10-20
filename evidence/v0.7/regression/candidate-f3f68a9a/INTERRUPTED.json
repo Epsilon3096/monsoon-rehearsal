@@ -1,0 +1,20 @@
+{
+  "status": "interrupted_development_attempt_not_qualified",
+  "utc": "2026-10-16T10:43:01.140146+00:00",
+  "reason": "Independent review found deterministic error ordering defect in failed-evidence reload. Stop before changing source; preserve exact candidate source and all partial outputs. No holdout exposure. No numerical acceptance criteria changed.",
+  "core_sha256": "f3f68a9a8bfe078700957017839862cc89c303afba5f5d8e9e9a6d0372d50f5e",
+  "known_parent_pids": [
+    11300,
+    21484,
+    8024,
+    7244
+  ],
+  "known_descendant_pids": [
+    15992,
+    20620,
+    7896,
+    15780,
+    8080,
+    8636
+  ]
+}

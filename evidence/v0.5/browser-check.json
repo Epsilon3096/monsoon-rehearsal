@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-14T12:09:48.490198+00:00",
+  "url": "http://127.0.0.1:8513/",
+  "method": "Actual Codex in-app browser navigation, model run, synthetic study exercise and download controls",
+  "supplied_forms_started_blank": true,
+  "numerical_pair_passed": true,
+  "download_artifact_count": 18,
+  "nested_native_artifacts_preserved": true,
+  "downloaded_zip_sha256": "481b37a5cf67523e69fad42de8b9a4cbeccab223f0e703f291739b9d09e9d8f2",
+  "downloaded_exercise_sha256": "b3fe3478651c1fdc1fa9dbcfbd5f4c8ddd57d2f5f778b65533b59af4c6482443",
+  "synthetic_exercise_status": "passed",
+  "physical_validation_established": false,
+  "layout": "Default narrow app panel; navigation drawer closed for content inspection. Metric values and exercise table readable. No viewport override.",
+  "screenshots": {
+    "Monsoon_Rehearsal_v0.5_Bench_Model.png": "5c6dbab68d3812997492abbc3df1d3c053225113d056b46ee53c326cd8c0b37f",
+    "Monsoon_Rehearsal_v0.5_Bench_Study.png": "2a45dc9b3ff96a7cb39ef57d17d2f60476211016c135a15ca2db460925872fcb"
+  }
+}

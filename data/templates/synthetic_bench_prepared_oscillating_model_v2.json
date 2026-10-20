@@ -1,0 +1,70 @@
+{
+  "schema_version": "monsoon.bench-model/1",
+  "model_id": "SYNTHETIC-PREPARED-MODEL",
+  "site_package_sha256": "622d0123b42177514b4e58f4277a1a0085d8c6c6db5c5c1b0674d8d627561147",
+  "evidence_kind": "synthetic_fixture",
+  "completed_job_ids": [],
+  "junction_storage": [
+    {
+      "node_id": "A",
+      "stage_area": [
+        {
+          "stage_m": 0.04,
+          "area_m2": 0.015
+        },
+        {
+          "stage_m": 0.29,
+          "area_m2": 0.015
+        }
+      ],
+      "source_id": "SYN-BENCH-SOURCE"
+    }
+  ],
+  "link_parameters": [
+    {
+      "link_id": "L1",
+      "roughness_n": 0.012,
+      "entrance_loss_coefficient": 0.0,
+      "exit_loss_coefficient": 0.0,
+      "average_loss_coefficient": 0.0,
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    {
+      "link_id": "L2",
+      "roughness_n": 0.012,
+      "entrance_loss_coefficient": 0.0,
+      "exit_loss_coefficient": 0.0,
+      "average_loss_coefficient": 0.0,
+      "source_id": "SYN-BENCH-SOURCE"
+    }
+  ],
+  "overflow": [
+    {
+      "node_id": "A",
+      "destination": "external_absorbing_collector",
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    {
+      "node_id": "S",
+      "destination": "external_absorbing_collector",
+      "source_id": "SYN-BENCH-SOURCE"
+    }
+  ],
+  "losses": {
+    "evaporation": "excluded_zero",
+    "seepage": "excluded_zero",
+    "leakage": "excluded_zero",
+    "source_id": "SYN-BENCH-SOURCE"
+  },
+  "numerics": {
+    "routing_step_s": 0.01,
+    "report_step_s": 1,
+    "head_tolerance_m": 1e-06,
+    "minimum_surface_area_m2": 1e-06,
+    "max_trials": 100,
+    "inertial_damping": "NONE",
+    "normal_flow_limited": "BOTH",
+    "initial_numerical_storage_tolerance_m3": 1e-05
+  },
+  "notes": "Invented fixed raised-outlet model, explicit storage and unchanged 0.012 roughness; zero losses are assumed. No calibration or physical validation."
+}

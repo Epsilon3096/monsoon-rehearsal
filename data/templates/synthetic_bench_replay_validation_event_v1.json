@@ -1,0 +1,48 @@
+{
+  "event_id": "SYN-REPLAY-VAL-01",
+  "window": null,
+  "planned_targets": {
+    "inflows": [
+      {
+        "node_id": "A",
+        "points": [
+          {
+            "elapsed_s": 0,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 10,
+            "value_m3_s": 0.0002
+          },
+          {
+            "elapsed_s": 30,
+            "value_m3_s": 0.0002
+          },
+          {
+            "elapsed_s": 50,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 120,
+            "value_m3_s": 0
+          }
+        ]
+      }
+    ],
+    "receiving_stages": [
+      {
+        "node_id": "O",
+        "points": [
+          {
+            "elapsed_s": 0,
+            "stage_m": 0.22
+          },
+          {
+            "elapsed_s": 120,
+            "stage_m": 0.22
+          }
+        ]
+      }
+    ]
+  }
+}

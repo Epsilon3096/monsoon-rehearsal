@@ -1,0 +1,2712 @@
+EEEEE.EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE....E...............EEEEEEEEE..E... [ 17%]
+.................................EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE [ 35%]
+EEEEEEEEEEEEEE..................EEE...................EEE..E............ [ 53%]
+....................................EE.EEEEEEEEEEEEE.................... [ 71%]
+........................................................................ [ 89%]
+..................EEEEEEEEEEEEEEEEEEEEEEEE                               [100%]
+=================================== ERRORS ====================================
+_ ERROR at setup of test_arithmetic_complete_ui_audit_ticket_and_verified_replan _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_real_reference_stress_failure_blocks_ui_review_and_approval _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_____ ERROR at setup of test_changed_controls_invalidate_cached_ui_result _____
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_identical_context_is_stable_and_saved_evidence_durable _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_real_no_work_audit_can_be_approved_but_cannot_issue_any_job _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_complete_intact_evidence_can_pass_only_declared_envelope _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_ticket_stamping_preserves_same_subject_and_rejects_changed_observation _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_queue_deadline_observed_version_and_input_identity_are_bound[queue-value0] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_queue_deadline_observed_version_and_input_identity_are_bound[deadline_minutes-179] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_queue_deadline_observed_version_and_input_identity_are_bound[travel_minutes-9] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_queue_deadline_observed_version_and_input_identity_are_bound[state_version-1] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_queue_deadline_observed_version_and_input_identity_are_bound[context_fingerprint-0000000000000000000000000000000000000000000000000000000000000000] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_queue_deadline_observed_version_and_input_identity_are_bound[frozen_fingerprint-1111111111111111111111111111111111111111111111111111111111111111] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[id-P-fabricated] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[worst_spill_m3-0] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[mean_spill_m3-0] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[worst_crew_minutes-0] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[worst_cost_rm-0] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[reasons-value5] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[scenario_results-value6] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_selected_plan_score_drift_rejected_before_stress_callback _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+____ ERROR at setup of test_stale_engine_source_and_planner_identity_block ____
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_simple_and_resealed_result_tampering_fail_closed ___
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_missing_case_and_missing_raw_result_cannot_be_resealed_to_pass _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_prefix_harm_blocks_even_when_final_and_total_improve _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_a_half_step_classification_flip_is_unresolved_not_a_pass _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_missing_numerics_and_callback_failures_stay_unresolved _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_malformed_numeric_callbacks_export_unresolved_in_strict_json[None] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result1] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result2] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result3] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result4] _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_uncertified_horizon_and_step_values_are_recomputed_from_raw_runs _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_no_work_compares_against_current_verified_start_not_empty _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_raw_artefact_tamper_blocks_even_when_top_audit_unchanged _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_no_stress_selection_or_oracle_and_bad_freeze_rejected_before_callback _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__________ ERROR at setup of test_offline_inspection_cannot_approve ___________
+
+tmp_path_factory = TempPathFactory(_given_basetemp=WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-...luggy._tracing.TagTracerSub object at 0x0000027DA7605F40>, _basetemp=None, _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="module")
+    def passing(tmp_path_factory):
+>       return make_assurance_fixture(tmp_path_factory.mktemp("assurance-arithmetic"))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_assurance.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:136: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:117: in _ensure_relative_to_basetemp
+    if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+        ^^^^^^^^^^^^^^^^^^
+..\..\work\runtime\venv\Lib\site-packages\_pytest\tmpdir.py:158: in getbasetemp
+    basetemp.mkdir(mode=0o700)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_missing_source_refuses_all_cards[evidence/planning.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_missing_source_refuses_all_cards[evidence/holdouts.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_missing_source_refuses_all_cards[evidence/assurance-development-census.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_missing_source_refuses_all_cards[evidence/assurance-census-runs.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_altered_source_refuses_all_cards[evidence/planning.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_altered_source_refuses_all_cards[evidence/holdouts.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_altered_source_refuses_all_cards[evidence/assurance-development-census.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_each_altered_source_refuses_all_cards[evidence/assurance-census-runs.json] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_relocated_sources_work_and_later_byte_changes_do_not_reuse_stale_cards _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+________ ERROR at setup of test_modified_protocol_file_cannot_be_used _________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_bootstrap_credentials_and_sensitive_records_are_not_exposed _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_unauthenticated_calls_cannot_read_or_write[None] ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_____ ERROR at setup of test_unauthenticated_calls_cannot_read_or_write[] _____
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_unauthenticated_calls_cannot_read_or_write[dispatcher] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_unauthenticated_calls_cannot_read_or_write[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_roles_are_enforced_by_methods_and_admin_is_not_dispatcher _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_expiry_logout_disable_and_password_change_revoke ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+________ ERROR at setup of test_bootstrap_is_atomic_across_connections ________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_invalid_site_remains_draft_and_duplicate_json_is_rejected _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+______ ERROR at setup of test_real_site_validator_and_independent_review ______
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_baseline_revisions_only_before_disclosure_and_concurrent_writes _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_operator_review_requires_documented_feedback_after_disclosure _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_later_available_information_cannot_enter_model_snapshot[observed_at] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_later_available_information_cannot_enter_model_snapshot[issued_at] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_later_available_information_cannot_enter_model_snapshot[available_at] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_future_issued_forecast_cannot_hide_behind_past_availability _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_forecast_valid_time_can_be_future_but_no_naive_timestamps _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+________ ERROR at setup of test_input_fingerprint_and_copies_are_bound ________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_backfill_future_and_live_transition_are_rejected ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_empty_recommendation_is_not_a_valid_model_result ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_outcomes_are_later_separate_immutable_and_missing_is_unresolved _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_observed_outcome_needs_later_evidence_and_declared_actual_plan _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_empty_operating_values_remain_unknown_but_empty_authorised_set_is_known _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_outcome_duration_must_be_nonnegative_finite_or_null[-1] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_outcome_duration_must_be_nonnegative_finite_or_null[True] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_outcome_duration_must_be_nonnegative_finite_or_null[nan] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_outcome_duration_must_be_nonnegative_finite_or_null[inf] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_outcome_duration_must_be_nonnegative_finite_or_null[unknown] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+____ ERROR at setup of test_unplanned_actual_work_needs_recorded_exception ____
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[../evil.txt] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[..\\evil.txt] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[C:\\temp\\evil.txt] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[/evil.txt] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[evil.txt:stream] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[CON.txt] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[evil.html] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[evil.svg] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[evil.exe] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_attachment_paths_and_executable_types_are_rejected[trailing.txt.] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+____ ERROR at setup of test_attachment_type_size_and_structured_id_checks _____
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_records_and_events_have_sql_immutability_and_tamper_detection _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_____ ERROR at setup of test_attachment_tamper_fails_all_protected_reads ______
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__________ ERROR at setup of test_event_alteration_fails_hash_chain ___________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_self_reported_engineer_does_not_become_verified_or_grant_pilot _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_verified_backup_restore_never_overwrites_and_revokes_restored_sessions _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_foreign_or_altered_backup_is_rejected_before_restore _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_export_has_no_credentials_and_references_original_evidence _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_____ ERROR at setup of test_model_artifact_from_another_site_is_rejected _____
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_valid_site_rejects_nonexistent_authorised_and_model_jobs _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_______ ERROR at setup of test_removed_immutability_guard_fails_closed ________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_append_order_controls_latest_evidence_review_with_equal_timestamps _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_future_site_package_cannot_supply_earlier_model_snapshot _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_valid_synthetic_contract_completes_documentary_loop_without_field_claim _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_freeze_cannot_be_overwritten_and_detects_source_change _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_______ ERROR at setup of test_altered_freeze_record_cannot_revalidate ________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_prespecified_computation_cap_leaves_missing_evidence_unresolved _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_changed_or_missing_record_is_rejected[data/policy_v3_protocol.json-_PROTOCOL_PATH] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_changed_or_missing_record_is_rejected[evidence/v0.3/policy-freeze.json-_FREEZE_PATH] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_changed_or_missing_record_is_rejected[evidence/v0.3/policy-development.json-_DEVELOPMENT_PATH] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_archive_preserves_bytes_source_and_detects_truncation _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_invalid_parsed_draft_can_be_saved_but_not_activated __
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_stage_snapshots_before_validation_even_if_caller_mutates _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_readiness_does_not_invent_completed_external_validation _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_research_store_integrity_refusal_is_visible_without_opening_controls _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_site_intake_and_changed_source_cannot_borrow_previous_checks _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_measurement_fixture_retains_evidence_limits_and_stales_on_site_change _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_local_setup_login_and_logout_do_not_leave_authenticated_controls _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_synthetic_operator_and_prospective_shadow_forms_preserve_seal[False] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_synthetic_operator_and_prospective_shadow_forms_preserve_seal[True] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="0" errors="0" skipped="0"-passed] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="0" errors="0" skipped="1"-failed] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="1" errors="0" skipped="0"-failed] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="0" errors="1" skipped="0"-failed] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_incomplete_or_failed_execution_is_not_passed[tests="0" failures="0" errors="0" skipped="0"-failed] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+______________ ERROR at setup of test_missing_report_is_not_run _______________
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_saved_plan_requires_calculation_identity[context_fingerprint] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_saved_plan_requires_calculation_identity[state_version] _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_cached_snapshot_cannot_inherit_new_input_approval ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_same_fingerprint_cannot_hide_changed_observed_state __
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_context_compare_and_set_rejects_intervening_observation _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_rehearse_rejects_change_between_state_read_and_context_commit _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_rehearse_rejects_change_after_context_commit_before_return _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_rehearse_rejects_context_change_during_evaluation ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_model_update_invalidates_unstarted_approval_on_application_entry _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_model_update_preserves_historical_in_progress_reporting _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_unchanged_runtime_preserves_current_approval_on_application_entry _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_reinterpreted_completed_job_blocks_planning_but_allows_historical_close _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_project_state_never_combines_old_physical_state_with_new_readiness _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+______ ERROR at setup of test_export_is_one_consistent_database_snapshot ______
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_delay_changing_next_job_requires_rehearsal_and_new_approval _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_invalid_delay_does_not_mutate_state_or_audit[0] ____
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_invalid_delay_does_not_mutate_state_or_audit[-1] ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_invalid_delay_does_not_mutate_state_or_audit[inf] ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_invalid_delay_does_not_mutate_state_or_audit[True] __
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+___ ERROR at setup of test_invalid_delay_does_not_mutate_state_or_audit[70] ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+__ ERROR at setup of test_delay_cannot_replace_unresolved_work_observations ___
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_runtime_identity_is_durable_idempotent_and_invalidates_current_plans _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_runtime_change_during_work_keeps_original_observation_contract _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+_ ERROR at setup of test_version_one_database_migrates_without_rewriting_history _
+
+self = WindowsPath('C:/Users/kingy/Documents/Codex/2026-10-13/new-chat/work/product-20261017-02 parallel 2utohlb6/shard-1/pytest')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\work\\product-20261017-02 parallel 2utohlb6\\shard-1\\pytest'
+
+C:\Users\kingy\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py:1311: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/test_app.py::test_arithmetic_complete_ui_audit_ticket_and_verified_replan
+ERROR tests/test_app.py::test_real_reference_stress_failure_blocks_ui_review_and_approval
+ERROR tests/test_app.py::test_changed_controls_invalidate_cached_ui_result - ...
+ERROR tests/test_app.py::test_identical_context_is_stable_and_saved_evidence_durable
+ERROR tests/test_app.py::test_real_no_work_audit_can_be_approved_but_cannot_issue_any_job
+ERROR tests/test_assurance.py::test_complete_intact_evidence_can_pass_only_declared_envelope
+ERROR tests/test_assurance.py::test_ticket_stamping_preserves_same_subject_and_rejects_changed_observation
+ERROR tests/test_assurance.py::test_queue_deadline_observed_version_and_input_identity_are_bound[queue-value0]
+ERROR tests/test_assurance.py::test_queue_deadline_observed_version_and_input_identity_are_bound[deadline_minutes-179]
+ERROR tests/test_assurance.py::test_queue_deadline_observed_version_and_input_identity_are_bound[travel_minutes-9]
+ERROR tests/test_assurance.py::test_queue_deadline_observed_version_and_input_identity_are_bound[state_version-1]
+ERROR tests/test_assurance.py::test_queue_deadline_observed_version_and_input_identity_are_bound[context_fingerprint-0000000000000000000000000000000000000000000000000000000000000000]
+ERROR tests/test_assurance.py::test_queue_deadline_observed_version_and_input_identity_are_bound[frozen_fingerprint-1111111111111111111111111111111111111111111111111111111111111111]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[id-P-fabricated]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[worst_spill_m3-0]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[mean_spill_m3-0]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[worst_crew_minutes-0]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[worst_cost_rm-0]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[reasons-value5]
+ERROR tests/test_assurance.py::test_all_displayed_planning_evidence_is_bound_not_only_execution_queue[scenario_results-value6]
+ERROR tests/test_assurance.py::test_selected_plan_score_drift_rejected_before_stress_callback
+ERROR tests/test_assurance.py::test_stale_engine_source_and_planner_identity_block
+ERROR tests/test_assurance.py::test_simple_and_resealed_result_tampering_fail_closed
+ERROR tests/test_assurance.py::test_missing_case_and_missing_raw_result_cannot_be_resealed_to_pass
+ERROR tests/test_assurance.py::test_prefix_harm_blocks_even_when_final_and_total_improve
+ERROR tests/test_assurance.py::test_a_half_step_classification_flip_is_unresolved_not_a_pass
+ERROR tests/test_assurance.py::test_missing_numerics_and_callback_failures_stay_unresolved
+ERROR tests/test_assurance.py::test_malformed_numeric_callbacks_export_unresolved_in_strict_json[None]
+ERROR tests/test_assurance.py::test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result1]
+ERROR tests/test_assurance.py::test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result2]
+ERROR tests/test_assurance.py::test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result3]
+ERROR tests/test_assurance.py::test_malformed_numeric_callbacks_export_unresolved_in_strict_json[bad_result4]
+ERROR tests/test_assurance.py::test_uncertified_horizon_and_step_values_are_recomputed_from_raw_runs
+ERROR tests/test_assurance.py::test_no_work_compares_against_current_verified_start_not_empty
+ERROR tests/test_assurance.py::test_raw_artefact_tamper_blocks_even_when_top_audit_unchanged
+ERROR tests/test_assurance.py::test_no_stress_selection_or_oracle_and_bad_freeze_rejected_before_callback
+ERROR tests/test_assurance.py::test_offline_inspection_cannot_approve - FileN...
+ERROR tests/test_decision_review.py::test_each_missing_source_refuses_all_cards[evidence/planning.json]
+ERROR tests/test_decision_review.py::test_each_missing_source_refuses_all_cards[evidence/holdouts.json]
+ERROR tests/test_decision_review.py::test_each_missing_source_refuses_all_cards[evidence/assurance-development-census.json]
+ERROR tests/test_decision_review.py::test_each_missing_source_refuses_all_cards[evidence/assurance-census-runs.json]
+ERROR tests/test_decision_review.py::test_each_altered_source_refuses_all_cards[evidence/planning.json]
+ERROR tests/test_decision_review.py::test_each_altered_source_refuses_all_cards[evidence/holdouts.json]
+ERROR tests/test_decision_review.py::test_each_altered_source_refuses_all_cards[evidence/assurance-development-census.json]
+ERROR tests/test_decision_review.py::test_each_altered_source_refuses_all_cards[evidence/assurance-census-runs.json]
+ERROR tests/test_decision_review.py::test_relocated_sources_work_and_later_byte_changes_do_not_reuse_stale_cards
+ERROR tests/test_measurements.py::test_modified_protocol_file_cannot_be_used
+ERROR tests/test_operations.py::test_bootstrap_credentials_and_sensitive_records_are_not_exposed
+ERROR tests/test_operations.py::test_unauthenticated_calls_cannot_read_or_write[None]
+ERROR tests/test_operations.py::test_unauthenticated_calls_cannot_read_or_write[]
+ERROR tests/test_operations.py::test_unauthenticated_calls_cannot_read_or_write[dispatcher]
+ERROR tests/test_operations.py::test_unauthenticated_calls_cannot_read_or_write[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]
+ERROR tests/test_operations.py::test_roles_are_enforced_by_methods_and_admin_is_not_dispatcher
+ERROR tests/test_operations.py::test_expiry_logout_disable_and_password_change_revoke
+ERROR tests/test_operations.py::test_bootstrap_is_atomic_across_connections
+ERROR tests/test_operations.py::test_invalid_site_remains_draft_and_duplicate_json_is_rejected
+ERROR tests/test_operations.py::test_real_site_validator_and_independent_review
+ERROR tests/test_operations.py::test_baseline_revisions_only_before_disclosure_and_concurrent_writes
+ERROR tests/test_operations.py::test_operator_review_requires_documented_feedback_after_disclosure
+ERROR tests/test_operations.py::test_later_available_information_cannot_enter_model_snapshot[observed_at]
+ERROR tests/test_operations.py::test_later_available_information_cannot_enter_model_snapshot[issued_at]
+ERROR tests/test_operations.py::test_later_available_information_cannot_enter_model_snapshot[available_at]
+ERROR tests/test_operations.py::test_future_issued_forecast_cannot_hide_behind_past_availability
+ERROR tests/test_operations.py::test_forecast_valid_time_can_be_future_but_no_naive_timestamps
+ERROR tests/test_operations.py::test_input_fingerprint_and_copies_are_bound
+ERROR tests/test_operations.py::test_backfill_future_and_live_transition_are_rejected
+ERROR tests/test_operations.py::test_empty_recommendation_is_not_a_valid_model_result
+ERROR tests/test_operations.py::test_outcomes_are_later_separate_immutable_and_missing_is_unresolved
+ERROR tests/test_operations.py::test_observed_outcome_needs_later_evidence_and_declared_actual_plan
+ERROR tests/test_operations.py::test_empty_operating_values_remain_unknown_but_empty_authorised_set_is_known
+ERROR tests/test_operations.py::test_outcome_duration_must_be_nonnegative_finite_or_null[-1]
+ERROR tests/test_operations.py::test_outcome_duration_must_be_nonnegative_finite_or_null[True]
+ERROR tests/test_operations.py::test_outcome_duration_must_be_nonnegative_finite_or_null[nan]
+ERROR tests/test_operations.py::test_outcome_duration_must_be_nonnegative_finite_or_null[inf]
+ERROR tests/test_operations.py::test_outcome_duration_must_be_nonnegative_finite_or_null[unknown]
+ERROR tests/test_operations.py::test_unplanned_actual_work_needs_recorded_exception
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[../evil.txt]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[..\\evil.txt]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[C:\\temp\\evil.txt]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[/evil.txt]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[evil.txt:stream]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[CON.txt]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[evil.html]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[evil.svg]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[evil.exe]
+ERROR tests/test_operations.py::test_attachment_paths_and_executable_types_are_rejected[trailing.txt.]
+ERROR tests/test_operations.py::test_attachment_type_size_and_structured_id_checks
+ERROR tests/test_operations.py::test_records_and_events_have_sql_immutability_and_tamper_detection
+ERROR tests/test_operations.py::test_attachment_tamper_fails_all_protected_reads
+ERROR tests/test_operations.py::test_event_alteration_fails_hash_chain - File...
+ERROR tests/test_operations.py::test_self_reported_engineer_does_not_become_verified_or_grant_pilot
+ERROR tests/test_operations.py::test_verified_backup_restore_never_overwrites_and_revokes_restored_sessions
+ERROR tests/test_operations.py::test_foreign_or_altered_backup_is_rejected_before_restore
+ERROR tests/test_operations.py::test_export_has_no_credentials_and_references_original_evidence
+ERROR tests/test_operations.py::test_model_artifact_from_another_site_is_rejected
+ERROR tests/test_operations.py::test_valid_site_rejects_nonexistent_authorised_and_model_jobs
+ERROR tests/test_operations.py::test_removed_immutability_guard_fails_closed
+ERROR tests/test_operations.py::test_append_order_controls_latest_evidence_review_with_equal_timestamps
+ERROR tests/test_operations.py::test_future_site_package_cannot_supply_earlier_model_snapshot
+ERROR tests/test_operations.py::test_valid_synthetic_contract_completes_documentary_loop_without_field_claim
+ERROR tests/test_policy_evaluation.py::test_freeze_cannot_be_overwritten_and_detects_source_change
+ERROR tests/test_policy_evaluation.py::test_altered_freeze_record_cannot_revalidate
+ERROR tests/test_policy_evaluation.py::test_prespecified_computation_cap_leaves_missing_evidence_unresolved
+ERROR tests/test_policy_replay.py::test_changed_or_missing_record_is_rejected[data/policy_v3_protocol.json-_PROTOCOL_PATH]
+ERROR tests/test_policy_replay.py::test_changed_or_missing_record_is_rejected[evidence/v0.3/policy-freeze.json-_FREEZE_PATH]
+ERROR tests/test_policy_replay.py::test_changed_or_missing_record_is_rejected[evidence/v0.3/policy-development.json-_DEVELOPMENT_PATH]
+ERROR tests/test_public_weather.py::test_archive_preserves_bytes_source_and_detects_truncation
+ERROR tests/test_site_data.py::test_invalid_parsed_draft_can_be_saved_but_not_activated
+ERROR tests/test_site_data.py::test_stage_snapshots_before_validation_even_if_caller_mutates
+ERROR tests/test_validation_ui.py::test_readiness_does_not_invent_completed_external_validation
+ERROR tests/test_validation_ui.py::test_research_store_integrity_refusal_is_visible_without_opening_controls
+ERROR tests/test_validation_ui.py::test_site_intake_and_changed_source_cannot_borrow_previous_checks
+ERROR tests/test_validation_ui.py::test_measurement_fixture_retains_evidence_limits_and_stales_on_site_change
+ERROR tests/test_validation_ui.py::test_local_setup_login_and_logout_do_not_leave_authenticated_controls
+ERROR tests/test_validation_ui.py::test_synthetic_operator_and_prospective_shadow_forms_preserve_seal[False]
+ERROR tests/test_validation_ui.py::test_synthetic_operator_and_prospective_shadow_forms_preserve_seal[True]
+ERROR tests/test_verify_report.py::test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="0" errors="0" skipped="0"-passed]
+ERROR tests/test_verify_report.py::test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="0" errors="0" skipped="1"-failed]
+ERROR tests/test_verify_report.py::test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="1" errors="0" skipped="0"-failed]
+ERROR tests/test_verify_report.py::test_incomplete_or_failed_execution_is_not_passed[tests="3" failures="0" errors="1" skipped="0"-failed]
+ERROR tests/test_verify_report.py::test_incomplete_or_failed_execution_is_not_passed[tests="0" failures="0" errors="0" skipped="0"-failed]
+ERROR tests/test_verify_report.py::test_missing_report_is_not_run - FileNotFo...
+ERROR tests/test_workflow_review.py::test_saved_plan_requires_calculation_identity[context_fingerprint]
+ERROR tests/test_workflow_review.py::test_saved_plan_requires_calculation_identity[state_version]
+ERROR tests/test_workflow_review.py::test_cached_snapshot_cannot_inherit_new_input_approval
+ERROR tests/test_workflow_review.py::test_same_fingerprint_cannot_hide_changed_observed_state
+ERROR tests/test_workflow_review.py::test_context_compare_and_set_rejects_intervening_observation
+ERROR tests/test_workflow_review.py::test_rehearse_rejects_change_between_state_read_and_context_commit
+ERROR tests/test_workflow_review.py::test_rehearse_rejects_change_after_context_commit_before_return
+ERROR tests/test_workflow_review.py::test_rehearse_rejects_context_change_during_evaluation
+ERROR tests/test_workflow_review.py::test_model_update_invalidates_unstarted_approval_on_application_entry
+ERROR tests/test_workflow_review.py::test_model_update_preserves_historical_in_progress_reporting
+ERROR tests/test_workflow_review.py::test_unchanged_runtime_preserves_current_approval_on_application_entry
+ERROR tests/test_workflow_review.py::test_reinterpreted_completed_job_blocks_planning_but_allows_historical_close
+ERROR tests/test_workflow_review.py::test_project_state_never_combines_old_physical_state_with_new_readiness
+ERROR tests/test_workflow_review.py::test_export_is_one_consistent_database_snapshot
+ERROR tests/test_workflow_review.py::test_delay_changing_next_job_requires_rehearsal_and_new_approval
+ERROR tests/test_workflow_review.py::test_invalid_delay_does_not_mutate_state_or_audit[0]
+ERROR tests/test_workflow_review.py::test_invalid_delay_does_not_mutate_state_or_audit[-1]
+ERROR tests/test_workflow_review.py::test_invalid_delay_does_not_mutate_state_or_audit[inf]
+ERROR tests/test_workflow_review.py::test_invalid_delay_does_not_mutate_state_or_audit[True]
+ERROR tests/test_workflow_review.py::test_invalid_delay_does_not_mutate_state_or_audit[70]
+ERROR tests/test_workflow_review.py::test_delay_cannot_replace_unresolved_work_observations
+ERROR tests/test_workflow_review.py::test_runtime_identity_is_durable_idempotent_and_invalidates_current_plans
+ERROR tests/test_workflow_review.py::test_runtime_change_during_work_keeps_original_observation_contract
+ERROR tests/test_workflow_review.py::test_version_one_database_migrates_without_rewriting_history
+256 passed, 146 errors in 6.87s

@@ -1,0 +1,31 @@
+{
+  "record_written_utc": "2026-10-17T05:19:32.265702+00:00",
+  "url": "http://127.0.0.1:8513/",
+  "viewport_pixels": [
+    546,
+    668
+  ],
+  "native_reference_plan_failed_cases": 5,
+  "required_cases": 15,
+  "h2_b2_baseline_m3_displayed": 280.7769,
+  "h2_b2_result_m3_displayed": 810.7718,
+  "h2_b2_change_m3_displayed": 529.9949,
+  "allowance_m3_displayed": 0.05,
+  "empty_selection_required_own_audit": true,
+  "empty_audit_passed": true,
+  "baseline_risk_and_no_ticket_text_visible": true,
+  "signed_empty_plan_overlay_all_zero_and_table_matching": true,
+  "both_exact_bound_audit_depth_traces_displayed": true,
+  "work_approved_or_dispatched_in_live_browser": false,
+  "screenshots_sha256": {
+    "blocked-decision.png": "ad1d734b56ba516f64695a0175a1a2acbdd48a6d09ab3e89ab3e55089e65be9c",
+    "empty-audited.png": "93fea18d23a6e36d5eda7b21c8cb568ae9e06b9444f2fdfe7f39955e17806bd6",
+    "spill-change.png": "9f13ce17880a1c00b7ef86368ad5a495298251ba7c484b2fae772c8a9e122c25"
+  },
+  "screenshot_files_written_utc": {
+    "blocked-decision.png": "2026-10-17T05:06:46.783640+00:00",
+    "empty-audited.png": "2026-10-17T05:08:13.972672+00:00",
+    "spill-change.png": "2026-10-17T04:33:49.112927+00:00"
+  },
+  "screenshot_provenance": "Actual live UI captures; file-write timestamps distinguish capture sessions from this record. UI implementation and hydraulic calculations did not change during the later cache-publication-only fix."
+}

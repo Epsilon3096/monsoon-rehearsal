@@ -1,0 +1,67 @@
+{
+  "schema_version": "monsoon.bench-prepared-run/1",
+  "prepared_run_id": "SYNTHETIC-TAILWATER-UNRESOLVED",
+  "evidence_kind": "synthetic_fixture",
+  "continuous_run": {
+    "schema_version": "monsoon.bench-run/1",
+    "run_id": "SYNTHETIC-CONTINUOUS-WET-HISTORY",
+    "model_sha256": "d741596e33806a2e716860bc92d6b1434a89a0dc86d1073a2008a035c804edb5",
+    "duration_s": 120,
+    "initial_conditions": {
+      "kind": "dry_zero_flow",
+      "source_id": "SYN-BENCH-SOURCE"
+    },
+    "inflows": [
+      {
+        "node_id": "A",
+        "points": [
+          {
+            "elapsed_s": 0,
+            "value_m3_s": 0
+          },
+          {
+            "elapsed_s": 120,
+            "value_m3_s": 0
+          }
+        ]
+      }
+    ],
+    "receiving_stages": [
+      {
+        "node_id": "O",
+        "points": [
+          {
+            "elapsed_s": 0,
+            "stage_m": 0
+          },
+          {
+            "elapsed_s": 20,
+            "stage_m": 0.06
+          },
+          {
+            "elapsed_s": 50,
+            "stage_m": 0.06
+          },
+          {
+            "elapsed_s": 90,
+            "stage_m": 0
+          },
+          {
+            "elapsed_s": 120,
+            "stage_m": 0
+          }
+        ]
+      }
+    ],
+    "notes": "Invented continuous dry-start history with backfill before evaluation and later drainage; no physical measurements."
+  },
+  "event_start_s": 50,
+  "preparation": {
+    "kind": "continuous_dry_start",
+    "source_id": "SYN-BENCH-SOURCE",
+    "equilibrium": {
+      "kind": "not_claimed"
+    }
+  },
+  "notes": "Synthetic adverse software case: rapid tailwater rise then fall; phase-specific conservation fails despite an acceptable whole-history balance. Retained unresolved, not equilibrium or measured evidence."
+}

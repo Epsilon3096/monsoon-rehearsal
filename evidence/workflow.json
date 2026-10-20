@@ -1,0 +1,3019 @@
+{
+  "schema_version": 2,
+  "exported_at": "2026-10-13T14:20:24.978591+00:00",
+  "authentication": "none; named actors are research-prototype audit labels",
+  "project": {
+    "id": "synthetic-two-branch-v1",
+    "version": 6,
+    "completed_jobs": [
+      "J4"
+    ],
+    "elapsed_minutes": 85.0,
+    "crew_location": "J4",
+    "crew": "Synthetic crew",
+    "context_fingerprint": "e27200321356cec4a0de700809e21de623bc723aec5c7cb229b7e26da255b6b9",
+    "runtime_identity": "4cf6eb45aebea9a3a4e9cbe5f4be05121e6973b68ef5ac96683ae08664ca0a3d",
+    "inputs": {
+      "already_completed": [
+        "J4"
+      ],
+      "app_version": "0.1.0",
+      "case": {
+        "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+        "default_deadline_minutes": 180,
+        "depth_threshold_fraction": 0.8,
+        "description": "Two prescribed inflow branches, a shared trunk and online designed storage. Concept verification only; no surveyed site, rainfall forecast, inundation map or calibrated benefit.",
+        "epsilon_m3": 0.05,
+        "evidence_status": "synthetic",
+        "frozen_before_outcome_comparison": true,
+        "id": "synthetic-two-branch-v1",
+        "jobs": [
+          {
+            "asset_id": "TRUNK",
+            "cost_rm": 1080,
+            "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+            "downstream_rank": 0,
+            "evidence_status": "synthetic",
+            "id": "J1",
+            "max_minutes": 100,
+            "nominal_minutes": 90,
+            "prerequisites": [],
+            "title": "Restore shared trunk"
+          },
+          {
+            "asset_id": "A_REACH",
+            "cost_rm": 540,
+            "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+            "downstream_rank": 3,
+            "evidence_status": "synthetic",
+            "id": "J2",
+            "max_minutes": 55,
+            "nominal_minutes": 45,
+            "prerequisites": [],
+            "title": "Restore Branch A reach"
+          },
+          {
+            "asset_id": "B_REACH",
+            "cost_rm": 720,
+            "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+            "downstream_rank": 2,
+            "evidence_status": "synthetic",
+            "id": "J3",
+            "max_minutes": 70,
+            "nominal_minutes": 60,
+            "prerequisites": [],
+            "title": "Restore Branch B upstream reach"
+          },
+          {
+            "asset_id": "STORE_IN",
+            "cost_rm": 900,
+            "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+            "downstream_rank": 1,
+            "evidence_status": "synthetic",
+            "id": "J4",
+            "max_minutes": 85,
+            "nominal_minutes": 75,
+            "prerequisites": [],
+            "title": "Restore designed storage inlet"
+          }
+        ],
+        "links": [
+          {
+            "blocked_width_m": 0.35,
+            "depth_m": 1,
+            "from_node": "A1",
+            "id": "A_REACH",
+            "job_id": "J2",
+            "length_m": 90,
+            "restored_width_m": 0.8,
+            "roughness_n": 0.015,
+            "shape": "RECT_OPEN",
+            "to_node": "A2"
+          },
+          {
+            "blocked_width_m": 0.8,
+            "depth_m": 1,
+            "from_node": "A2",
+            "id": "A_LOWER",
+            "job_id": null,
+            "length_m": 100,
+            "restored_width_m": 0.8,
+            "roughness_n": 0.015,
+            "shape": "RECT_OPEN",
+            "to_node": "J"
+          },
+          {
+            "blocked_width_m": 0.3,
+            "depth_m": 1.1,
+            "from_node": "B1",
+            "id": "B_REACH",
+            "job_id": "J3",
+            "length_m": 70,
+            "restored_width_m": 0.7,
+            "roughness_n": 0.015,
+            "shape": "RECT_OPEN",
+            "to_node": "B2"
+          },
+          {
+            "blocked_width_m": 0.2,
+            "depth_m": 1.1,
+            "from_node": "B2",
+            "id": "STORE_IN",
+            "job_id": "J4",
+            "length_m": 40,
+            "restored_width_m": 0.8,
+            "roughness_n": 0.015,
+            "shape": "RECT_OPEN",
+            "to_node": "S"
+          },
+          {
+            "blocked_width_m": 0,
+            "depth_m": 0.5,
+            "from_node": "S",
+            "id": "STORE_OUT",
+            "job_id": null,
+            "length_m": 60,
+            "restored_width_m": 0,
+            "roughness_n": 0.015,
+            "shape": "CIRCULAR",
+            "to_node": "J"
+          },
+          {
+            "blocked_width_m": 0.4,
+            "depth_m": 1.2,
+            "from_node": "J",
+            "id": "TRUNK",
+            "job_id": "J1",
+            "length_m": 80,
+            "restored_width_m": 1.1,
+            "roughness_n": 0.015,
+            "shape": "RECT_OPEN",
+            "to_node": "T"
+          },
+          {
+            "blocked_width_m": 1.2,
+            "depth_m": 1.2,
+            "from_node": "T",
+            "id": "OUTLET",
+            "job_id": null,
+            "length_m": 80,
+            "restored_width_m": 1.2,
+            "roughness_n": 0.015,
+            "shape": "RECT_OPEN",
+            "to_node": "O"
+          }
+        ],
+        "model_assumptions": [
+          "CMS inflows prescribed at A1 and B1; inlet capture is not modelled.",
+          "Conveyance restrictions are synthetic lateral encroachment represented only by clear rectangular width.",
+          "All node flooding crosses an absorbing collector boundary; no surface ponding or re-entry.",
+          "All maintenance completes dry before the 3-hour hydraulic event; no transient in-work geometry.",
+          "Storage has fixed 300 m2 surface area and unchanged 0.5 m circular outlet.",
+          "Initial storage depth is observed hydraulic state, not manipulated to justify a job.",
+          "No flap gate at outfall; dynamic-wave routing permits reverse flow.",
+          "Coordinates are a schematic, not surveyed geospatial positions."
+        ],
+        "model_version": "synthetic-1.0.0",
+        "nodes": [
+          {
+            "id": "A1",
+            "invert_m": 101.4,
+            "kind": "junction",
+            "label": "Branch A inlet",
+            "max_depth_m": 1.0,
+            "x": 0,
+            "y": 3
+          },
+          {
+            "id": "A2",
+            "invert_m": 100.8,
+            "kind": "junction",
+            "label": "Branch A junction",
+            "max_depth_m": 1.0,
+            "x": 2,
+            "y": 3
+          },
+          {
+            "id": "B1",
+            "invert_m": 101.2,
+            "kind": "junction",
+            "label": "Branch B inlet",
+            "max_depth_m": 1.1,
+            "x": 0,
+            "y": 0
+          },
+          {
+            "id": "B2",
+            "invert_m": 100.8,
+            "kind": "junction",
+            "label": "Storage approach",
+            "max_depth_m": 1.1,
+            "x": 2,
+            "y": 0
+          },
+          {
+            "id": "S",
+            "invert_m": 100.1,
+            "kind": "storage",
+            "label": "Designed storage",
+            "max_depth_m": 2.0,
+            "x": 4,
+            "y": 0
+          },
+          {
+            "id": "J",
+            "invert_m": 100.0,
+            "kind": "junction",
+            "label": "Shared confluence",
+            "max_depth_m": 1.2,
+            "x": 5,
+            "y": 2
+          },
+          {
+            "id": "T",
+            "invert_m": 99.6,
+            "kind": "junction",
+            "label": "Trunk downstream",
+            "max_depth_m": 1.2,
+            "x": 7,
+            "y": 2
+          },
+          {
+            "id": "O",
+            "invert_m": 99.2,
+            "kind": "outfall",
+            "label": "Receiving water",
+            "max_depth_m": 0.0,
+            "x": 9,
+            "y": 2
+          }
+        ],
+        "protected_nodes": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "S",
+          "J",
+          "T"
+        ],
+        "storage_area_m2": 300,
+        "tie_m3": 0.05,
+        "title": "Monsoon Rehearsal \u00b7 synthetic reference catchment",
+        "travel_minutes": 10
+      },
+      "deadline_minutes": 180,
+      "engine": {
+        "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c",
+        "adapter_version": "1.0.1",
+        "default_routing_step_s": 0.5,
+        "engine": "EPA SWMM / Open Water Analytics toolkit",
+        "engine_version": "5.2.4",
+        "engine_version_int": 52004,
+        "routing": "DYNWAVE",
+        "runtime_file_sha256": {
+          "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+          "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+          "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+          "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+          "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+          "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+          "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+          "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+          "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+          "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+          "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+          "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+          "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+          "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+        },
+        "toolkit_version": "0.17.0",
+        "units": "CMS / metres / m3"
+      },
+      "implementation_hash": "ae7d7cbf0fa28f3219d8a67efcfc177c82a28e0d007e70a7ea91342f7ff5d8f8",
+      "operator_queue": null,
+      "scenarios": [
+        {
+          "description": "Synthetic symmetric 50-minute triangular inflows; low tailwater; nominal work durations.",
+          "durations": {
+            "J1": 90,
+            "J2": 45,
+            "J3": 60,
+            "J4": 75
+          },
+          "hydraulic": {
+            "hydrograph": "triangle",
+            "initial_storage_depth_m": 0,
+            "peak_a_cms": 0.65,
+            "peak_b_cms": 0.55,
+            "restriction_multiplier": 1.0,
+            "roughness_multiplier": 1.0,
+            "tailwater_m": 99.3
+          },
+          "id": "P1",
+          "phase": "planning",
+          "title": "Balanced design event"
+        },
+        {
+          "description": "Synthetic A-dominant triangular inflows; upper-bound durations.",
+          "durations": {
+            "J1": 100,
+            "J2": 55,
+            "J3": 70,
+            "J4": 85
+          },
+          "hydraulic": {
+            "hydrograph": "triangle",
+            "initial_storage_depth_m": 0,
+            "peak_a_cms": 0.9,
+            "peak_b_cms": 0.3,
+            "restriction_multiplier": 1.0,
+            "roughness_multiplier": 1.0,
+            "tailwater_m": 99.3
+          },
+          "id": "P2",
+          "phase": "planning",
+          "title": "Branch A dominant event"
+        },
+        {
+          "description": "Synthetic B-dominant triangular inflows; shorter observed work durations.",
+          "durations": {
+            "J1": 80,
+            "J2": 40,
+            "J3": 55,
+            "J4": 70
+          },
+          "hydraulic": {
+            "hydrograph": "triangle",
+            "initial_storage_depth_m": 0,
+            "peak_a_cms": 0.3,
+            "peak_b_cms": 0.9,
+            "restriction_multiplier": 1.0,
+            "roughness_multiplier": 1.0,
+            "tailwater_m": 99.3
+          },
+          "id": "P3",
+          "phase": "planning",
+          "title": "Branch B dominant event"
+        },
+        {
+          "description": "Elevated fixed tailwater with otherwise balanced inflow. Backflow is allowed.",
+          "durations": {
+            "J1": 95,
+            "J2": 50,
+            "J3": 65,
+            "J4": 80
+          },
+          "hydraulic": {
+            "hydrograph": "triangle",
+            "initial_storage_depth_m": 0,
+            "peak_a_cms": 0.65,
+            "peak_b_cms": 0.55,
+            "restriction_multiplier": 1.0,
+            "roughness_multiplier": 1.0,
+            "tailwater_m": 100.4
+          },
+          "id": "P4",
+          "phase": "planning",
+          "title": "Elevated receiving water"
+        }
+      ],
+      "start_location": "J4",
+      "start_minute": 85.0
+    },
+    "jobs": [
+      {
+        "asset_id": "TRUNK",
+        "cost_rm": 1080,
+        "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+        "downstream_rank": 0,
+        "evidence_status": "synthetic",
+        "id": "J1",
+        "max_minutes": 100,
+        "nominal_minutes": 90,
+        "prerequisites": [],
+        "title": "Restore shared trunk"
+      },
+      {
+        "asset_id": "A_REACH",
+        "cost_rm": 540,
+        "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+        "downstream_rank": 3,
+        "evidence_status": "synthetic",
+        "id": "J2",
+        "max_minutes": 55,
+        "nominal_minutes": 45,
+        "prerequisites": [],
+        "title": "Restore Branch A reach"
+      },
+      {
+        "asset_id": "B_REACH",
+        "cost_rm": 720,
+        "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+        "downstream_rank": 2,
+        "evidence_status": "synthetic",
+        "id": "J3",
+        "max_minutes": 70,
+        "nominal_minutes": 60,
+        "prerequisites": [],
+        "title": "Restore Branch B upstream reach"
+      },
+      {
+        "asset_id": "STORE_IN",
+        "cost_rm": 900,
+        "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+        "downstream_rank": 1,
+        "evidence_status": "synthetic",
+        "id": "J4",
+        "max_minutes": 85,
+        "nominal_minutes": 75,
+        "prerequisites": [],
+        "title": "Restore designed storage inlet"
+      }
+    ],
+    "unresolved_jobs": [],
+    "condition_unknown": false,
+    "ready_to_replan": true
+  },
+  "plans": [
+    {
+      "id": "P-e232cd6c88cb4af6",
+      "project_id": "synthetic-two-branch-v1",
+      "snapshot_hash": "d5c996c6e8c674c83e5c592e98479e6e0921b7529d07a009d81e373f70de13b9",
+      "state_version": 2,
+      "fingerprint": "e672c09526e938d7ee48d82e7cc493dd1ebf40fdca155ba7ba7f148b36ad0234",
+      "status": "approved",
+      "created_at": "2026-10-13T14:20:24.314786+00:00",
+      "created_by": "Verification planner",
+      "snapshot": {
+        "admissible": true,
+        "context_fingerprint": "e672c09526e938d7ee48d82e7cc493dd1ebf40fdca155ba7ba7f148b36ad0234",
+        "context_inputs": {
+          "already_completed": [],
+          "app_version": "0.1.0",
+          "case": {
+            "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+            "default_deadline_minutes": 180,
+            "depth_threshold_fraction": 0.8,
+            "description": "Two prescribed inflow branches, a shared trunk and online designed storage. Concept verification only; no surveyed site, rainfall forecast, inundation map or calibrated benefit.",
+            "epsilon_m3": 0.05,
+            "evidence_status": "synthetic",
+            "frozen_before_outcome_comparison": true,
+            "id": "synthetic-two-branch-v1",
+            "jobs": [
+              {
+                "asset_id": "TRUNK",
+                "cost_rm": 1080,
+                "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+                "downstream_rank": 0,
+                "evidence_status": "synthetic",
+                "id": "J1",
+                "max_minutes": 100,
+                "nominal_minutes": 90,
+                "prerequisites": [],
+                "title": "Restore shared trunk"
+              },
+              {
+                "asset_id": "A_REACH",
+                "cost_rm": 540,
+                "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+                "downstream_rank": 3,
+                "evidence_status": "synthetic",
+                "id": "J2",
+                "max_minutes": 55,
+                "nominal_minutes": 45,
+                "prerequisites": [],
+                "title": "Restore Branch A reach"
+              },
+              {
+                "asset_id": "B_REACH",
+                "cost_rm": 720,
+                "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+                "downstream_rank": 2,
+                "evidence_status": "synthetic",
+                "id": "J3",
+                "max_minutes": 70,
+                "nominal_minutes": 60,
+                "prerequisites": [],
+                "title": "Restore Branch B upstream reach"
+              },
+              {
+                "asset_id": "STORE_IN",
+                "cost_rm": 900,
+                "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+                "downstream_rank": 1,
+                "evidence_status": "synthetic",
+                "id": "J4",
+                "max_minutes": 85,
+                "nominal_minutes": 75,
+                "prerequisites": [],
+                "title": "Restore designed storage inlet"
+              }
+            ],
+            "links": [
+              {
+                "blocked_width_m": 0.35,
+                "depth_m": 1,
+                "from_node": "A1",
+                "id": "A_REACH",
+                "job_id": "J2",
+                "length_m": 90,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "A2"
+              },
+              {
+                "blocked_width_m": 0.8,
+                "depth_m": 1,
+                "from_node": "A2",
+                "id": "A_LOWER",
+                "job_id": null,
+                "length_m": 100,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.3,
+                "depth_m": 1.1,
+                "from_node": "B1",
+                "id": "B_REACH",
+                "job_id": "J3",
+                "length_m": 70,
+                "restored_width_m": 0.7,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "B2"
+              },
+              {
+                "blocked_width_m": 0.2,
+                "depth_m": 1.1,
+                "from_node": "B2",
+                "id": "STORE_IN",
+                "job_id": "J4",
+                "length_m": 40,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "S"
+              },
+              {
+                "blocked_width_m": 0,
+                "depth_m": 0.5,
+                "from_node": "S",
+                "id": "STORE_OUT",
+                "job_id": null,
+                "length_m": 60,
+                "restored_width_m": 0,
+                "roughness_n": 0.015,
+                "shape": "CIRCULAR",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.4,
+                "depth_m": 1.2,
+                "from_node": "J",
+                "id": "TRUNK",
+                "job_id": "J1",
+                "length_m": 80,
+                "restored_width_m": 1.1,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "T"
+              },
+              {
+                "blocked_width_m": 1.2,
+                "depth_m": 1.2,
+                "from_node": "T",
+                "id": "OUTLET",
+                "job_id": null,
+                "length_m": 80,
+                "restored_width_m": 1.2,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "O"
+              }
+            ],
+            "model_assumptions": [
+              "CMS inflows prescribed at A1 and B1; inlet capture is not modelled.",
+              "Conveyance restrictions are synthetic lateral encroachment represented only by clear rectangular width.",
+              "All node flooding crosses an absorbing collector boundary; no surface ponding or re-entry.",
+              "All maintenance completes dry before the 3-hour hydraulic event; no transient in-work geometry.",
+              "Storage has fixed 300 m2 surface area and unchanged 0.5 m circular outlet.",
+              "Initial storage depth is observed hydraulic state, not manipulated to justify a job.",
+              "No flap gate at outfall; dynamic-wave routing permits reverse flow.",
+              "Coordinates are a schematic, not surveyed geospatial positions."
+            ],
+            "model_version": "synthetic-1.0.0",
+            "nodes": [
+              {
+                "id": "A1",
+                "invert_m": 101.4,
+                "kind": "junction",
+                "label": "Branch A inlet",
+                "max_depth_m": 1.0,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "id": "A2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Branch A junction",
+                "max_depth_m": 1.0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": "B1",
+                "invert_m": 101.2,
+                "kind": "junction",
+                "label": "Branch B inlet",
+                "max_depth_m": 1.1,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Storage approach",
+                "max_depth_m": 1.1,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "id": "S",
+                "invert_m": 100.1,
+                "kind": "storage",
+                "label": "Designed storage",
+                "max_depth_m": 2.0,
+                "x": 4,
+                "y": 0
+              },
+              {
+                "id": "J",
+                "invert_m": 100.0,
+                "kind": "junction",
+                "label": "Shared confluence",
+                "max_depth_m": 1.2,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "id": "T",
+                "invert_m": 99.6,
+                "kind": "junction",
+                "label": "Trunk downstream",
+                "max_depth_m": 1.2,
+                "x": 7,
+                "y": 2
+              },
+              {
+                "id": "O",
+                "invert_m": 99.2,
+                "kind": "outfall",
+                "label": "Receiving water",
+                "max_depth_m": 0.0,
+                "x": 9,
+                "y": 2
+              }
+            ],
+            "protected_nodes": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "S",
+              "J",
+              "T"
+            ],
+            "storage_area_m2": 300,
+            "tie_m3": 0.05,
+            "title": "Monsoon Rehearsal \u00b7 synthetic reference catchment",
+            "travel_minutes": 10
+          },
+          "deadline_minutes": 180,
+          "engine": {
+            "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c",
+            "adapter_version": "1.0.1",
+            "default_routing_step_s": 0.5,
+            "engine": "EPA SWMM / Open Water Analytics toolkit",
+            "engine_version": "5.2.4",
+            "engine_version_int": 52004,
+            "routing": "DYNWAVE",
+            "runtime_file_sha256": {
+              "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+              "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+              "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+              "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+              "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+              "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+              "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+              "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+              "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+              "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+              "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+              "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+              "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+              "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+            },
+            "toolkit_version": "0.17.0",
+            "units": "CMS / metres / m3"
+          },
+          "implementation_hash": "ae7d7cbf0fa28f3219d8a67efcfc177c82a28e0d007e70a7ea91342f7ff5d8f8",
+          "operator_queue": null,
+          "scenarios": [
+            {
+              "description": "Synthetic symmetric 50-minute triangular inflows; low tailwater; nominal work durations.",
+              "durations": {
+                "J1": 90,
+                "J2": 45,
+                "J3": 60,
+                "J4": 75
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P1",
+              "phase": "planning",
+              "title": "Balanced design event"
+            },
+            {
+              "description": "Synthetic A-dominant triangular inflows; upper-bound durations.",
+              "durations": {
+                "J1": 100,
+                "J2": 55,
+                "J3": 70,
+                "J4": 85
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.9,
+                "peak_b_cms": 0.3,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P2",
+              "phase": "planning",
+              "title": "Branch A dominant event"
+            },
+            {
+              "description": "Synthetic B-dominant triangular inflows; shorter observed work durations.",
+              "durations": {
+                "J1": 80,
+                "J2": 40,
+                "J3": 55,
+                "J4": 70
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.3,
+                "peak_b_cms": 0.9,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P3",
+              "phase": "planning",
+              "title": "Branch B dominant event"
+            },
+            {
+              "description": "Elevated fixed tailwater with otherwise balanced inflow. Backflow is allowed.",
+              "durations": {
+                "J1": 95,
+                "J2": 50,
+                "J3": 65,
+                "J4": 80
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 100.4
+              },
+              "id": "P4",
+              "phase": "planning",
+              "title": "Elevated receiving water"
+            }
+          ],
+          "start_location": "DEPOT",
+          "start_minute": 0.0
+        },
+        "deadline_minutes": 180,
+        "episode_file": "C:\\Users\\kingy\\Documents\\Codex\\2026-10-13\\new-chat\\outputs\\monsoon-rehearsal\\var\\verification-pcabjifz\\episodes\\e672c09526e938d7ee48d82e7cc493dd1ebf40fdca155ba7ba7f148b36ad0234.json",
+        "evidence_status": "synthetic",
+        "hydraulic_run_ids": [
+          "024649fce64f159a401a2e2c3d48bc1497571c0c236b1c8cfad02b8e5d721ba4",
+          "028e69260c280fce4d4018f671b68b4bd4be9d6acb96248bfb96ca483599332d",
+          "02ba40ccac5387e1d3a9e79b1db8327bff297a7efce78470df141104dc93b16c",
+          "034a84e638c94d1fda018785cf68a98d65e84614d0479828d303c1c4de2495a5",
+          "07e04aecd9d1fc36f97273e40e6ca22b2dd4dfeeeabfae10089a4a086708f08f",
+          "0c64917bb223b301ea335e401758ba8768400b9c66eafdce38c953d7fccd437f",
+          "1332fbf07fc51d0b1d61be59df861bc082261f1dd49f1e5af066fb0245603607",
+          "1738109171e2395d890a9913bc6c8a6f92d823d01689209e6141d418a864de52",
+          "174675edef312a55eea84492453b224cf75a3f3c9b0b11cd355ed9ec59860f11",
+          "1757dc20dfb9185ec0b1fc036664245c98a8b73cf772903f01a80f636b6553f6",
+          "178639a4ed861521ac0b55bf6a2111acf2aef020375ac13dd7f3cf8afea75456",
+          "23551d5b7dd6eff2602af4cde64d04d8f91e67d5f82d0e619be37e6df6eac064",
+          "25492d15dca75529e31a297c0b24e78e679766aa7d7b013bd75e355a7421d740",
+          "26973a8b96f36d85f4a7bba4908d9565bc0bb6b248530bceb72042b06f47f1db",
+          "26d07a63f7adf1e15747def1db48ef78c5296c704d7de54b0281ae2981968405",
+          "27b941639810c726ce52dfc3309fd5a0d69cabe283add44510ffb379927ee020",
+          "2811ce1f6792d166241a3e62b2d09416a722e2f1412f2efaef3745b1137e8e56",
+          "40c0df274b6c87d9e05d8b1705b8cbce48e4f99a47501c51298d37facb9c0720",
+          "40cd8847bb736c464756d806ec76e3e1833f74e0f38d6ad425d0a5616f6eca24",
+          "46543d27a16415c0569dd5692a11c561bbf2c583ab0b6149cf46a1bc0d2d26d5",
+          "4823d9bf5c9f58e246e6a85730e208b3250161a5b4999c33bbe870c7d14f511d",
+          "4f196ebee22cca4c3a814e8d853f43e8514a68d2b87b40c91a2bb6ac9183b30f",
+          "523a416d165229ff79fcb5e88c72e36cd0dc6ad12de874d89d325ffe0306c21f",
+          "53a92a5f307752deb27913a3f176fb3ebb752013364f0cb3a6d730d312eb05f1",
+          "543d09bec91878f74f08d051119a5d87c4e5551b99f75371c0927e16ec42f6d7",
+          "554e14681e10583f7fdd406d9b4195e4a30ff357154e22a1b104a4fa69c2e4c1",
+          "5a84b4c9cd90f91ebb228a557b10903b0f4243fe6b840ab379f563df080eb132",
+          "5c904cafc70154524428e054f2b21c51ba9892e2dbd3e89a17b505c93ddc8970",
+          "63add01c6921f06a7a68a49d4b3b5dee580e3ffb1d562399916c2e5dbf73b664",
+          "655528dcefaf1d22df3ffb731d92a95e84d5584ac76eafb277f315077d3f0275",
+          "656845304efd65906a5a8d94373d33d14b5f826b1c456250ced66c8cb97298fc",
+          "667087dc01b4facbadd56a2bc6f08d2c553946a21074246983042a2d939d46b1",
+          "6688ad794f488f98e96c18d0f010052326b546d86d814dc091f05b37f040f918",
+          "6ac9f38e64a3e76f1ecf7921595979a618b74825e18fab1e67c57059248a7b20",
+          "6c1929c9eb8b6a978cdcd4f6af230abf2b68f14787f50d565808cc4db9f04a6f",
+          "6c57207073906c133b36df38858b8bb638dd30097f9333aad53be839ffc36c9e",
+          "6ee65baee3e523a4a85bfa362a9c69a5f6ce91c51c9876e8ec6e83adb606c63a",
+          "7a2b0729ba8ccc1f2d4a4d92b7577826f22d20e13dabc9747555af21678057aa",
+          "818e11e743010b46020b2eddf327dc2e48634f35fa4b938e9984c4ff9fd2c84e",
+          "83319c90d37d31228b858d8f566e2367d435c28c920e31b0cec893adf85892aa",
+          "85138131fc4ac333425af58eeeac213b731adff67e364bff8c9016cc8139ef5c",
+          "918d332bc07cf4c7eb885ca79a8b496c4762933a4a73f48ca01781228a03f0aa",
+          "931e91b186f884b50ef1f444cfe770d5a8778e758fa6a1d1597de22ac68ff1ca",
+          "974391dbedcf82a5241ef4b4c93dfb5a26aba8f23dcb5ebd89ce3f6c1876df59",
+          "9974621fccbee2cf13d28fd0115e9be9c664fd48abde218811f948ad8bc06af3",
+          "9bab838f2fb84726cce6072050695046760e838fa8bfd18cd01a648866470177",
+          "9fb69884457edf70243b73df5c35b9d7e34ab3024ca76de3b343660b49215a41",
+          "a3adfd564ef299e25d66e91cb85d29e1a4af00c5408d49413e05a4302e74ab3c",
+          "a67ec8a1ce6152e9a45893deab36f0ac5c550fd6cf7ccd9f6a7ff23ccdc173a2",
+          "af159f9c0da529d5a515609c432ea37f6856fcea5760b97f5617896a43552106",
+          "af1a02459913d38440ec3ae4f6b503653cc0dd85273693d1ce442decd9a63cef",
+          "bbdd0b784c83d8a0c55d1dd662ba78bd6de98532b2033378566b49376fdabfbf",
+          "c4758a39d9b2bfd4929a4345ca5386209f5b6d022dc267eb9805139bc4d76d09",
+          "c49b7c328187634b16d9ca34683c5f175f56a18519e10942e48736e7cacd69c7",
+          "cacd08d2c505a247811a827318a2a3d1dc44c9c1fdd1af08bde66fc0d9870a21",
+          "d17b5ed8a66eca4e224b078b6be045f1ebd7c31b8d4d92366d32aedd328654cf",
+          "d5a8e8983e1e4b252716002a2fffe9c5cd04e03f9089f5d0befd7398361ab5ba",
+          "d60d4846c7c36cf898298b45e067b33e71b8d94ba5c21b9471a3512c37ac47ab",
+          "d705ddafd606bbad916b1104e185c25f5f0d79dc94202bce59206173822d1300",
+          "d7a031b3d579bd471d04dcf952427264518aacbe7cce43ef46e6a9bdc0109205",
+          "edc04f938a03d9b08db45411b86e5bd9b2c713f9b0a4cb71a7bc686eeeaac807",
+          "edcdbf6065e8a6dd27e6acf172a1569a30b30cf8094a316ed8a2fe36db48859c",
+          "f222ef138e572bc4a06d3539313899d7411eaec73a80dbb32eef4b63b4866c47",
+          "faa7dff0d99c8eba8e4c0cb1aeb40097f3292ebfac332662bfdadde8fa669cd2"
+        ],
+        "id": "P-J4-J1-J3-J2",
+        "jobs": [
+          {
+            "asset_id": "TRUNK",
+            "cost_rm": 1080,
+            "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+            "downstream_rank": 0,
+            "evidence_status": "synthetic",
+            "id": "J1",
+            "max_minutes": 100,
+            "nominal_minutes": 90,
+            "prerequisites": [],
+            "title": "Restore shared trunk"
+          },
+          {
+            "asset_id": "A_REACH",
+            "cost_rm": 540,
+            "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+            "downstream_rank": 3,
+            "evidence_status": "synthetic",
+            "id": "J2",
+            "max_minutes": 55,
+            "nominal_minutes": 45,
+            "prerequisites": [],
+            "title": "Restore Branch A reach"
+          },
+          {
+            "asset_id": "B_REACH",
+            "cost_rm": 720,
+            "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+            "downstream_rank": 2,
+            "evidence_status": "synthetic",
+            "id": "J3",
+            "max_minutes": 70,
+            "nominal_minutes": 60,
+            "prerequisites": [],
+            "title": "Restore Branch B upstream reach"
+          },
+          {
+            "asset_id": "STORE_IN",
+            "cost_rm": 900,
+            "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+            "downstream_rank": 1,
+            "evidence_status": "synthetic",
+            "id": "J4",
+            "max_minutes": 85,
+            "nominal_minutes": 75,
+            "prerequisites": [],
+            "title": "Restore designed storage inlet"
+          }
+        ],
+        "mean_spill_m3": 0.2692446243239318,
+        "model_version": "synthetic-1.0.0",
+        "observed_state": {
+          "completed_jobs": [],
+          "crew_location": "DEPOT",
+          "elapsed_minutes": 0.0
+        },
+        "provenance": {
+          "already_completed": [],
+          "app_version": "0.1.0",
+          "case": {
+            "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+            "default_deadline_minutes": 180,
+            "depth_threshold_fraction": 0.8,
+            "description": "Two prescribed inflow branches, a shared trunk and online designed storage. Concept verification only; no surveyed site, rainfall forecast, inundation map or calibrated benefit.",
+            "epsilon_m3": 0.05,
+            "evidence_status": "synthetic",
+            "frozen_before_outcome_comparison": true,
+            "id": "synthetic-two-branch-v1",
+            "jobs": [
+              {
+                "asset_id": "TRUNK",
+                "cost_rm": 1080,
+                "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+                "downstream_rank": 0,
+                "evidence_status": "synthetic",
+                "id": "J1",
+                "max_minutes": 100,
+                "nominal_minutes": 90,
+                "prerequisites": [],
+                "title": "Restore shared trunk"
+              },
+              {
+                "asset_id": "A_REACH",
+                "cost_rm": 540,
+                "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+                "downstream_rank": 3,
+                "evidence_status": "synthetic",
+                "id": "J2",
+                "max_minutes": 55,
+                "nominal_minutes": 45,
+                "prerequisites": [],
+                "title": "Restore Branch A reach"
+              },
+              {
+                "asset_id": "B_REACH",
+                "cost_rm": 720,
+                "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+                "downstream_rank": 2,
+                "evidence_status": "synthetic",
+                "id": "J3",
+                "max_minutes": 70,
+                "nominal_minutes": 60,
+                "prerequisites": [],
+                "title": "Restore Branch B upstream reach"
+              },
+              {
+                "asset_id": "STORE_IN",
+                "cost_rm": 900,
+                "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+                "downstream_rank": 1,
+                "evidence_status": "synthetic",
+                "id": "J4",
+                "max_minutes": 85,
+                "nominal_minutes": 75,
+                "prerequisites": [],
+                "title": "Restore designed storage inlet"
+              }
+            ],
+            "links": [
+              {
+                "blocked_width_m": 0.35,
+                "depth_m": 1,
+                "from_node": "A1",
+                "id": "A_REACH",
+                "job_id": "J2",
+                "length_m": 90,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "A2"
+              },
+              {
+                "blocked_width_m": 0.8,
+                "depth_m": 1,
+                "from_node": "A2",
+                "id": "A_LOWER",
+                "job_id": null,
+                "length_m": 100,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.3,
+                "depth_m": 1.1,
+                "from_node": "B1",
+                "id": "B_REACH",
+                "job_id": "J3",
+                "length_m": 70,
+                "restored_width_m": 0.7,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "B2"
+              },
+              {
+                "blocked_width_m": 0.2,
+                "depth_m": 1.1,
+                "from_node": "B2",
+                "id": "STORE_IN",
+                "job_id": "J4",
+                "length_m": 40,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "S"
+              },
+              {
+                "blocked_width_m": 0,
+                "depth_m": 0.5,
+                "from_node": "S",
+                "id": "STORE_OUT",
+                "job_id": null,
+                "length_m": 60,
+                "restored_width_m": 0,
+                "roughness_n": 0.015,
+                "shape": "CIRCULAR",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.4,
+                "depth_m": 1.2,
+                "from_node": "J",
+                "id": "TRUNK",
+                "job_id": "J1",
+                "length_m": 80,
+                "restored_width_m": 1.1,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "T"
+              },
+              {
+                "blocked_width_m": 1.2,
+                "depth_m": 1.2,
+                "from_node": "T",
+                "id": "OUTLET",
+                "job_id": null,
+                "length_m": 80,
+                "restored_width_m": 1.2,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "O"
+              }
+            ],
+            "model_assumptions": [
+              "CMS inflows prescribed at A1 and B1; inlet capture is not modelled.",
+              "Conveyance restrictions are synthetic lateral encroachment represented only by clear rectangular width.",
+              "All node flooding crosses an absorbing collector boundary; no surface ponding or re-entry.",
+              "All maintenance completes dry before the 3-hour hydraulic event; no transient in-work geometry.",
+              "Storage has fixed 300 m2 surface area and unchanged 0.5 m circular outlet.",
+              "Initial storage depth is observed hydraulic state, not manipulated to justify a job.",
+              "No flap gate at outfall; dynamic-wave routing permits reverse flow.",
+              "Coordinates are a schematic, not surveyed geospatial positions."
+            ],
+            "model_version": "synthetic-1.0.0",
+            "nodes": [
+              {
+                "id": "A1",
+                "invert_m": 101.4,
+                "kind": "junction",
+                "label": "Branch A inlet",
+                "max_depth_m": 1.0,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "id": "A2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Branch A junction",
+                "max_depth_m": 1.0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": "B1",
+                "invert_m": 101.2,
+                "kind": "junction",
+                "label": "Branch B inlet",
+                "max_depth_m": 1.1,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Storage approach",
+                "max_depth_m": 1.1,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "id": "S",
+                "invert_m": 100.1,
+                "kind": "storage",
+                "label": "Designed storage",
+                "max_depth_m": 2.0,
+                "x": 4,
+                "y": 0
+              },
+              {
+                "id": "J",
+                "invert_m": 100.0,
+                "kind": "junction",
+                "label": "Shared confluence",
+                "max_depth_m": 1.2,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "id": "T",
+                "invert_m": 99.6,
+                "kind": "junction",
+                "label": "Trunk downstream",
+                "max_depth_m": 1.2,
+                "x": 7,
+                "y": 2
+              },
+              {
+                "id": "O",
+                "invert_m": 99.2,
+                "kind": "outfall",
+                "label": "Receiving water",
+                "max_depth_m": 0.0,
+                "x": 9,
+                "y": 2
+              }
+            ],
+            "protected_nodes": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "S",
+              "J",
+              "T"
+            ],
+            "storage_area_m2": 300,
+            "tie_m3": 0.05,
+            "title": "Monsoon Rehearsal \u00b7 synthetic reference catchment",
+            "travel_minutes": 10
+          },
+          "deadline_minutes": 180,
+          "engine": {
+            "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c",
+            "adapter_version": "1.0.1",
+            "default_routing_step_s": 0.5,
+            "engine": "EPA SWMM / Open Water Analytics toolkit",
+            "engine_version": "5.2.4",
+            "engine_version_int": 52004,
+            "routing": "DYNWAVE",
+            "runtime_file_sha256": {
+              "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+              "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+              "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+              "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+              "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+              "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+              "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+              "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+              "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+              "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+              "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+              "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+              "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+              "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+            },
+            "toolkit_version": "0.17.0",
+            "units": "CMS / metres / m3"
+          },
+          "implementation_hash": "ae7d7cbf0fa28f3219d8a67efcfc177c82a28e0d007e70a7ea91342f7ff5d8f8",
+          "operator_queue": null,
+          "scenarios": [
+            {
+              "description": "Synthetic symmetric 50-minute triangular inflows; low tailwater; nominal work durations.",
+              "durations": {
+                "J1": 90,
+                "J2": 45,
+                "J3": 60,
+                "J4": 75
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P1",
+              "phase": "planning",
+              "title": "Balanced design event"
+            },
+            {
+              "description": "Synthetic A-dominant triangular inflows; upper-bound durations.",
+              "durations": {
+                "J1": 100,
+                "J2": 55,
+                "J3": 70,
+                "J4": 85
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.9,
+                "peak_b_cms": 0.3,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P2",
+              "phase": "planning",
+              "title": "Branch A dominant event"
+            },
+            {
+              "description": "Synthetic B-dominant triangular inflows; shorter observed work durations.",
+              "durations": {
+                "J1": 80,
+                "J2": 40,
+                "J3": 55,
+                "J4": 70
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.3,
+                "peak_b_cms": 0.9,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P3",
+              "phase": "planning",
+              "title": "Branch B dominant event"
+            },
+            {
+              "description": "Elevated fixed tailwater with otherwise balanced inflow. Backflow is allowed.",
+              "durations": {
+                "J1": 95,
+                "J2": 50,
+                "J3": 65,
+                "J4": 80
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 100.4
+              },
+              "id": "P4",
+              "phase": "planning",
+              "title": "Elevated receiving water"
+            }
+          ],
+          "start_location": "DEPOT",
+          "start_minute": 0.0
+        },
+        "queue": [
+          "J4",
+          "J1",
+          "J3",
+          "J2"
+        ],
+        "reasons": [],
+        "scenario_results": [
+          {
+            "completed_jobs": [
+              "J3",
+              "J4"
+            ],
+            "crew_minutes": 165.0,
+            "intermediate_states": [
+              {
+                "completed_jobs": [
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "40c0df274b6c87d9e05d8b1705b8cbce48e4f99a47501c51298d37facb9c0720",
+                "total_spill_m3": 0.5384892486539424
+              },
+              {
+                "completed_jobs": [
+                  "J3",
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "974391dbedcf82a5241ef4b4c93dfb5a26aba8f23dcb5ebd89ce3f6c1876df59",
+                "total_spill_m3": 0.5384892486540153
+              }
+            ],
+            "newly_completed_jobs": [
+              "J4",
+              "J3"
+            ],
+            "nodes": {
+              "A1": {
+                "duration_above_threshold_min": 12.51253831872489,
+                "flood_duration_min": 1.0083333333333333,
+                "integrated_spill_m3": 0.5384892486540156,
+                "max_depth_m": 0.9999999999999999,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.5384892486540153,
+                "threshold_m": 0.8
+              },
+              "A2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.39001658451521914,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8
+              },
+              "B1": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.43532048561282327,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "B2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.6508203050350116,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "J": {
+                "duration_above_threshold_min": 8.299834424735584,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.9917449939602043,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              },
+              "O": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.34148670514381196,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.0
+              },
+              "S": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.3028921331259165,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 1.6
+              },
+              "T": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.35757022112708164,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              }
+            },
+            "protected_violations": [],
+            "reasons": [],
+            "replay": {
+              "completed_jobs": [
+                "J4",
+                "J3"
+              ],
+              "crew_minutes": 165.0,
+              "deadline_minutes": 180.0,
+              "events": [
+                {
+                  "actual_minutes": 75.0,
+                  "bound_finish_minute": 95.0,
+                  "depart_minute": 0.0,
+                  "finish_minute": 85.0,
+                  "from_location": "DEPOT",
+                  "job_id": "J4",
+                  "max_minutes": 85.0,
+                  "start_minute": 10.0,
+                  "supported": true,
+                  "to_location": "J4"
+                },
+                {
+                  "actual_minutes": 60.0,
+                  "bound_finish_minute": 165.0,
+                  "depart_minute": 85.0,
+                  "finish_minute": 155.0,
+                  "from_location": "J4",
+                  "job_id": "J3",
+                  "max_minutes": 70.0,
+                  "start_minute": 95.0,
+                  "supported": true,
+                  "to_location": "J3"
+                }
+              ],
+              "final_location": "DEPOT",
+              "finish_minute": 165.0,
+              "last_work_location": "J3",
+              "reasons": [],
+              "return_minutes": 10.0,
+              "skipped": [
+                {
+                  "job_id": "J1",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                },
+                {
+                  "job_id": "J2",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                }
+              ],
+              "start_location": "DEPOT",
+              "start_minute": 0.0,
+              "status": "supported",
+              "work_finish_minute": 155.0
+            },
+            "run_id": "974391dbedcf82a5241ef4b4c93dfb5a26aba8f23dcb5ebd89ce3f6c1876df59",
+            "scenario_id": "P1",
+            "status": "supported",
+            "total_spill_m3": 0.5384892486540153
+          },
+          {
+            "completed_jobs": [
+              "J2",
+              "J4"
+            ],
+            "crew_minutes": 170.0,
+            "intermediate_states": [
+              {
+                "completed_jobs": [
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "07e04aecd9d1fc36f97273e40e6ca22b2dd4dfeeeabfae10089a4a086708f08f",
+                "total_spill_m3": 108.79833958052089
+              },
+              {
+                "completed_jobs": [
+                  "J2",
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "028e69260c280fce4d4018f671b68b4bd4be9d6acb96248bfb96ca483599332d",
+                "total_spill_m3": 0.0
+              }
+            ],
+            "newly_completed_jobs": [
+              "J4",
+              "J2"
+            ],
+            "nodes": {
+              "A1": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.5453458562643045,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8
+              },
+              "A2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.5036496605023,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8
+              },
+              "B1": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.6724847368834038,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "B2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.39577135458135215,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "J": {
+                "duration_above_threshold_min": 12.136077210888457,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.0525604822432546,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              },
+              "O": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.3616175806393882,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.0
+              },
+              "S": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.077331997117565,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 1.6
+              },
+              "T": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.37979885792626683,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              }
+            },
+            "protected_violations": [],
+            "reasons": [],
+            "replay": {
+              "completed_jobs": [
+                "J4",
+                "J2"
+              ],
+              "crew_minutes": 170.0,
+              "deadline_minutes": 180.0,
+              "events": [
+                {
+                  "actual_minutes": 85.0,
+                  "bound_finish_minute": 95.0,
+                  "depart_minute": 0.0,
+                  "finish_minute": 95.0,
+                  "from_location": "DEPOT",
+                  "job_id": "J4",
+                  "max_minutes": 85.0,
+                  "start_minute": 10.0,
+                  "supported": true,
+                  "to_location": "J4"
+                },
+                {
+                  "actual_minutes": 55.0,
+                  "bound_finish_minute": 160.0,
+                  "depart_minute": 95.0,
+                  "finish_minute": 160.0,
+                  "from_location": "J4",
+                  "job_id": "J2",
+                  "max_minutes": 55.0,
+                  "start_minute": 105.0,
+                  "supported": true,
+                  "to_location": "J2"
+                }
+              ],
+              "final_location": "DEPOT",
+              "finish_minute": 170.0,
+              "last_work_location": "J2",
+              "reasons": [],
+              "return_minutes": 10.0,
+              "skipped": [
+                {
+                  "job_id": "J1",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                },
+                {
+                  "job_id": "J3",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                }
+              ],
+              "start_location": "DEPOT",
+              "start_minute": 0.0,
+              "status": "supported",
+              "work_finish_minute": 160.0
+            },
+            "run_id": "028e69260c280fce4d4018f671b68b4bd4be9d6acb96248bfb96ca483599332d",
+            "scenario_id": "P2",
+            "status": "supported",
+            "total_spill_m3": 0.0
+          },
+          {
+            "completed_jobs": [
+              "J3",
+              "J4"
+            ],
+            "crew_minutes": 155.0,
+            "intermediate_states": [
+              {
+                "completed_jobs": [
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "9fb69884457edf70243b73df5c35b9d7e34ab3024ca76de3b343660b49215a41",
+                "total_spill_m3": 188.06934728018055
+              },
+              {
+                "completed_jobs": [
+                  "J3",
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "85138131fc4ac333425af58eeeac213b731adff67e364bff8c9016cc8139ef5c",
+                "total_spill_m3": 0.0
+              }
+            ],
+            "newly_completed_jobs": [
+              "J4",
+              "J3"
+            ],
+            "nodes": {
+              "A1": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.5699247816309413,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8
+              },
+              "A2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.22452255220256048,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8
+              },
+              "B1": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.6666557765952658,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "B2": {
+                "duration_above_threshold_min": 16.170965643486213,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.0421656828631685,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "J": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.8545922853341579,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              },
+              "O": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.2967607069416671,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.0
+              },
+              "S": {
+                "duration_above_threshold_min": 14.721052125269187,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.733803023963503,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 1.6
+              },
+              "T": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.3090790667759597,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              }
+            },
+            "protected_violations": [],
+            "reasons": [],
+            "replay": {
+              "completed_jobs": [
+                "J4",
+                "J3"
+              ],
+              "crew_minutes": 155.0,
+              "deadline_minutes": 180.0,
+              "events": [
+                {
+                  "actual_minutes": 70.0,
+                  "bound_finish_minute": 95.0,
+                  "depart_minute": 0.0,
+                  "finish_minute": 80.0,
+                  "from_location": "DEPOT",
+                  "job_id": "J4",
+                  "max_minutes": 85.0,
+                  "start_minute": 10.0,
+                  "supported": true,
+                  "to_location": "J4"
+                },
+                {
+                  "actual_minutes": 55.0,
+                  "bound_finish_minute": 160.0,
+                  "depart_minute": 80.0,
+                  "finish_minute": 145.0,
+                  "from_location": "J4",
+                  "job_id": "J3",
+                  "max_minutes": 70.0,
+                  "start_minute": 90.0,
+                  "supported": true,
+                  "to_location": "J3"
+                }
+              ],
+              "final_location": "DEPOT",
+              "finish_minute": 155.0,
+              "last_work_location": "J3",
+              "reasons": [],
+              "return_minutes": 10.0,
+              "skipped": [
+                {
+                  "job_id": "J1",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                },
+                {
+                  "job_id": "J2",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                }
+              ],
+              "start_location": "DEPOT",
+              "start_minute": 0.0,
+              "status": "supported",
+              "work_finish_minute": 145.0
+            },
+            "run_id": "85138131fc4ac333425af58eeeac213b731adff67e364bff8c9016cc8139ef5c",
+            "scenario_id": "P3",
+            "status": "supported",
+            "total_spill_m3": 0.0
+          },
+          {
+            "completed_jobs": [
+              "J3",
+              "J4"
+            ],
+            "crew_minutes": 175.0,
+            "intermediate_states": [
+              {
+                "completed_jobs": [
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "6ac9f38e64a3e76f1ecf7921595979a618b74825e18fab1e67c57059248a7b20",
+                "total_spill_m3": 0.538489248641712
+              },
+              {
+                "completed_jobs": [
+                  "J3",
+                  "J4"
+                ],
+                "protected_violations": [],
+                "run_id": "178639a4ed861521ac0b55bf6a2111acf2aef020375ac13dd7f3cf8afea75456",
+                "total_spill_m3": 0.538489248641712
+              }
+            ],
+            "newly_completed_jobs": [
+              "J4",
+              "J3"
+            ],
+            "nodes": {
+              "A1": {
+                "duration_above_threshold_min": 13.736235881996047,
+                "flood_duration_min": 1.0083333333333333,
+                "integrated_spill_m3": 0.5384892486417123,
+                "max_depth_m": 0.9999999999999999,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.538489248641712,
+                "threshold_m": 0.8
+              },
+              "A2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.3900165845152112,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8
+              },
+              "B1": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.43532048561277575,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "B2": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 0.7524628103794635,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.8800000000000001
+              },
+              "J": {
+                "duration_above_threshold_min": 20.1469421504146,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.1483755063113315,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              },
+              "O": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.2000000000000044,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.0
+              },
+              "S": {
+                "duration_above_threshold_min": 0.0,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.4367562675892764,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 1.6
+              },
+              "T": {
+                "duration_above_threshold_min": 1.1106522901764344,
+                "flood_duration_min": 0.0,
+                "integrated_spill_m3": 0.0,
+                "max_depth_m": 1.183770803758265,
+                "nonconverged_steps": 0,
+                "spill_m3": 0.0,
+                "threshold_m": 0.96
+              }
+            },
+            "protected_violations": [],
+            "reasons": [],
+            "replay": {
+              "completed_jobs": [
+                "J4",
+                "J3"
+              ],
+              "crew_minutes": 175.0,
+              "deadline_minutes": 180.0,
+              "events": [
+                {
+                  "actual_minutes": 80.0,
+                  "bound_finish_minute": 95.0,
+                  "depart_minute": 0.0,
+                  "finish_minute": 90.0,
+                  "from_location": "DEPOT",
+                  "job_id": "J4",
+                  "max_minutes": 85.0,
+                  "start_minute": 10.0,
+                  "supported": true,
+                  "to_location": "J4"
+                },
+                {
+                  "actual_minutes": 65.0,
+                  "bound_finish_minute": 170.0,
+                  "depart_minute": 90.0,
+                  "finish_minute": 165.0,
+                  "from_location": "J4",
+                  "job_id": "J3",
+                  "max_minutes": 70.0,
+                  "start_minute": 100.0,
+                  "supported": true,
+                  "to_location": "J3"
+                }
+              ],
+              "final_location": "DEPOT",
+              "finish_minute": 175.0,
+              "last_work_location": "J3",
+              "reasons": [],
+              "return_minutes": 10.0,
+              "skipped": [
+                {
+                  "job_id": "J1",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                },
+                {
+                  "job_id": "J2",
+                  "missing_prerequisites": [],
+                  "reason": "insufficient_bound_window"
+                }
+              ],
+              "start_location": "DEPOT",
+              "start_minute": 0.0,
+              "status": "supported",
+              "work_finish_minute": 165.0
+            },
+            "run_id": "178639a4ed861521ac0b55bf6a2111acf2aef020375ac13dd7f3cf8afea75456",
+            "scenario_id": "P4",
+            "status": "supported",
+            "total_spill_m3": 0.538489248641712
+          }
+        ],
+        "state_version": 2,
+        "status": "supported",
+        "supported": true,
+        "travel_minutes": 10,
+        "worst_cost_rm": 1620.0,
+        "worst_crew_minutes": 175.0,
+        "worst_spill_m3": 0.5384892486540153
+      },
+      "queue": [
+        "J4",
+        "J1",
+        "J3",
+        "J2"
+      ],
+      "is_stale": true,
+      "review": {
+        "plan_id": "P-e232cd6c88cb4af6",
+        "actor": "Verification reviewer",
+        "notes": "Numerical and reference-case exercise only.",
+        "created_at": "2026-10-13T14:20:24.329074+00:00"
+      },
+      "approval": {
+        "plan_id": "P-e232cd6c88cb4af6",
+        "actor": "Verification supervisor",
+        "notes": "Local synthetic workflow test.",
+        "snapshot_hash": "d5c996c6e8c674c83e5c592e98479e6e0921b7529d07a009d81e373f70de13b9",
+        "created_at": "2026-10-13T14:20:24.340994+00:00"
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "id": "T-84a0391893964c22",
+      "plan_id": "P-e232cd6c88cb4af6",
+      "project_id": "synthetic-two-branch-v1",
+      "job_id": "J4",
+      "status": "closed",
+      "crew": "Synthetic crew",
+      "start_minute": 10.0,
+      "finish_minute": 85.0,
+      "observed_condition": "restored",
+      "created_at": "2026-10-13T14:20:24.352107+00:00",
+      "created_by": "Verification supervisor",
+      "report_evidence": {
+        "asset_id": "STORE_IN",
+        "observation": "Test fixture asserts restored condition; no field inspection occurred.",
+        "type": "synthetic_test_fixture"
+      },
+      "verification_evidence": {
+        "asset_id": "STORE_IN",
+        "observation": "Test fixture asserts restored condition; no field inspection occurred.",
+        "type": "synthetic_test_fixture"
+      },
+      "is_stale": true,
+      "snapshot_hash": "d5c996c6e8c674c83e5c592e98479e6e0921b7529d07a009d81e373f70de13b9",
+      "actual_minutes": 75.0,
+      "duration_bound_exceeded": false,
+      "deadline_including_return_exceeded": false
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "project",
+      "entity_id": "synthetic-two-branch-v1",
+      "action": "created",
+      "actor": "Prototype",
+      "created_at": "2026-10-13T14:20:22.752009+00:00",
+      "payload": {
+        "jobs": [
+          {
+            "asset_id": "TRUNK",
+            "cost_rm": 1080,
+            "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+            "downstream_rank": 0,
+            "evidence_status": "synthetic",
+            "id": "J1",
+            "max_minutes": 100,
+            "nominal_minutes": 90,
+            "prerequisites": [],
+            "title": "Restore shared trunk"
+          },
+          {
+            "asset_id": "A_REACH",
+            "cost_rm": 540,
+            "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+            "downstream_rank": 3,
+            "evidence_status": "synthetic",
+            "id": "J2",
+            "max_minutes": 55,
+            "nominal_minutes": 45,
+            "prerequisites": [],
+            "title": "Restore Branch A reach"
+          },
+          {
+            "asset_id": "B_REACH",
+            "cost_rm": 720,
+            "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+            "downstream_rank": 2,
+            "evidence_status": "synthetic",
+            "id": "J3",
+            "max_minutes": 70,
+            "nominal_minutes": 60,
+            "prerequisites": [],
+            "title": "Restore Branch B upstream reach"
+          },
+          {
+            "asset_id": "STORE_IN",
+            "cost_rm": 900,
+            "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+            "downstream_rank": 1,
+            "evidence_status": "synthetic",
+            "id": "J4",
+            "max_minutes": 85,
+            "nominal_minutes": 75,
+            "prerequisites": [],
+            "title": "Restore designed storage inlet"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 2,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "project",
+      "entity_id": "synthetic-two-branch-v1",
+      "action": "runtime_identity_changed",
+      "actor": "Prototype",
+      "created_at": "2026-10-13T14:20:22.752511+00:00",
+      "payload": {
+        "identity": "4cf6eb45aebea9a3a4e9cbe5f4be05121e6973b68ef5ac96683ae08664ca0a3d",
+        "previous_identity": null,
+        "previous_version": 0
+      }
+    },
+    {
+      "sequence": 3,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "project",
+      "entity_id": "synthetic-two-branch-v1",
+      "action": "context_changed",
+      "actor": "Planner",
+      "created_at": "2026-10-13T14:20:22.761523+00:00",
+      "payload": {
+        "fingerprint": "e672c09526e938d7ee48d82e7cc493dd1ebf40fdca155ba7ba7f148b36ad0234",
+        "inputs": {
+          "already_completed": [],
+          "app_version": "0.1.0",
+          "case": {
+            "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+            "default_deadline_minutes": 180,
+            "depth_threshold_fraction": 0.8,
+            "description": "Two prescribed inflow branches, a shared trunk and online designed storage. Concept verification only; no surveyed site, rainfall forecast, inundation map or calibrated benefit.",
+            "epsilon_m3": 0.05,
+            "evidence_status": "synthetic",
+            "frozen_before_outcome_comparison": true,
+            "id": "synthetic-two-branch-v1",
+            "jobs": [
+              {
+                "asset_id": "TRUNK",
+                "cost_rm": 1080,
+                "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+                "downstream_rank": 0,
+                "evidence_status": "synthetic",
+                "id": "J1",
+                "max_minutes": 100,
+                "nominal_minutes": 90,
+                "prerequisites": [],
+                "title": "Restore shared trunk"
+              },
+              {
+                "asset_id": "A_REACH",
+                "cost_rm": 540,
+                "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+                "downstream_rank": 3,
+                "evidence_status": "synthetic",
+                "id": "J2",
+                "max_minutes": 55,
+                "nominal_minutes": 45,
+                "prerequisites": [],
+                "title": "Restore Branch A reach"
+              },
+              {
+                "asset_id": "B_REACH",
+                "cost_rm": 720,
+                "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+                "downstream_rank": 2,
+                "evidence_status": "synthetic",
+                "id": "J3",
+                "max_minutes": 70,
+                "nominal_minutes": 60,
+                "prerequisites": [],
+                "title": "Restore Branch B upstream reach"
+              },
+              {
+                "asset_id": "STORE_IN",
+                "cost_rm": 900,
+                "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+                "downstream_rank": 1,
+                "evidence_status": "synthetic",
+                "id": "J4",
+                "max_minutes": 85,
+                "nominal_minutes": 75,
+                "prerequisites": [],
+                "title": "Restore designed storage inlet"
+              }
+            ],
+            "links": [
+              {
+                "blocked_width_m": 0.35,
+                "depth_m": 1,
+                "from_node": "A1",
+                "id": "A_REACH",
+                "job_id": "J2",
+                "length_m": 90,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "A2"
+              },
+              {
+                "blocked_width_m": 0.8,
+                "depth_m": 1,
+                "from_node": "A2",
+                "id": "A_LOWER",
+                "job_id": null,
+                "length_m": 100,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.3,
+                "depth_m": 1.1,
+                "from_node": "B1",
+                "id": "B_REACH",
+                "job_id": "J3",
+                "length_m": 70,
+                "restored_width_m": 0.7,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "B2"
+              },
+              {
+                "blocked_width_m": 0.2,
+                "depth_m": 1.1,
+                "from_node": "B2",
+                "id": "STORE_IN",
+                "job_id": "J4",
+                "length_m": 40,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "S"
+              },
+              {
+                "blocked_width_m": 0,
+                "depth_m": 0.5,
+                "from_node": "S",
+                "id": "STORE_OUT",
+                "job_id": null,
+                "length_m": 60,
+                "restored_width_m": 0,
+                "roughness_n": 0.015,
+                "shape": "CIRCULAR",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.4,
+                "depth_m": 1.2,
+                "from_node": "J",
+                "id": "TRUNK",
+                "job_id": "J1",
+                "length_m": 80,
+                "restored_width_m": 1.1,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "T"
+              },
+              {
+                "blocked_width_m": 1.2,
+                "depth_m": 1.2,
+                "from_node": "T",
+                "id": "OUTLET",
+                "job_id": null,
+                "length_m": 80,
+                "restored_width_m": 1.2,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "O"
+              }
+            ],
+            "model_assumptions": [
+              "CMS inflows prescribed at A1 and B1; inlet capture is not modelled.",
+              "Conveyance restrictions are synthetic lateral encroachment represented only by clear rectangular width.",
+              "All node flooding crosses an absorbing collector boundary; no surface ponding or re-entry.",
+              "All maintenance completes dry before the 3-hour hydraulic event; no transient in-work geometry.",
+              "Storage has fixed 300 m2 surface area and unchanged 0.5 m circular outlet.",
+              "Initial storage depth is observed hydraulic state, not manipulated to justify a job.",
+              "No flap gate at outfall; dynamic-wave routing permits reverse flow.",
+              "Coordinates are a schematic, not surveyed geospatial positions."
+            ],
+            "model_version": "synthetic-1.0.0",
+            "nodes": [
+              {
+                "id": "A1",
+                "invert_m": 101.4,
+                "kind": "junction",
+                "label": "Branch A inlet",
+                "max_depth_m": 1.0,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "id": "A2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Branch A junction",
+                "max_depth_m": 1.0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": "B1",
+                "invert_m": 101.2,
+                "kind": "junction",
+                "label": "Branch B inlet",
+                "max_depth_m": 1.1,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Storage approach",
+                "max_depth_m": 1.1,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "id": "S",
+                "invert_m": 100.1,
+                "kind": "storage",
+                "label": "Designed storage",
+                "max_depth_m": 2.0,
+                "x": 4,
+                "y": 0
+              },
+              {
+                "id": "J",
+                "invert_m": 100.0,
+                "kind": "junction",
+                "label": "Shared confluence",
+                "max_depth_m": 1.2,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "id": "T",
+                "invert_m": 99.6,
+                "kind": "junction",
+                "label": "Trunk downstream",
+                "max_depth_m": 1.2,
+                "x": 7,
+                "y": 2
+              },
+              {
+                "id": "O",
+                "invert_m": 99.2,
+                "kind": "outfall",
+                "label": "Receiving water",
+                "max_depth_m": 0.0,
+                "x": 9,
+                "y": 2
+              }
+            ],
+            "protected_nodes": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "S",
+              "J",
+              "T"
+            ],
+            "storage_area_m2": 300,
+            "tie_m3": 0.05,
+            "title": "Monsoon Rehearsal \u00b7 synthetic reference catchment",
+            "travel_minutes": 10
+          },
+          "deadline_minutes": 180,
+          "engine": {
+            "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c",
+            "adapter_version": "1.0.1",
+            "default_routing_step_s": 0.5,
+            "engine": "EPA SWMM / Open Water Analytics toolkit",
+            "engine_version": "5.2.4",
+            "engine_version_int": 52004,
+            "routing": "DYNWAVE",
+            "runtime_file_sha256": {
+              "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+              "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+              "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+              "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+              "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+              "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+              "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+              "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+              "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+              "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+              "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+              "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+              "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+              "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+            },
+            "toolkit_version": "0.17.0",
+            "units": "CMS / metres / m3"
+          },
+          "implementation_hash": "ae7d7cbf0fa28f3219d8a67efcfc177c82a28e0d007e70a7ea91342f7ff5d8f8",
+          "operator_queue": null,
+          "scenarios": [
+            {
+              "description": "Synthetic symmetric 50-minute triangular inflows; low tailwater; nominal work durations.",
+              "durations": {
+                "J1": 90,
+                "J2": 45,
+                "J3": 60,
+                "J4": 75
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P1",
+              "phase": "planning",
+              "title": "Balanced design event"
+            },
+            {
+              "description": "Synthetic A-dominant triangular inflows; upper-bound durations.",
+              "durations": {
+                "J1": 100,
+                "J2": 55,
+                "J3": 70,
+                "J4": 85
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.9,
+                "peak_b_cms": 0.3,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P2",
+              "phase": "planning",
+              "title": "Branch A dominant event"
+            },
+            {
+              "description": "Synthetic B-dominant triangular inflows; shorter observed work durations.",
+              "durations": {
+                "J1": 80,
+                "J2": 40,
+                "J3": 55,
+                "J4": 70
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.3,
+                "peak_b_cms": 0.9,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P3",
+              "phase": "planning",
+              "title": "Branch B dominant event"
+            },
+            {
+              "description": "Elevated fixed tailwater with otherwise balanced inflow. Backflow is allowed.",
+              "durations": {
+                "J1": 95,
+                "J2": 50,
+                "J3": 65,
+                "J4": 80
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 100.4
+              },
+              "id": "P4",
+              "phase": "planning",
+              "title": "Elevated receiving water"
+            }
+          ],
+          "start_location": "DEPOT",
+          "start_minute": 0.0
+        },
+        "previous_version": 1
+      }
+    },
+    {
+      "sequence": 4,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "plan",
+      "entity_id": "P-e232cd6c88cb4af6",
+      "action": "saved",
+      "actor": "Verification planner",
+      "created_at": "2026-10-13T14:20:24.314786+00:00",
+      "payload": {
+        "fingerprint": "e672c09526e938d7ee48d82e7cc493dd1ebf40fdca155ba7ba7f148b36ad0234",
+        "snapshot_hash": "d5c996c6e8c674c83e5c592e98479e6e0921b7529d07a009d81e373f70de13b9",
+        "state_version": 2
+      }
+    },
+    {
+      "sequence": 5,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "plan",
+      "entity_id": "P-e232cd6c88cb4af6",
+      "action": "reviewed",
+      "actor": "Verification reviewer",
+      "created_at": "2026-10-13T14:20:24.329074+00:00",
+      "payload": {
+        "notes": "Numerical and reference-case exercise only."
+      }
+    },
+    {
+      "sequence": 6,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "plan",
+      "entity_id": "P-e232cd6c88cb4af6",
+      "action": "approved",
+      "actor": "Verification supervisor",
+      "created_at": "2026-10-13T14:20:24.340994+00:00",
+      "payload": {
+        "notes": "Local synthetic workflow test.",
+        "snapshot_hash": "d5c996c6e8c674c83e5c592e98479e6e0921b7529d07a009d81e373f70de13b9"
+      }
+    },
+    {
+      "sequence": 7,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "ticket",
+      "entity_id": "T-84a0391893964c22",
+      "action": "issued",
+      "actor": "Verification supervisor",
+      "created_at": "2026-10-13T14:20:24.353020+00:00",
+      "payload": {
+        "job_id": "J4",
+        "plan_id": "P-e232cd6c88cb4af6",
+        "snapshot_hash": "d5c996c6e8c674c83e5c592e98479e6e0921b7529d07a009d81e373f70de13b9"
+      }
+    },
+    {
+      "sequence": 8,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "ticket",
+      "entity_id": "T-84a0391893964c22",
+      "action": "assigned",
+      "actor": "Verification dispatcher",
+      "created_at": "2026-10-13T14:20:24.365092+00:00",
+      "payload": {
+        "crew": "Synthetic crew"
+      }
+    },
+    {
+      "sequence": 9,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "ticket",
+      "entity_id": "T-84a0391893964c22",
+      "action": "started",
+      "actor": "Verification crew",
+      "created_at": "2026-10-13T14:20:24.378164+00:00",
+      "payload": {
+        "crew": "Synthetic crew",
+        "start_minute": 10.0
+      }
+    },
+    {
+      "sequence": 10,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "ticket",
+      "entity_id": "T-84a0391893964c22",
+      "action": "completion_reported",
+      "actor": "Verification crew",
+      "created_at": "2026-10-13T14:20:24.382335+00:00",
+      "payload": {
+        "actual_minutes": 75.0,
+        "deadline_including_return_exceeded": false,
+        "duration_bound_exceeded": false,
+        "evidence": {
+          "asset_id": "STORE_IN",
+          "observation": "Test fixture asserts restored condition; no field inspection occurred.",
+          "type": "synthetic_test_fixture"
+        },
+        "finish_minute": 85.0
+      }
+    },
+    {
+      "sequence": 11,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "ticket",
+      "entity_id": "T-84a0391893964c22",
+      "action": "verification_accepted",
+      "actor": "Verification inspector",
+      "created_at": "2026-10-13T14:20:24.385348+00:00",
+      "payload": {
+        "accepted": true,
+        "completed_jobs": [
+          "J4"
+        ],
+        "evidence": {
+          "asset_id": "STORE_IN",
+          "observation": "Test fixture asserts restored condition; no field inspection occurred.",
+          "type": "synthetic_test_fixture"
+        },
+        "observed_condition": "restored",
+        "physical_state_changed": true
+      }
+    },
+    {
+      "sequence": 12,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "ticket",
+      "entity_id": "T-84a0391893964c22",
+      "action": "closed",
+      "actor": "Verification supervisor",
+      "created_at": "2026-10-13T14:20:24.388423+00:00",
+      "payload": {}
+    },
+    {
+      "sequence": 13,
+      "schema_version": 2,
+      "project_id": "synthetic-two-branch-v1",
+      "entity_type": "project",
+      "entity_id": "synthetic-two-branch-v1",
+      "action": "context_changed",
+      "actor": "Planner",
+      "created_at": "2026-10-13T14:20:24.399348+00:00",
+      "payload": {
+        "fingerprint": "e27200321356cec4a0de700809e21de623bc723aec5c7cb229b7e26da255b6b9",
+        "inputs": {
+          "already_completed": [
+            "J4"
+          ],
+          "app_version": "0.1.0",
+          "case": {
+            "case_sha256": "45eddc5d248a23b1954f4bd0e27b645acd21a53c5518005388d7e0b07cb36436",
+            "default_deadline_minutes": 180,
+            "depth_threshold_fraction": 0.8,
+            "description": "Two prescribed inflow branches, a shared trunk and online designed storage. Concept verification only; no surveyed site, rainfall forecast, inundation map or calibrated benefit.",
+            "epsilon_m3": 0.05,
+            "evidence_status": "synthetic",
+            "frozen_before_outcome_comparison": true,
+            "id": "synthetic-two-branch-v1",
+            "jobs": [
+              {
+                "asset_id": "TRUNK",
+                "cost_rm": 1080,
+                "description": "Remove lateral encroachment: clear width 0.40 to 1.10 m; same invert, depth and roughness.",
+                "downstream_rank": 0,
+                "evidence_status": "synthetic",
+                "id": "J1",
+                "max_minutes": 100,
+                "nominal_minutes": 90,
+                "prerequisites": [],
+                "title": "Restore shared trunk"
+              },
+              {
+                "asset_id": "A_REACH",
+                "cost_rm": 540,
+                "description": "Restore A1 to A2 clear width from 0.35 to 0.80 m; separate asset.",
+                "downstream_rank": 3,
+                "evidence_status": "synthetic",
+                "id": "J2",
+                "max_minutes": 55,
+                "nominal_minutes": 45,
+                "prerequisites": [],
+                "title": "Restore Branch A reach"
+              },
+              {
+                "asset_id": "B_REACH",
+                "cost_rm": 720,
+                "description": "Restore B1 to B2 clear width from 0.30 to 0.70 m; not the storage inlet.",
+                "downstream_rank": 2,
+                "evidence_status": "synthetic",
+                "id": "J3",
+                "max_minutes": 70,
+                "nominal_minutes": 60,
+                "prerequisites": [],
+                "title": "Restore Branch B upstream reach"
+              },
+              {
+                "asset_id": "STORE_IN",
+                "cost_rm": 900,
+                "description": "Restore B2 to storage clear width from 0.20 to 0.80 m; designed outlet remains unchanged.",
+                "downstream_rank": 1,
+                "evidence_status": "synthetic",
+                "id": "J4",
+                "max_minutes": 85,
+                "nominal_minutes": 75,
+                "prerequisites": [],
+                "title": "Restore designed storage inlet"
+              }
+            ],
+            "links": [
+              {
+                "blocked_width_m": 0.35,
+                "depth_m": 1,
+                "from_node": "A1",
+                "id": "A_REACH",
+                "job_id": "J2",
+                "length_m": 90,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "A2"
+              },
+              {
+                "blocked_width_m": 0.8,
+                "depth_m": 1,
+                "from_node": "A2",
+                "id": "A_LOWER",
+                "job_id": null,
+                "length_m": 100,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.3,
+                "depth_m": 1.1,
+                "from_node": "B1",
+                "id": "B_REACH",
+                "job_id": "J3",
+                "length_m": 70,
+                "restored_width_m": 0.7,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "B2"
+              },
+              {
+                "blocked_width_m": 0.2,
+                "depth_m": 1.1,
+                "from_node": "B2",
+                "id": "STORE_IN",
+                "job_id": "J4",
+                "length_m": 40,
+                "restored_width_m": 0.8,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "S"
+              },
+              {
+                "blocked_width_m": 0,
+                "depth_m": 0.5,
+                "from_node": "S",
+                "id": "STORE_OUT",
+                "job_id": null,
+                "length_m": 60,
+                "restored_width_m": 0,
+                "roughness_n": 0.015,
+                "shape": "CIRCULAR",
+                "to_node": "J"
+              },
+              {
+                "blocked_width_m": 0.4,
+                "depth_m": 1.2,
+                "from_node": "J",
+                "id": "TRUNK",
+                "job_id": "J1",
+                "length_m": 80,
+                "restored_width_m": 1.1,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "T"
+              },
+              {
+                "blocked_width_m": 1.2,
+                "depth_m": 1.2,
+                "from_node": "T",
+                "id": "OUTLET",
+                "job_id": null,
+                "length_m": 80,
+                "restored_width_m": 1.2,
+                "roughness_n": 0.015,
+                "shape": "RECT_OPEN",
+                "to_node": "O"
+              }
+            ],
+            "model_assumptions": [
+              "CMS inflows prescribed at A1 and B1; inlet capture is not modelled.",
+              "Conveyance restrictions are synthetic lateral encroachment represented only by clear rectangular width.",
+              "All node flooding crosses an absorbing collector boundary; no surface ponding or re-entry.",
+              "All maintenance completes dry before the 3-hour hydraulic event; no transient in-work geometry.",
+              "Storage has fixed 300 m2 surface area and unchanged 0.5 m circular outlet.",
+              "Initial storage depth is observed hydraulic state, not manipulated to justify a job.",
+              "No flap gate at outfall; dynamic-wave routing permits reverse flow.",
+              "Coordinates are a schematic, not surveyed geospatial positions."
+            ],
+            "model_version": "synthetic-1.0.0",
+            "nodes": [
+              {
+                "id": "A1",
+                "invert_m": 101.4,
+                "kind": "junction",
+                "label": "Branch A inlet",
+                "max_depth_m": 1.0,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "id": "A2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Branch A junction",
+                "max_depth_m": 1.0,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "id": "B1",
+                "invert_m": 101.2,
+                "kind": "junction",
+                "label": "Branch B inlet",
+                "max_depth_m": 1.1,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "B2",
+                "invert_m": 100.8,
+                "kind": "junction",
+                "label": "Storage approach",
+                "max_depth_m": 1.1,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "id": "S",
+                "invert_m": 100.1,
+                "kind": "storage",
+                "label": "Designed storage",
+                "max_depth_m": 2.0,
+                "x": 4,
+                "y": 0
+              },
+              {
+                "id": "J",
+                "invert_m": 100.0,
+                "kind": "junction",
+                "label": "Shared confluence",
+                "max_depth_m": 1.2,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "id": "T",
+                "invert_m": 99.6,
+                "kind": "junction",
+                "label": "Trunk downstream",
+                "max_depth_m": 1.2,
+                "x": 7,
+                "y": 2
+              },
+              {
+                "id": "O",
+                "invert_m": 99.2,
+                "kind": "outfall",
+                "label": "Receiving water",
+                "max_depth_m": 0.0,
+                "x": 9,
+                "y": 2
+              }
+            ],
+            "protected_nodes": [
+              "A1",
+              "A2",
+              "B1",
+              "B2",
+              "S",
+              "J",
+              "T"
+            ],
+            "storage_area_m2": 300,
+            "tie_m3": 0.05,
+            "title": "Monsoon Rehearsal \u00b7 synthetic reference catchment",
+            "travel_minutes": 10
+          },
+          "deadline_minutes": 180,
+          "engine": {
+            "adapter_sha256": "5917ee6988515e32b7a4605fd7e576025c6beb0f2b5d9e7c8ec4c9b4005b3e3c",
+            "adapter_version": "1.0.1",
+            "default_routing_step_s": 0.5,
+            "engine": "EPA SWMM / Open Water Analytics toolkit",
+            "engine_version": "5.2.4",
+            "engine_version_int": 52004,
+            "routing": "DYNWAVE",
+            "runtime_file_sha256": {
+              "swmm/toolkit/_output.pyd": "f18387252ca3a0a544dd0a74eb4eeabff935802c44c052afbbae5df53bc1b930",
+              "swmm/toolkit/_solver.pyd": "e2dc1f5fcdb57bf9ce5dc18844489203632b666d868e8815bc4c8ead27716a10",
+              "swmm/toolkit/concrt140.dll": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376",
+              "swmm/toolkit/msvcp140.dll": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9",
+              "swmm/toolkit/msvcp140_1.dll": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d",
+              "swmm/toolkit/msvcp140_2.dll": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9",
+              "swmm/toolkit/msvcp140_atomic_wait.dll": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479",
+              "swmm/toolkit/msvcp140_codecvt_ids.dll": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18",
+              "swmm/toolkit/shared_enum.py": "57aa593af231e9dbad263e72dfb8c101f094ed06ec526dbd9657133096f0c0c3",
+              "swmm/toolkit/solver.py": "ac46d83d000a6632831ad9c1b70ae54645499634af0783a838830ff3b9345ddb",
+              "swmm/toolkit/swmm-output.dll": "99c314328704092a9b3e0cdf44ed80d6c43cc51990628cf4c336b5785f5444ff",
+              "swmm/toolkit/swmm5.dll": "8e898b7ecd63145b450c3264522ce095d28cc0ae175805fa104dddcf486cee06",
+              "swmm/toolkit/vcruntime140.dll": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+              "swmm/toolkit/vcruntime140_1.dll": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+            },
+            "toolkit_version": "0.17.0",
+            "units": "CMS / metres / m3"
+          },
+          "implementation_hash": "ae7d7cbf0fa28f3219d8a67efcfc177c82a28e0d007e70a7ea91342f7ff5d8f8",
+          "operator_queue": null,
+          "scenarios": [
+            {
+              "description": "Synthetic symmetric 50-minute triangular inflows; low tailwater; nominal work durations.",
+              "durations": {
+                "J1": 90,
+                "J2": 45,
+                "J3": 60,
+                "J4": 75
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P1",
+              "phase": "planning",
+              "title": "Balanced design event"
+            },
+            {
+              "description": "Synthetic A-dominant triangular inflows; upper-bound durations.",
+              "durations": {
+                "J1": 100,
+                "J2": 55,
+                "J3": 70,
+                "J4": 85
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.9,
+                "peak_b_cms": 0.3,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P2",
+              "phase": "planning",
+              "title": "Branch A dominant event"
+            },
+            {
+              "description": "Synthetic B-dominant triangular inflows; shorter observed work durations.",
+              "durations": {
+                "J1": 80,
+                "J2": 40,
+                "J3": 55,
+                "J4": 70
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.3,
+                "peak_b_cms": 0.9,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 99.3
+              },
+              "id": "P3",
+              "phase": "planning",
+              "title": "Branch B dominant event"
+            },
+            {
+              "description": "Elevated fixed tailwater with otherwise balanced inflow. Backflow is allowed.",
+              "durations": {
+                "J1": 95,
+                "J2": 50,
+                "J3": 65,
+                "J4": 80
+              },
+              "hydraulic": {
+                "hydrograph": "triangle",
+                "initial_storage_depth_m": 0,
+                "peak_a_cms": 0.65,
+                "peak_b_cms": 0.55,
+                "restriction_multiplier": 1.0,
+                "roughness_multiplier": 1.0,
+                "tailwater_m": 100.4
+              },
+              "id": "P4",
+              "phase": "planning",
+              "title": "Elevated receiving water"
+            }
+          ],
+          "start_location": "J4",
+          "start_minute": 85.0
+        },
+        "previous_version": 5
+      }
+    }
+  ]
+}
