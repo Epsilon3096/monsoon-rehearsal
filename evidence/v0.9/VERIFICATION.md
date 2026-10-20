@@ -1,5 +1,7 @@
 # Version 0.9.0 verification
 
+Publication follow-up: archived webpage identifiers were subsequently redacted. The original package-byte comparison below predates that intentional change; application code, observations and numerical results remain unchanged. See [the cleanup record](../../SECURITY_REDACTION.md) and `publication-cleanup-tests.xml`.
+
 Verified on 20 October 2026 in the pinned Windows environment.
 
 - **652 product tests passed**, zero failures, errors or skips. Profile: `pytest-product.ini`.

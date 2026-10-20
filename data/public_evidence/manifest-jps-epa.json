@@ -6,8 +6,8 @@
       "path": "data/public_evidence/jps/jps_selangor_rainfall_page.html.txt",
       "source_url": "https://publicinfobanjir.water.gov.my/hujan/data-hujan/?state=SEL&lang=en",
       "retrieved_at_utc": "2026-10-13T14:41:23.479950+00:00",
-      "sha256": "1546b296f50adfc3b3209b8cb8559be6ef165480e5d1312d3e4044080a6baa41",
-      "bytes": 78666,
+      "sha256": "d59eed141e48cbaf5ff04fb86c927906f20b10639684c62785cb2ad1885c4468",
+      "bytes": 78671,
       "publisher": "Department of Irrigation and Drainage Malaysia (JPS/DID)",
       "licence_status": "Public anonymous read. No explicit open reuse licence identified in the captured page/response; agency attribution retained. Portal access does not establish permission for unrestricted redistribution or commercial reuse.",
       "evidence_class": "Public portal documentation snapshot; inert HTML source",
@@ -15,9 +15,23 @@
       "original_response_bytes": 78678,
       "redaction": {
         "date": "2026-10-20",
-        "replacements": 3,
+        "replacements": 4,
         "reason": "Remove third-party browser telemetry key, CAPTCHA site identifier and page token from public redistribution",
-        "claim": "Public-page identifiers are not project credentials. Sanitised copy; document text unchanged."
+        "claim": "Public-page identifiers are not project credentials. Sanitised copy; document text unchanged.",
+        "replacement_counts": [
+          {
+            "marker": "REDACTED_PUBLIC_PAGE_TELEMETRY_KEY",
+            "occurrences": 2
+          },
+          {
+            "marker": "REDACTED_PUBLIC_PAGE_SITE_KEY",
+            "occurrences": 1
+          },
+          {
+            "marker": "REDACTED_PUBLIC_PAGE_TOKEN",
+            "occurrences": 1
+          }
+        ]
       }
     },
     {
@@ -38,7 +52,13 @@
         "reason": "Remove third-party Google Maps API key embedded in public webpage script URL before further distribution",
         "replacements": 1,
         "marker": "REDACTED_PUBLIC_PAGE_GOOGLE_API_KEY",
-        "claim": "Sanitised copy; not byte-identical to acquired response. Rainfall table values unchanged."
+        "claim": "Sanitised copy; not byte-identical to acquired response. Rainfall table values unchanged.",
+        "replacement_counts": [
+          {
+            "marker": "REDACTED_PUBLIC_PAGE_GOOGLE_API_KEY",
+            "occurrences": 1
+          }
+        ]
       }
     },
     {

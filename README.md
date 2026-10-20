@@ -4,6 +4,8 @@
 
 Version 0.9.0 adds a three-minute guided demonstration and a prospectively declared outlet-restoration benchmark. Start with **Demonstration** in the sidebar; use **Rehearse** for the full four-job planning workflow.
 
+**No Google API key is required.** Captured third-party webpage credentials have been redacted; the application and rainfall values are unchanged. See the [publication cleanup record](SECURITY_REDACTION.md).
+
 | What you can inspect | Current evidence |
 | --- | --- |
 | Maintenance benefit | Four separate synthetic outlet-restoration cases pass unchanged numerical and represented-location checks; zero-inflow control passes. |
