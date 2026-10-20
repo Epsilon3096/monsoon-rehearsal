@@ -92,8 +92,10 @@ def test_walkthrough_is_read_only_and_exposes_limits():
     assert any("Skip M1" in x.value for x in app.warning)
     app.radio(key="demo_step").set_value("3 · Catch transferred harm").run()
     assert any("STOP" in x.value for x in app.error)
-    app.radio(key="demo_step").set_value("4 · Operator review").run()
-    assert any("No completed operator interview" in x.value for x in app.warning)
+    app.radio(key="demo_step").set_value("4 · Decision controls").run()
+    assert any("No completed operator review" in x.value for x in app.info)
+    assert not app.get("download_button")
+    assert not any("public submission" in x.value or "Next evidence" in x.value for x in app.markdown)
     assert not app.button and not app.text_input and not app.text_area
     assert not app.exception
 

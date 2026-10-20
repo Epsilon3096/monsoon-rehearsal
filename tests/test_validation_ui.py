@@ -11,6 +11,7 @@ from monsoon.service import ROOT
 
 @pytest.fixture
 def app(tmp_path, monkeypatch):
+    monkeypatch.setenv("MONSOON_ENABLE_RESEARCH_UI", "1")
     monkeypatch.setenv("MONSOON_DATA_DIR", str(tmp_path / "interactive"))
     monkeypatch.setenv("MONSOON_CACHE_DIR", str(ROOT / "var" / "hydraulic_runs"))
     result = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120).run()

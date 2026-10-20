@@ -79,7 +79,7 @@ def render_work_window(case):
     mode = st.radio("Timing evidence", ["Synthetic timing example", "Observed records"], horizontal=True,
                     key="window_mode")
     if mode == "Synthetic timing example":
-        st.info("A timing illustration using the frozen synthetic jobs. It supplies no inspection evidence or hydraulic approval. The original queue is a historical diagnostic, and its adverse hydraulic results remain unchanged.")
+        st.info("A timing illustration using the frozen synthetic jobs. It supplies no inspection evidence or hydraulic approval. The example queue is not an approved work instruction.")
         queue_column, deadline_column = st.columns(2)
         with queue_column:
             text = st.text_input("Queue to inspect", "J4, J1, J3, J2", key="window_queue",
@@ -140,7 +140,10 @@ def render_work_window(case):
         elif report:
             st.warning("The records changed. Audit again before using the result.")
     st.caption("This review cannot authorise field work or a hydraulic restart. An interrupted or unverified condition needs assessment; it is never automatically treated as the original geometry.")
-    _document("WORK_WINDOW.md", "Work-window guide")
+    with st.expander("How to interpret a stop"):
+        st.write("The original deadline determines the planned work. The stop time tests which activities could have happened by an earlier cutoff.")
+        st.write("Predicted completion is not a condition inspection. Interrupted or unverified work remains unresolved until evidence establishes the actual condition.")
+        st.caption("Observed records use minutes from the same shift origin. Include observation time and availability time; later reports cannot change what was known at the stop.")
 
 
 def render_bench_preparation():

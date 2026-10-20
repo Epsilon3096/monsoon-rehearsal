@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -20,8 +21,11 @@ from monsoon.service import (ROOT, canonical_hash, context, data_root, find_run,
 
 st.set_page_config(page_title="Monsoon Rehearsal", page_icon="🌧️", layout="wide")
 st.markdown("""<style>
-.block-container {padding-top:2rem;max-width:1440px;}
-[data-testid="stSidebar"] {background:#e9f0f3;}
+.block-container {padding-top:3rem;padding-bottom:3rem;max-width:1280px;}
+[data-testid="stSidebar"] {background:#edf3f5;border-right:1px solid #dce5ea;}
+h1 {letter-spacing:-.035em;} h2,h3 {letter-spacing:-.02em;}
+[data-testid="stExpander"] {background:#fff;border:1px solid #dce5ea;border-radius:12px;}
+@media(max-width:640px){.block-container{padding-top:2rem;} .mr-hero{padding:22px!important;} .mr-hero h1{font-size:1.8rem!important;}}
 .mr-kicker {font-size:.73rem;letter-spacing:.17em;font-weight:700;color:#00867d;margin-bottom:8px;}
 .mr-hero {background:linear-gradient(110deg,#153343,#215563);padding:28px 32px;border-radius:17px;color:white;margin-bottom:22px;}
 .mr-hero h1 {font-size:2.35rem;letter-spacing:-.04em;color:white;padding:0 0 10px;margin:0;}
@@ -45,7 +49,7 @@ def action(label, call, *, key=None, disabled=False, primary=False):
 def show_assurance(audit, gate=None):
     """Read the exact audit, independently of the planning-scenario selector."""
     st.subheader("Plan-specific stress audit")
-    st.caption("Required development checks of this queue and its achieved work states. These are synthetic model checks, not field validation or a safety certificate.")
+    st.caption("Checks of this queue and its completed work states under the declared scenarios. Passing these model checks does not certify field safety.")
     if not audit:
         st.info("This plan has no stress audit. It can be saved as a blocked draft; review, approval and dispatch require complete passing evidence.")
         return
@@ -458,66 +462,47 @@ def decision_review_panel():
 
 
 def evidence_page(case,store):
-    st.markdown('<div class="mr-kicker">REPRODUCIBILITY / LIMITS / INDEPENDENT CHECKS</div>',unsafe_allow_html=True)
-    st.title("Evidence and model")
-    st.write("This prototype runs the EPA SWMM engine on a synthetic reference catchment. Numerical and software verification are separate from bench or field validation.")
-    st.warning("The separate experimental conservative bench solver is unqualified: it failed a required mesh-accuracy check on the complex pulse case. It does not supply the SWMM rehearsal or work-ticket decisions. Its adverse results remain available below.")
-    decision_review_panel()
-    report=ROOT/"evidence"/"verification.json"
-    if report.exists():
-        data=json.loads(report.read_text(encoding="utf-8"))
-        st.subheader("Original v0.1 verification run")
-        st.caption("Historical evidence for the frozen original case. Current stress-audit outcomes are reported separately; a software test pass does not mean every candidate plan passes.")
-        st.json(data,expanded=False)
-        st.download_button("Download verification results",report.read_bytes(),file_name="verification.json",mime="application/json")
-    holdout_file=ROOT/"evidence"/"holdouts.json"
+    st.markdown('<div class="mr-kicker">MODEL / RESULTS / ASSURANCE</div>', unsafe_allow_html=True)
+    st.title("Model & assurance")
+    st.write("Understand the model behind each recommendation and the checks required before a plan can proceed.")
+    left, middle, right = st.columns(3)
+    left.metric("Hydraulic engine", "EPA SWMM")
+    middle.metric("Reference network", "4 jobs · 1 crew")
+    right.metric("Data basis", "Synthetic")
+    st.info("This demonstration uses synthetic geometry and inflows. It is not calibrated to a real site and does not authorise field work.")
+
+    st.subheader("How a plan is checked")
+    for title, description in [
+        ("01 · Achievable work", "Job duration, travel, prerequisites and the return deadline determine which jobs can finish."),
+        ("02 · Hydraulic consequences", "Completed restoration states are compared with no additional work and alternative schedules under the same assumptions."),
+        ("03 · Location safeguards", "A lower total spill is insufficient: numerical checks and every protected location must also pass."),
+        ("04 · Review and verification", "Approval requires a passing audit bound to the exact plan. Reporting completion alone does not update the hydraulic state."),
+    ]:
+        with st.container(border=True):
+            st.markdown(f"**{title}**")
+            st.write(description)
+
+    st.subheader("Results and limits")
+    st.write("The reference planner ties the adaptive marginal baseline. The separate outlet-restoration example ties downstream-first. Neither comparison establishes scheduling superiority.")
+    holdout_file = ROOT / "evidence" / "holdouts.json"
     if holdout_file.exists():
-        holdouts=json.loads(holdout_file.read_text(encoding="utf-8"))
-        st.subheader("Withheld synthetic-event evaluation")
-        st.warning("The robust and adaptive marginal policies both fail the per-location no-worsening screen in H2. A lower total spill does not override harm at a protected location. These findings are retained without retuning the case.")
-        st.info("The robust priority queue ties the adaptive marginal baseline on the four planning scenarios. This reference case does not establish an advantage over that baseline.")
-        frame=pd.DataFrame(holdouts.get("comparisons",[]))
-        cols=[c for c in ["method","scenario_id","status","total_spill_m3","completed_jobs"] if c in frame]
-        st.dataframe(frame[cols],hide_index=True,width="stretch")
-        st.download_button("Download frozen-policy holdouts",holdout_file.read_bytes(),file_name="holdouts.json",mime="application/json")
+        holdouts = json.loads(holdout_file.read_text(encoding="utf-8"))
+        st.warning("In stress case H2, the robust and adaptive marginal policies both fail the per-location no-worsening screen. A lower total spill does not override increased spill at a protected location.")
+        with st.expander("Stress-case results"):
+            frame = pd.DataFrame(holdouts.get("comparisons", []))
+            cols = [c for c in ["method", "scenario_id", "status", "total_spill_m3", "completed_jobs"] if c in frame]
+            st.dataframe(frame[cols], hide_index=True, width="stretch")
+            st.download_button("Download stress-case results", holdout_file.read_bytes(),
+                               file_name="holdouts.json", mime="application/json")
     else:
-        st.info("The verification report is generated by the reproducible verification command.")
-    st.subheader("Supported envelope")
-    st.write("One crew; four distinct restoration jobs; a common pre-event work deadline; fixed restored hydraulic states; prescribed inflows; declared downstream boundaries; explicit node spill. No live forecast interpretation, field calibration, surface inundation model, autonomous dispatch, or wet-work transition is claimed.")
-    st.subheader("What the comparisons establish")
-    st.write("The exact planner searches all ordered subsets under the same scheduling constraints as its baselines. Holdout evaluation reveals future conditions only after the operational policies are frozen. Scenario frequencies are not weather probabilities. Named actors provide local prototype audit records, not authenticated production authorisation.")
-    stress_report=ROOT/"evidence"/"v0.2"/"verification.json"
-    if stress_report.exists():
-        with st.expander("v0.2 audit and workflow verification"):
-            st.json(json.loads(stress_report.read_text(encoding="utf-8")),expanded=False)
-    st.subheader("Public data collected")
-    st.caption("Archived public context is kept separate from the synthetic hydraulic model. No automatic requests are made when this page opens.")
-    weather=ROOT/"data"/"public_evidence"/"met"/"met_manifest.json"
-    if weather.exists():
-        manifest=json.loads(weather.read_text(encoding="utf-8"))
-        st.write(manifest["purpose"])
-        st.dataframe([{k:r.get(k) for k in ["kind","record_count","date_from","date_to","freshness","possibly_truncated"]} for r in manifest["records"]],hide_index=True,width="stretch")
-        if any(r.get("freshness")=="does_not_cover_reference_date" for r in manifest["records"]):
-            st.warning("The downloaded forecast does not cover the research reference date. It demonstrates ingestion only and must not be presented as a current local forecast.")
-        st.caption("Forecast phrases are not rainfall intensities and cannot be converted into SWMM inflows or a safe work deadline.")
-        with st.expander("Public weather provenance and limitations"): st.json(manifest,expanded=False)
-        st.download_button("Download public weather provenance",weather.read_bytes(),file_name="met-public-data-manifest.json",mime="application/json")
-    rainfall=ROOT/"data"/"public_evidence"/"jps"/"jps_selangor_rainfall_snapshot.csv"
-    if rainfall.exists():
-        st.write("JPS Selangor rainfall observations are archived as a dated table. Station identifiers and missing-value markers are preserved; this is not a complete event rainfall time series.")
-        st.download_button("Download JPS rainfall snapshot",rainfall.read_bytes(),file_name=rainfall.name,mime="text/csv")
-        quality=rainfall.parent/"summary.json"
-        if quality.exists():
-            with st.expander("Rainfall snapshot quality checks"): st.json(json.loads(quality.read_text(encoding="utf-8")),expanded=False)
-    external=ROOT/"data"/"public_evidence"/"manifest-jps-epa.json"
-    if external.exists():
-        st.download_button("Download JPS and EPA provenance",external.read_bytes(),file_name=external.name,mime="application/json")
-    with st.expander("Frozen synthetic case definition"): st.json(case,expanded=False)
-    docs=[("data/MODEL_NOTES.md","Hydraulic model notes"),("evidence/v0.8/VERIFICATION.md","Current SWMM prototype verification (v0.8)"),("evidence/v0.7/VERIFICATION.md","Unqualified custom-solver research (v0.7)"),("CONSERVATIVE_BENCH.md","Experimental conservative bench method and scope"),("evidence/v0.6/VERIFICATION.md","Preserved v0.6 verification report"),("VERIFICATION.md","Original v0.1 verification report"),("evidence/PUBLIC_DATA.md","Public evidence inventory"),("EVIDENCE_ROADMAP.md","Next priorities and data requests"),("README.md","Running and reproducing the prototype")]
-    for file,label in docs:
-        p=ROOT/file
-        if p.exists():
-            with st.expander(label): st.markdown(p.read_text(encoding="utf-8"))
+        st.warning("Stress-case evidence is unavailable. Do not infer a passing result.")
+    with st.expander("Model scope and assumptions"):
+        st.write("One crew, four independent clear-width restorations, prescribed inflows and receiving-water levels, and a common restoration-and-return deadline. Only completed, verified work receives restoration credit.")
+        st.write("The model reports drainage spill at represented nodes. It does not predict surface flood extent, property damage, live weather or the hydraulic effects of interrupted excavation.")
+        st.write("The demonstration has no completed field calibration or operator validation. Named actors in the ticket workflow are prototype audit labels, not verified professional identities.")
+    with st.expander("Reference network inputs"):
+        st.json(case, expanded=False)
+    st.caption("Use Demonstration to inspect the maintenance case, boundary limits and transferred-harm example. Use Rehearse to calculate and audit a specific plan.")
 
 
 def workspace(case,store):
@@ -525,8 +510,12 @@ def workspace(case,store):
     with st.sidebar:
         st.markdown("### Monsoon\n### Rehearsal")
         st.caption("Plan the achievable work.")
-        research=st.checkbox("Show research tools",value=False,key="research_tools_enabled",
-                             help="Opt in to experimental validation workspaces. These tools do not qualify the custom solver or authorise maintenance.")
+        research=False
+        if os.environ.get("MONSOON_ENABLE_RESEARCH_UI") == "1":
+            research=st.checkbox("Show research tools",value=False,key="research_tools_enabled",
+                                 help="Internal research workspaces; unavailable in the public interface.")
+        else:
+            st.session_state["research_tools_enabled"]=False
         pages=["Rehearse","Demonstration","Work window","Work tickets","Evidence"]
         if research:
             pages.insert(3,"Validation")
@@ -538,7 +527,7 @@ def workspace(case,store):
         st.caption("REFERENCE CATCHMENT")
         st.write(case["title"])
         st.caption("Synthetic data · one crew · four jobs")
-        st.caption(f"v{__version__} · SWMM prototype")
+        st.caption("Demonstration environment · no live dispatch")
     notice=st.session_state.pop("notice",None)
     if notice: st.success(notice)
     if case.get("runtime_warning"): st.warning(case["runtime_warning"])

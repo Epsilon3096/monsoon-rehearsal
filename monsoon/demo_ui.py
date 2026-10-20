@@ -21,7 +21,7 @@ def render_demo():
                 'and the reasons a promising plan may need to stop.</p></div>', unsafe_allow_html=True)
     st.caption("Read-only synthetic demonstration · no work is approved or dispatched · operator review pending")
     step = st.radio("Explore the decision", ["1 · Maintenance benefit", "2 · Work before rain",
-                                           "3 · Catch transferred harm", "4 · Operator review"],
+                                           "3 · Catch transferred harm", "4 · Decision controls"],
                     horizontal=True, key="demo_step")
     if step.startswith(("1", "2")):
         loaded = load_results(BENCHMARK, MANIFEST_SHA256)
@@ -98,14 +98,16 @@ def render_demo():
                  "The new outlet example cannot supply that audit for the original four-job network.")
         st.caption("This panel reads checksum-bound historical summaries. It does not rerun native files or approve work.")
     else:
-        st.subheader("Ask a practitioner to challenge the decision")
-        st.write("A real reviewer can be anonymous in the public submission. Record their relevant role, "
-                 "the actual review date, what they saw, their corrections and permission to quote them. "
-                 "Keep identifying details and original correspondence privately.")
-        st.warning("No completed operator interview or observed trial is claimed in this release.")
-        for name, label in [("OPERATOR_REVIEW_PACKET.md", "Interview and review form"),
-                            ("FICTIONAL_REVIEW_PRACTICE.md", "Fictional practice example — not evidence")]:
-            st.download_button(label, (ROOT / "docs" / name).read_bytes(), file_name=name,
-                               mime="text/markdown")
-        st.caption("Next evidence: actual review → agreed data contract → observed shadow trial → "
-                   "professionally supervised pilot, if the preceding evidence supports it.")
+        st.subheader("From a candidate plan to verified work")
+        st.write("Each stage has a separate control. A recommendation alone cannot become a work instruction.")
+        for title, description in [
+            ("Audit the exact plan", "Required numerical and protected-location checks must pass for the selected queue and completed work states."),
+            ("Review before approval", "A failed, unresolved or outdated audit blocks approval and dispatch."),
+            ("Report, then verify", "A crew completion report does not restore the model automatically. Verified condition evidence is required."),
+            ("Rehearse after a change", "Changes to work timing, conditions or the model require a new supported decision."),
+        ]:
+            with st.container(border=True):
+                st.markdown(f"**{title}**")
+                st.write(description)
+        st.info("This is a synthetic demonstration, not a field-validated operating system. No completed operator review or observed trial is claimed.")
+        st.caption("Open Work tickets to inspect the approval controls. This walkthrough cannot approve or dispatch work.")

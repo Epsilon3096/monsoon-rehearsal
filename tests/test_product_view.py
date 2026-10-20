@@ -9,6 +9,7 @@ from monsoon.service import ROOT
 
 @pytest.fixture
 def local_data(tmp_path, monkeypatch):
+    monkeypatch.delenv("MONSOON_ENABLE_RESEARCH_UI", raising=False)
     monkeypatch.setenv("MONSOON_DATA_DIR", str(tmp_path / "interactive"))
     monkeypatch.setenv("MONSOON_CACHE_DIR", str(ROOT / "var/hydraulic_runs"))
 
@@ -29,21 +30,25 @@ def test_default_product_pages_keep_adverse_evidence_without_experimental_import
     reject_experimental_imports(monkeypatch)
     app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120).run()
     assert not app.exception
-    assert app.sidebar.checkbox(key="research_tools_enabled").value is False
+    assert not app.sidebar.checkbox
     assert app.sidebar.radio(key="workspace").options == ["Rehearse", "Demonstration", "Work window", "Work tickets", "Evidence"]
     assert app.sidebar.radio(key="workspace").value == "Rehearse"
     for page in ("Demonstration", "Work window", "Work tickets", "Evidence"):
         app.sidebar.radio(key="workspace").set_value(page).run()
         assert not app.exception, [e.value for e in app.exception]
     warnings = "\n".join(item.value for item in app.warning)
-    assert "experimental conservative bench solver is unqualified" in warnings
-    assert "mesh-accuracy check" in warnings
-    assert "both fail the per-location no-worsening screen in H2" in warnings
-    assert any("ties the adaptive marginal baseline" in item.value for item in app.info)
-    assert any(item.label == "Unqualified custom-solver research (v0.7)" for item in app.expander)
+    assert "both fail the per-location no-worsening screen" in warnings
+    text = "\n".join(item.value for item in app.markdown)
+    assert "ties the adaptive marginal baseline" in text
+    assert "not calibrated to a real site" in "\n".join(item.value for item in app.info)
+    labels = [item.label for item in app.expander]
+    assert "Stress-case results" in labels
+    assert not any("v0." in label or "priorities" in label or "research" in label.lower() for label in labels)
+    assert "EVIDENCE_ROADMAP" not in text and "before submitting" not in text
 
 
-def test_research_opt_in_and_revocation_reset_stale_workspace(local_data):
+def test_research_opt_in_and_revocation_reset_stale_workspace(local_data, monkeypatch):
+    monkeypatch.setenv("MONSOON_ENABLE_RESEARCH_UI", "1")
     app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120).run()
     app.sidebar.checkbox(key="research_tools_enabled").check().run()
     assert "Validation" in app.sidebar.radio(key="workspace").options
@@ -58,6 +63,18 @@ def test_research_opt_in_and_revocation_reset_stale_workspace(local_data):
     assert "Validation" not in app.sidebar.radio(key="workspace").options
     assert all(item.key != "fv_run" for item in app.button)
     assert all(item.key != "validation_area" for item in app.radio)
+
+
+def test_public_mode_revokes_stale_research_state(local_data):
+    app = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120)
+    app.session_state["workspace"] = "Validation"
+    app.session_state["research_tools_enabled"] = True
+    app.run()
+    assert not app.exception
+    assert not app.sidebar.checkbox
+    assert app.session_state["research_tools_enabled"] is False
+    assert app.sidebar.radio(key="workspace").value == "Rehearse"
+    assert "Validation" not in app.sidebar.radio(key="workspace").options
 
 
 def test_direct_validation_render_rejects_stale_selection_without_opt_in(local_data, monkeypatch):

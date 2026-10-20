@@ -37,6 +37,16 @@ Official instructions:
 
 ## Hosted verification
 
+The default public interface contains only the product workspaces. Internal
+research tools are disabled unless the server administrator explicitly sets
+`MONSOON_ENABLE_RESEARCH_UI=1` in the process environment. Do not enable this
+setting on the public submission app. An old browser session cannot restore
+the research workspace when the server setting is absent.
+
+Development roadmaps, release history, bench research reports and interview
+preparation remain repository documentation. The public Evidence page shows
+only model scope, relevant results and decision controls.
+
 Successful dependency installation is only the first check. Open the deployed
 app in a signed-out browser, inspect Demonstration and Evidence, and run a
 rehearsal and its plan audit. Retain failed hydraulic/location checks as failed.

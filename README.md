@@ -57,6 +57,11 @@ For a different port: `./Start.ps1 -Port 8514`. Bind to localhost. The original 
 
 ## Start the validation phase
 
+Research workspaces are excluded from the public interface. For internal local
+research only, set `MONSOON_ENABLE_RESEARCH_UI=1` in the server environment before
+starting the app; this exposes the research opt-in described below. Development
+plans and release history stay in this repository, not in the public app.
+
 Enable **Show research tools**, then open **Validation** in the sidebar. These research tools support a later measured bench/site investigation; they are not prerequisites for running the supported product demonstration. No real operator or measured dataset has been supplied, so external validation remains pending.
 
 Development, bench preparation and interviews run in parallel. The operator gate applies to validating a real decision and operational use; it does not block building or testing. Begin with a campus facilities drainage/maintenance operator for workflow input and a separate civil engineering reviewer for technical input. The four-job synthetic network is already frozen; this release preserves it and every previous policy result.
